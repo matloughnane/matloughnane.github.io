@@ -1,0 +1,140 @@
+/* line 2, sass/partials/_base.scss */
+body {
+  font-family: 'Rambla', sans-serif;
+  background-color: #ecf0f1;
+}
+
+/* line 7, sass/partials/_base.scss */
+h1 {
+  font-size: 50px;
+}
+
+/* line 11, sass/partials/_base.scss */
+p {
+  font-size: 10px;
+}
+
+/* line 15, sass/partials/_base.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 20, sass/partials/_base.scss */
+.container {
+  padding-top: 100px;
+}
+
+/* line 24, sass/partials/_base.scss */
+.headline {
+  padding-top: 100px;
+  text-align: center;
+}
+
+/* line 29, sass/partials/_base.scss */
+.share {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 36, sass/partials/_base.scss */
+img.ri {
+  position: relative;
+  max-width: 80%;
+}
+
+@media screen and (max-width: 640px) {
+  /* line 47, sass/partials/_base.scss */
+  .headline {
+    padding-top: 20px;
+  }
+
+  /* line 51, sass/partials/_base.scss */
+  img.ri {
+    position: relative;
+    max-width: 60%;
+  }
+}
+/* line 1, sass/partials/_buttons.scss */
+.btn {
+  border: none;
+  background: none;
+  padding: 10px 10px;
+  display: inline-block;
+  margin: 8px 5px;
+  text-transform: lowercase;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  border-radius: 3px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+/* line 17, sass/partials/_buttons.scss */
+.default {
+  color: #ecf0f1;
+  background-color: #c0392b;
+}
+/* line 20, sass/partials/_buttons.scss */
+.default:hover {
+  box-shadow: 0px -3px 0px 0px #852f2f inset;
+  outline: 0 6px #852f2f;
+  background-color: #d16262;
+}
+/* line 25, sass/partials/_buttons.scss */
+.default:active {
+  background-color: #c0392b;
+  top: 0px;
+}
+
+/* line 31, sass/partials/_buttons.scss */
+.googlebtn {
+  color: #ecf0f1;
+  background-color: #dd4b39;
+}
+/* line 34, sass/partials/_buttons.scss */
+.googlebtn:hover {
+  box-shadow: 0px -3px 0px 0px #892417 inset;
+  outline: 0 6px #892417;
+  background-color: #e05a4a;
+}
+/* line 39, sass/partials/_buttons.scss */
+.googlebtn:active {
+  background-color: #dd4b39;
+  top: 0px;
+}
+
+/* line 45, sass/partials/_buttons.scss */
+.twitterbtn {
+  color: #ecf0f1;
+  background-color: #00aced;
+}
+/* line 48, sass/partials/_buttons.scss */
+.twitterbtn:hover {
+  box-shadow: 0px -3px 0px 0px #0081b2 inset;
+  outline: 0 6px #0081b2;
+  background-color: #29c4ff;
+}
+/* line 54, sass/partials/_buttons.scss */
+.twitterbtn:active {
+  background-color: #00aced;
+  top: 0px;
+}
+
+/* line 60, sass/partials/_buttons.scss */
+.githubbtn {
+  color: #ecf0f1;
+  background-color: #0e1717;
+}
+/* line 63, sass/partials/_buttons.scss */
+.githubbtn:hover {
+  box-shadow: 0px -3px 0px 0px #426c6c inset;
+  outline: 0 6px #426c6c;
+  background-color: #77adad;
+}
+/* line 69, sass/partials/_buttons.scss */
+.githubbtn:active {
+  background-color: #0e1717;
+  top: 0px;
+}
