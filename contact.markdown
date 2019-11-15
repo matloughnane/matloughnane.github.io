@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Page Title
+title: Contact
 description: This is the page description.
 background: '/PATH_TO_IMAGE'
 ---
