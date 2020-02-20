@@ -1,4 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-09T20:40:50+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mat Loughnane</title><subtitle>A Blog Theme by Start Bootstrap</subtitle><author><name>Mat Loughnane</name></author><entry><title type="html">It’s beginning to look a lot like Christmas</title><link href="http://localhost:4000/2019/12/09/xmas-update.html" rel="alternate" type="text/html" title="It's beginning to look a lot like Christmas" /><published>2019-12-09T20:35:13+00:00</published><updated>2019-12-09T20:35:13+00:00</updated><id>http://localhost:4000/2019/12/09/xmas-update</id><content type="html" xml:base="http://localhost:4000/2019/12/09/xmas-update.html">&lt;blockquote class=&quot;blockquote&quot;&gt;The Arranmore and Tory ferry apps are ready for Christmas, are you?&lt;/blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-20T21:44:45+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mat Loughnane</title><subtitle>All Sorts of Code Projects</subtitle><author><name>Mat Loughnane</name></author><entry><title type="html">Penjii Protects the Planet</title><link href="http://localhost:4000/2020/02/20/penjii-protects-the-planet.html" rel="alternate" type="text/html" title="Penjii Protects the Planet" /><published>2020-02-20T11:35:13+00:00</published><updated>2020-02-20T11:35:13+00:00</updated><id>http://localhost:4000/2020/02/20/penjii-protects-the-planet</id><content type="html" xml:base="http://localhost:4000/2020/02/20/penjii-protects-the-planet.html">&lt;blockquote class=&quot;blockquote&quot;&gt;Penjii Protects the planet is our mobile game that aims to teach players how to save their planet! The game is a result of an Erasmus+ project with partners from Austria, Croatia, Ireland and Spain all working together
+  to promote Green Skills.&lt;/blockquote&gt;
+
+&lt;p&gt;Penjii dodges past obstacles with a swipe on your phone. Swipe up to jump, down to duck and left and right to change Penjii's lane.&lt;/p&gt;
+
+&lt;p&gt;While the game's downloading now for your device on either Android and iOS, learn more about the Penjii's adventures.&lt;/p&gt;
+
+&lt;p&gt;
+  Penjii visits 4 different parts of the world:
+&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    The Antarctic
+  &lt;/li&gt;
+  &lt;li&gt;
+    A Beautiful Beach
+  &lt;/li&gt;
+  &lt;li&gt;
+    A Chaotic City
+  &lt;/li&gt;
+  &lt;li&gt;
+    Your Home
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;img class=&quot;img-fluid&quot; src=&quot;/img/posts/Artboard6-titled.png&quot; alt=&quot;All 4 Levels of Penjii Protects the Planet&quot;&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;All 4 Levels of the Game&lt;/span&gt;
+
+&lt;h2 class=&quot;section-heading&quot;&gt;Teacher Platform&lt;/h2&gt;
+&lt;p&gt;Teachers can monitor their progress, their statistics and can even choose which levels are available to their class. By locking and unlocking levels teachers can steer players to specific lessons and content and tailor their classroom activities accordingly.&lt;/p&gt;
+
+&lt;img class=&quot;img-fluid&quot; src=&quot;/img/posts/Artboard5.png&quot; alt=&quot;Players login screens.&quot;&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;Teachers can create accounts for their students.&lt;/span&gt;
+
+&lt;p&gt;If you've got any ideas on how we can improve the app feel free to reach out to us.&lt;/p&gt;</content><author><name>Mat Loughnane</name></author><summary type="html">Penjii Protects the planet is our mobile game that aims to teach players how to save their planet! The game is a result of an Erasmus+ project with partners from Austria, Croatia, Ireland and Spain all working together to promote Green Skills.</summary></entry><entry><title type="html">It’s beginning to look a lot like Christmas</title><link href="http://localhost:4000/2019/12/09/xmas-update.html" rel="alternate" type="text/html" title="It's beginning to look a lot like Christmas" /><published>2019-12-09T20:35:13+00:00</published><updated>2019-12-09T20:35:13+00:00</updated><id>http://localhost:4000/2019/12/09/xmas-update</id><content type="html" xml:base="http://localhost:4000/2019/12/09/xmas-update.html">&lt;blockquote class=&quot;blockquote&quot;&gt;The Arranmore and Tory ferry apps are ready for Christmas, are you?&lt;/blockquote&gt;
 
 &lt;p&gt;As we head into the Christmas season we wanted to make sure our apps was up to date so everyone can catch their favourite ferry service during the festive season.&lt;/p&gt;
 
