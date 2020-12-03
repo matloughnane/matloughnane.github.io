@@ -1,4 +1,103 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-20T21:44:45+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mat Loughnane</title><subtitle>All Sorts of Code Projects</subtitle><author><name>Mat Loughnane</name></author><entry><title type="html">Penjii Protects the Planet</title><link href="http://localhost:4000/2020/02/20/penjii-protects-the-planet.html" rel="alternate" type="text/html" title="Penjii Protects the Planet" /><published>2020-02-20T11:35:13+00:00</published><updated>2020-02-20T11:35:13+00:00</updated><id>http://localhost:4000/2020/02/20/penjii-protects-the-planet</id><content type="html" xml:base="http://localhost:4000/2020/02/20/penjii-protects-the-planet.html">&lt;blockquote class=&quot;blockquote&quot;&gt;Penjii Protects the planet is our mobile game that aims to teach players how to save their planet! The game is a result of an Erasmus+ project with partners from Austria, Croatia, Ireland and Spain all working together
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://matloughnane.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://matloughnane.github.io/" rel="alternate" type="text/html" /><updated>2020-12-03T00:02:42+00:00</updated><id>https://matloughnane.github.io/feed.xml</id><title type="html">Mat Loughnane</title><subtitle>All Sorts of Code Projects</subtitle><author><name>Mat Loughnane</name></author><entry><title type="html">Arranmore Weather</title><link href="https://matloughnane.github.io/2020/08/01/arranmore-weather.html" rel="alternate" type="text/html" title="Arranmore Weather" /><published>2020-08-01T13:00:00+01:00</published><updated>2020-08-01T13:00:00+01:00</updated><id>https://matloughnane.github.io/2020/08/01/arranmore-weather</id><content type="html" xml:base="https://matloughnane.github.io/2020/08/01/arranmore-weather.html">&lt;blockquote class=&quot;blockquote&quot;&gt;Arranmore Island recently made their weather station data available so here's an app to
+	make that data available on your iOS or Android devices.&lt;/blockquote&gt;
+
+&lt;p&gt;
+	This app was developed using Arranmore Island Community Council Weather Station data powered by Three Ireland and
+	supplemented with OpenWeather forecast data. It's part of Three Ireland's larger 'Most Connected Island' campaign
+	and also made a dashboard available with the data graphed and charted.
+&lt;/p&gt;
+
+&lt;img class=&quot;img-fluid&quot; src=&quot;/img/app/arranmore-weather/Artboard2-opt.png&quot; alt=&quot;The Arranmore Weather App&quot;&gt;
+
+&lt;p&gt;
+	The app is designed to give you all the information about the current weather as quickly and as simply as possible.
+	The design will change throughout the day based on the time of day only - but the small landscape at the bottom only
+	shows Arranmore under beautiful conditions. Don't expect hurricanes to appear in the app.
+&lt;/p&gt;
+&lt;img class=&quot;img-fluid&quot; src=&quot;/img/app/arranmore-weather/android-tab1.png&quot; alt=&quot;The Arranmore Weather App&quot;&gt;
+&lt;img class=&quot;img-fluid&quot; src=&quot;/img/app/arranmore-weather/ios1.png&quot; alt=&quot;The Arranmore Weather App&quot;&gt;
+
+&lt;p&gt;
+	The forecast data comes from the Open Weather API - they're a reliable service who's nearest weather station is
+	based in Dungloe and will give an accurate forecast for the next 10 days.
+&lt;/p&gt;
+
+&lt;img class=&quot;img-fluid&quot; src=&quot;/img/app/arranmore-weather/ios2.png&quot; alt=&quot;The Arranmore Weather App&quot;&gt;
+
+&lt;p&gt;
+	The weather data in the app is straight from the weather station and shows the last 30 days of information
+	collected.
+&lt;/p&gt;
+&lt;p&gt;
+	At the top you'll find highest piece of information on record highlighted. The data has 6 types: Wind Speed, Wind
+	Direction, Humidity, Temperature, Rainfall and Solar Radiation.
+&lt;/p&gt;
+
+&lt;img class=&quot;img-fluid&quot; src=&quot;/img/app/arranmore-weather/FeatureGraphic.png&quot; alt=&quot;The Arranmore Weather App logo&quot;&gt;
+
+&lt;br /&gt;
+&lt;br /&gt;
+
+&lt;a href=&quot;https://hexastudios.co/arranmore-weather/&quot;&gt;Cross Posted on Hexa Studios website&lt;/a&gt;</content><author><name>Mat Loughnane</name></author><summary type="html">Arranmore Island recently made their weather station data available so here's an app to make that data available on your iOS or Android devices.</summary></entry><entry><title type="html">Family Fortunes</title><link href="https://matloughnane.github.io/2020/05/11/family-fortunes.html" rel="alternate" type="text/html" title="Family Fortunes" /><published>2020-05-11T13:00:00+01:00</published><updated>2020-05-11T13:00:00+01:00</updated><id>https://matloughnane.github.io/2020/05/11/family-fortunes</id><content type="html" xml:base="https://matloughnane.github.io/2020/05/11/family-fortunes.html">&lt;blockquote class=&quot;blockquote&quot;&gt;I created a quick little game of family fortunes and wanted to share the game and code in
+	case anyone wanted to use it.&lt;/blockquote&gt;
+
+&lt;h3&gt;Online Version&lt;/h3&gt;
+
+&lt;p&gt;
+	The game is available online at &lt;a href=&quot;https://matloughnane.github.io/family-fortune-game/&quot;&gt;https://matloughnane.github.io/family-fortune-game/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	The answers for the game (should only be read by the 'host') are here:
+	&lt;a href=&quot;https://github.com/matloughnane/family-fortune-game/blob/master/assets/js/data.js&quot;&gt;https://github.com/matloughnane/family-fortune-game/blob/master/assets/js/data.js&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	The easiest way we've found to play the game was to share the website on screen and have the host view the answers
+	file on another.
+&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;If a player get's an answer correct, the host can click the answer or the corresponding number on their keyboard.&lt;/li&gt;
+    &lt;li&gt;If a player get's it wrong, the host can click the wrong button or click the &quot;x&quot; key on their keyboard.&lt;/li&gt;
+    &lt;li&gt;If all 3 wrong answers are exhausted they can reset the wrong answer counter with the other red button.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;img class=&quot;img-fluid&quot; src=&quot;/img/games/family-fortunes/shareimage.png&quot; alt=&quot;The Gameplay&quot;&gt;
+
+&lt;br /&gt;
+&lt;br /&gt;
+
+&lt;a href=&quot;https://hexastudios.co/family-fortunes/&quot;&gt;Cross Posted on Hexa Studios website&lt;/a&gt;</content><author><name>Mat Loughnane</name></author><summary type="html">I created a quick little game of family fortunes and wanted to share the game and code in case anyone wanted to use it.</summary></entry><entry><title type="html">Adventures of the Boy Wonder</title><link href="https://matloughnane.github.io/2020/05/05/adventures-of-the-boy-wonder.html" rel="alternate" type="text/html" title="Adventures of the Boy Wonder" /><published>2020-05-05T13:00:00+01:00</published><updated>2020-05-05T13:00:00+01:00</updated><id>https://matloughnane.github.io/2020/05/05/adventures-of-the-boy-wonder</id><content type="html" xml:base="https://matloughnane.github.io/2020/05/05/adventures-of-the-boy-wonder.html">&lt;blockquote class=&quot;blockquote&quot;&gt;For my brother's 21st Birthday I wanted to create a gift as special as my birthday
+	present from him, the result - a mobile adventure with Owen, the Boy wonder at the centre.&lt;/blockquote&gt;
+
+&lt;p&gt;I designed the game to look as much like comic book as I could while integrating into a classic 2D platformer.&lt;/p&gt;
+
+&lt;p&gt;All the artwork was hand drawn with a digital tablet (with many iterations - drawing is hard) inspired by the style
+	of the JL8 comic by Yale Stewart and the platformer, Hollow Knight.&lt;/p&gt;
+
+&lt;img class=&quot;img-fluid&quot; src=&quot;/img/games/aotbw/android3.png&quot; alt=&quot;The Gameplay&quot;&gt;
+
+&lt;p&gt;
+	In order to gift the present the game to Owen I spun up a quick website using a GatsbyJS theme at
+	&lt;a href=&quot;https://adventuresoftheboywonder.com&quot;&gt;adventuresoftheboywonder.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;
+
+	There's some of the initial artwork there including my very poor attempt at creating a sprite sheet for an idle
+	animation before moving to a skeletal animation player.
+&lt;/p&gt;
+
+&lt;img class=&quot;img-fluid&quot; src=&quot;/img/games/aotbw/android4.png&quot; alt=&quot;The Gameplay&quot;&gt;
+
+&lt;br/&gt;
+&lt;br/&gt;
+
+&lt;h3&gt;Available for Download&lt;/h3&gt;
+
+&lt;p&gt;The game is available for download now on Android and iOS&lt;/p&gt;
+
+&lt;p&gt;If you've got any ideas on how we can improve the app feel free to reach out to us.&lt;/p&gt;
+
+&lt;img class=&quot;img-fluid&quot; src=&quot;/img/games/aotbw/shareimagev1.png&quot; alt=&quot;The Gameplay&quot;&gt;</content><author><name>Mat Loughnane</name></author><summary type="html">For my brother's 21st Birthday I wanted to create a gift as special as my birthday present from him, the result - a mobile adventure with Owen, the Boy wonder at the centre.</summary></entry><entry><title type="html">Penjii Protects the Planet</title><link href="https://matloughnane.github.io/2020/02/20/penjii-protects-the-planet.html" rel="alternate" type="text/html" title="Penjii Protects the Planet" /><published>2020-02-20T11:35:13+00:00</published><updated>2020-02-20T11:35:13+00:00</updated><id>https://matloughnane.github.io/2020/02/20/penjii-protects-the-planet</id><content type="html" xml:base="https://matloughnane.github.io/2020/02/20/penjii-protects-the-planet.html">&lt;blockquote class=&quot;blockquote&quot;&gt;Penjii Protects the planet is our mobile game that aims to teach players how to save their planet! The game is a result of an Erasmus+ project with partners from Austria, Croatia, Ireland and Spain all working together
   to promote Green Skills.&lt;/blockquote&gt;
 
 &lt;p&gt;Penjii dodges past obstacles with a swipe on your phone. Swipe up to jump, down to duck and left and right to change Penjii's lane.&lt;/p&gt;
@@ -33,7 +132,7 @@
 &lt;img class=&quot;img-fluid&quot; src=&quot;/img/posts/Artboard5.png&quot; alt=&quot;Players login screens.&quot;&gt;
 &lt;span class=&quot;caption text-muted&quot;&gt;Teachers can create accounts for their students.&lt;/span&gt;
 
-&lt;p&gt;If you've got any ideas on how we can improve the app feel free to reach out to us.&lt;/p&gt;</content><author><name>Mat Loughnane</name></author><summary type="html">Penjii Protects the planet is our mobile game that aims to teach players how to save their planet! The game is a result of an Erasmus+ project with partners from Austria, Croatia, Ireland and Spain all working together to promote Green Skills.</summary></entry><entry><title type="html">It’s beginning to look a lot like Christmas</title><link href="http://localhost:4000/2019/12/09/xmas-update.html" rel="alternate" type="text/html" title="It's beginning to look a lot like Christmas" /><published>2019-12-09T20:35:13+00:00</published><updated>2019-12-09T20:35:13+00:00</updated><id>http://localhost:4000/2019/12/09/xmas-update</id><content type="html" xml:base="http://localhost:4000/2019/12/09/xmas-update.html">&lt;blockquote class=&quot;blockquote&quot;&gt;The Arranmore and Tory ferry apps are ready for Christmas, are you?&lt;/blockquote&gt;
+&lt;p&gt;If you've got any ideas on how we can improve the app feel free to reach out to us.&lt;/p&gt;</content><author><name>Mat Loughnane</name></author><summary type="html">Penjii Protects the planet is our mobile game that aims to teach players how to save their planet! The game is a result of an Erasmus+ project with partners from Austria, Croatia, Ireland and Spain all working together to promote Green Skills.</summary></entry><entry><title type="html">It’s beginning to look a lot like Christmas</title><link href="https://matloughnane.github.io/2019/12/09/xmas-update.html" rel="alternate" type="text/html" title="It's beginning to look a lot like Christmas" /><published>2019-12-09T20:35:13+00:00</published><updated>2019-12-09T20:35:13+00:00</updated><id>https://matloughnane.github.io/2019/12/09/xmas-update</id><content type="html" xml:base="https://matloughnane.github.io/2019/12/09/xmas-update.html">&lt;blockquote class=&quot;blockquote&quot;&gt;The Arranmore and Tory ferry apps are ready for Christmas, are you?&lt;/blockquote&gt;
 
 &lt;p&gt;As we head into the Christmas season we wanted to make sure our apps was up to date so everyone can catch their favourite ferry service during the festive season.&lt;/p&gt;
 
@@ -55,7 +154,7 @@
 
 &lt;p&gt;If you've got any ideas on how we can improve the app feel free to reach out to us.&lt;/p&gt;
 
-&lt;p&gt;We also wanted to take this time to wish everyone a Merry Christmas and a Happy New Year.&lt;/p&gt;</content><author><name>Mat Loughnane</name></author><summary type="html">The Arranmore and Tory ferry apps are ready for Christmas, are you?</summary></entry><entry><title type="html">Starting a Jekyll Blog</title><link href="http://localhost:4000/2019/12/09/jekyll.html" rel="alternate" type="text/html" title="Starting a Jekyll Blog" /><published>2019-12-09T19:45:13+00:00</published><updated>2019-12-09T19:45:13+00:00</updated><id>http://localhost:4000/2019/12/09/jekyll</id><content type="html" xml:base="http://localhost:4000/2019/12/09/jekyll.html">&lt;p&gt;Having taken a look at the latest blogging tools, I wanted to give Jekyll a try.&lt;/p&gt;
+&lt;p&gt;We also wanted to take this time to wish everyone a Merry Christmas and a Happy New Year.&lt;/p&gt;</content><author><name>Mat Loughnane</name></author><summary type="html">The Arranmore and Tory ferry apps are ready for Christmas, are you?</summary></entry><entry><title type="html">Starting a Jekyll Blog</title><link href="https://matloughnane.github.io/2019/12/09/jekyll.html" rel="alternate" type="text/html" title="Starting a Jekyll Blog" /><published>2019-12-09T19:45:13+00:00</published><updated>2019-12-09T19:45:13+00:00</updated><id>https://matloughnane.github.io/2019/12/09/jekyll</id><content type="html" xml:base="https://matloughnane.github.io/2019/12/09/jekyll.html">&lt;p&gt;Having taken a look at the latest blogging tools, I wanted to give Jekyll a try.&lt;/p&gt;
 
 &lt;p&gt;This blog is built using a template from Black Rock Digital, found &lt;a href=&quot;http://blackrockdigital.github.io/startbootstrap-clean-blog-jekyll/&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;. It's a clean simple startup blog and has easy to follow instructions.&lt;/p&gt; 
 
