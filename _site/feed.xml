@@ -1,167 +1,334 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://matloughnane.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://matloughnane.github.io/" rel="alternate" type="text/html" /><updated>2020-12-08T10:57:06+00:00</updated><id>https://matloughnane.github.io/feed.xml</id><title type="html">Mat Loughnane</title><subtitle>All Sorts of Code Projects</subtitle><author><name>Mat Loughnane</name></author><entry><title type="html">Arranmore Weather</title><link href="https://matloughnane.github.io/2020/08/01/arranmore-weather.html" rel="alternate" type="text/html" title="Arranmore Weather" /><published>2020-08-01T13:00:00+01:00</published><updated>2020-08-01T13:00:00+01:00</updated><id>https://matloughnane.github.io/2020/08/01/arranmore-weather</id><content type="html" xml:base="https://matloughnane.github.io/2020/08/01/arranmore-weather.html">&lt;blockquote class=&quot;blockquote&quot;&gt;Arranmore Island recently made their weather station data available so here's an app to
-	make that data available on your iOS or Android devices.&lt;/blockquote&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mat Loughnane</title>
+    <description>I like to travel, code and cook...</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 30 Dec 2020 00:18:47 +0000</pubDate>
+    <lastBuildDate>Wed, 30 Dec 2020 00:18:47 +0000</lastBuildDate>
+    <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Thai Red Curry</title>
+        <description>&lt;p&gt;Here’s a simple Thai Red Curry recipe for two, or one if you’re hungry! It’s hot, sweet and very quick and easy to make. The most imoprtant ingredient is the red thai paste. I buy mine but you can make some - here’s a couple of great recipes if you want to give it a go.&lt;/p&gt;
 
-&lt;p&gt;
-	This app was developed using Arranmore Island Community Council Weather Station data powered by Three Ireland and
-	supplemented with OpenWeather forecast data. It's part of Three Ireland's larger 'Most Connected Island' campaign
-	and also made a dashboard available with the data graphed and charted.
-&lt;/p&gt;
+&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.eatingthaifood.com/thai-red-curry-paste-recipe/&quot; class=&quot;btn badge-primary&quot;&gt; Red Paste Recipes →&lt;/a&gt;&lt;/p&gt;
 
-&lt;img class=&quot;img-fluid&quot; src=&quot;/img/app/arranmore-weather/Artboard2-opt.png&quot; alt=&quot;The Arranmore Weather App&quot;&gt;
-
-&lt;p&gt;
-	The app is designed to give you all the information about the current weather as quickly and as simply as possible.
-	The design will change throughout the day based on the time of day only - but the small landscape at the bottom only
-	shows Arranmore under beautiful conditions. Don't expect hurricanes to appear in the app.
-&lt;/p&gt;
-&lt;img class=&quot;img-fluid&quot; src=&quot;/img/app/arranmore-weather/android-tab1.png&quot; alt=&quot;The Arranmore Weather App&quot;&gt;
-&lt;img class=&quot;img-fluid&quot; src=&quot;/img/app/arranmore-weather/ios1.png&quot; alt=&quot;The Arranmore Weather App&quot;&gt;
-
-&lt;p&gt;
-	The forecast data comes from the Open Weather API - they're a reliable service who's nearest weather station is
-	based in Dungloe and will give an accurate forecast for the next 10 days.
-&lt;/p&gt;
-
-&lt;img class=&quot;img-fluid&quot; src=&quot;/img/app/arranmore-weather/ios2.png&quot; alt=&quot;The Arranmore Weather App&quot;&gt;
-
-&lt;p&gt;
-	The weather data in the app is straight from the weather station and shows the last 30 days of information
-	collected.
-&lt;/p&gt;
-&lt;p&gt;
-	At the top you'll find highest piece of information on record highlighted. The data has 6 types: Wind Speed, Wind
-	Direction, Humidity, Temperature, Rainfall and Solar Radiation.
-&lt;/p&gt;
-
-&lt;img class=&quot;img-fluid&quot; src=&quot;/img/app/arranmore-weather/FeatureGraphic.png&quot; alt=&quot;The Arranmore Weather App logo&quot;&gt;
-
-&lt;br /&gt;
-&lt;br /&gt;
-
-&lt;a href=&quot;https://hexastudios.co/arranmore-weather/&quot;&gt;Cross Posted on Hexa Studios website&lt;/a&gt;</content><author><name>Mat Loughnane</name></author><summary type="html">Arranmore Island recently made their weather station data available so here's an app to make that data available on your iOS or Android devices.</summary></entry><entry><title type="html">Family Fortunes</title><link href="https://matloughnane.github.io/2020/05/11/family-fortunes.html" rel="alternate" type="text/html" title="Family Fortunes" /><published>2020-05-11T13:00:00+01:00</published><updated>2020-05-11T13:00:00+01:00</updated><id>https://matloughnane.github.io/2020/05/11/family-fortunes</id><content type="html" xml:base="https://matloughnane.github.io/2020/05/11/family-fortunes.html">&lt;blockquote class=&quot;blockquote&quot;&gt;I created a quick little game of family fortunes and wanted to share the game and code in
-	case anyone wanted to use it.&lt;/blockquote&gt;
-
-&lt;h3&gt;Online Version&lt;/h3&gt;
-
-&lt;p&gt;
-	The game is available online at &lt;a href=&quot;https://matloughnane.github.io/family-fortune-game/&quot;&gt;https://matloughnane.github.io/family-fortune-game/&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;
-	The answers for the game (should only be read by the 'host') are here:
-	&lt;a href=&quot;https://github.com/matloughnane/family-fortune-game/blob/master/assets/js/data.js&quot;&gt;https://github.com/matloughnane/family-fortune-game/blob/master/assets/js/data.js&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;
-	The easiest way we've found to play the game was to share the website on screen and have the host view the answers
-	file on another.
-&lt;/p&gt;
+&lt;h1 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h1&gt;
 
 &lt;ul&gt;
-	&lt;li&gt;If a player get's an answer correct, the host can click the answer or the corresponding number on their keyboard.&lt;/li&gt;
-    &lt;li&gt;If a player get's it wrong, the host can click the wrong button or click the &quot;x&quot; key on their keyboard.&lt;/li&gt;
-    &lt;li&gt;If all 3 wrong answers are exhausted they can reset the wrong answer counter with the other red button.&lt;/li&gt;
+  &lt;li&gt;Red Thai Paste (2 tablesppons)&lt;/li&gt;
+  &lt;li&gt;Coconut Milk (400ml / 1 can)&lt;/li&gt;
+  &lt;li&gt;A few Lime Leaves or 1 Lime&lt;/li&gt;
+  &lt;li&gt;1 Red Bell Pepper&lt;/li&gt;
+  &lt;li&gt;Rice (any type works)&lt;/li&gt;
+  &lt;li&gt;Soy Sauce (2 teaspoons)&lt;/li&gt;
+  &lt;li&gt;2 Chicken Breasts&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;img class=&quot;img-fluid&quot; src=&quot;/img/games/family-fortunes/shareimage.png&quot; alt=&quot;The Gameplay&quot;&gt;
-
-&lt;br /&gt;
-&lt;br /&gt;
-
-&lt;a href=&quot;https://hexastudios.co/family-fortunes/&quot;&gt;Cross Posted on Hexa Studios website&lt;/a&gt;</content><author><name>Mat Loughnane</name></author><summary type="html">I created a quick little game of family fortunes and wanted to share the game and code in case anyone wanted to use it.</summary></entry><entry><title type="html">Adventures of the Boy Wonder</title><link href="https://matloughnane.github.io/2020/05/05/adventures-of-the-boy-wonder.html" rel="alternate" type="text/html" title="Adventures of the Boy Wonder" /><published>2020-05-05T13:00:00+01:00</published><updated>2020-05-05T13:00:00+01:00</updated><id>https://matloughnane.github.io/2020/05/05/adventures-of-the-boy-wonder</id><content type="html" xml:base="https://matloughnane.github.io/2020/05/05/adventures-of-the-boy-wonder.html">&lt;blockquote class=&quot;blockquote&quot;&gt;For my brother's 21st Birthday I wanted to create a gift as special as my birthday
-	present from him, the result - a mobile adventure with Owen, the Boy wonder at the centre.&lt;/blockquote&gt;
-
-&lt;p&gt;I designed the game to look as much like comic book as I could while integrating into a classic 2D platformer.&lt;/p&gt;
-
-&lt;p&gt;All the artwork was hand drawn with a digital tablet (with many iterations - drawing is hard) inspired by the style
-	of the JL8 comic by Yale Stewart and the platformer, Hollow Knight.&lt;/p&gt;
-
-&lt;img class=&quot;img-fluid&quot; src=&quot;/img/games/aotbw/android3.png&quot; alt=&quot;The Gameplay&quot;&gt;
-
-&lt;p&gt;
-	In order to gift the present the game to Owen I spun up a quick website using a GatsbyJS theme at
-	&lt;a href=&quot;https://adventuresoftheboywonder.com&quot;&gt;adventuresoftheboywonder.com&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;
-
-	There's some of the initial artwork there including my very poor attempt at creating a sprite sheet for an idle
-	animation before moving to a skeletal animation player.
-&lt;/p&gt;
-
-&lt;img class=&quot;img-fluid&quot; src=&quot;/img/games/aotbw/android4.png&quot; alt=&quot;The Gameplay&quot;&gt;
-
-&lt;br/&gt;
-&lt;br/&gt;
-
-&lt;h3&gt;Available for Download&lt;/h3&gt;
-
-&lt;p&gt;The game is available for download now on Android and iOS&lt;/p&gt;
-
-&lt;p&gt;If you've got any ideas on how we can improve the app feel free to reach out to us.&lt;/p&gt;
-
-&lt;img class=&quot;img-fluid&quot; src=&quot;/img/games/aotbw/shareimagev1.png&quot; alt=&quot;The Gameplay&quot;&gt;</content><author><name>Mat Loughnane</name></author><summary type="html">For my brother's 21st Birthday I wanted to create a gift as special as my birthday present from him, the result - a mobile adventure with Owen, the Boy wonder at the centre.</summary></entry><entry><title type="html">Penjii Protects the Planet</title><link href="https://matloughnane.github.io/2020/02/20/penjii-protects-the-planet.html" rel="alternate" type="text/html" title="Penjii Protects the Planet" /><published>2020-02-20T11:35:13+00:00</published><updated>2020-02-20T11:35:13+00:00</updated><id>https://matloughnane.github.io/2020/02/20/penjii-protects-the-planet</id><content type="html" xml:base="https://matloughnane.github.io/2020/02/20/penjii-protects-the-planet.html">&lt;blockquote class=&quot;blockquote&quot;&gt;Penjii Protects the planet is our mobile game that aims to teach players how to save their planet! The game is a result of an Erasmus+ project with partners from Austria, Croatia, Ireland and Spain all working together
-  to promote Green Skills.&lt;/blockquote&gt;
-
-&lt;p&gt;Penjii dodges past obstacles with a swipe on your phone. Swipe up to jump, down to duck and left and right to change Penjii's lane.&lt;/p&gt;
-
-&lt;p&gt;While the game's downloading now for your device on either Android and iOS, learn more about the Penjii's adventures.&lt;/p&gt;
-
-&lt;p&gt;
-  Penjii visits 4 different parts of the world:
-&lt;/p&gt;
+&lt;h1 id=&quot;method&quot;&gt;Method&lt;/h1&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;
-    The Antarctic
-  &lt;/li&gt;
-  &lt;li&gt;
-    A Beautiful Beach
-  &lt;/li&gt;
-  &lt;li&gt;
-    A Chaotic City
-  &lt;/li&gt;
-  &lt;li&gt;
-    Your Home
-  &lt;/li&gt;
+  &lt;li&gt;Heat a work or a large non stick pan on high heat.&lt;/li&gt;
+  &lt;li&gt;With the pan hot, add 100g (quarter can) or the coconut milk. This will spatter.&lt;/li&gt;
+  &lt;li&gt;After the milk has warmed a couple of minutes, add two tablespoons of Red Thai Paste and mix.&lt;/li&gt;
+  &lt;li&gt;Add the chicken to the mix and ensure the chicken is cooked.&lt;/li&gt;
+  &lt;li&gt;Chop the bell peppers and add to the curry.&lt;/li&gt;
+  &lt;li&gt;Drop the temperature to a steady simmer and add the remainder of the coconut milk ~ 300ml and stir.&lt;/li&gt;
+  &lt;li&gt;Add the lime leaves or squeeze half a limes juice into the curry, then add the soy sauce (2 tbsp).&lt;/li&gt;
+  &lt;li&gt;Taste the curry, seasoning and ensuring it’s hot enough.&lt;/li&gt;
+  &lt;li&gt;Serve with rice and a decorative lime wedge.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;img class=&quot;img-fluid&quot; src=&quot;/img/posts/Artboard6-titled.png&quot; alt=&quot;All 4 Levels of Penjii Protects the Planet&quot;&gt;
-&lt;span class=&quot;caption text-muted&quot;&gt;All 4 Levels of the Game&lt;/span&gt;
+&lt;p&gt;I took this recipe from this YouTube video: &lt;a href=&quot;https://www.youtube.com/watch?v=Bduxpd1_EVA&quot;&gt;Kravings Red Thai Curry&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 class=&quot;section-heading&quot;&gt;Teacher Platform&lt;/h2&gt;
-&lt;p&gt;Teachers can monitor their progress, their statistics and can even choose which levels are available to their class. By locking and unlocking levels teachers can steer players to specific lessons and content and tailor their classroom activities accordingly.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/recipes/red-thai-curry/main.jpg&quot; alt=&quot;Thai Red Curry&quot; /&gt;&lt;/p&gt;
 
-&lt;img class=&quot;img-fluid&quot; src=&quot;/img/posts/Artboard5.png&quot; alt=&quot;Players login screens.&quot;&gt;
-&lt;span class=&quot;caption text-muted&quot;&gt;Teachers can create accounts for their students.&lt;/span&gt;
+</description>
+        <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+        <link>/thai-red-curry/</link>
+        <guid isPermaLink="true">/thai-red-curry/</guid>
+        
+        <category>Thai</category>
+        
+        <category>Curry</category>
+        
+        
+        <category>Recipes</category>
+        
+      </item>
+    
+      <item>
+        <title>Coding in 2020</title>
+        <description>&lt;p&gt;With the end of year coming around - now’s a good time to reflect on what I worked on in 2020.
+&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;If you've got any ideas on how we can improve the app feel free to reach out to us.&lt;/p&gt;</content><author><name>Mat Loughnane</name></author><summary type="html">Penjii Protects the planet is our mobile game that aims to teach players how to save their planet! The game is a result of an Erasmus+ project with partners from Austria, Croatia, Ireland and Spain all working together to promote Green Skills.</summary></entry><entry><title type="html">It’s beginning to look a lot like Christmas</title><link href="https://matloughnane.github.io/2019/12/09/xmas-update.html" rel="alternate" type="text/html" title="It’s beginning to look a lot like Christmas" /><published>2019-12-09T20:35:13+00:00</published><updated>2019-12-09T20:35:13+00:00</updated><id>https://matloughnane.github.io/2019/12/09/xmas-update</id><content type="html" xml:base="https://matloughnane.github.io/2019/12/09/xmas-update.html">&lt;blockquote class=&quot;blockquote&quot;&gt;The Arranmore and Tory ferry apps are ready for Christmas, are you?&lt;/blockquote&gt;
+&lt;h1 id=&quot;tory-ferry-tickets&quot;&gt;Tory Ferry Tickets&lt;/h1&gt;
 
-&lt;p&gt;As we head into the Christmas season we wanted to make sure our apps was up to date so everyone can catch their favourite ferry service during the festive season.&lt;/p&gt;
+&lt;p&gt;The most recent effort to the &lt;a href=&quot;https://toryferry.com&quot;&gt;Tory Ferry&lt;/a&gt; mobile app and website, brings new accounts &amp;amp; ticketing features to the Tory Ferry customers. The app gives users the ability to sign in using their social network logins (AKA no new passwords to remember) and manage their tickets.&lt;/p&gt;
 
-&lt;p&gt;Both apps have been updated to include a snowy scene on the dashboard and it'll . continue to snow until the new decade.&lt;/p&gt;
+&lt;p&gt;We’ve made it as simple as possible to buy using new or saved cards and thrown in a cute confetti animation for when the ticket is confirmed. This update was the largest update since the creation of the app over 3 years ago and we’re really looking forward to adding more features in the future.&lt;/p&gt;
 
-&lt;p&gt;However if you're a bit of a grinch and don't like the new snow, you can check the settings page and find a small switch to turn off the snow.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/code/year-review-2020/Glamour.png&quot; alt=&quot;Tory Ferry App&quot; /&gt;&lt;/p&gt;
 
-&lt;img class=&quot;img-fluid&quot; src=&quot;/img/posts/af-christmas-poster.jpg&quot; alt=&quot;Arranmore Ferry's update&quot;&gt;
-&lt;span class=&quot;caption text-muted&quot;&gt;Arranmore Ferry's snowy Christmas update.&lt;/span&gt;
+&lt;p&gt;You can download the Tory Ferry apps now on Google Play and the Apple App Store.&lt;/p&gt;
 
-&lt;h2 class=&quot;section-heading&quot;&gt;Tory Ferry Reroutes&lt;/h2&gt;
+&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://play.google.com/store/apps/details?id=co.hexastudios.toryferry&quot; class=&quot;btn badge-dark&quot;&gt;Google Play →&lt;/a&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://apps.apple.com/us/app/tory-ferry/id1367177195&quot; class=&quot;btn badge-dark&quot;&gt;Apple App Store →&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;The biggest non-Christmas update comes in aid of the reroute features of the Tory app. Due to the tidal nature of the Tory ferry route we want to ensure that our users are able to see that a change has been made and can act accordingly.&lt;/p&gt;
+&lt;h2 id=&quot;tory-ferry-admin-react&quot;&gt;Tory Ferry Admin React&lt;/h2&gt;
 
-&lt;p&gt;The tables should now be clearer and we won't show empty tables when there's no ferries running. Tomorrow's times and our date picker will all show the same format too.&lt;/p&gt;
+&lt;p&gt;We couldn’t pass up the opptunity to mention the new &lt;a href=&quot;https://reactjs.org/&quot;&gt;React&lt;/a&gt; based admin panel that was built from scratch the manage all the ticket ferry functionality. The team can send notifications, view the latest ticket information and of course manage the changing timetables all from this custom built dashboard.&lt;/p&gt;
 
-&lt;img class=&quot;img-fluid&quot; src=&quot;/img/posts/tf-christmas-poster.jpg&quot; alt=&quot;Tory Ferry's update&quot;&gt;
-&lt;span class=&quot;caption text-muted&quot;&gt;Tory Ferry's snowy Christmas update and new rerouted timetables.&lt;/span&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/code/year-review-2020/web-app-1.png&quot; alt=&quot;Tory Ferry React Web App&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;If you've got any ideas on how we can improve the app feel free to reach out to us.&lt;/p&gt;
+&lt;h1 id=&quot;arranmore-weather&quot;&gt;Arranmore Weather&lt;/h1&gt;
 
-&lt;p&gt;We also wanted to take this time to wish everyone a Merry Christmas and a Happy New Year.&lt;/p&gt;</content><author><name>Mat Loughnane</name></author><summary type="html">The Arranmore and Tory ferry apps are ready for Christmas, are you?</summary></entry><entry><title type="html">Starting a Jekyll Blog</title><link href="https://matloughnane.github.io/2019/12/09/jekyll.html" rel="alternate" type="text/html" title="Starting a Jekyll Blog" /><published>2019-12-09T19:45:13+00:00</published><updated>2019-12-09T19:45:13+00:00</updated><id>https://matloughnane.github.io/2019/12/09/jekyll</id><content type="html" xml:base="https://matloughnane.github.io/2019/12/09/jekyll.html">&lt;p&gt;Having taken a look at the latest blogging tools, I wanted to give Jekyll a try.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://hexastudios.co/arranmore-weather&quot;&gt;Arranmore Weather&lt;/a&gt; app is a brand new app built to utilise the weather station on Arranmore Island as part of their &lt;a href=&quot;https://www.three.ie/business/the-island/&quot;&gt;‘Most Connected Island’ campaign with Three&lt;/a&gt;. We developed the app with help from the Arranmore Community Council responsible for &lt;a href=&quot;https://modam.work/&quot;&gt;MODAM&lt;/a&gt; on the island.&lt;/p&gt;
 
-&lt;p&gt;This blog is built using a template from Black Rock Digital, found &lt;a href=&quot;http://blackrockdigital.github.io/startbootstrap-clean-blog-jekyll/&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;. It's a clean simple startup blog and has easy to follow instructions.&lt;/p&gt; 
+&lt;p&gt;The most recent, seasonal, update brings snowfall and wintry backgrounds to the app too.&lt;/p&gt;
 
-&lt;h2 class=&quot;section-heading&quot;&gt;Github&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/code/year-review-2020/xmas-christmas.png&quot; alt=&quot;Arranmore Weather App Christmas Update&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;I'm going to continue experimenting with Github and Jekyll and run some blog posts alongside my other website, a ghost blog, &lt;a href=&quot;https://hexastudios.co&quot; target=&quot;_blank&quot; &gt;hexastudios.co&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can download Arranmore Weather now here:&lt;/p&gt;
 
-&lt;p&gt;For now this will have to serve my first blog post until I have more time.&lt;/p&gt;
+&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://play.google.com/store/apps/details?id=co.hexastudios.arranmoreweather&quot; class=&quot;btn badge-dark&quot;&gt;Google Play →&lt;/a&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://apps.apple.com/us/app/arranmore-weather/id1514928374?ls=1&quot; class=&quot;btn badge-dark&quot;&gt;Apple App Store →&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Mat&lt;/p&gt;</content><author><name>Mat Loughnane</name></author><summary type="html">Having taken a look at the latest blogging tools, I wanted to give Jekyll a try.</summary></entry></feed>
+&lt;h1 id=&quot;hi-sign&quot;&gt;Hi Sign&lt;/h1&gt;
+
+&lt;p&gt;One small app we released this year as a learning lesson more than anything else, was “Hi Sign”. It was designed to share short quick messages when speaking out loud isn’t an option.&lt;/p&gt;
+
+&lt;p&gt;Over the year we’ve used it while on conference calls (using the mirror function to reverse the text too), while other people were on phones and even when projecting a message on a screen via Chromecast.&lt;/p&gt;
+
+&lt;p&gt;The longer I’ve had the app on our phones the more uses I’ve found for it. It’s available for download now:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/code/year-review-2020/mobile-app-2.png&quot; alt=&quot;Hi Sign App&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://play.google.com/store/apps/details?id=co.hexastudios.hi_sign&quot; class=&quot;btn badge-dark&quot;&gt;Google Play →&lt;/a&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://apps.apple.com/us/app/hi-sign/id1512656648&quot; class=&quot;btn badge-dark&quot;&gt;Apple App Store →&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;adventures-of-the-boy-wonder&quot;&gt;Adventures of the Boy Wonder&lt;/h1&gt;
+
+&lt;p&gt;As far as presents go, this &lt;a href=&quot;https://hexastudios.co/blog/aotbw-apple-tree-house&quot;&gt;one&lt;/a&gt; will be my favourite for quite some time. For my brother &lt;a href=&quot;https://owenloughnane.com/&quot;&gt;Owen&lt;/a&gt;’s 21st birthday, in reponse to his birthday present for me, I built a mobile game based on the &lt;a href=&quot;https://adventuresoftheboywonder.com&quot;&gt;Adventures of the Boy Wonder&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://player.vimeo.com/video/449220948?color=6F1E51&amp;amp;title=0&amp;amp;byline=0&quot; class=&quot;btn badge-primary&quot;&gt;Game Trailer →&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The game uses so many new pieces of technology (to me) that it was a fantastic learning experience with a brilliant pay off: listening to Owen’s frustration trying to complete all the levels. There may be more levels to come in 2021, but for now enjoy the trailer and download it if you have a spare few minutes.&lt;/p&gt;
+
+&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://play.google.com/store/apps/details?id=co.hexastudios.AdventuresoftheBoyWonder&quot; class=&quot;btn badge-dark&quot;&gt;Google Play →&lt;/a&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://apps.apple.com/us/app/adventures-of-the-boy-wonder/id1511391599&quot; class=&quot;btn badge-dark&quot;&gt;Apple App Store →&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;family-fortunes-style-game&quot;&gt;Family Fortunes Style Game&lt;/h1&gt;
+
+&lt;p&gt;Amid the first COVID-19 lockdown I developed a quick website for an online version of &lt;a href=&quot;https://matloughnane.github.io/family-fortune-game/&quot;&gt;Family Fortunes&lt;/a&gt;, the game is available on &lt;a href=&quot;https://github.com/matloughnane/family-fortune-game&quot;&gt;github&lt;/a&gt; and has become the first project that I’ve made available online and had pull requests on. Big moment :).&lt;/p&gt;
+
+&lt;p&gt;The game has a static file for &lt;a href=&quot;https://github.com/matloughnane/family-fortune-game/blob/master/assets/js/data.js&quot;&gt;answers&lt;/a&gt; in JSON format and can be edited for your own purposes easily.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/code/year-review-2020/shareimage.png&quot; alt=&quot;Family Fortunes&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;hexa-website&quot;&gt;Hexa Website&lt;/h1&gt;
+
+&lt;p&gt;Finally, the Hexa Studios website itself has had a makeover. The new website is built using Jekyll and blogs posts are written using Markdown. The whole website is hosted on github pages, and get’s built automatically with every git push. Let me know what you think of it.&lt;/p&gt;
+
+&lt;h1 id=&quot;2021&quot;&gt;2021&lt;/h1&gt;
+
+&lt;p&gt;This years been a rough one, but working with people on all these projects and releasing them thoughout the year has been a lot of fun. If you have any ideas for future projects for 2021 and beyond, please feel free to reach out.&lt;/p&gt;
+
+&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://hexastudios.co&quot; class=&quot;btn badge-hexa&quot;&gt;Hexa Studios →&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+        <link>/coding-in-2020/</link>
+        <guid isPermaLink="true">/coding-in-2020/</guid>
+        
+        <category>Review</category>
+        
+        <category>Apps</category>
+        
+        <category>Games</category>
+        
+        
+        <category>Code</category>
+        
+      </item>
+    
+      <item>
+        <title>Apple Galette</title>
+        <description>&lt;p&gt;Here’s a quick but great looking dessert to make use of any apples going spare. This recipe also calls for shortcrust pastry / puff pastry - I usually buy mine but there’s a great recipe below for puff pastry for those who want to go the extra mile.&lt;/p&gt;
+
+&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.bonappetit.com/recipe/shortcut-puff-pastry&quot; class=&quot;btn badge-primary&quot;&gt; Red Paste Recipes →&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;3 Apples&lt;/li&gt;
+  &lt;li&gt;Ground Cinnamon (1 teaspoon)&lt;/li&gt;
+  &lt;li&gt;Demerara Sugar / Brown Sugar (120g)&lt;/li&gt;
+  &lt;li&gt;Lemon (1)&lt;/li&gt;
+  &lt;li&gt;Puff or Shortcrust Pastry&lt;/li&gt;
+  &lt;li&gt;1 Egg (beaten with a teaspoon of water)&lt;/li&gt;
+  &lt;li&gt;Apricot Jam (optional)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;method&quot;&gt;Method&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Thaw your pastry and preheat your oven to 200°C&lt;/li&gt;
+  &lt;li&gt;Wash, then slice an apple into half moon slices which are less than 5mm. Any thicker and the apples won’t cook.&lt;/li&gt;
+  &lt;li&gt;As your sliced apples are waiting coat them in the juice of a lemon to prevent them from browning.&lt;/li&gt;
+  &lt;li&gt;Add 3/4 - 1 teaspoon of cinnamon to your apple lemon mixture and ~120g of demerara sugar.&lt;/li&gt;
+  &lt;li&gt;Mix your filling thoroughly, adding more lemon juice if necessary.&lt;/li&gt;
+  &lt;li&gt;Arrange the sliced apples onto your pastry leaving an inch around the edges.&lt;/li&gt;
+  &lt;li&gt;Fold the edges onto the apple filling and seal the corners with your beaten egg.&lt;/li&gt;
+  &lt;li&gt;Sprinkle some demerara sugar on the edges.&lt;/li&gt;
+  &lt;li&gt;Put the galette onto a piece of baking parchment on a tray and place in the over for 20-25 minutes.&lt;/li&gt;
+  &lt;li&gt;Once out of the over brush some apricot jam over the warm filling and leave to cool.&lt;/li&gt;
+  &lt;li&gt;Serve with ice cream, cream or just have it for breakfast the next day…&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/recipes/apple-galette/portrait.jpg&quot; alt=&quot;Apple Galette&quot; /&gt;
+This galette uses puff pastry, the one featured above uses shortcrust.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+        <link>/apple-galette/</link>
+        <guid isPermaLink="true">/apple-galette/</guid>
+        
+        <category>Dessert</category>
+        
+        <category>Apple</category>
+        
+        
+        <category>Recipes</category>
+        
+      </item>
+    
+      <item>
+        <title>Tokyo &amp; Japan</title>
+        <description>&lt;p&gt;I travelled to Japan in 2015 and visited Osaka, Kyoto and Tokyo on holiday, later the same year I went back to Tokyo for a project with work. It’s a fantastic part of the world with incredible history and a vibrant, modern culture.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/tokyo/tokyo2.jpg&quot; alt=&quot;Wagyu Beef from Japan's Kitchen, Osaka&quot; /&gt;
+Wagyu Beef from Japan’s Kitchen, Osaka.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/tokyo/tokyo1.jpg&quot; alt=&quot;A temple in Kyoto&quot; /&gt;
+A temple in Kyoto.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/tokyo/tokyo4.jpg&quot; alt=&quot;The decor at the robot cafe in Tokyo, Japan&quot; /&gt;
+The decor at the robot cafe in Tokyo, Japan.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;wider-image&quot;&gt;
+    &lt;img class=&quot;featured-image lazyimg&quot; src=&quot;/assets/images/travel/tokyo/tokyo3.jpg&quot; alt=&quot;Kinkaku-ji, The Temple of the Golden Pavillion&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;Kinkaku-ji, The Temple of the Golden Pavillion.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+        <link>/tokyo/</link>
+        <guid isPermaLink="true">/tokyo/</guid>
+        
+        <category>Tokyo</category>
+        
+        <category>Japan</category>
+        
+        
+        <category>Travel</category>
+        
+      </item>
+    
+      <item>
+        <title>Neapolitan Style Pizza</title>
+        <description>&lt;p&gt;Earlier this year, my sister was kind enough to send me a pizza pilgrims Do-It-Yourself kit, since then I’ve moved away from London but I’ve managed to make the dough myself. So here’s the recipe for Neopolitan style pizza from the Pizza Pilgrim.&lt;/p&gt;
+
+&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.pizzapilgrims.co.uk/doughityourself/&quot; class=&quot;btn badge-primary&quot;&gt;Pizza Pilgrim →&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/recipes/pizza-dough/pizzapilgrim.jpg&quot; alt=&quot;The Pizza Pilgrim Kit&quot; /&gt;
+The Pizza Pilgrim Kit.&lt;/p&gt;
+
+&lt;h1 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h1&gt;
+
+&lt;p&gt;Two sets of ingredients&lt;/p&gt;
+&lt;h2 id=&quot;dough&quot;&gt;Dough&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;1kg ‘00’ flour with a high gluten content&lt;/li&gt;
+  &lt;li&gt;2g fresh baker’s yeast&lt;/li&gt;
+  &lt;li&gt;600ml cold water&lt;/li&gt;
+  &lt;li&gt;30g table salt
+(Yields 8 bases)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;toppings&quot;&gt;Toppings&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Can of tomatoes&lt;/li&gt;
+  &lt;li&gt;Garlic&lt;/li&gt;
+  &lt;li&gt;Basil&lt;/li&gt;
+  &lt;li&gt;Mozzarella Cheese&lt;/li&gt;
+  &lt;li&gt;Anything else - chorizo’s good.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;method&quot;&gt;Method&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;Heat your oven to it’s highest possible temperature with a grill.&lt;/li&gt;
+  &lt;li&gt;Make the sauce by blending the can of tomatoes and garlic together&lt;/li&gt;
+  &lt;li&gt;Take the dough and work it on the back of your hands to a large pizza base.&lt;/li&gt;
+  &lt;li&gt;Heat a skillet on a high heat.&lt;/li&gt;
+  &lt;li&gt;Place the dough onto the skillet, don’t worry if the outside edges can be slightly thicker.&lt;/li&gt;
+  &lt;li&gt;Add the tomato sauce (2/3 tablespoons) to the dough right away.&lt;/li&gt;
+  &lt;li&gt;After a couple of minutes, the base should be cooking, with darker spots.&lt;/li&gt;
+  &lt;li&gt;Add the rest of your toppings to the pizza dough and move it to the grill.&lt;/li&gt;
+  &lt;li&gt;It’ll cook in a few minutes under the grill - keep an eye on it.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;wider-image&quot;&gt;
+    &lt;img class=&quot;featured-image lazyimg&quot; src=&quot;/assets/images/recipes/pizza-dough/table.jpg&quot; alt=&quot;Kinkaku-ji, The Temple of the Golden Pavillion&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;The finished pizza.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+        <link>/neopolitan-pizza/</link>
+        <guid isPermaLink="true">/neopolitan-pizza/</guid>
+        
+        <category>Pizza</category>
+        
+        <category>Dough</category>
+        
+        
+        <category>Recipes</category>
+        
+      </item>
+    
+      <item>
+        <title>Arranmore Island</title>
+        <description>&lt;p&gt;Arranmore Island is an island off the North West coast of Ireland, it’s approximately a 25 minute ferry ride from the local port, Burtonport. It’s beaches and cliffs rival any of the country whether the sea is stormy or calm like glass. Here are some of the photos I’ve taken while living here.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/arranmore/1stormy.jpeg&quot; alt=&quot;Arranmore Island's Stony Beach, Beal a Chrois&quot; /&gt;
+Arranmore Island’s Stony Beach, Beal a Chrois.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/arranmore/3green.jpeg&quot; alt=&quot;Looking to mainland Ireland from Arranmore's south west cliffs&quot; /&gt;
+Looking to mainland Ireland from Arranmore’s south west cliffs.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/arranmore/4.jpeg&quot; alt=&quot;The hills off the beach of Beal a Chrois&quot; /&gt;
+The hills off the beach of Beal a Chrois.&lt;/p&gt;
+
+&lt;!-- ![Looking at Arranmore's coastline from it's northern most point](/assets/images/travel/arranmore/5.jpeg){:.widerimage} --&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;wider-image&quot;&gt;
+    &lt;img class=&quot;featured-image lazyimg&quot; src=&quot;/assets/images/travel/arranmore/5.jpeg&quot; alt=&quot;Arranmore Island&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;Looking at Arranmore’s coastline from it’s northern most point.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+        <link>/arranmore-island/</link>
+        <guid isPermaLink="true">/arranmore-island/</guid>
+        
+        <category>Ireland</category>
+        
+        
+        <category>Travel</category>
+        
+      </item>
+    
+  </channel>
+</rss>

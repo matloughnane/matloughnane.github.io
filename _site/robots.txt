@@ -1,1 +1,1 @@
-Sitemap: https://matloughnane.github.io/sitemap.xml
+Sitemap: /sitemap.xml
