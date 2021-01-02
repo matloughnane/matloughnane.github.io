@@ -16,7 +16,7 @@ recipeInstructions: "Thaw your pastry and preheat your oven to 200°C. Wash, the
 
 Here's a quick but great looking dessert to make use of any apples going spare. This recipe also calls for shortcrust pastry / puff pastry - I usually buy mine but there's a great recipe below for puff pastry for those who want to go the extra mile.
 
-<a target="_blank" href="https://www.bonappetit.com/recipe/shortcut-puff-pastry" class="btn badge-primary"> Red Paste Recipes &rarr;</a>
+<a target="_blank" href="https://www.bonappetit.com/recipe/shortcut-puff-pastry" class="btn badge-primary"> Pastry Recipes &rarr;</a>
 
 # Ingredients
 
