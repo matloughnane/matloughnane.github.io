@@ -41,13 +41,13 @@ I've been trying out a few different types of chocolate cookies, this one caught
 8. Cook for 9-11 minutes at 175°C.
 9. Cookies will have a powdered outside with visible earthquake cracks across their surface.
 
-![The decor at the robot cafe in Tokyo, Japan](/assets/images/recipes/earthquake-cookies/prep.jpg)
+![The cookies before going into the oven](/assets/images/recipes/earthquake-cookies/prep.jpg)
 
 ## Side Note:
 
 I found this great website for calculating volumetric measurements to metric weights.
 
-<a target="_blank" href="https://www.howmany.wiki/vw/--1%7C2--cup--of--powdered-sugar--in--gram" class="btn badge-primary">Crinkle Cookies &rarr;</a>
+<a target="_blank" href="https://www.howmany.wiki/vw/--1%7C2--cup--of--powdered-sugar--in--gram" class="btn badge-primary">Weight Converter &rarr;</a>
 
 <div class="wider-image">
     <img class="featured-image lazyimg" src="/assets/images/recipes/earthquake-cookies/main.jpg" alt="">
