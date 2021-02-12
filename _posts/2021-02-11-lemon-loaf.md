@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Lemon Earthquake Cookies
+title:  Lemon Loaf
 author: Matthew Loughnane
 categories: [ Recipes ]
 tags: [ Loaf, Lemon ]
@@ -18,6 +18,7 @@ recipeIngredient: ["225g Unsalted Butter", "225g Caster Sugar", "4 Eggs", "22g S
 A moist, dense, drizzly, lemon-y loaf. It's great!
 
 This recipe is almost a carbon copy of the BBC Good Food recipe, with some helpful hints.
+
 <a target="_blank" href="https://www.bbc.co.uk/food/recipes/easy_lemon_drizzle_cake_78533" class="btn badge-primary">Easy Lemon Drizzle Loaf &rarr;</a>
 
 # Ingredients
