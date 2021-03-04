@@ -19,8 +19,8 @@ I've been trying out a few different types of chocolate cookies, this one caught
 
 # Ingredients
 
--   120g Cocoa Powder
--   400g Demerara Sugar
+-   120g Cocoa Powder (Not Drinking Chocolate)
+-   400g Demerara or Granulated Sugar
 -   112ml Oil
 -   4 Eggs
 -   2 tsp Vanilla extract
