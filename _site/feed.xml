@@ -5,9 +5,78 @@
     <description>I like to travel, code and cook...</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 04 Mar 2021 12:21:57 +0000</pubDate>
-    <lastBuildDate>Thu, 04 Mar 2021 12:21:57 +0000</lastBuildDate>
+    <pubDate>Sat, 06 Mar 2021 15:07:28 +0000</pubDate>
+    <lastBuildDate>Sat, 06 Mar 2021 15:07:28 +0000</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Carrot Cake</title>
+        <description>&lt;p&gt;Carrots are so much better when baked into cakes…&lt;/p&gt;
+
+&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.bbc.co.uk/food/recipes/carrot_cake_29800&quot; class=&quot;btn badge-primary&quot;&gt;Original Recipe →&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h1&gt;
+&lt;p&gt;In two parts: Cake and Topping.&lt;/p&gt;
+
+&lt;h2 id=&quot;cake&quot;&gt;Cake&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;140ml Vegetable Oil&lt;/li&gt;
+  &lt;li&gt;2 Eggs&lt;/li&gt;
+  &lt;li&gt;200g Brown sugar&lt;/li&gt;
+  &lt;li&gt;300g Grated Carrot (grated weight)&lt;/li&gt;
+  &lt;li&gt;100g Walnuts Chopped&lt;/li&gt;
+  &lt;li&gt;75g Raisins (optional)&lt;/li&gt;
+  &lt;li&gt;180g Self-Raising Flour&lt;/li&gt;
+  &lt;li&gt;1 pinch Salt&lt;/li&gt;
+  &lt;li&gt;1/2 tsp Bicarbonate of Soda&lt;/li&gt;
+  &lt;li&gt;1 tsp Ground Cinnamon&lt;/li&gt;
+  &lt;li&gt;1/2 tsp Mixed Spice&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;topping&quot;&gt;Topping&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;200g Cream Cheese&lt;/li&gt;
+  &lt;li&gt;50g Butter, at room temperature (or melted)&lt;/li&gt;
+  &lt;li&gt;1 tsp Vanilla Extract&lt;/li&gt;
+  &lt;li&gt;50g Icing Sugar, sifted&lt;/li&gt;
+  &lt;li&gt;1 Orange / Satsuma / Tangerine, zest only&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/recipes/carrot-cake/IMG_20210306_100003.jpg&quot; alt=&quot;The mixture before adding flour&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;method&quot;&gt;Method&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;Preheat the oven at 150°C and grease a loaf tin.&lt;/li&gt;
+  &lt;li&gt;Beat two eggs together and add the carrots (300g), vegetable oil (140ml), brown sugar (200g) and chopped walnuts (100g). You can optionally add raisins too (75g).&lt;/li&gt;
+  &lt;li&gt;Mix together the self-raising flour (180g), bicarbonate of soda (1/2 tsp), salt (1 pinch), cinnamon (1 tsp), 1/2 tsp mixed spice then combine the two mixes.&lt;/li&gt;
+  &lt;li&gt;Add the mixture to the loaf tin.&lt;/li&gt;
+  &lt;li&gt;Bake for 1 hr and 15 minutes or until a cake tester comes out clean.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;make-the-frosting&quot;&gt;Make the Frosting&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Melt the butter (50g) and combine with with the cream cheese (200g) until homogenous.&lt;/li&gt;
+  &lt;li&gt;Add the vanilla extract (1 tsp) and icing sugar (50g).&lt;/li&gt;
+  &lt;li&gt;Top the cake mixture with the nuts and bake for 1 hour.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;wider-image&quot;&gt;
+    &lt;img class=&quot;featured-image lazyimg&quot; src=&quot;/assets/images/recipes/carrot-cake/IMG_20210306_131931.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
+        <link>/carrot-cake/</link>
+        <guid isPermaLink="true">/carrot-cake/</guid>
+        
+        <category>Carrot Cake</category>
+        
+        <category>Loaf</category>
+        
+        
+        <category>Recipes</category>
+        
+      </item>
     
       <item>
         <title>Riga</title>
@@ -523,38 +592,6 @@ This galette uses puff pastry, the one featured above uses shortcrust.&lt;/p&gt;
         
         
         <category>Recipes</category>
-        
-      </item>
-    
-      <item>
-        <title>Tokyo &amp; Japan</title>
-        <description>&lt;p&gt;I travelled to Japan in 2015 and visited Osaka, Kyoto and Tokyo on holiday, later the same year I went back to Tokyo for a project with work. It’s a fantastic part of the world with incredible history and a vibrant, modern culture.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/travel/tokyo/tokyo6.jpg&quot; alt=&quot;Sushi in Tokyo&quot; /&gt;
-Sushi in Tokyo.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/travel/tokyo/tokyo1.jpg&quot; alt=&quot;A temple in Kyoto&quot; /&gt;
-A temple in Kyoto.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/travel/tokyo/tokyo4.jpg&quot; alt=&quot;The decor at the robot cafe in Tokyo, Japan&quot; /&gt;
-The decor at the robot cafe in Tokyo, Japan.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;div class=&quot;wider-image&quot;&gt;
-    &lt;img class=&quot;featured-image lazyimg&quot; src=&quot;/assets/images/travel/tokyo/tokyo3.jpg&quot; alt=&quot;Kinkaku-ji, The Temple of the Golden Pavillion&quot; /&gt;
-&lt;/div&gt;
-&lt;p&gt;Kinkaku-ji, The Temple of the Golden Pavillion.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
-        <link>/tokyo/</link>
-        <guid isPermaLink="true">/tokyo/</guid>
-        
-        <category>Tokyo</category>
-        
-        <category>Japan</category>
-        
-        
-        <category>Travel</category>
         
       </item>
     

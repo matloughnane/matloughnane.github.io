@@ -51,3 +51,8 @@ Pecan Pie Loaf cake is a simple pound cake with a great crunchy topping.
 <div class="wider-image">
     <img class="featured-image lazyimg" src="/assets/images/recipes/earthquake-cookies/main.jpg" alt="">
 </div>
+
+# Notes
+1 tsp baking powder
+Used double the topping, shouldn't have - it all sunk into the cake.
+Use smaller loaf tin - would still over flow
