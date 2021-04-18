@@ -5,9 +5,66 @@
     <description>I like to travel, code and cook...</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 12 Mar 2021 22:15:52 +0000</pubDate>
-    <lastBuildDate>Fri, 12 Mar 2021 22:15:52 +0000</lastBuildDate>
+    <pubDate>Sun, 18 Apr 2021 13:16:35 +0100</pubDate>
+    <lastBuildDate>Sun, 18 Apr 2021 13:16:35 +0100</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Banana Bread</title>
+        <description>&lt;p&gt;A simple but tasty banana loaf bread.&lt;/p&gt;
+
+&lt;h1 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h1&gt;
+
+&lt;h2 id=&quot;cake&quot;&gt;Cake&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;125g butter room temperature&lt;/li&gt;
+  &lt;li&gt;200g brown sugar&lt;/li&gt;
+  &lt;li&gt;2 extra-large eggs&lt;/li&gt;
+  &lt;li&gt;350g (approx. 5/6) large bananas&lt;/li&gt;
+  &lt;li&gt;1 teaspoon vanilla extract&lt;/li&gt;
+  &lt;li&gt;250g flour&lt;/li&gt;
+  &lt;li&gt;1 teaspoon ground cinnamon&lt;/li&gt;
+  &lt;li&gt;2 teaspoons baking powder&lt;/li&gt;
+  &lt;li&gt;1 pinch of salt&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;topping&quot;&gt;Topping&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;2 tablespoon brown sugar&lt;/li&gt;
+  &lt;li&gt;1 teaspoon cinnamon&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;method&quot;&gt;Method&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;Preheat the oven at 180°C and grease a loaf tin.&lt;/li&gt;
+  &lt;li&gt;Beat the butter (125g) and Brown Sugar (200g) together until light, then add each egg individually.&lt;/li&gt;
+  &lt;li&gt;Mash or use a blender to break down the banana bread and add to the mixture. Stir in the vanilla extract too.&lt;/li&gt;
+  &lt;li&gt;Mix together the flour (250g), baking powder (2 tsp) and cinnamon (1 tsp) then combine the two mixes.&lt;/li&gt;
+  &lt;li&gt;Add the mixture to the loaf tin.&lt;/li&gt;
+  &lt;li&gt;Combine the brown sugar and cinnmon to make the topping and sprinkle on top before putting it in the oven.&lt;/li&gt;
+  &lt;li&gt;Leave in the oven for 45 minutes or until a cake tester comes out clean.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/recipes/banana-bread/top-view.jpg&quot; alt=&quot;The loaf before going into the oven&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;wider-image&quot;&gt;
+    &lt;div style=&quot;display:flex&quot;&gt;
+    &lt;img style=&quot;margin: 0 auto&quot; class=&quot;featured-image lazyimg&quot; src=&quot;/assets/images/recipes/banana-bread/final-cropped.jpg&quot; alt=&quot;The finished product - banana bread&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 16 Apr 2021 00:00:00 +0100</pubDate>
+        <link>/banana-bread/</link>
+        <guid isPermaLink="true">/banana-bread/</guid>
+        
+        <category>Sweet</category>
+        
+        <category>Loaf</category>
+        
+        
+        <category>Recipes</category>
+        
+      </item>
     
       <item>
         <title>Raspberry Ripple Loaf</title>
@@ -176,7 +233,7 @@ Raspberry Ripple Loaf straight from the oven.&lt;/p&gt;
         <title>Riga</title>
         <description>&lt;p&gt;In September 2019 I travelled to Riga, on a whim for a weekend, between the history of the city, walking tour and food markets, it was a great weekend. Don’t miss the coffee house on the river edge - there’s a great rhubarb crumble.&lt;/p&gt;
 
-&lt;!-- This recipe comes from the epicurious website, but I've translated from the from volumetric measurements to metric measurements.
+&lt;!-- This recipe comes from the epicurious website, but I&apos;ve translated from the from volumetric measurements to metric measurements.
 &lt;a target=&quot;_blank&quot; href=&quot;https://www.epicurious.com/recipes/food/views/apple-cider-doughnut-loaf-cake&quot; class=&quot;btn badge-primary&quot;&gt;Apple Cider Doughnut Loaf Cake &amp;rarr;&lt;/a&gt; --&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/travel/riga/IMG_20190906_134250.jpg&quot; alt=&quot;Mat Loughnane visiting, Riga&quot; /&gt;&lt;/p&gt;
@@ -325,7 +382,7 @@ Soda Bread prepped for the oven.&lt;/p&gt;
         <title>Peru</title>
         <description>&lt;p&gt;In November 2019 I travelled to Peru, visiting Cusco, Machu Picchu and Lima (briefly). The engineering that would have been involved in building Machu Picchu is just one small thing that amazed me about the Inca.&lt;/p&gt;
 
-&lt;!-- This recipe comes from the epicurious website, but I've translated from the from volumetric measurements to metric measurements.
+&lt;!-- This recipe comes from the epicurious website, but I&apos;ve translated from the from volumetric measurements to metric measurements.
 &lt;a target=&quot;_blank&quot; href=&quot;https://www.epicurious.com/recipes/food/views/apple-cider-doughnut-loaf-cake&quot; class=&quot;btn badge-primary&quot;&gt;Apple Cider Doughnut Loaf Cake &amp;rarr;&lt;/a&gt; --&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/travel/peru/IMG_20191124_145545.jpg&quot; alt=&quot;Mat Loughnane visiting, Cusco, Machu Picchu and Peru&quot; /&gt;&lt;/p&gt;
@@ -487,56 +544,6 @@ Soda Bread prepped for the oven.&lt;/p&gt;
         <category>Chocolate</category>
         
         <category>Cookies</category>
-        
-        
-        <category>Recipes</category>
-        
-      </item>
-    
-      <item>
-        <title>Thai Red Curry</title>
-        <description>&lt;p&gt;Here’s a simple Thai Red Curry recipe for two, or one if you’re hungry! It’s hot, sweet and very quick and easy to make. The most imoprtant ingredient is the red thai paste. I buy mine but you can make some - here’s a couple of great recipes if you want to give it a go.&lt;/p&gt;
-
-&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.eatingthaifood.com/thai-red-curry-paste-recipe/&quot; class=&quot;btn badge-primary&quot;&gt; Red Paste Recipes →&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Red Thai Paste (2 tablesppons)&lt;/li&gt;
-  &lt;li&gt;Coconut Milk (400ml / 1 can)&lt;/li&gt;
-  &lt;li&gt;A few Lime Leaves or 1 Lime&lt;/li&gt;
-  &lt;li&gt;1 Red Bell Pepper&lt;/li&gt;
-  &lt;li&gt;Rice (any type works)&lt;/li&gt;
-  &lt;li&gt;Soy Sauce (2 teaspoons)&lt;/li&gt;
-  &lt;li&gt;2 Chicken Breasts&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;method&quot;&gt;Method&lt;/h1&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Heat a work or a large non stick pan on high heat.&lt;/li&gt;
-  &lt;li&gt;With the pan hot, add 100g (quarter can) or the coconut milk. This will spatter.&lt;/li&gt;
-  &lt;li&gt;After the milk has warmed a couple of minutes, add two tablespoons of Red Thai Paste and mix.&lt;/li&gt;
-  &lt;li&gt;Add the chicken to the mix and ensure the chicken is cooked.&lt;/li&gt;
-  &lt;li&gt;Chop the bell peppers and add to the curry.&lt;/li&gt;
-  &lt;li&gt;Drop the temperature to a steady simmer and add the remainder of the coconut milk ~ 300ml and stir.&lt;/li&gt;
-  &lt;li&gt;Add the lime leaves or squeeze half a limes juice into the curry, then add the soy sauce (2 tbsp).&lt;/li&gt;
-  &lt;li&gt;Taste the curry, seasoning and ensuring it’s hot enough.&lt;/li&gt;
-  &lt;li&gt;Serve with rice and a decorative lime wedge.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I took this recipe from this YouTube video: &lt;a href=&quot;https://www.youtube.com/watch?v=Bduxpd1_EVA&quot;&gt;Kravings Red Thai Curry&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/recipes/red-thai-curry/main.jpg&quot; alt=&quot;Thai Red Curry&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
-        <link>/thai-red-curry/</link>
-        <guid isPermaLink="true">/thai-red-curry/</guid>
-        
-        <category>Thai</category>
-        
-        <category>Curry</category>
         
         
         <category>Recipes</category>
