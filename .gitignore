@@ -10,3 +10,4 @@ _archive
 .jekyll-metadata
 **.jekyll-cache
 vendor
+.vscode/
