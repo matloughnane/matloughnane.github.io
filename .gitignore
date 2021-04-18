@@ -9,3 +9,4 @@ _archive
 .jekyll-cache/
 .jekyll-metadata
 **.jekyll-cache
+vendor
