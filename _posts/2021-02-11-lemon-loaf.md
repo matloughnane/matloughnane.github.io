@@ -9,7 +9,7 @@ comments: false
 recipe: true
 prepTime: PT15M
 cookTime: PT55M
-recipeIngredient: ["225g Unsalted Butter", "225g Caster Sugar", "4 Eggs", "22g Self Raising Flour", "1 Lemon", "85g Icing Sugar"]
+recipeIngredient: ["225g Unsalted Butter", "225g Caster Sugar", "4 Eggs", "225g Self Raising Flour", "1 Lemon", "85g Icing Sugar"]
 # recipeInstructions: "Preheat the oven to 180°C (160°C Fan). Cream the butter (225g) and sugar (225g) together (I usually stick the button in the microwave to soften it). Add the eggs, 1 at a time and continue mixing. Add the self raising flour (225g). Add the whole zest of the lemon to the batter. Pour the mixture into a greased and lined 9" loaf tin. Cook for 50 - 55 minutes."
 ---
 
@@ -24,7 +24,7 @@ This recipe is almost a carbon copy of the BBC Good Food recipe, with some helpf
 -   225g Unsalted Butter
 -	225g Caster Sugar
 -	4 Eggs
--	22g Self Raising Flour
+-	225g Self Raising Flour
 -	1 Lemon
 -	85g Icing Sugar
 

@@ -52,10 +52,10 @@ In two parts: Cake and Topping.
 ## Make the Frosting
 1. Melt the butter (50g) and combine with with the cream cheese (200g) until homogenous.
 2. Add the vanilla extract (1 tsp) and icing sugar (50g).
-3. Top the cake mixture with the nuts and bake for 1 hour.
+3. Spread the icing once the cake has cooled.
 
 
 <div class="wider-image">
-    <img class="featured-image lazyimg" src="/assets/images/recipes/carrot-cake/IMG_20210306_131931.jpg" alt="">
+    <img class="featured-image lazyimg" src="/assets/images/recipes/carrot-cake/IMG_20210306_131931.jpg" alt="The carrot cake completed">
 </div>
 
