@@ -5,9 +5,90 @@
     <description>I like to travel, code and cook...</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 18 Apr 2021 13:42:12 +0100</pubDate>
-    <lastBuildDate>Sun, 18 Apr 2021 13:42:12 +0100</lastBuildDate>
+    <pubDate>Wed, 05 May 2021 11:40:46 +0100</pubDate>
+    <lastBuildDate>Wed, 05 May 2021 11:40:46 +0100</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Simple Butter Chicken Recipe</title>
+        <description>&lt;p&gt;A simple butter chicken curry recipe modified for two from Josh Weissman’s YouTube Channel&lt;/p&gt;
+
+&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/watch?v=hDjK5C2aoSs&quot; class=&quot;btn badge-primary&quot;&gt;Original Recipe →&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h1&gt;
+
+&lt;h2 id=&quot;marinade&quot;&gt;Marinade&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;160g full-fat yogurt&lt;/li&gt;
+  &lt;li&gt;10g garam masala&lt;/li&gt;
+  &lt;li&gt;10g kosher salt&lt;/li&gt;
+  &lt;li&gt;2 Chicken Breasts&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;curry&quot;&gt;Curry&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;30g vegetable oil&lt;/li&gt;
+  &lt;li&gt;1 white onion&lt;/li&gt;
+  &lt;li&gt;2-inch knob of ginger&lt;/li&gt;
+  &lt;li&gt;6 cloves of sliced garlic&lt;/li&gt;
+  &lt;li&gt;8g paprika&lt;/li&gt;
+  &lt;li&gt;9g ground cumin&lt;/li&gt;
+  &lt;li&gt;14g garam masala&lt;/li&gt;
+  &lt;li&gt;10g turmeric powder *optional&lt;/li&gt;
+  &lt;li&gt;400g can of crushed tomatoes&lt;/li&gt;
+  &lt;li&gt;160ml water&lt;/li&gt;
+  &lt;li&gt;240ml heavy cream&lt;/li&gt;
+  &lt;li&gt;28g unsalted butter&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Salt and pepper to taste&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Rice + Corriander&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;marinade-1&quot;&gt;Marinade&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;Mix the yoghurt, garam masala and salt in a bowl&lt;/li&gt;
+  &lt;li&gt;Chop the chicken into 1 inch piece and place and coat in the marinade bowl.&lt;/li&gt;
+  &lt;li&gt;Leave to rest covered in cling film for 30 minutes+ (up to overnight)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;the-curry&quot;&gt;The Curry&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;In a non stick pan heat some vegetable oil over medium / high heat&lt;/li&gt;
+  &lt;li&gt;Add the chicken to pan to sear - cook it quickly, but not all the way through (yet)&lt;/li&gt;
+  &lt;li&gt;Remove the chicken from the pan and leave to rest for a minute.&lt;/li&gt;
+  &lt;li&gt;Dice the onion and finely dice the ginger and add to the pan&lt;/li&gt;
+  &lt;li&gt;Add the 6 cloves of sliced garlic&lt;/li&gt;
+  &lt;li&gt;Add water to the pot if necessary to get the fond off the bottom.&lt;/li&gt;
+  &lt;li&gt;Cook for 3 minutes until vegetables or soft.&lt;/li&gt;
+  &lt;li&gt;Add all the spices to the mix. Cumin (9g), Garam Masala (14g), Paprika (8g), Tumeric (10g) and cook for a further 2 minutes.&lt;/li&gt;
+  &lt;li&gt;Add the can of tomatoes, then add the water&lt;/li&gt;
+  &lt;li&gt;Let it simmer for 5-8 minutes until it’s reduced by 30%&lt;/li&gt;
+  &lt;li&gt;Add the chicken back to the pan - let it simmer for another 3-5 minutes&lt;/li&gt;
+  &lt;li&gt;Add the 250ml of cream.&lt;/li&gt;
+  &lt;li&gt;Turn off the heat and add the 28g butter - keep the curry moving to helpemulsify the butter correctly.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Meanwhile cook the rice and serve togehter.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/recipes/butter-chicken/bc-prep.jpg&quot; alt=&quot;All the items are prepped&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;wider-image&quot;&gt;
+    &lt;img class=&quot;featured-image lazyimg&quot; src=&quot;assets/images/recipes/butter-chicken/bc-plate.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 04 May 2021 00:00:00 +0100</pubDate>
+        <link>/simple-butter-chicken/</link>
+        <guid isPermaLink="true">/simple-butter-chicken/</guid>
+        
+        <category>Curry</category>
+        
+        <category>Savoury</category>
+        
+        
+        <category>Recipes</category>
+        
+      </item>
     
       <item>
         <title>Banana Bread</title>
@@ -208,11 +289,11 @@ Raspberry Ripple Loaf straight from the oven.&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;Melt the butter (50g) and combine with with the cream cheese (200g) until homogenous.&lt;/li&gt;
   &lt;li&gt;Add the vanilla extract (1 tsp) and icing sugar (50g).&lt;/li&gt;
-  &lt;li&gt;Top the cake mixture with the nuts and bake for 1 hour.&lt;/li&gt;
+  &lt;li&gt;Spread the icing once the cake has cooled.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;div class=&quot;wider-image&quot;&gt;
-    &lt;img class=&quot;featured-image lazyimg&quot; src=&quot;/assets/images/recipes/carrot-cake/IMG_20210306_131931.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;img class=&quot;featured-image lazyimg&quot; src=&quot;/assets/images/recipes/carrot-cake/IMG_20210306_131931.jpg&quot; alt=&quot;The carrot cake completed&quot; /&gt;
 &lt;/div&gt;
 
 </description>
@@ -278,7 +359,7 @@ Raspberry Ripple Loaf straight from the oven.&lt;/p&gt;
   &lt;li&gt;225g Unsalted Butter&lt;/li&gt;
   &lt;li&gt;225g Caster Sugar&lt;/li&gt;
   &lt;li&gt;4 Eggs&lt;/li&gt;
-  &lt;li&gt;22g Self Raising Flour&lt;/li&gt;
+  &lt;li&gt;225g Self Raising Flour&lt;/li&gt;
   &lt;li&gt;1 Lemon&lt;/li&gt;
   &lt;li&gt;85g Icing Sugar&lt;/li&gt;
 &lt;/ul&gt;
@@ -485,65 +566,6 @@ Soda Bread prepped for the oven.&lt;/p&gt;
         <category>Loaf</category>
         
         <category>Apple</category>
-        
-        
-        <category>Recipes</category>
-        
-      </item>
-    
-      <item>
-        <title>Chocolate Earthquake Cookies</title>
-        <description>&lt;p&gt;I’ve been trying out a few different types of chocolate cookies, this one caught my eye because of the name. Most of the recipes involved the use volumetric measurements, so I converted this one to metric below.&lt;/p&gt;
-
-&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://lilluna.com/crinkles-cookies-recipe/#wprm-recipe-container-101842&quot; class=&quot;btn badge-primary&quot;&gt;Crinkle Cookies →&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;120g Cocoa Powder (Not Drinking Chocolate)&lt;/li&gt;
-  &lt;li&gt;400g Demerara or Granulated Sugar&lt;/li&gt;
-  &lt;li&gt;112ml Oil&lt;/li&gt;
-  &lt;li&gt;4 Eggs&lt;/li&gt;
-  &lt;li&gt;2 tsp Vanilla extract&lt;/li&gt;
-  &lt;li&gt;2 tsp Baking powder&lt;/li&gt;
-  &lt;li&gt;1/2 tsp Salt&lt;/li&gt;
-  &lt;li&gt;250g Plain Flour&lt;/li&gt;
-  &lt;li&gt;56g Powdered Sugar&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;method&quot;&gt;Method&lt;/h1&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Mix the Cocoa Powder (120g), Sugar (400g) and Oil (112ml) in one large bowl.&lt;/li&gt;
-  &lt;li&gt;Beat the 4 eggs into this mix one by one.&lt;/li&gt;
-  &lt;li&gt;Add the 2tsp vanilla extract.&lt;/li&gt;
-  &lt;li&gt;Combine the 2tsp Baking powder, 1/2 tsp salt and 250g Flour in a separate bowl.&lt;/li&gt;
-  &lt;li&gt;Combine the contents fo the two bowls to make one homogenous mix.&lt;/li&gt;
-  &lt;li&gt;Chill for 4 hours in the fridge. Before your 4 hours is up, preheat your oven to 175°C.&lt;/li&gt;
-  &lt;li&gt;Roll 1 inch balls in powdered sugar and place on a lined baking sheet.&lt;/li&gt;
-  &lt;li&gt;Cook for 9-11 minutes at 175°C.&lt;/li&gt;
-  &lt;li&gt;Cookies will have a powdered outside with visible earthquake cracks across their surface.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/recipes/earthquake-cookies/prep.jpg&quot; alt=&quot;The cookies before going into the oven&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;side-note&quot;&gt;Side Note:&lt;/h2&gt;
-
-&lt;p&gt;I found this great website for calculating volumetric measurements to metric weights.&lt;/p&gt;
-
-&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.howmany.wiki/vw/--1%7C2--cup--of--powdered-sugar--in--gram&quot; class=&quot;btn badge-primary&quot;&gt;Weight Converter →&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&quot;wider-image&quot;&gt;
-    &lt;img class=&quot;featured-image lazyimg&quot; src=&quot;/assets/images/recipes/earthquake-cookies/main.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
-        <link>/chocolate-earthquake-cookies/</link>
-        <guid isPermaLink="true">/chocolate-earthquake-cookies/</guid>
-        
-        <category>Chocolate</category>
-        
-        <category>Cookies</category>
         
         
         <category>Recipes</category>
