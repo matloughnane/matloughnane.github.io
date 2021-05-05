@@ -62,7 +62,7 @@ A simple butter chicken curry recipe modified for two from Josh Weissman's YouTu
 12. Add the 250ml of cream.
 13. Turn off the heat and add the 28g butter - keep the curry moving to helpemulsify the butter correctly.
 
-Meanwhile cook the rice and serve togehter.
+Meanwhile cook the rice and serve together.
 
 
 ![All the items are prepped](/assets/images/recipes/butter-chicken/bc-prep.jpg)
