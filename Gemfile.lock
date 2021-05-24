@@ -90,8 +90,6 @@ GEM
       racc (~> 1.4)
     nokogiri (1.11.5-x86_64-linux)
       racc (~> 1.4)
-    nokogiri (1.11.3-x86_64-linux)
-      racc (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     popper_js (1.16.0)
