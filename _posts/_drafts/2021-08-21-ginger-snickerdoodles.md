@@ -11,11 +11,7 @@ prepTime: PT10M
 cookTime: PT15M
 recipeIngredient: [ "185g Flour" ,"3 1/2 Teaspoon Baking Powder" ,"1 Teaspoon Salt" ,"1 Tablespoon Granulated Sugar" ,"306ml Milk" ,"1 Egg" ,"42.4g Butter Melter" ]
 recipeInstructions: "1. Sift and Whisk all the dry ingredients together. 2. Add all the wet ingredients to a well in the middle of the bowl."
----
-
-Perfect pancakes for a birthday morning, taken from All Recipes website. Yield is about 8 pancakes.
-
-<a target="_blank" href="https://www.allrecipes.com/recipe/21014/good-old-fashioned-pancakes/" class="btn badge-primary">All Recipes &rarr;</a>
+--- 
 
 # Ingredients
 
