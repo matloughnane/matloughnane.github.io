@@ -5,8 +5,8 @@
     <description>I like to travel, code and cook...</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 20 Feb 2023 22:20:58 +0000</pubDate>
-    <lastBuildDate>Mon, 20 Feb 2023 22:20:58 +0000</lastBuildDate>
+    <pubDate>Tue, 14 Mar 2023 15:51:24 +0000</pubDate>
+    <lastBuildDate>Tue, 14 Mar 2023 15:51:24 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -101,6 +101,96 @@ Salt and Pepper to taste&lt;/p&gt;
         
         
         <category>Recipes</category>
+        
+      </item>
+    
+      <item>
+        <title>2022 Hexa Studios Round Up</title>
+        <description>&lt;p&gt;It’s that time of year again - here’s a round up of everything that Hexa Studios shipped this year. It’s been a busy one.&lt;/p&gt;
+
+&lt;h1 id=&quot;arranmore-ferry-relaunch&quot;&gt;Arranmore Ferry Relaunch&lt;/h1&gt;
+
+&lt;p&gt;Right at the start of the year - we relaunched the &lt;a href=&quot;https://hexastudios.co/blog/new-arranmore-ferry-mobile&quot;&gt;Arranmore Ferry app&lt;/a&gt; with a completely new User Interface and User Experience (UI/UX). The app, website and API were all given a complete rewrite and the &lt;a href=&quot;https://thearranmoreferry.com/about&quot;&gt;Arranmore Ferry team&lt;/a&gt; were given a whole new admin panel.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The new Arranmore app features all our dashboard, where you’ll see the latest for todays and tomorrows ferries, any messages from the team about the day or upcoming events will also appear here.
+You can view the timetables for the year or pick a date for any day using our date picker too!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://directus.hexastudios.co/assets/6d42500b-3fce-4f59-a8bc-022099b4bff6&quot; alt=&quot;The Arranmore Ferry App&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Arranmore Ferry team have some exciting news about a &lt;a href=&quot;https://thearranmoreferry.com/blog/the-new-arranmore-ferry&quot;&gt;brand new ferry&lt;/a&gt; coming in 2023 - so download the app now for the latest news.&lt;/p&gt;
+
+&lt;h1 id=&quot;seo-árainn-mhór-launch&quot;&gt;Seo Árainn Mhór Launch&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/code/2022-round-up/background.jpg&quot; alt=&quot;Seo Árainn Mhór Featured Background&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In Spring we launched &lt;a href=&quot;https://seoarainnmhor.com/app&quot;&gt;Seo Árainn Mhór&lt;/a&gt;, a mobile app for the island of Arranmore, Co. Donegal. The app features ‘pages’ which each business owner is able to create and update. Each page features photos, opening times, posts and location maps. Everything a business could need to promote themselves on the island and more importantly how people on the island and visitors cand find all the information they need.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Another aspect of the project which was hugely important, was that the Gaeilge language be featured front and centre. You’ll see in screenshots below and in &lt;a href=&quot;https://seoarainnmhor.com/blog/x-post-hexa-seo-arainnmhor-launch&quot;&gt;all marketing materials&lt;/a&gt; that we’ve endevoured to feature it in every screen of the app.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/code/2022-round-up/app-blue.png&quot; alt=&quot;App screenshots&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Seo Árainn Mhór is available now for download.&lt;/p&gt;
+
+&lt;h1 id=&quot;tory-and-arranmore-get-google-and-apply-pay-support&quot;&gt;Tory and Arranmore get Google and Apply Pay support&lt;/h1&gt;
+
+&lt;p&gt;Later in 2022 I deployed brand new ticketing flows for &lt;a href=&quot;https://toryferry.com/app&quot;&gt;Tory&lt;/a&gt; and &lt;a href=&quot;https://thearranmoreferry.com/&quot;&gt;Arranmore&lt;/a&gt; Ferries. The new ticketing flow employs &lt;a href=&quot;https://stripe.com&quot;&gt;Stripe&lt;/a&gt;’s official flutter implementation which we used to enable Apple Pay and Google Pay in both apps.&lt;/p&gt;
+
+&lt;p&gt;In addition the updates included a new feature to pull the latest blog data into the app. Download the Tory Ferry app to view the latest &lt;a href=&quot;https://www.toryferry.com/blog/tory-ferry-v6-update&quot;&gt;blog post&lt;/a&gt; now.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://directus.hexastudios.co/assets/90ff2ebf-9f41-4cb3-a56c-01009f03a491&quot; alt=&quot;Tory Ferry Promo&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;heritage-points-on-seo-árainn-mhór&quot;&gt;Heritage Points on Seo Árainn Mhór&lt;/h1&gt;
+
+&lt;p&gt;In late August we &lt;a href=&quot;https://seoarainnmhor.com/blog/heritage-points&quot;&gt;launched&lt;/a&gt; a sister project to Seo Árainn Mhór: &lt;a href=&quot;https://www.scéalóbhéal.com/&quot;&gt;Scéal Ó Bhéal&lt;/a&gt; - a collection of audio stories capturing stories from Arranmore Island told by islanders.&lt;/p&gt;
+
+&lt;p&gt;The points were all integrated into the Seo Árainn Mhór app where you can listen to the stories in English and Gaeilge.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/code/2022-round-up/scealabheal-straight.png&quot; alt=&quot;Promo image for Seo Árainn Mhór update&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;gúrú---remote-mentoring-web-app&quot;&gt;gúrú - remote mentoring web app&lt;/h1&gt;
+
+&lt;p&gt;The final launch of 2022 came in the form a web app - connecting people to remote working mentors, called &lt;a href=&quot;https://www.gúrú.work/&quot;&gt;gúrú&lt;/a&gt;. The mission statement is, as stated on the website:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;At gúrú we are here to help; by matching expert volunteer mentors with community members looking for their next remote employment opportunity, we help break down the barriers to finding your perfect job.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The project is currently being trialled by the &lt;a href=&quot;https://growremote.ie/arranmore-chapter-new-remote-mentoring/&quot;&gt;growremote.ie&lt;/a&gt; team and we’re working on getting fixes in for them - so stay tuned for more updates soon.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/code/2022-round-up/guru-meta.png&quot; alt=&quot;Promo image for Seo Árainn Mhór update&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;favourite-tech&quot;&gt;Favourite Tech&lt;/h1&gt;
+
+&lt;p&gt;It’s important to give credit where it’s due and I employed a lot of new open source technologies this year - keep up to date with my twitter where I try and share all the exciting tech I use. Two in particular were really cool:&lt;/p&gt;
+
+&lt;h3 id=&quot;umami&quot;&gt;Umami&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://umami.is/&quot;&gt;Umami analytics&lt;/a&gt; is an open source privacy focused Google Analytics alternative. It’s quick and easy to set up and you can create shareable links for clients individual dashboards. I’ve got all my projects running their analytics using one installation of Umami.&lt;/p&gt;
+
+&lt;h3 id=&quot;supabase&quot;&gt;Supabase&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://supabase.io&quot;&gt;Supabase&lt;/a&gt; is the open source Firebase alternative that gives Postgres a really powerful API, with official sdks for JS and Flutter. We’ve used the platform for gúrú, the remote mentoring project we launched this year.&lt;/p&gt;
+
+&lt;h1 id=&quot;2023&quot;&gt;2023&lt;/h1&gt;
+
+&lt;p&gt;It’s been a productive year and I’ve got big plans for 2023. As always let me know if you have any ideas on what I should build next.&lt;/p&gt;
+
+&lt;p&gt;Matthew&lt;/p&gt;
+</description>
+        <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2022-hexa-round-up/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022-hexa-round-up/</guid>
+        
+        <category>web</category>
+        
+        <category>app</category>
+        
+        
+        <category>Travel</category>
         
       </item>
     
@@ -462,41 +552,6 @@ Raspberry Ripple Loaf straight from the oven.&lt;/p&gt;
         
         
         <category>Recipes</category>
-        
-      </item>
-    
-      <item>
-        <title>Riga</title>
-        <description>&lt;p&gt;In September 2019 I travelled to Riga, on a whim for a weekend, between the history of the city, walking tour and food markets, it was a great weekend. Don’t miss the coffee house on the river edge - there’s a great rhubarb crumble.&lt;/p&gt;
-
-&lt;!-- This recipe comes from the epicurious website, but I&apos;ve translated from the from volumetric measurements to metric measurements.
-&lt;a target=&quot;_blank&quot; href=&quot;https://www.epicurious.com/recipes/food/views/apple-cider-doughnut-loaf-cake&quot; class=&quot;btn badge-primary&quot;&gt;Apple Cider Doughnut Loaf Cake &amp;rarr;&lt;/a&gt; --&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/travel/riga/IMG_20190906_134250.jpg&quot; alt=&quot;Mat Loughnane visiting, Riga&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/travel/riga/IMG_20190906_202600.jpg&quot; alt=&quot;Mat Loughnane visiting, Riga&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/travel/riga/IMG_20190907_170434.jpg&quot; alt=&quot;Mat Loughnane visiting, Riga&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/travel/riga/IMG_20190907_200814.jpg&quot; alt=&quot;Mat Loughnane visiting, Riga&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/travel/riga/IMG_20190908_113020.jpg&quot; alt=&quot;Mat Loughnane visiting, Riga&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/travel/riga/IMG_20190908_113414-01.jpeg&quot; alt=&quot;Mat Loughnane visiting, Riga&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/travel/riga/IMG_20190908_154341.jpg&quot; alt=&quot;Mat Loughnane visiting, Riga&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/riga/</link>
-        <guid isPermaLink="true">http://localhost:4000/riga/</guid>
-        
-        <category>Latvia</category>
-        
-        <category>Riga</category>
-        
-        
-        <category>Travel</category>
         
       </item>
     
