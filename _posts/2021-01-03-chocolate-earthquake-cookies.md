@@ -35,7 +35,7 @@ I've been trying out a few different types of chocolate cookies, this one caught
 2. Beat the 4 eggs into this mix one by one.
 3. Add the 2tsp vanilla extract.
 4. Combine the 2tsp Baking powder, 1/2 tsp salt and 250g Flour in a separate bowl.
-5. Combine the contents fo the two bowls to make one homogenous mix.
+5. Combine the contents of the two bowls to make one homogenous mix.
 6. Chill for 4 hours in the fridge. Before your 4 hours is up, preheat your oven to 175°C.
 7. Roll 1 inch balls in powdered sugar and place on a lined baking sheet.
 8. Cook for 9-11 minutes at 175°C.
