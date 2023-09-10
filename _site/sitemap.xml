@@ -89,6 +89,10 @@
 <lastmod>2023-02-15T00:00:00+00:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/arranmore-ferry-kiosk/</loc>
+<lastmod>2023-08-04T00:00:00+01:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about</loc>
 </url>
 <url>
@@ -111,6 +115,15 @@
 </url>
 <url>
 <loc>http://localhost:4000/category/code/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/ferry/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/kiosk/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/hardware/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/page2/</loc>
