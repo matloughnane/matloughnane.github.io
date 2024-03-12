@@ -5,9 +5,9 @@
     <description>I like to travel, code and cook...</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 10 Sep 2023 12:41:20 +0100</pubDate>
-    <lastBuildDate>Sun, 10 Sep 2023 12:41:20 +0100</lastBuildDate>
-    <generator>Jekyll v4.3.2</generator>
+    <pubDate>Tue, 12 Mar 2024 23:57:21 +0000</pubDate>
+    <lastBuildDate>Tue, 12 Mar 2024 23:57:21 +0000</lastBuildDate>
+    <generator>Jekyll v4.3.3</generator>
     
       <item>
         <title>Arranmore Ferry Kiosk</title>
@@ -137,24 +137,28 @@
 &lt;h1 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h1&gt;
 
 &lt;h2 id=&quot;chicken&quot;&gt;Chicken&lt;/h2&gt;
-&lt;p&gt;1 tsp Paprika
-1 tsp Cayenne Pepper or Chilli Powder
-1 tsp Garlic Powder
-1 tsp Onion Powder
-Salt and Pepper to taste&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;1 tsp Paprika&lt;/li&gt;
+  &lt;li&gt;1 tsp Cayenne Pepper or Chilli Powder&lt;/li&gt;
+  &lt;li&gt;1 tsp Garlic Powder&lt;/li&gt;
+  &lt;li&gt;1 tsp Onion Powder&lt;/li&gt;
+  &lt;li&gt;Salt and Pepper to taste&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;sauce&quot;&gt;Sauce&lt;/h2&gt;
-&lt;p&gt;1 Small Red Onion
-4 Garlic Gloves chopped
-1 Small Red Pepper
-250ml Double Cream
-1 tsp Paprika
-1 tsp Red Chilli Flakes
-2 tsp Pepper
-1 tsp Salt (to taste)
-1/2 Jar of Sundried Tomatoes
-40g Cheddar Cheese
-2-3 Handfuls of Spinach&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;1 Small Red Onion&lt;/li&gt;
+  &lt;li&gt;4 Garlic Gloves chopped&lt;/li&gt;
+  &lt;li&gt;1 Small Red Pepper&lt;/li&gt;
+  &lt;li&gt;250ml Double Cream&lt;/li&gt;
+  &lt;li&gt;1 tsp Paprika&lt;/li&gt;
+  &lt;li&gt;1 tsp Red Chilli Flakes&lt;/li&gt;
+  &lt;li&gt;2 tsp Pepper&lt;/li&gt;
+  &lt;li&gt;1 tsp Salt (to taste)&lt;/li&gt;
+  &lt;li&gt;1/2 Jar of Sundried Tomatoes&lt;/li&gt;
+  &lt;li&gt;40g Cheddar Cheese&lt;/li&gt;
+  &lt;li&gt;2-3 Handfuls of Spinach&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Pasta (shells or tubes work best)&lt;/p&gt;
 
