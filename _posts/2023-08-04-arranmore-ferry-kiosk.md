@@ -9,7 +9,6 @@ comments: false
 recipe: false
 ---
 
-
 After a couple of [teases](https://www.facebook.com/hexastudiosco/posts/pfbid02BzRuwGrzaj11KkouRisv7aB3uaKZeBEACybYiB6Kt2RdHkqqp3y9UYkHW22v1Wndl), we're incredibly excited to share our latest project, the Arranmore Ferry self service kiosk. This project is a culmination of months of work (and years or dreaming from Seamus, Louise and myself).
 
 A little over a year ago I was calling companies asking whether they were able to help me in realising this project. I'm not exaggerating when I say that they laughed down the phone to me, saying that it was not worth their time to work with Hexa, since we're such a small company... So we built it ourselves. We reached out to the fantastic team at [AllSee Technologies](https://allsee-tech.com) - who specialise in interactive displays and started creating inventive code to use [Stripe](https://stripe.com)'s, the secure digital payment solutions, terminals to faciliate payments.
