@@ -20,24 +20,24 @@ This is a recipe found on instagram by [@kauscooks](https://www.instagram.com/ka
 # Ingredients
 
 ## Chicken
-1 tsp Paprika
-1 tsp Cayenne Pepper or Chilli Powder
-1 tsp Garlic Powder
-1 tsp Onion Powder
-Salt and Pepper to taste
+- 1 tsp Paprika
+- 1 tsp Cayenne Pepper or Chilli Powder
+- 1 tsp Garlic Powder
+- 1 tsp Onion Powder
+- Salt and Pepper to taste
 
 ## Sauce
-1 Small Red Onion
-4 Garlic Gloves chopped
-1 Small Red Pepper
-250ml Double Cream
-1 tsp Paprika
-1 tsp Red Chilli Flakes
-2 tsp Pepper
-1 tsp Salt (to taste)
-1/2 Jar of Sundried Tomatoes
-40g Cheddar Cheese
-2-3 Handfuls of Spinach
+- 1 Small Red Onion
+- 4 Garlic Gloves chopped
+- 1 Small Red Pepper
+- 250ml Double Cream
+- 1 tsp Paprika
+- 1 tsp Red Chilli Flakes
+- 2 tsp Pepper
+- 1 tsp Salt (to taste)
+- 1/2 Jar of Sundried Tomatoes
+- 40g Cheddar Cheese
+- 2-3 Handfuls of Spinach
 
 Pasta (shells or tubes work best)
 
