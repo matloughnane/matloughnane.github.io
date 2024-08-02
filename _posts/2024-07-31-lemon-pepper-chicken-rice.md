@@ -16,6 +16,7 @@ recipeInstructions: ""
 # Lemon Pepper Chicken Rice
 
 This is a recipe found on instagram by [@jalalsamfit](https://www.instagram.com/reel/C9QbWTCoNd3/)
+(Makes serving for 4)
 
 # Ingredients
 
