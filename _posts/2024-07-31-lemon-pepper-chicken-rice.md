@@ -56,13 +56,14 @@ This is a recipe found on instagram by [@jalalsamfit](https://www.instagram.com/
 
 
 # Steps
-1. Butterfly chicken and coat in the spice mix
-2. Add some oil to a pan and cook the chicken through
-3. In the same pan, add the onion, garlic and pepper
-4. Start boiling the pasta
-5. Cover in spices and toast for a couple more minutes
-6. Add the cream and salt and pepper to taste
-7. Simmer for a few minutes, then add spinach and sundried tomatoes
-8. Add the chedder cheese and some pasta water to emulsify
-9. Serve with chicken sliced on top of the pasta.
+- Marinate the chicken for at least 30 mins.
+    - You can use chicken breast for this too
+- Cook the chicken on medium high heat for 4 mins before turning it over, with a little bit of butter. Should get a nice golden crust.
+- Cook the rice alongside the chicken
+- When the chicken is cooked, put it to one side.
+- Fry Onion and garlic for until softened and then bloom Salt, Paprika, Turmeric, Oregano.
+- Add the rice and then the chopped parsely to the pan too.
+- Add the chicken back to the pan to reheat.
 
+## Salad
+Mix all the salad ingredients up.
