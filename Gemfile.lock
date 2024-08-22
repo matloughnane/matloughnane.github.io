@@ -149,7 +149,7 @@ GEM
       psych (>= 4.0.0)
     reline (0.4.3)
       io-console (~> 0.5)
-    rexml (3.3.3)
+    rexml (3.3.6)
       strscan
     rouge (4.2.0)
     safe_yaml (1.0.5)
