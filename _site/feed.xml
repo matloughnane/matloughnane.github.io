@@ -5,9 +5,279 @@
     <description>I like to travel, code and cook...</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 11 Sep 2024 11:17:30 +0100</pubDate>
-    <lastBuildDate>Wed, 11 Sep 2024 11:17:30 +0100</lastBuildDate>
+    <pubDate>Wed, 10 Sep 2025 15:16:10 +0100</pubDate>
+    <lastBuildDate>Wed, 10 Sep 2025 15:16:10 +0100</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>Happy Anniver-Paris</title>
+        <description>&lt;p&gt;We visited Paris for our 1st anniversary. Amazing museums and bakeries galore.&lt;/p&gt;
+
+&lt;p&gt;A couple of highlights:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cedric-grolet.com/cafe/&quot;&gt;Cedric Grolet Café&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gourmet.galerieslafayette.com/&quot;&gt;Galeries Lafayette&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://la-maison-disabelle.foodjoyy.com/&quot;&gt;La Maison d’Isabelle&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/paris/1291e6d2-d38b-4aeb-b89e-772904dc6c03-copiedjpg.jpg&quot; alt=&quot;Mat Loughnane ins Paris&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/paris/PXL_20250822_163609113.jpg&quot; alt=&quot;Mat Loughnane ins Paris&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/paris/PXL_20250823_111603523.jpg&quot; alt=&quot;Mat Loughnane ins Paris&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/paris/PXL_20250823_143415716.jpg&quot; alt=&quot;Mat Loughnane ins Paris&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/paris/PXL_20250824_130007715.jpg&quot; alt=&quot;Mat Loughnane ins Paris&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 24 Aug 2025 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/paris/</link>
+        <guid isPermaLink="true">http://localhost:4000/paris/</guid>
+        
+        <category>hexa</category>
+        
+        <category>code</category>
+        
+        
+        <category>Code</category>
+        
+      </item>
+    
+      <item>
+        <title>Bridgit</title>
+        <description>&lt;p&gt;I’ve been working on Bridgit - a Charities iPaaS - and it’s just launched in beta.&lt;/p&gt;
+
+&lt;p&gt;In fact Bridgit already had a fully self serve customer!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/code/bridgit/first-customer.png&quot; alt=&quot;First Customer&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;One of the last major features to be implemented since Bridgit launched was Bridge editing. It’s still an early UX that will continue to evolve but it works well and our early customers understand it without too much prompting.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/code/bridgit/bridge-editing.png&quot; alt=&quot;Bridge editing&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m looking forward to sharing more with Bridgit later this year. Stay tuned to &lt;a href=&quot;https://hibridgit.com&quot;&gt;hibridgit.com&lt;/a&gt; for more information.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 20 May 2025 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/bridgit/</link>
+        <guid isPermaLink="true">http://localhost:4000/bridgit/</guid>
+        
+        <category>hexa</category>
+        
+        <category>code</category>
+        
+        
+        <category>Code</category>
+        
+      </item>
+    
+      <item>
+        <title>Bali &amp; Philippines</title>
+        <description>&lt;p&gt;For our honeymoon we travelled to Bali and the Philippines. While in the Philippines we spend 4 days on a &lt;a href=&quot;https://www.taophilippines.com/&quot;&gt;Tao Philippines&lt;/a&gt; expedition which was incredible&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/paris/1291e6d2-d38b-4aeb-b89e-772904dc6c03-copiedjpg.jpg&quot; alt=&quot;Mat Loughnane Bali &amp;amp; Philippines&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/paris/PXL_20250822_163609113.jpg&quot; alt=&quot;Mat Loughnane Bali &amp;amp; Philippines&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/paris/PXL_20250823_111603523.jpg&quot; alt=&quot;Mat Loughnane Bali &amp;amp; Philippines&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/paris/PXL_20250823_143415716.jpg&quot; alt=&quot;Mat Loughnane Bali &amp;amp; Philippines&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/paris/PXL_20250824_130007715.jpg&quot; alt=&quot;Mat Loughnane Bali &amp;amp; Philippines&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 04 May 2025 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/bali-philippines/</link>
+        <guid isPermaLink="true">http://localhost:4000/bali-philippines/</guid>
+        
+        <category>travel</category>
+        
+        
+        <category>Travel</category>
+        
+      </item>
+    
+      <item>
+        <title>Hexa Studios Round Up</title>
+        <description>&lt;p&gt;2024 was the first full year that I was working for myself as Hexa Studios and I loved the challenges of running my own business, picking up new projects and the variety of works people reached out to me for. Here’s a run down of the Hexa Studios’ 2024!&lt;/p&gt;
+
+&lt;h1 id=&quot;arranmore-ferry---new-admin-promo-codes&quot;&gt;Arranmore Ferry - New Admin, Promo Codes&lt;/h1&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://thearranmoreferry.com&quot;&gt;Arranmore Ferry&lt;/a&gt; saw updates to their entire platform this year, from the &lt;a href=&quot;https://thearranmoreferry.com/arranmore-ferry-blog/arranmore-ferry-self-service-kiosk&quot;&gt;self service kiosk&lt;/a&gt; to their Point of Sale (POS devices), each component of the platform saw major updates to make them easier to use and fully integrated with the teams day to day use.&lt;/p&gt;
+
+&lt;p&gt;The biggest update came in the form of the admin application which the team use monitor all tickets, timetables and ferries throughout the day. If you’re on the phone, web, app, kiosk or onboard, your ticket will appear on the admin panel for the team to see.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://hexastudios.co/assets/projects/ferry-dashboard/ferry-dashboard.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;https://hexastudios.co/assets/projects/ferry-dashboard/ferry-dashboard-dark-notifications.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;https://hexastudios.co/assets/projects/ferry-dashboard/ferry-dashboard-timetables.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;promo-codes-for-the-arranmore-ferry&quot;&gt;Promo Codes for the Arranmore Ferry&lt;/h2&gt;
+
+&lt;p&gt;We added promo codes to the Arranmore Ferry app too, you can enter a special promo code into the app and receive a discount and save a little money while booking your ticket to your favourite island.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://hexastudios.co/assets/docs/arranmore-ferry/promo/promo-codes/promo-code-secondary-tiled-sq.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In even bigger (and shinier) news - the &lt;a href=&quot;https://thearranmoreferry.com/arranmore-ferry-blog/new-arranmore-ferry-arranmore-blu-incoming&quot;&gt;Arranmore Ferry&lt;/a&gt; is adding a brand new ship to their fleet in 2025, “Arranmore Blu”, 2025 is set to be a big year for the Arranmore Ferry team.&lt;/p&gt;
+
+&lt;p&gt;2025 will mark the 10th Anniversary of the mobile application available on &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.thearranmoreferry.app&quot;&gt;Android&lt;/a&gt; and &lt;a href=&quot;https://apps.apple.com/ie/app/the-arranmore-ferry-blue/id1548020032&quot;&gt;iOS&lt;/a&gt; so we’ve got a few updates and surprises planned for 2025, we’ll see you then!&lt;/p&gt;
+
+&lt;h1 id=&quot;yoga-with-maura&quot;&gt;Yoga With Maura&lt;/h1&gt;
+
+&lt;p&gt;Hot on the heels of &lt;a href=&quot;https://goss.ie/showbiz/irish-social-media-star-joins-the-cast-of-bbcs-the-apprentice-366504&quot;&gt;her run-in with Alan Sugar&lt;/a&gt;, Maura of &lt;a href=&quot;https://yogawithmaura.ie&quot;&gt;Yoga With Maura&lt;/a&gt; reached out to build and updated UX for her online yoga studio. We had a lot of fun &lt;a href=&quot;https://www.hexastudios.co/blog/yoga-with-maura-calendar-update&quot;&gt;playing around with ideas&lt;/a&gt; and settled on big ‘calming’ round corners, great typography and a simple colour palette to make it as easy for Maura and her Yogi’s to join her community in her daily yoga classes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://hexastudios.co/assets/docs/yoga-with-maura/promo/ywm-calendar-update/calendar-card-details.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;https://hexastudios.co/assets/docs/yoga-with-maura/promo/ywm-calendar-update/calendar-card.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Maura has live classes every day on her online yoga studio (with playback for up to 7 days!) and right now is offering discounts to those who sign up for her &lt;a href=&quot;https://www.yogawithmaura.ie/discount?ref=hexa&quot;&gt;Body Blueprint 30-Day Challenge&lt;/a&gt;, join the community now if you’re looking to kick start 2025 with a more energized and mindful 2025.&lt;/p&gt;
+
+&lt;h1 id=&quot;inis-oírr-beo&quot;&gt;Inis Oírr Beo&lt;/h1&gt;
+
+&lt;p&gt;April 2024 marked the launch of Inis Oírr Beo, a brand new community application for the islanders and visitors of Inis Oírr, one of the Arran Islands in Co. Galway. We launched on &lt;a href=&quot;https://inisoirrbeo.com&quot;&gt;Inis Oírr Beo&lt;/a&gt; with the incredible support of the local community and a committee made up of a volunteers.&lt;/p&gt;
+
+&lt;div style=&quot;width:100%; max-width:100%; margin: 0 auto;&quot;&gt;
+&lt;video src=&quot;https://hexa-studios-cdn.lon1.digitaloceanspaces.com/videos/inis-oirr-beo/inis-oirr-beo-introduction.mp4&quot; poster=&quot;https://hexa-studios-cdn.lon1.digitaloceanspaces.com/videos/hexa-promo/community-hub-platform/community-hub-cover.png&quot; controls=&quot;&quot; style=&quot;width:100%; height:auto; max-width:100%; display:block;&quot;&gt;&lt;/video&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The app features, every community project, business, landmark and enterprise with contact details, opening times, audio introduction, photos and updated page lists.
+The app allows islanders to receive notifications to pages they’ve subscribed to and will give directions for any visitors using the built in maps functionality. It was designed to help islanders and visitors equally, I think we’ve catered to both user groups equally well, we’re delighted with the result!&lt;/p&gt;
+
+&lt;p&gt;We nearly forgot the best part, the entire application is available in Gaeilge!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://hexastudios.co/assets/blog/2024/inis-oirr-beo/launch/a3_poster-green.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The response has been incredible (we’ve seen over 1700 downloads across Android and iOS) and the app is used in ways we hadn’t even dreamed up. A huge thank you is owed to community groups and has been funded by BIM (Bord Iascaigh Mhara) and Pleanáil Teanga Inis Oírr.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/comharcaomhan.inisoirr&quot;&gt;Comhar Chomhán Teo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;CLEAS&lt;/li&gt;
+  &lt;li&gt;Pleanáil Teanga Inis Oírr&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can download Inis Oírr Beo for Android &amp;amp; iOS today.&lt;/p&gt;
+
+&lt;!-- &lt;br/&gt;
+&lt;AppStoreBadges 
+	google=&quot;https://play.google.com/store/apps/details?id=co.hexastudios.inisoirrbeo&quot;
+	apple=&quot;https://apps.apple.com/gb/app/inis-o%C3%ADrr-beo/id6474134415&quot; /&gt;
+&lt;br/&gt; --&gt;
+
+&lt;h1 id=&quot;seo-árainn-mhór-all-islands-and-jbh&quot;&gt;Seo Árainn Mhór: All Islands and JBH&lt;/h1&gt;
+
+&lt;p&gt;The Seo Árainn Mhór app has become the go-to platform for keeping up with key events on Arranmore Island, and June 2024 was no exception. Over the June Bank Holiday weekend, the island was abuzz with excitement as it hosted the All-Island GAA Football Tournament, a thrilling showcase of talent, teamwork, and island spirit.&lt;/p&gt;
+
+&lt;p&gt;The app provided live updates, match schedules, and team results, ensuring that locals and visitors alike could stay informed about every play and goal. Its real-time updates meant that even those unable to attend the matches could follow the action from wherever they were.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://hexastudios.co/assets/blog/2024/seo-arainnmhor-gaa-weekend/square-poster-2.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;https://hexastudios.co/assets/blog/2024/seo-arainnmhor-arranmore-challenge/square-poster-3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://seoarainnmhor.com&quot;&gt;Seo Árainn Mhór&lt;/a&gt; is available for download on iOS and Android now&lt;/p&gt;
+
+&lt;!-- &lt;br/&gt;
+&lt;AppStoreBadges 
+	google=&quot;https://play.google.com/store/apps/details?id=co.hexastudios.seoarainnmhor&quot;
+	apple=&quot;https://apps.apple.com/app/seo-%C3%A1rainn-mh%C3%B3r/id1620779594&quot; /&gt;
+&lt;br/&gt; --&gt;
+
+&lt;h1 id=&quot;new-open-source-package&quot;&gt;New Open Source Package&lt;/h1&gt;
+
+&lt;p&gt;This year, I had the chance to release the &lt;a href=&quot;https://pub.dev/packages/progress_bar_countdown&quot;&gt;progress_bar_countdown&lt;/a&gt; Flutter package, and it’s been incredible to see how developers have embraced it. The package makes creating countdown timers with a progress bar effortless.&lt;/p&gt;
+
+&lt;p&gt;I designed it to be highly customizable, offering options like left-to-right or right-to-left progress directions and fully adjustable styles to suit any app’s design. It’s lightweight yet powerful, with features like start, pause, resume, and reset functionality and customisation for shaders, text colour schemes. It even got accepted to the brilliant &lt;a href=&quot;https://fluttergems.dev&quot;&gt;Flutter Gems website&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Whether for quizzes, workout apps, or productivity tools, it’s been rewarding to see it helping others build engaging, time-sensitive experiences. I’ve wanted to contribute something useful to the open source community for a while, here it is and it’s definitely a highlight of my year!&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Link&lt;/th&gt;
+      &lt;th&gt;URL&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/Flutter-02569B?logo=flutter&amp;amp;logoColor=fff&quot; alt=&quot;Flutter&quot; /&gt;&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://pub.dev/packages/progress_bar_countdown&quot;&gt;https://pub.dev/packages/progress_bar_countdown&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;https://img.shields.io/badge/Flutter-Gems-ffffff?style=flat&amp;amp;color=0377d7&quot; alt=&quot;Flutter Gems&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://fluttergems.dev/packages/progress_bar_countdown/&quot;&gt;Flutter Gems&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;designing-the-weldworx-logo&quot;&gt;Designing the Weldworx logo&lt;/h1&gt;
+
+&lt;p&gt;Kevin from Weldworx reached out to me in 2024 too - asking for a logo for his welding company Weldworx. It was fun to play about with a few concepts with him before ultimately settling on this logo which combined a welders mask into the Weldworx “O”. I’m looking forward to working with Kevin again in 2025 as his business expands.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://hexastudios.co/assets/docs/weldworx/profile-picture/profile-navy-on-steel.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;!-- &lt;ImageGalleryList 
+    type=&quot;new&quot;
+    style=&quot;horizontal&quot;
+	imageList={[
+		{ asset: &quot;/assets/docs/weldworx/profile-picture/profile-navy-on-steel.png&quot;, alt: &quot;Seo Árainn Mhór x Gaa Weekend Posters&quot;, width: 2160, height: 2160 },
+	]} 
+/&gt; --&gt;
+
+&lt;h1 id=&quot;mtu-talk-and-upcoming-project&quot;&gt;MTU Talk and Upcoming Project&lt;/h1&gt;
+
+&lt;p&gt;I closed the year out with a talk with MA students from Munster Technological University (MTU) about the E-Learning and how my experiences with e-learning games has shaped the way I approach all applications and the development process. I’ve done a few of these kinds of talks now and each one has a different focus as the industry shifts, I closed the talk with a mention of how AI, while looming over developers can also be a useful tool!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://hexastudios.co/assets/blog/2024/2024-round-up/mtu-talk/Artboard2.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;https://hexastudios.co/assets/blog/2024/2024-round-up/mtu-talk/Artboard3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;!-- &lt;ImageGalleryList 
+    type=&quot;new&quot;
+    style=&quot;horizontal&quot;
+	imageList={[
+		{ asset: &quot;/assets/blog/2024/2024-round-up/mtu-talk/Artboard2.png&quot;, alt: &quot;Hexa Studios, Development Process, MTU Talk&quot;, width: 1200, height: 1200 },
+		{ asset: &quot;/assets/blog/2024/2024-round-up/mtu-talk/Artboard1.png&quot;, alt: &quot;Hexa Studios, Development Process, MTU Talk&quot;, width: 1200, height: 1200 },
+		{ asset: &quot;/assets/blog/2024/2024-round-up/mtu-talk/Artboard3.png&quot;, alt: &quot;Hexa Studios, Development Process, MTU Talk&quot;, width: 1200, height: 1200 },
+		{ asset: &quot;/assets/blog/2024/2024-round-up/mtu-talk/Artboard4.png&quot;, alt: &quot;Hexa Studios, Development Process, MTU Talk&quot;, width: 1200, height: 1200 }
+	]} 
+/&gt; --&gt;
+
+&lt;h1 id=&quot;thank-you&quot;&gt;Thank You&lt;/h1&gt;
+
+&lt;p&gt;It’s been a fantastic year for me personally (did I mention I got married!) and professionally (the first year as my own boss!), so I wanted to take the time thank everyone I’ve worked with over 2024 and I’m very much looking forward to sharing more work with you all in 2025!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2024-hexa-round-up/</link>
+        <guid isPermaLink="true">http://localhost:4000/2024-hexa-round-up/</guid>
+        
+        <category>hexa</category>
+        
+        <category>code</category>
+        
+        
+        <category>Code</category>
+        
+      </item>
+    
+      <item>
+        <title>Married</title>
+        <description>&lt;p&gt;We got married!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/about/married/2129.jpg&quot; alt=&quot;Mat Loughnane getting married&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/about/married/2161.jpg&quot; alt=&quot;Mat Loughnane getting married&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/about/married/PXL_20240514_145850554.jpg&quot; alt=&quot;Mat Loughnane getting married&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/about/married/Screenshot_20250214-211150.png&quot; alt=&quot;Mat Loughnane getting married&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 24 Aug 2024 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/married/</link>
+        <guid isPermaLink="true">http://localhost:4000/married/</guid>
+        
+        <category>life</category>
+        
+        <category>married</category>
+        
+        
+        <category>about</category>
+        
+      </item>
     
       <item>
         <title>Lemon Pepper Chicken Rice</title>
@@ -86,6 +356,124 @@
         
         
         <category>Recipes</category>
+        
+      </item>
+    
+      <item>
+        <title>Inis Oírr Beo Launches</title>
+        <description>&lt;p&gt;We’re very excited to announce the launch of Inis Oírr Beo, a mobile app for islanders and visitors to share and discover the island of Inis Oírr.&lt;/p&gt;
+
+&lt;h1 id=&quot;inis-oírr-beo&quot;&gt;Inis Oírr Beo&lt;/h1&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://inisoirrbeo.com&quot;&gt;Inis Oírr Beo&lt;/a&gt; mobile application is an Android and iOS app designed and developed on the island of Inis Oírr with three purposes: How do we make it simple for people, islanders and visitors alike, to discover what’s happening, on Inis Oírr, to promote the Irish language using the latest technology both written and audio and to develop a unified brand across the island? So, here it is, a mobile app chock-filled with pages from your favourite, the smallest of the Aran Islands.&lt;/p&gt;
+
+&lt;p&gt;We’ve got pages for all the island’s businesses, their opening times, products, photos and latest events. Search for what you want on the island map, using QR codes or just check the island calendar.&lt;/p&gt;
+
+&lt;p&gt;Download the app today whether you’re on the island, planning to visit or admiring from afar!&lt;/p&gt;
+
+&lt;p&gt;We hope the Inis Oírr Beo app answers the questions:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Things to do on Inis Oírr?&lt;/li&gt;
+  &lt;li&gt;Where to stay and eat on Inis Oírr&lt;/li&gt;
+  &lt;li&gt;Interesting places to see on Inis Oírr?&lt;/li&gt;
+  &lt;li&gt;Who We Are?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This app is a result of a joint effort between Inis Oírr’s community groups and has been funded by BIM (Bord Iascaigh Mhara) and Pleanáil Teanga Inis Oírr.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Comhar Chomhán Teo&lt;/li&gt;
+  &lt;li&gt;CLEAS&lt;/li&gt;
+  &lt;li&gt;Pleanáil Teanga Inis Oírr&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://hexastudios.co/images/2024/inis-oirr-beo/launch/perspective_promo_1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;download-now&quot;&gt;Download Now&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;You can download Inis Oírr Beo for your Android or iOS devices now.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=co.hexastudios.inisoirrbeo&quot;&gt;Android&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://apps.apple.com/gb/app/inis-o%C3%ADrr-beo/id6474134415&quot;&gt;iOS&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Or visit the website for more information &lt;a href=&quot;https://inisoirrbeo.com&quot;&gt;https://inisoirrbeo.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;thank-you&quot;&gt;Thank You&lt;/h2&gt;
+
+&lt;p&gt;A little over a year ago, I &lt;a href=&quot;https://hexastudios.co/blog/inis-oirr-seo-arainnmhor&quot;&gt;visited&lt;/a&gt; the island of Inis Oírr to share the idea and finished product of the &lt;a href=&quot;https://hexastudios.co/blog/seo-arainnmhor&quot;&gt;Seo Árainn Mhór&lt;/a&gt; mobile app. Since then a committee has sprung up (and particularly in the last couple of weeks) been working to fill the app with great content, amazing photography and helping me find bugs!&lt;/p&gt;
+
+&lt;p&gt;Thank you to everyone on the committee for ensuring the success of this project, in particular Áine and Chloe who first reached out to me and have shepherded this project to where it is today.&lt;/p&gt;
+
+&lt;p&gt;AND - &lt;strong&gt;thank you&lt;/strong&gt; to everyone who has used the app, created pages, listened to me complain about strange code and provide feedback, help and advice as this app has been in development. It makes my job all the more rewarding when I’m able to share the ups (and downs) with you all.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://hexastudios.co/images/2024/inis-oirr-beo/launch/a3_poster-green.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 19 Apr 2024 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/inis-oirr-beo/</link>
+        <guid isPermaLink="true">http://localhost:4000/inis-oirr-beo/</guid>
+        
+        <category>InisOírr</category>
+        
+        <category>Island</category>
+        
+        
+        <category>Code</category>
+        
+      </item>
+    
+      <item>
+        <title>Italy</title>
+        <description>&lt;p&gt;In March 2024, Megan and I travelled the length of Italy via Train.&lt;/p&gt;
+
+&lt;p&gt;We went from Venice &amp;gt; Florence &amp;gt; Rome &amp;gt; Naples &amp;gt; Sorrento &amp;gt; Capri and finally Salerno.&lt;/p&gt;
+
+&lt;p&gt;A once in a lifetime trip filled with amazing Pizza (best was in Naples, followed closely by Venice), Pasta (best in Florence) and sweet treats (Sorrento Granitas!)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/italy/1000172278-01.jpeg&quot; alt=&quot;Mat Loughnane visiting Italy&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/italy/PXL_20240327_103232886.jpg&quot; alt=&quot;Mat Loughnane visiting Italy&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/italy/PXL_20240327_164156564.jpg&quot; alt=&quot;Mat Loughnane visiting Italy&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/italy/PXL_20240328_153004758.jpg&quot; alt=&quot;Mat Loughnane visiting Italy&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/italy/PXL_20240329_131924895.jpg&quot; alt=&quot;Mat Loughnane visiting Italy&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/italy/PXL_20240331_070748771.jpg&quot; alt=&quot;Mat Loughnane visiting Italy&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/italy/PXL_20240401_165909925.jpg&quot; alt=&quot;Mat Loughnane visiting Italy&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/italy/PXL_20240402_135846454.jpg&quot; alt=&quot;Mat Loughnane visiting Italy&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/italy/PXL_20240402_183949784.jpg&quot; alt=&quot;Mat Loughnane visiting Italy&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/travel/italy/PXL_20240406_173040256.jpg&quot; alt=&quot;Mat Loughnane visiting Italy&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/italy/</link>
+        <guid isPermaLink="true">http://localhost:4000/italy/</guid>
+        
+        <category>Venice</category>
+        
+        <category>Florence</category>
+        
+        <category>Rome</category>
+        
+        <category>Naples</category>
+        
+        <category>Sorrento</category>
+        
+        <category>Capri</category>
+        
+        <category>Salerno</category>
+        
+        
+        <category>Travel</category>
         
       </item>
     
@@ -205,419 +593,6 @@
         
         
         <category>Travel</category>
-        
-      </item>
-    
-      <item>
-        <title>Creamy Tuscan Pasta</title>
-        <description>&lt;h1 id=&quot;creamy-tuscan-chicken-pasta&quot;&gt;Creamy Tuscan Chicken Pasta&lt;/h1&gt;
-
-&lt;p&gt;This is a recipe found on instagram by &lt;a href=&quot;https://www.instagram.com/kauscooks/&quot;&gt;@kauscooks&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h1&gt;
-
-&lt;h2 id=&quot;chicken&quot;&gt;Chicken&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;1 tsp Paprika&lt;/li&gt;
-  &lt;li&gt;1 tsp Cayenne Pepper or Chilli Powder&lt;/li&gt;
-  &lt;li&gt;1 tsp Garlic Powder&lt;/li&gt;
-  &lt;li&gt;1 tsp Onion Powder&lt;/li&gt;
-  &lt;li&gt;Salt and Pepper to taste&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;sauce&quot;&gt;Sauce&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;1 Small Red Onion&lt;/li&gt;
-  &lt;li&gt;4 Garlic Gloves chopped&lt;/li&gt;
-  &lt;li&gt;1 Small Red Pepper&lt;/li&gt;
-  &lt;li&gt;250ml Double Cream&lt;/li&gt;
-  &lt;li&gt;1 tsp Paprika&lt;/li&gt;
-  &lt;li&gt;1 tsp Red Chilli Flakes&lt;/li&gt;
-  &lt;li&gt;2 tsp Pepper&lt;/li&gt;
-  &lt;li&gt;1 tsp Salt (to taste)&lt;/li&gt;
-  &lt;li&gt;1/2 Jar of Sundried Tomatoes&lt;/li&gt;
-  &lt;li&gt;40g Cheddar Cheese&lt;/li&gt;
-  &lt;li&gt;2-3 Handfuls of Spinach&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Pasta (shells or tubes work best)&lt;/p&gt;
-
-&lt;h1 id=&quot;steps&quot;&gt;Steps&lt;/h1&gt;
-&lt;ol&gt;
-  &lt;li&gt;Butterfly chicken and coat in the spice mix&lt;/li&gt;
-  &lt;li&gt;Add some oil to a pan and cook the chicken through&lt;/li&gt;
-  &lt;li&gt;In the same pan, add the onion, garlic and pepper&lt;/li&gt;
-  &lt;li&gt;Start boiling the pasta&lt;/li&gt;
-  &lt;li&gt;Cover in spices and toast for a couple more minutes&lt;/li&gt;
-  &lt;li&gt;Add the cream and salt and pepper to taste&lt;/li&gt;
-  &lt;li&gt;Simmer for a few minutes, then add spinach and sundried tomatoes&lt;/li&gt;
-  &lt;li&gt;Add the chedder cheese and some pasta water to emulsify&lt;/li&gt;
-  &lt;li&gt;Serve with chicken sliced on top of the pasta.&lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/creamy-tuscan-pasta/</link>
-        <guid isPermaLink="true">http://localhost:4000/creamy-tuscan-pasta/</guid>
-        
-        <category>Chicken</category>
-        
-        <category>Savoury</category>
-        
-        
-        <category>Recipes</category>
-        
-      </item>
-    
-      <item>
-        <title>2022 Hexa Studios Round Up</title>
-        <description>&lt;p&gt;It’s that time of year again - here’s a round up of everything that Hexa Studios shipped this year. It’s been a busy one.&lt;/p&gt;
-
-&lt;h1 id=&quot;arranmore-ferry-relaunch&quot;&gt;Arranmore Ferry Relaunch&lt;/h1&gt;
-
-&lt;p&gt;Right at the start of the year - we relaunched the &lt;a href=&quot;https://hexastudios.co/blog/new-arranmore-ferry-mobile&quot;&gt;Arranmore Ferry app&lt;/a&gt; with a completely new User Interface and User Experience (UI/UX). The app, website and API were all given a complete rewrite and the &lt;a href=&quot;https://thearranmoreferry.com/about&quot;&gt;Arranmore Ferry team&lt;/a&gt; were given a whole new admin panel.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The new Arranmore app features all our dashboard, where you’ll see the latest for todays and tomorrows ferries, any messages from the team about the day or upcoming events will also appear here.
-You can view the timetables for the year or pick a date for any day using our date picker too!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://directus.hexastudios.co/assets/6d42500b-3fce-4f59-a8bc-022099b4bff6&quot; alt=&quot;The Arranmore Ferry App&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The Arranmore Ferry team have some exciting news about a &lt;a href=&quot;https://thearranmoreferry.com/blog/the-new-arranmore-ferry&quot;&gt;brand new ferry&lt;/a&gt; coming in 2023 - so download the app now for the latest news.&lt;/p&gt;
-
-&lt;h1 id=&quot;seo-árainn-mhór-launch&quot;&gt;Seo Árainn Mhór Launch&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/code/2022-round-up/background.jpg&quot; alt=&quot;Seo Árainn Mhór Featured Background&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In Spring we launched &lt;a href=&quot;https://seoarainnmhor.com/app&quot;&gt;Seo Árainn Mhór&lt;/a&gt;, a mobile app for the island of Arranmore, Co. Donegal. The app features ‘pages’ which each business owner is able to create and update. Each page features photos, opening times, posts and location maps. Everything a business could need to promote themselves on the island and more importantly how people on the island and visitors cand find all the information they need.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Another aspect of the project which was hugely important, was that the Gaeilge language be featured front and centre. You’ll see in screenshots below and in &lt;a href=&quot;https://seoarainnmhor.com/blog/x-post-hexa-seo-arainnmhor-launch&quot;&gt;all marketing materials&lt;/a&gt; that we’ve endevoured to feature it in every screen of the app.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/code/2022-round-up/app-blue.png&quot; alt=&quot;App screenshots&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Seo Árainn Mhór is available now for download.&lt;/p&gt;
-
-&lt;h1 id=&quot;tory-and-arranmore-get-google-and-apply-pay-support&quot;&gt;Tory and Arranmore get Google and Apply Pay support&lt;/h1&gt;
-
-&lt;p&gt;Later in 2022 I deployed brand new ticketing flows for &lt;a href=&quot;https://toryferry.com/app&quot;&gt;Tory&lt;/a&gt; and &lt;a href=&quot;https://thearranmoreferry.com/&quot;&gt;Arranmore&lt;/a&gt; Ferries. The new ticketing flow employs &lt;a href=&quot;https://stripe.com&quot;&gt;Stripe&lt;/a&gt;’s official flutter implementation which we used to enable Apple Pay and Google Pay in both apps.&lt;/p&gt;
-
-&lt;p&gt;In addition the updates included a new feature to pull the latest blog data into the app. Download the Tory Ferry app to view the latest &lt;a href=&quot;https://www.toryferry.com/blog/tory-ferry-v6-update&quot;&gt;blog post&lt;/a&gt; now.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://directus.hexastudios.co/assets/90ff2ebf-9f41-4cb3-a56c-01009f03a491&quot; alt=&quot;Tory Ferry Promo&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;heritage-points-on-seo-árainn-mhór&quot;&gt;Heritage Points on Seo Árainn Mhór&lt;/h1&gt;
-
-&lt;p&gt;In late August we &lt;a href=&quot;https://seoarainnmhor.com/blog/heritage-points&quot;&gt;launched&lt;/a&gt; a sister project to Seo Árainn Mhór: &lt;a href=&quot;https://www.scéalóbhéal.com/&quot;&gt;Scéal Ó Bhéal&lt;/a&gt; - a collection of audio stories capturing stories from Arranmore Island told by islanders.&lt;/p&gt;
-
-&lt;p&gt;The points were all integrated into the Seo Árainn Mhór app where you can listen to the stories in English and Gaeilge.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/code/2022-round-up/scealabheal-straight.png&quot; alt=&quot;Promo image for Seo Árainn Mhór update&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;gúrú---remote-mentoring-web-app&quot;&gt;gúrú - remote mentoring web app&lt;/h1&gt;
-
-&lt;p&gt;The final launch of 2022 came in the form a web app - connecting people to remote working mentors, called &lt;a href=&quot;https://www.gúrú.work/&quot;&gt;gúrú&lt;/a&gt;. The mission statement is, as stated on the website:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;At gúrú we are here to help; by matching expert volunteer mentors with community members looking for their next remote employment opportunity, we help break down the barriers to finding your perfect job.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The project is currently being trialled by the &lt;a href=&quot;https://growremote.ie/arranmore-chapter-new-remote-mentoring/&quot;&gt;growremote.ie&lt;/a&gt; team and we’re working on getting fixes in for them - so stay tuned for more updates soon.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/code/2022-round-up/guru-meta.png&quot; alt=&quot;Promo image for Seo Árainn Mhór update&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;favourite-tech&quot;&gt;Favourite Tech&lt;/h1&gt;
-
-&lt;p&gt;It’s important to give credit where it’s due and I employed a lot of new open source technologies this year - keep up to date with my twitter where I try and share all the exciting tech I use. Two in particular were really cool:&lt;/p&gt;
-
-&lt;h3 id=&quot;umami&quot;&gt;Umami&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://umami.is/&quot;&gt;Umami analytics&lt;/a&gt; is an open source privacy focused Google Analytics alternative. It’s quick and easy to set up and you can create shareable links for clients individual dashboards. I’ve got all my projects running their analytics using one installation of Umami.&lt;/p&gt;
-
-&lt;h3 id=&quot;supabase&quot;&gt;Supabase&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://supabase.io&quot;&gt;Supabase&lt;/a&gt; is the open source Firebase alternative that gives Postgres a really powerful API, with official sdks for JS and Flutter. We’ve used the platform for gúrú, the remote mentoring project we launched this year.&lt;/p&gt;
-
-&lt;h1 id=&quot;2023&quot;&gt;2023&lt;/h1&gt;
-
-&lt;p&gt;It’s been a productive year and I’ve got big plans for 2023. As always let me know if you have any ideas on what I should build next.&lt;/p&gt;
-
-&lt;p&gt;Matthew&lt;/p&gt;
-</description>
-        <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2022-hexa-round-up/</link>
-        <guid isPermaLink="true">http://localhost:4000/2022-hexa-round-up/</guid>
-        
-        <category>web</category>
-        
-        <category>app</category>
-        
-        
-        <category>Travel</category>
-        
-      </item>
-    
-      <item>
-        <title>Skiing in Sierra Nevada</title>
-        <description>&lt;p&gt;2021 ended with a Spanish holiday including, Sierra Nevada and skiing!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/travel/sierra-nevada/PXL_20211210_180922091.jpg&quot; alt=&quot;Sunset in Sierra Nevada&quot; /&gt;
-Sunset in Sierra Nevada.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/travel/sierra-nevada/PXL_20211211_162700087.jpg&quot; alt=&quot;Skiing in Sierra Nevada&quot; /&gt;
-Skiing in Sierra Nevada.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/travel/sierra-nevada/PXL_20211211_175100446.jpg&quot; alt=&quot;View from the town looking south&quot; /&gt;
-View from the town looking south.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;div class=&quot;wider-image&quot;&gt;
-    &lt;img class=&quot;featured-image lazyimg&quot; src=&quot;/assets/images/travel/sierra-nevada/PXL_20211211_151907918.jpg&quot; alt=&quot;Kinkaku-ji, The Temple of the Golden Pavillion&quot; /&gt;
-&lt;/div&gt;
-&lt;p&gt;Kinkaku-ji, The Temple of the Golden Pavillion.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 18 Dec 2021 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/sierra-nevada/</link>
-        <guid isPermaLink="true">http://localhost:4000/sierra-nevada/</guid>
-        
-        <category>Sierra Nevada</category>
-        
-        <category>Spain</category>
-        
-        
-        <category>Travel</category>
-        
-      </item>
-    
-      <item>
-        <title>Donegal</title>
-        <description>&lt;p&gt;A weekend away exploring Donegal after 5K restrictions had lifted on the county. First weekend away in a long time and the weather was amazing&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/travel/donegal/IMG_20210424_122856.jpg&quot; alt=&quot;Mat Loughnane visiting, Donegal&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/travel/donegal/IMG_20210424_144503.jpg&quot; alt=&quot;Mat Loughnane visiting, Donegal&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/travel/donegal/IMG_20210424_151229.jpg&quot; alt=&quot;Mat Loughnane visiting, Donegal&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/travel/donegal/IMG_20210425_173056.jpg&quot; alt=&quot;Mat Loughnane visiting, Donegal&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/travel/donegal/IMG_20210425_174733.jpg&quot; alt=&quot;Mat Loughnane visiting, Donegal&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 06 May 2021 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/donegal/</link>
-        <guid isPermaLink="true">http://localhost:4000/donegal/</guid>
-        
-        <category>Doengal</category>
-        
-        <category>Ireland</category>
-        
-        
-        <category>Travel</category>
-        
-      </item>
-    
-      <item>
-        <title>Simple Butter Chicken Recipe</title>
-        <description>&lt;p&gt;A simple butter chicken curry recipe modified for two from Josh Weissman’s YouTube Channel&lt;/p&gt;
-
-&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/watch?v=hDjK5C2aoSs&quot; class=&quot;btn badge-primary&quot;&gt;Original Recipe →&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h1&gt;
-
-&lt;h2 id=&quot;marinade&quot;&gt;Marinade&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;160g full-fat yogurt&lt;/li&gt;
-  &lt;li&gt;10g garam masala&lt;/li&gt;
-  &lt;li&gt;10g kosher salt&lt;/li&gt;
-  &lt;li&gt;2 Chicken Breasts&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;curry&quot;&gt;Curry&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;30g vegetable oil&lt;/li&gt;
-  &lt;li&gt;1 white onion&lt;/li&gt;
-  &lt;li&gt;2-inch knob of ginger&lt;/li&gt;
-  &lt;li&gt;6 cloves of sliced garlic&lt;/li&gt;
-  &lt;li&gt;8g paprika&lt;/li&gt;
-  &lt;li&gt;9g ground cumin&lt;/li&gt;
-  &lt;li&gt;14g garam masala&lt;/li&gt;
-  &lt;li&gt;10g turmeric powder *optional&lt;/li&gt;
-  &lt;li&gt;400g can of crushed tomatoes&lt;/li&gt;
-  &lt;li&gt;160ml water&lt;/li&gt;
-  &lt;li&gt;240ml heavy cream&lt;/li&gt;
-  &lt;li&gt;28g unsalted butter&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Salt and pepper to taste&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Rice + Corriander&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;marinade-1&quot;&gt;Marinade&lt;/h1&gt;
-&lt;ol&gt;
-  &lt;li&gt;Mix the yoghurt, garam masala and salt in a bowl&lt;/li&gt;
-  &lt;li&gt;Chop the chicken into 1 inch piece and place and coat in the marinade bowl.&lt;/li&gt;
-  &lt;li&gt;Leave to rest covered in cling film for 30 minutes+ (up to overnight)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;the-curry&quot;&gt;The Curry&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;In a non stick pan heat some vegetable oil over medium / high heat&lt;/li&gt;
-  &lt;li&gt;Add the chicken to pan to sear - cook it quickly, but not all the way through (yet)&lt;/li&gt;
-  &lt;li&gt;Remove the chicken from the pan and leave to rest for a minute.&lt;/li&gt;
-  &lt;li&gt;Dice the onion and finely dice the ginger and add to the pan&lt;/li&gt;
-  &lt;li&gt;Add the 6 cloves of sliced garlic&lt;/li&gt;
-  &lt;li&gt;Add water to the pot if necessary to get the fond off the bottom.&lt;/li&gt;
-  &lt;li&gt;Cook for 3 minutes until vegetables or soft.&lt;/li&gt;
-  &lt;li&gt;Add all the spices to the mix. Cumin (9g), Garam Masala (14g), Paprika (8g), Tumeric (10g) and cook for a further 2 minutes.&lt;/li&gt;
-  &lt;li&gt;Add the can of tomatoes, then add the water&lt;/li&gt;
-  &lt;li&gt;Let it simmer for 5-8 minutes until it’s reduced by 30%&lt;/li&gt;
-  &lt;li&gt;Add the chicken back to the pan - let it simmer for another 3-5 minutes&lt;/li&gt;
-  &lt;li&gt;Add the 250ml of cream.&lt;/li&gt;
-  &lt;li&gt;Turn off the heat and add the 28g butter - keep the curry moving to helpemulsify the butter correctly.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Meanwhile cook the rice and serve together.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/recipes/butter-chicken/bc-prep.jpg&quot; alt=&quot;All the items are prepped&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;wider-image&quot;&gt;
-    &lt;img class=&quot;featured-image lazyimg&quot; src=&quot;assets/images/recipes/butter-chicken/bc-plate.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 04 May 2021 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/simple-butter-chicken/</link>
-        <guid isPermaLink="true">http://localhost:4000/simple-butter-chicken/</guid>
-        
-        <category>Curry</category>
-        
-        <category>Savoury</category>
-        
-        
-        <category>Recipes</category>
-        
-      </item>
-    
-      <item>
-        <title>Banana Bread</title>
-        <description>&lt;p&gt;A simple but tasty banana loaf bread.&lt;/p&gt;
-
-&lt;h1 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h1&gt;
-
-&lt;h2 id=&quot;cake&quot;&gt;Cake&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;125g butter room temperature&lt;/li&gt;
-  &lt;li&gt;200g brown sugar&lt;/li&gt;
-  &lt;li&gt;2 extra-large eggs&lt;/li&gt;
-  &lt;li&gt;350g (approx. 5/6) large bananas&lt;/li&gt;
-  &lt;li&gt;1 teaspoon vanilla extract&lt;/li&gt;
-  &lt;li&gt;250g flour&lt;/li&gt;
-  &lt;li&gt;1 teaspoon ground cinnamon&lt;/li&gt;
-  &lt;li&gt;2 teaspoons baking powder&lt;/li&gt;
-  &lt;li&gt;1 pinch of salt&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;topping&quot;&gt;Topping&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;2 tablespoon brown sugar&lt;/li&gt;
-  &lt;li&gt;1 teaspoon cinnamon&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;method&quot;&gt;Method&lt;/h1&gt;
-&lt;ol&gt;
-  &lt;li&gt;Preheat the oven at 180°C and grease a loaf tin.&lt;/li&gt;
-  &lt;li&gt;Beat the butter (125g) and Brown Sugar (200g) together until light, then add each egg individually.&lt;/li&gt;
-  &lt;li&gt;Mash or use a blender to break down the banana bread and add to the mixture. Stir in the vanilla extract too.&lt;/li&gt;
-  &lt;li&gt;Mix together the flour (250g), baking powder (2 tsp) and cinnamon (1 tsp) then combine the two mixes.&lt;/li&gt;
-  &lt;li&gt;Add the mixture to the loaf tin.&lt;/li&gt;
-  &lt;li&gt;Combine the brown sugar and cinnmon to make the topping and sprinkle on top before putting it in the oven.&lt;/li&gt;
-  &lt;li&gt;Leave in the oven for 45 minutes or until a cake tester comes out clean.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/recipes/banana-bread/top-view.jpg&quot; alt=&quot;The loaf before going into the oven&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;wider-image&quot;&gt;
-    &lt;div style=&quot;display:flex&quot;&gt;
-    &lt;img style=&quot;margin: 0 auto&quot; class=&quot;featured-image lazyimg&quot; src=&quot;/assets/images/recipes/banana-bread/final-cropped.jpg&quot; alt=&quot;The finished product - banana bread&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Fri, 16 Apr 2021 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/banana-bread/</link>
-        <guid isPermaLink="true">http://localhost:4000/banana-bread/</guid>
-        
-        <category>Sweet</category>
-        
-        <category>Loaf</category>
-        
-        
-        <category>Recipes</category>
-        
-      </item>
-    
-      <item>
-        <title>Raspberry Ripple Loaf</title>
-        <description>&lt;p&gt;A loaf cake of my own design - Raspberry Ripple Loaf Cake.&lt;/p&gt;
-
-&lt;h1 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;225g Unsalted Butter&lt;/li&gt;
-  &lt;li&gt;225g Caster Sugar&lt;/li&gt;
-  &lt;li&gt;225g Self Raising Flour&lt;/li&gt;
-  &lt;li&gt;4 Eggs&lt;/li&gt;
-  &lt;li&gt;3 tsp Raspberry Flash Frozen Powder&lt;/li&gt;
-  &lt;li&gt;30g Frozen Raspberries&lt;/li&gt;
-  &lt;li&gt;1g Red Food Colouring&lt;/li&gt;
-  &lt;li&gt;85g Icing Sugar&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/recipes/raspberry-ripple-loaf/IMG_20210312_200439.jpg&quot; alt=&quot;Raspberry Ripple Loaf&quot; /&gt;
-Raspberry Ripple Loaf straight from the oven.&lt;/p&gt;
-
-&lt;h1 id=&quot;method&quot;&gt;Method&lt;/h1&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Preheat the oven to 180°C (160°C Fan).&lt;/li&gt;
-  &lt;li&gt;Cream the butter (225g) and sugar (225g) together (I usually stick the button in the microwave to soften it).&lt;/li&gt;
-  &lt;li&gt;Add the eggs, 1 at a time and continue mixing.&lt;/li&gt;
-  &lt;li&gt;Add the self raising flour (225g).&lt;/li&gt;
-  &lt;li&gt;Separate the mixture into two, add the raspberry powder (3 tsp) and food colour into one.&lt;/li&gt;
-  &lt;li&gt;Scoop the mixtures alternately and unevenly into a greased and lined 9” loaf tin.&lt;/li&gt;
-  &lt;li&gt;Use and spoon and lift parts of the mixtures through eachother, don’t mix, you wand the colours to be separate.&lt;/li&gt;
-  &lt;li&gt;Cook for 50 - 55 minutes.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;drizzle-recipe&quot;&gt;Drizzle Recipe&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;Blend a small amount of water and the frozen raspberries into a smooth liquid.&lt;/li&gt;
-  &lt;li&gt;Sieve the seeds from the mixture into the icing sugar.&lt;/li&gt;
-  &lt;li&gt;That’s it.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;When the loaf comes out of the over, poke several holes with your cake tester and pour the drizzle over the top as it cools.&lt;/p&gt;
-
-&lt;p&gt;Enjoy.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;wider-image&quot;&gt;
-    &lt;!-- &lt;img class=&quot;featured-image lazyimg&quot; src=&quot;/assets/images/recipes/raspberry-ripple-loaf/IMG_20210312_212027.jpg&quot; alt=&quot;Zooming in on the Raspberry Ripple Loaf&quot;&gt; --&gt;
-    &lt;img class=&quot;featured-image lazyimg&quot; src=&quot;/assets/images/recipes/raspberry-ripple-loaf/IMG_20210312_212016.jpg&quot; alt=&quot;Zooming in on the Raspberry Ripple Loaf&quot; /&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/rapberry-ripple-loaf/</link>
-        <guid isPermaLink="true">http://localhost:4000/rapberry-ripple-loaf/</guid>
-        
-        <category>Loaf</category>
-        
-        <category>Raspberry</category>
-        
-        
-        <category>Recipes</category>
         
       </item>
     
