@@ -5,9 +5,9 @@
     <description>I like to travel, code and cook...</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 10 Sep 2025 15:16:10 +0100</pubDate>
-    <lastBuildDate>Wed, 10 Sep 2025 15:16:10 +0100</lastBuildDate>
-    <generator>Jekyll v4.3.3</generator>
+    <pubDate>Tue, 30 Sep 2025 09:49:39 +0100</pubDate>
+    <lastBuildDate>Tue, 30 Sep 2025 09:49:39 +0100</lastBuildDate>
+    <generator>Jekyll v4.4.1</generator>
     
       <item>
         <title>Happy Anniver-Paris</title>
