@@ -77,6 +77,6 @@ Two sets of ingredients
 
 <br/>
 <div class="wider-image">
-    <img class="featured-image lazyimg" src="/assets/images/recipes/pizza-dough/table.jpg" alt="Kinkaku-ji, The Temple of the Golden Pavillion">
+    <img class="featured-image lazyimg" src="/assets/images/recipes/pizza-dough/table.jpg" alt="Neopolitan pizza">
 </div>
 The finished pizza.
