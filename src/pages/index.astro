@@ -1,16 +1,11 @@
 ---
-
+import GlobalLayout from '../layouts/global-layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Mat Loughnane</h1>
-	</body>
-</html>
+<GlobalLayout title='Home' description='From the life of Mat Loughnane, travel, food and code' >
+    <div class="p-4">
+        <h1 class="text-2xl">Mat Loughnane</h1>
+        <a class="underline" href="/">Home</a>
+        <a class="underline" href="/about">About</a>
+    </div>
+</GlobalLayout>
