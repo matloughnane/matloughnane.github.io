@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: ../../layouts/post-layout.astro
 title:  "Thai Red Curry"
 author: Matthew Loughnane
 categories: [ Recipes ]
 tags: [ Thai, Curry ]
-image: assets/images/recipes/red-thai-curry/cover.jpg
+image: /assets/images/recipes/red-thai-curry/cover.jpg
 comments: false
 recipe: true
 cookTime: PT20M

@@ -1,0 +1,87 @@
+---
+import { readdir } from 'fs/promises';
+import { join } from 'path';
+
+export interface Props {
+    imagePath: string;
+    altText?: string;
+}
+
+const { imagePath, altText = 'Gallery image' } = Astro.props;
+
+// console.log({ imagePath });
+
+let publicImagePaths: string[] = [];
+
+try {
+    // Convert the imagePath to the actual file system path
+    const fullPath = join(process.cwd(), 'public', imagePath);
+    // console.log({ fullPath });
+
+    // Read the directory contents
+    const files = await readdir(fullPath);
+    // console.log({ files });
+
+    // Filter for image files
+    const imageExtensions = [
+        '.png',
+        '.jpg',
+        '.jpeg',
+        '.gif',
+        '.webp',
+        '.PNG',
+        '.JPG',
+        '.JPEG',
+        '.GIF',
+        '.WEBP',
+    ];
+    const imageFiles = files.filter((file) =>
+        imageExtensions.some((ext) =>
+            file.toLowerCase().endsWith(ext.toLowerCase())
+        )
+    );
+
+    // Convert to public paths
+    publicImagePaths = imageFiles.map((file) => `${imagePath}/${file}`);
+    // console.log({ publicImagePaths });
+} catch (error) {
+    console.error('Error reading image directory:', error);
+}
+---
+
+{
+    publicImagePaths.length > 0 && (
+        <div class="image-gallery my-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {publicImagePaths.map((imagePath) => (
+                    <div class="aspect-square bg-red-500 overflow-hidden">
+                        <img
+                            src={imagePath}
+                            alt="Mat Loughnane in Paris"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300 mt-0"
+                            loading="lazy"
+                        />{' '}
+                    </div>
+                ))}
+            </div>
+        </div>
+    )
+}
+
+<!-- Fallback: If no images found using glob, show manual gallery -->
+<!-- {
+    publicImagePaths.length === 0 && (
+        <div class="image-gallery my-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="aspect-square overflow-hidden rounded-none">
+                    <img
+                        src="/assets/images/travel/paris/PXL_20250822_163609113.jpg"
+                        alt="Mat Loughnane in Paris"
+                        class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
+        </div>
+    )
+} -->

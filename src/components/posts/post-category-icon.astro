@@ -1,0 +1,82 @@
+---
+export interface Props {
+    categories: string[];
+    size?: string;
+    class?: string;
+}
+
+const { categories = [], size = '6', class: className = '' } = Astro.props;
+
+// Get all matching icon types based on categories
+function getIconTypes(categories: string[]): string[] {
+    const lowerCategories = categories.map(cat => cat.toLowerCase());
+    const iconTypes: string[] = [];
+
+    if (lowerCategories.includes('food')) iconTypes.push('food');
+    if (lowerCategories.includes('travel')) iconTypes.push('travel');
+    if (lowerCategories.includes('code')) iconTypes.push('code');
+    if (lowerCategories.includes('recipes') || lowerCategories.includes('recipe')) iconTypes.push('recipe');
+
+    return iconTypes.length > 0 ? iconTypes : ['default'];
+}
+
+const iconTypes = getIconTypes(categories);
+const iconClasses = `w-${size} h-${size} ${className}`;
+---
+
+<div class="flex flex-row gap-2">
+    {iconTypes.map((iconType) => (
+        <Fragment>
+            {iconType === 'food' && (
+                <!-- Hamburger Icon -->
+                <div class="bg-[#9A0D1B] rounded-full p-2 flex items-center justify-center">
+                    <svg class={iconClasses} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 16H4a2 2 0 1 1 0-4h16a2 2 0 1 1 0 4h-4.25"/>
+                        <path d="M5 12a2 2 0 0 1-2-2 9 7 0 0 1 18 0 2 2 0 0 1-2 2"/>
+                        <path d="M5 16a2 2 0 0 0-2 2 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 2 2 0 0 0-2-2q0 0 0 0"/>
+                        <path d="m6.67 12 6.13 4.6a2 2 0 0 0 2.8-.4l3.15-4.2"/>
+                    </svg>
+                </div>
+            )}
+
+            {iconType === 'travel' && (
+                <!-- Plane Icon -->
+                <div class="bg-[#9A0D1B] rounded-full p-2 flex items-center justify-center">
+                    <svg class={iconClasses} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>
+                    </svg>
+                </div>
+            )}
+
+            {iconType === 'code' && (
+                <!-- Code Icon -->
+                <div class="bg-[#9A0D1B] rounded-full p-2 flex items-center justify-center">
+                    <svg class={iconClasses} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m16 18 6-6-6-6"/>
+                        <path d="m8 6-6 6 6 6"/>
+                    </svg>
+                </div>
+            )}
+
+            {iconType === 'recipe' && (
+                <!-- Chef Hat Icon -->
+                <div class="bg-[#9A0D1B] rounded-full p-2 flex items-center justify-center">
+                    <svg class={iconClasses} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/>
+                        <path d="M6 17h12"/>
+                    </svg>
+                </div>
+            )}
+
+            {/* {iconType === 'default' && (
+                <!-- Default Icon (document/file) -->
+                <div class="bg-[#9A0D1B] rounded-full p-2 flex items-center justify-center">
+                    <svg class={iconClasses} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                    </svg>
+                </div>
+            )} */}
+        </Fragment>
+    ))}
+</div>

@@ -1,0 +1,142 @@
+---
+import WideCardPost from '../posts/wide-card-post.astro';
+import PostCard from '../posts/post-card.astro';
+
+export interface Props {
+    limit?: number;
+}
+
+const { limit } = Astro.props;
+
+const allPosts = import.meta.glob('../../pages/posts/*.{md,mdx}', {
+    eager: true,
+});
+
+// Process posts and extract data
+const posts = Object.entries(allPosts)
+    .map(([path, post]: [string, any]) => {
+        const slug =
+            path
+                .split('/')
+                .pop()
+                ?.replace(/\.(md|mdx)$/, '') || '';
+
+        // Extract first line of content as description
+        let description = '';
+
+        // Handle both .md and .mdx files
+        let content = '';
+        if (post.rawContent && typeof post.rawContent === 'function') {
+            content = post.rawContent();
+        } else if (post.body) {
+            content = post.body;
+        } else if (
+            post.compiledContent &&
+            typeof post.compiledContent === 'function'
+        ) {
+            content = post.compiledContent();
+        }
+
+        if (content) {
+            const lines = content.split('\n');
+            // Find the first non-empty line that's not a heading, frontmatter, or import
+            for (const line of lines) {
+                const trimmed = line.trim();
+                if (
+                    trimmed &&
+                    !trimmed.startsWith('#') &&
+                    !trimmed.startsWith('---') &&
+                    !trimmed.startsWith('!') &&
+                    !trimmed.startsWith('import ') &&
+                    !trimmed.startsWith('<')
+                ) {
+                    // Strip markdown formatting
+                    let cleanDescription = trimmed
+                        // Remove markdown links [text](url) -> text
+                        .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+                        // Remove markdown emphasis **text** or *text* -> text
+                        .replace(/\*\*([^*]+)\*\*/g, '$1')
+                        .replace(/\*([^*]+)\*/g, '$1')
+                        // Remove markdown code `text` -> text
+                        .replace(/`([^`]+)`/g, '$1')
+                        // Remove markdown images ![alt](url) -> alt
+                        .replace(/!\[([^\]]*)\]\([^)]+\)/g, '$1')
+                        // Remove HTML tags <tag> -> (empty)
+                        .replace(/<[^>]+>/g, '')
+                        // Clean up multiple spaces
+                        .replace(/\s+/g, ' ')
+                        .trim();
+
+                    description = cleanDescription.substring(0, 150); // Limit to 150 characters
+                    break;
+                }
+            }
+        }
+
+        // Fallback description if extraction failed
+        if (!description) {
+            description = `Read about ${post.frontmatter?.title || 'this post'} on Mat Loughnane's blog.`;
+        }
+
+        return {
+            title: post.frontmatter?.title,
+            image: post.frontmatter?.image,
+            categories: post.frontmatter?.categories || [],
+            slug: `/posts/${slug}`,
+            date: post.frontmatter?.date || slug.substring(0, 10),
+            description,
+            url: post.url,
+        };
+    })
+    .filter((post) => post.title);
+
+// Sort by date (newest first) and take latest 10
+const latestPosts = limit
+    ? posts
+          .sort(
+              (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+          )
+          .slice(0, limit)
+    : posts.sort(
+          (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+      );
+
+const featuredPost = latestPosts[0];
+const gridPosts = latestPosts.slice(1);
+---
+
+<section class="py-8 px-8">
+    <div class="max-w-7xl mx-auto">
+        <div class="space-y-8">
+            <!-- Featured Post (Wide) -->
+            {
+                featuredPost && (
+                    <WideCardPost
+                        title={featuredPost.title}
+                        slug={featuredPost.slug}
+                        image={featuredPost.image}
+                        categories={featuredPost.categories}
+                        description={featuredPost.description}
+                        redFilter={false}
+                    />
+                )
+            }
+
+            <!-- Grid Posts (3x3) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {
+                    gridPosts.map((post) => (
+                        <PostCard
+                            title={post.title}
+                            slug={post.slug}
+                            image={post.image}
+                            categories={post.categories}
+                            description={post.description}
+                            redFilter={false}
+                        />
+                    ))
+                }
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,11 +1,11 @@
 ---
-layout: post
+layout: ../../layouts/post-layout.astro
 title:  Raspberry Ripple Loaf
 author: Matthew Loughnane
 categories: [ Recipes ]
 tags: [ Loaf, Raspberry ]
 # image: assets/images/recipes/raspberry-ripple-loaf/IMG_20210312_212016.jpg
-image: assets/images/recipes/raspberry-ripple-loaf/IMG_20210312_212027.jpg
+image: /assets/images/recipes/raspberry-ripple-loaf/IMG_20210312_212027.jpg
 comments: false
 recipe: true
 prepTime: PT15M

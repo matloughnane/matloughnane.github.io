@@ -1,10 +1,11 @@
 ---
+layout: ../../layouts/post-layout.astro
 # layout: post
 title: "Neapolitan Style Pizza"
 author: Matthew Loughnane
 categories: [Recipes]
 tags: [Pizza, Dough]
-image: assets/images/recipes/pizza-dough/pan-cropped.jpg
+image: /assets/images/recipes/pizza-dough/pan-cropped.jpg
 comments: false
 recipe: true
 prepTime: PT24H

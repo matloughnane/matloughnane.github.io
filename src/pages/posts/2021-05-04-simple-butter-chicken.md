@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: ../../layouts/post-layout.astro
 title:  "Simple Butter Chicken Recipe"
 author: Matthew Loughnane
 categories: [ Recipes ]
 tags: [ Curry, Savoury ]
-image: assets/images/recipes/butter-chicken/bc-plate.jpg
+image: /assets/images/recipes/butter-chicken/bc-plate.jpg
 comments: false
 recipe: true
 prepTime: PT10M

@@ -1,0 +1,27 @@
+---
+export interface Props {
+    google: string;
+    apple: string;
+}
+
+const { google, apple } = Astro.props;
+---
+
+<div class="flex flex-col space-y-1 md:flex-row md:space-x-2 md:space-y-0">
+    <a target="_blank" href={apple}>
+        <img
+            src={`/assets/images/hexa/app_store_badge.svg`}
+            width={200}
+            height={50}
+            alt="Apple App Store Badge"
+        />
+    </a>
+    <a target="_blank" href={google}>
+        <img
+            src={`/assets/images/hexa/google_play_store.svg`}
+            width={200}
+            height={50}
+            alt="Google Play Store Badge"
+        />
+    </a>
+</div>

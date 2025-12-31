@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: ../../layouts/post-layout.astro
 title:  "Inis Oírr Beo Launches"
 author: Matthew Loughnane
 categories: [ Code ]
 tags: [ InisOírr, Island ]
-image: assets/images/code/inisoirr/perspective_promo_2.jpg
+image: /assets/images/code/inisoirr/perspective_promo_2.jpg
 comments: false
 recipe: false
 ---

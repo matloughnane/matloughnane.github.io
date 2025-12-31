@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: ../../layouts/post-layout.astro
 title:  "Chocolate Earthquake Cookies"
 author: Matthew Loughnane
 categories: [ Recipes ]
 tags: [ Chocolate, Cookies ]
-image: assets/images/recipes/earthquake-cookies/cover.jpg
+image: /assets/images/recipes/earthquake-cookies/cover.jpg
 comments: false
 recipe: true
 prepTime: PT4H

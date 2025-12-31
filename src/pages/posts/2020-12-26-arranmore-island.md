@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: ../../layouts/post-layout.astro
 title:  "Arranmore Island"
 author: Matthew Loughnane
 categories: [ Travel ]
 tags: [ Ireland ]
-image: assets/images/travel/arranmore/2.jpeg
+image: /assets/images/travel/arranmore/2.jpeg
 comments: false
 recipe: false
 ---

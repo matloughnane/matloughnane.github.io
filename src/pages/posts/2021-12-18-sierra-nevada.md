@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: ../../layouts/post-layout.astro
 title:  "Skiing in Sierra Nevada"
 author: Matthew Loughnane
 categories: [ Travel ]
 tags: [ Sierra Nevada, Spain ]
-image: assets/images/travel/sierra-nevada/PXL_20211210_180922091.jpg
+image: /assets/images/travel/sierra-nevada/PXL_20211210_180922091.jpg
 comments: false
 recipe: false
 ---

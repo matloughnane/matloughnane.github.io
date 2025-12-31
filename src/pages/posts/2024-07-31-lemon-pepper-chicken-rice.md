@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: ../../layouts/post-layout.astro
 title:  "Lemon Pepper Chicken Rice"
 author: Matthew Loughnane
 categories: [ Recipes ]
 tags: [ Chicken, Savoury ]
-image: assets/images/recipes/lemon-pepper-chicken/lemon-pepper-chicken.jpeg
+image: /assets/images/recipes/lemon-pepper-chicken/lemon-pepper-chicken.jpeg
 comments: false
 recipe: true
 prepTime: PT35M
@@ -12,8 +12,6 @@ cookTime: PT25M
 recipeIngredient: [ "", ]
 recipeInstructions: ""
 ---
-
-# Lemon Pepper Chicken Rice
 
 This is a recipe found on instagram by [@jalalsamfit](https://www.instagram.com/reel/C9QbWTCoNd3/)
 (Makes serving for 4)

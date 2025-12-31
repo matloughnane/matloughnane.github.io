@@ -1,0 +1,36 @@
+---
+import Link from '../ui/link.astro';
+
+const links = [
+    { label: 'Home', href: '/' },
+    { label: 'About', href: '/about' },
+    { label: 'Posts', href: '/posts' },
+];
+---
+
+<nav class="text-white bg-[#2d0808] px-8 py-6">
+    <div class="mx-auto flex justify-between items-center">
+        <!-- Left - Navigation Links -->
+        <div class="flex space-x-8">
+            {
+                links.map((link) => (
+                    <Link
+                        href={link.href}
+                        label={link.label}
+                        variant="subnav"
+                    />
+                ))
+            }
+        </div>
+
+        <!-- Right - Name with Red Dot -->
+        <div class="flex items-end space-x-1">
+            <div class="text-right">
+                <div class="text-sm font-bold text-white leading-tight">
+                    Mat Loughnane
+                </div>
+            </div>
+            <div class="w-1.5 h-1.5 mb-1 bg-[#9A0D1B] rounded-full"></div>
+        </div>
+    </div>
+</nav>

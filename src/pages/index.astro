@@ -1,16 +1,16 @@
 ---
-import HeroHeader from '../components/hero-header.astro';
+import HeroHeader from '../components/home/hero-header.astro';
+import LatestPosts from '../components/home/latest-posts.astro';
 import GlobalLayout from '../layouts/global-layout.astro';
 ---
 
-<!-- MAYBE LOOK TO ADD ASTROMAX -->
-<!-- https://github.com/michael-andreuzza/astromax/tree/main -->
-
-<GlobalLayout title='Home' description='From the life of Mat Loughnane, travel, food and code' >
+<GlobalLayout
+    title="Home"
+    description="Mat Loughnane, travel, food and code"
+>
     <HeroHeader />
-    <div class="p-4">
-        <h1 class="text-2xl">Mat Loughnane</h1>
-        <a class="underline" href="/">Home</a>
-        <a class="underline" href="/about">About</a>
+    <LatestPosts limit={7} />
+    <div class="flex flex-row justify-end mx-18 my-8">
+        <a class="btn" href="/posts">See All Posts</a>
     </div>
 </GlobalLayout>

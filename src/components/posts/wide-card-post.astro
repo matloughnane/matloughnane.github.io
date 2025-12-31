@@ -1,0 +1,71 @@
+---
+import PostCategoryIcon from './post-category-icon.astro';
+
+export interface Props {
+    title: string;
+    slug: string;
+    image: string;
+    categories: string[];
+    redFilter?: boolean;
+    description?: string;
+}
+
+const {
+    image,
+    title,
+    categories = [],
+    slug = '',
+    redFilter = true,
+    description,
+} = Astro.props;
+---
+
+<article
+    class="relative bg-white rounded-none overflow-hidden shadow-2xs group"
+>
+    <div class="md:flex">
+        <div class="md:w-1/2 relative overflow-hidden">
+            <img
+                src={image}
+                alt={title}
+                class={`w-full h-64 md:h-96 object-cover group-hover:scale-105 transition-all duration-300 ${redFilter ? 'red-filter-image' : ''}`}
+            />
+        </div>
+
+        <style>
+            .red-filter-image {
+                filter: sepia(100%) saturate(200%) hue-rotate(320deg)
+                    brightness(0.8);
+            }
+
+            .group:hover .red-filter-image {
+                filter: none;
+            }
+        </style>
+        <div class="p-8 md:w-1/2 flex flex-col justify-between">
+            <div>
+                <h3
+                    class="text-6xl font-bold text-gray-900 mb-4 group-hover:text-gray-700 transition-colors"
+                >
+                    {title}
+                </h3>
+                {
+                    description && (
+                        <p class="text-lg text-gray-600 mb-4 leading-relaxed">
+                            {description}
+                        </p>
+                    )
+                }
+            </div>
+            <div class="mt-6 flex flex-row items-center justify-between">
+                <PostCategoryIcon categories={categories} size="4" />
+                <a
+                    href={slug}
+                    class="inline-block px-6 py-3 bg-[#9A0D1B] text-white font-medium rounded-none hover:opacity-90 transition-opacity"
+                >
+                    More
+                </a>
+            </div>
+        </div>
+    </div>
+</article>

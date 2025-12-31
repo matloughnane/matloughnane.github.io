@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: ../../layouts/post-layout.astro
 title:  "Creamy Tuscan Pasta"
 author: Matthew Loughnane
 categories: [ Recipes ]
 tags: [ Chicken, Savoury ]
-image: assets/images/recipes/tuscan-chicken/tuscan-chicken-cover.jpg
+image: /assets/images/recipes/tuscan-chicken/tuscan-chicken-cover.jpg
 comments: false
 recipe: true
 prepTime: PT5M

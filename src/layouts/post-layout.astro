@@ -1,0 +1,65 @@
+---
+import GlobalLayout from './global-layout.astro';
+import SubPageNav from '../components/navigation/sub-page-nav.astro';
+import PostCategoryIcon from '../components/posts/post-category-icon.astro';
+
+export interface Props {
+    frontmatter: {
+        title: string;
+        author?: string;
+        categories?: string[];
+        tags?: string[];
+        image?: string;
+        comments?: boolean;
+        recipe?: boolean;
+    };
+}
+
+const { frontmatter } = Astro.props;
+const { title, author, categories = [], image, tags = [] } = frontmatter;
+---
+
+<GlobalLayout title={title} description={`${title} | Mat Loughnane`}>
+    <SubPageNav />
+    <article class="max-w-4xl mx-auto px-6">
+        <!-- Post Header -->
+        <header class="mb-12">
+
+            <!-- Featured Image -->
+            {image && (
+                <div class="mb-8">
+                    <img
+                        src={image}
+                        alt={title}
+                        class="w-full h-64 md:h-96 object-cover rounded-none shadow-lg"
+                    />
+                </div>
+            )}
+
+            <!-- Title -->
+            <h1 class="text-5xl md:text-7xl font-bold text-gray-900 tracking-tighter leading-tighter mb-2">
+                {title}
+            </h1>
+        </header>
+
+        <!-- Post Content -->
+        <div class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-[#9A0D1B] prose-a:no-underline hover:prose-a:underline prose-strong:text-gray-900">
+            <slot />
+        </div>
+
+        <!-- Post Footer -->
+        <footer class="mt-16 pt-8">
+            {tags.length > 0 && (
+                <div class="mb-6">
+                    <div class="flex flex-wrap gap-2">
+                        {tags.map((tag) => (
+                            <span class="px-3 py-1 lowercase cursor text-sm bg-[#9A0D1B] hover:bg-[#8b2d37] text-white rounded-none">
+                                {tag}
+                            </span>
+                        ))}
+                    </div>
+                </div>
+            )}
+        </footer>
+    </article>
+</GlobalLayout>

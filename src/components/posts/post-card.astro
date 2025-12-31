@@ -1,0 +1,64 @@
+---
+import PostCategoryIcon from './post-category-icon.astro';
+
+export interface Props {
+    title: string;
+    slug: string;
+    image: string;
+    categories: string[];
+    description?: string;
+    redFilter?: boolean;
+}
+
+const { image, title, categories = [], slug = '', description, redFilter = true } = Astro.props;
+---
+
+<article class="bg-white rounded-none overflow-hidden shadow group aspect-square">
+    <div class="relative h-full flex flex-col">
+        <!-- Image at top -->
+        <div class="relative overflow-hidden">
+            <img
+                src={image}
+                alt={title}
+                class={`w-full h-48 object-cover group-hover:scale-105 transition-all duration-300 ${redFilter ? 'red-filter-image' : ''}`}
+            />
+        </div>
+
+        <!-- Content section -->
+        <div class="p-6 flex flex-col justify-between grow">
+            <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-3 line-clamp-2 group-hover:text-gray-700 transition-colors">
+                    {title}
+                </h3>
+                {description && (
+                    <p class="text-sm text-gray-600 mb-3 leading-relaxed line-clamp-2">
+                        {description}
+                    </p>
+                )}
+            </div>
+
+            <!-- Footer with icons and button -->
+            <div class="mt-auto flex flex-col gap-3">
+                <div class="flex flex-row items-center justify-between">
+                    <PostCategoryIcon categories={categories} size="4" />
+                    <a
+                        href={slug}
+                        class="inline-block px-4 py-2 bg-[#9A0D1B] text-white text-sm font-medium rounded-none hover:opacity-90 transition-opacity"
+                    >
+                        More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .red-filter-image {
+            filter: sepia(100%) saturate(200%) hue-rotate(320deg) brightness(0.8);
+        }
+
+        .group:hover .red-filter-image {
+            filter: none;
+        }
+    </style>
+</article>

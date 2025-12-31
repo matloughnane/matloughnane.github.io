@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: ../../layouts/post-layout.astro
 title:  "Arranmore Ferry Kiosk"
 author: Matthew Loughnane
 categories: [ Ferry, Kiosk, Hardware ]
 tags: [ New York, America ]
-image: assets/images/code/2023-kiosk/2_intro_arranmore_ferry.png
+image: /assets/images/code/2023-kiosk/2_intro_arranmore_ferry.png
 comments: false
 recipe: false
 ---

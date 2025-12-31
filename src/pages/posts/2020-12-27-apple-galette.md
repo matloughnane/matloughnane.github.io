@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: ../../layouts/post-layout.astro
 title:  "Apple Galette"
 author: Matthew Loughnane
 categories: [ Recipes ]
 tags: [ Dessert, Apple ]
-image: assets/images/recipes/apple-galette/landscape.jpg
+image: /assets/images/recipes/apple-galette/landscape.jpg
 comments: false
 recipe: true
 cookTime: PT20M

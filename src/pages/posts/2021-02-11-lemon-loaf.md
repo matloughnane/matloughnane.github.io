@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: ../../layouts/post-layout.astro
 title:  Lemon Loaf
 author: Matthew Loughnane
 categories: [ Recipes ]
 tags: [ Loaf, Lemon ]
-image: assets/images/recipes/lemon-loaf/cover.jpg
+image: /assets/images/recipes/lemon-loaf/cover.jpg
 comments: false
 recipe: true
 prepTime: PT15M

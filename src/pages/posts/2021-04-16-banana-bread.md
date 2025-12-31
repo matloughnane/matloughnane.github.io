@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: ../../layouts/post-layout.astro
 title:  "Banana Bread"
 author: Matthew Loughnane
 categories: [ Recipes ]
 tags: [ Sweet, Loaf ]
-image: assets/images/recipes/banana-bread/prepped.jpg
+image: /assets/images/recipes/banana-bread/prepped.jpg
 comments: false
 recipe: true
 prepTime: PT15M

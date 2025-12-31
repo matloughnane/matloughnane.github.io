@@ -1,0 +1,61 @@
+---
+import Link from '../ui/link.astro';
+import HomeBoxes from './home-boxes.astro';
+import RotatingIcon from './rotating-icon.astro';
+
+const links = [
+    { label: 'Home', link: '/' },
+    { label: 'About', link: '/about' },
+    { label: 'Posts', link: '/posts' },
+];
+---
+
+<!-- style="background-color: #350616;"  --><!-- #952210 vibrant --><!-- #c26e59 shade -->
+<section class="h-[90vh] flex flex-col bg-[#2d0808]">
+    <!-- Navigation -->
+    <nav class="px-8 py-6">
+        <div class="flex space-x-8">
+            {
+                links.map((l) => (
+                    <Link href={l.link} label={l.label} variant="nav" />
+                ))
+            }
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="flex-1 px-8 py-12 flex flex-col">
+        <!-- Top Section with Description -->
+        <div class="flex justify-end mb-16">
+            <div class="max-w-md text-white space-y-6">
+                <p class="text-lg leading-relaxed">
+                    I'm a software developer with over a decade of experience
+                    building web and mobile apps as
+                    <a
+                        class="underline"
+                        href="https://hexastudios.co"
+                        target="_blank">Hexa Studios</a
+                    >
+                </p>
+                <p class="text-lg leading-relaxed">
+                    But this is my personal site where I share my travel, food
+                    and some coding stories
+                </p>
+            </div>
+        </div>
+
+        <!-- Large Name Section -->
+        <div class="flex-1 flex items-center">
+            <div class="flex items-end space-x-6">
+                <h1
+                    class="text-8xl md:text-9xl font-bold text-white tracking-tighter leading-none"
+                >
+                    Mat<br />Loughnane
+                </h1>
+                <RotatingIcon />
+            </div>
+        </div>
+
+        <!-- <HomeBoxes /> -->
+    </div>
+</section>

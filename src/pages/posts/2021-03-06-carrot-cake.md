@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: ../../layouts/post-layout.astro
 title:  "Carrot Cake"
 author: Matthew Loughnane
 categories: [ Recipes ]
 tags: [ Carrot Cake, Loaf ]
-image: assets/images/recipes/carrot-cake/IMG_20210306_132404.jpg
+image: /assets/images/recipes/carrot-cake/IMG_20210306_132404.jpg
 comments: false
 recipe: true
 prepTime: PT20M

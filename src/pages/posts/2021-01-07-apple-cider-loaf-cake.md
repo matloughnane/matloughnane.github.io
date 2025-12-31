@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: ../../layouts/post-layout.astro
 title:  "Apple Cider Loaf Cake"
 author: Matthew Loughnane
 categories: [ Recipes ]
 tags: [ Loaf, Apple ]
-image: assets/images/recipes/apple-cider-loaf/cover.jpg
+image: /assets/images/recipes/apple-cider-loaf/cover.jpg
 comments: false
 recipe: true
 prepTime: PT5M

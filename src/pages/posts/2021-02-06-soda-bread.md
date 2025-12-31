@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: ../../layouts/post-layout.astro
 title:  "Soda Bread"
 author: Matthew Loughnane
 categories: [ Recipes ]
 tags: [ Loaf, Soda ]
-image: assets/images/recipes/soda-bread/cover.jpg
+image: /assets/images/recipes/soda-bread/cover.jpg
 comments: false
 recipe: true
 prepTime: PT10M
