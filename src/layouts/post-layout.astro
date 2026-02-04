@@ -7,6 +7,8 @@ export interface Props {
     frontmatter: {
         title: string;
         author?: string;
+        description?: string;
+        publishDate?: string;
         categories?: string[];
         tags?: string[];
         image?: string;
@@ -16,10 +18,23 @@ export interface Props {
 }
 
 const { frontmatter } = Astro.props;
-const { title, author, categories = [], image, tags = [] } = frontmatter;
+const { title, author, description, publishDate, categories = [], image, tags = [] } = frontmatter;
+
+// Extract date from the file path if publishDate is not provided
+const filePath = Astro.url.pathname;
+const dateMatch = filePath.match(/(\d{4}-\d{2}-\d{2})/);
+const postDate = publishDate || (dateMatch ? dateMatch[0] : undefined);
+
+// Create a proper description if not provided
+const postDescription = description || `${title} - ${categories.join(', ')} post by Mat Loughnane. ${tags.length > 0 ? `Topics: ${tags.join(', ')}.` : ''}`;
 ---
 
-<GlobalLayout title={title} description={`${title} | Mat Loughnane`}>
+<GlobalLayout
+    title={title}
+    description={postDescription}
+    publishDate={postDate}
+    image={image}
+>
     <SubPageNav />
     <article class="max-w-4xl mx-auto px-6">
         <!-- Post Header -->
