@@ -1,5 +1,6 @@
 ---
 import Link from '../ui/link.astro';
+import Grainient from '../Grainient.tsx';
 
 const links = [
     { label: 'Home', href: '/' },
@@ -8,7 +9,16 @@ const links = [
 ];
 ---
 
-<nav class="text-white bg-[#2d0808] px-8 py-6">
+<nav class="text-white px-8 py-6 relative">
+    <div class="absolute inset-0 -z-10">
+        <Grainient
+            client:load
+            className="h-full w-full"
+            color1="#67052c"
+            color2="#b21f1f"
+            color3="#664265"
+        />
+    </div>
     <div class="mx-auto flex justify-between items-center">
         <!-- Left - Navigation Links -->
         <div class="flex space-x-8">
