@@ -1,0 +1,62 @@
+---
+layout: ../../layouts/post-layout.astro
+title:  "Experimenting with AI"
+author: Matthew Loughnane
+categories: [ Code ]
+tags: [ code, ai ]
+image: /assets/images/code/ai/hexa-ai.png
+comments: false
+recipe: false
+---
+
+Over the past few months I've been deep in experimentation mode, trying to figure out the best way to bring AI agents into the products we build at Hexa Studios. It's been a journey through MCP servers, AI SDK, various tooling approaches, and plenty of dead ends before landing on a stack I'm genuinely excited about. Here's how it went.
+
+## Starting with MCP
+
+The [Model Context Protocol](https://modelcontextprotocol.io/) was my first entry point. The idea is compelling - a standardised way for AI models to discover and call tools over HTTP. I built an Express.js API that exposed an MCP server, letting any compatible client connect and discover available tools dynamically.
+
+The initial prototype had a couple of simple tools: a test endpoint and a ferry timetable lookup that pulled live data from the [Arranmore Ferry](https://thearranmoreferry.com) API. From there I built a CLI client using `mcp-use` and LangChain that could connect to the MCP server and chat with Claude, calling ferry tools as needed.
+
+It worked. You could ask "when's the next boat?" and the agent would discover the ferry tool, call it, and give you a useful answer. But as I pushed further - building a Next.js web client, handling sessions, managing transport layers - the complexity started to outweigh the benefits. MCP is great for tool discovery and interoperability, but for building domain-specific agents with structured workflows, I needed something more opinionated.
+
+One early gotcha that kept catching me out was the date and time context. A seperate tool would be needed for referring to the current date and time. The colloquial terms like today, tomorrow and next Friday stumped it.
+
+## Exploring AI SDK and Tooling
+
+Next I spent time with Vercel's [AI SDK](https://sdk.vercel.ai/), which handles the streaming and UI integration side of things really well. The `useChat` hook and streaming primitives are excellent for building chat interfaces, and the provider abstraction makes it easy to swap between models.
+
+I also experimented with different approaches to tool calling - inline function tools, MCP-bridged tools, and various ways of structuring agent instructions. Each approach taught me something, but none of them gave me the full picture I was after: agents with memory, structured tool definitions, workflows that chain multiple steps together, and proper evaluation of agent quality.
+
+## Landing on Mastra
+
+[Mastra](https://mastra.ai) clicked for me because it's TypeScript-native and gives you agents, tools, workflows, memory, and evaluation all in one framework. No Python glue code, no separate orchestration layer - just TypeScript all the way down.
+
+The things that sold me:
+
+- **Native TypeScript** - Everything from tool definitions to agent instructions to workflow steps is typed. Zod schemas for tool inputs and outputs mean you catch problems at build time, not at runtime.
+- **Agents with memory** - Mastra's memory system lets agents maintain conversation context across turns, which is essential for a ferry booking assistant where context builds over multiple questions.
+- **Workflows** - Multi-step workflows that chain agents and tools together. The ferry workflow parses a travel date, checks availability, gets the weather, and generates a trip recommendation - all as discrete, testable steps.
+- **Evaluation** - Built-in scorers for measuring agent quality. I've built custom scorers that check whether the ferry agent uses the right tools, parses dates accurately, and returns complete responses. This is crucial for knowing whether changes improve or degrade the experience.
+- **Observability** - Tracing and logging out of the box, with Mastra Studio for visualising agent behaviour during development.
+
+## A Working POC
+
+The proof of concept is now at a point I'm happy with. The ferry agent connects directly to the Arranmore Ferry backend - the same APIs that power the mobile apps and website - and can handle natural language queries about timetables, availability, and capacity. It understands context like "when's the last boat back?" meaning back to the mainland, and it handles date parsing for queries like "next Friday afternoon" or "tomorrow morning".
+
+I also built a weather agent as a second test case, which fetches forecasts and suggests activities - useful for visitors to the island wondering what to do on a given day.
+
+The chat UI is a white-label Next.js app built on top of Mastra's AI SDK integration, with real-time tool execution display so users can see the agent checking ferries or parsing dates as it works.
+
+## What's Next
+
+Now that I've got a working beta, the plan is to integrate this into the existing product line:
+
+**Arranmore Ferry Assistant** - A dedicated AI assistant for the [Arranmore Ferry](https://thearranmoreferry.com) platform, helping passengers check schedules, understand availability, and plan their crossings.
+
+**Seo Árainn Mhór Community Agent** - A local community agent for the [Seo Árainn Mhór](https://www.seoarainmhor.com) platform, using the existing open API specification to answer questions about what's happening on the island, local services, and visitor information.
+
+Both platforms already have well-defined APIs, so the integration path is straightforward - define the tools, write the agent instructions, and connect the dots.
+
+The next technical challenge is **tooling for the web client**. Right now the agent responds with text, but the real potential is in actionable responses - either simple deep links to booking pages with details pre-filled, or interactive components rendered directly in the chat. Imagine asking "book me on the 3pm boat tomorrow" and getting a confirmation card with a one-tap booking button right in the conversation.
+
+Exciting times ahead.
