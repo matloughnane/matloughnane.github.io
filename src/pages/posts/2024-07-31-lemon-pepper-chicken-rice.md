@@ -8,6 +8,7 @@ image: /assets/images/recipes/lemon-pepper-chicken/lemon-pepper-chicken.jpeg
 comments: false
 recipe: true
 prepTime: PT35M
+learn_more: "Get Cooking"
 cookTime: PT25M
 recipeIngredient: [ "", ]
 recipeInstructions: ""

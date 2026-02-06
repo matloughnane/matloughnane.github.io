@@ -8,6 +8,7 @@ image: /assets/images/recipes/tuscan-chicken/tuscan-chicken-cover.jpg
 comments: false
 recipe: true
 prepTime: PT5M
+learn_more: "Mangia"
 cookTime: PT25M
 recipeIngredient: [ "", ]
 recipeInstructions: ""

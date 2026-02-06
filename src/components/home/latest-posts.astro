@@ -86,6 +86,7 @@ const posts = Object.entries(allPosts)
             date: post.frontmatter?.date || slug.substring(0, 10),
             description,
             url: post.url,
+            learnMore: post.frontmatter?.learn_more || '',
         };
     })
     .filter((post) => post.title);
@@ -118,6 +119,7 @@ const gridPosts = latestPosts.slice(1);
                         categories={featuredPost.categories}
                         description={featuredPost.description}
                         redFilter={false}
+                        learnMore={featuredPost.learnMore}
                     />
                 )
             }
@@ -133,6 +135,7 @@ const gridPosts = latestPosts.slice(1);
                             categories={post.categories}
                             description={post.description}
                             redFilter={false}
+                            learnMore={post.learnMore}
                         />
                     ))
                 }

@@ -8,6 +8,7 @@ image: /assets/images/recipes/banana-bread/prepped.jpg
 comments: false
 recipe: true
 prepTime: PT15M
+learn_more: "Go Bananas"
 cookTime: PT45M
 recipeIngredient: [  "125g butter room temperature", "200g brown sugar", "2 extra-large eggs", "350g (approx. 5/6) large bananas ", "1 teaspoon vanilla extract", "250g flour", "1 teaspoon ground cinnamon", "2 teaspoons baking powder", "1 pinch of salt",
  ]

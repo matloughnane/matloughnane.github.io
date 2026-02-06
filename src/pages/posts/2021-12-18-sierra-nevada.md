@@ -7,6 +7,7 @@ tags: [ Sierra Nevada, Spain ]
 image: /assets/images/travel/sierra-nevada/PXL_20211210_180922091.jpg
 comments: false
 recipe: false
+learn_more: "Hit the Slopes"
 ---
 
 2021 ended with a Spanish holiday including, Sierra Nevada and skiing!

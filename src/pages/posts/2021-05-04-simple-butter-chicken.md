@@ -8,6 +8,7 @@ image: /assets/images/recipes/butter-chicken/bc-plate.jpg
 comments: false
 recipe: true
 prepTime: PT10M
+learn_more: "Spice It Up"
 cookTime: PT35M
 # recipeIngredient: [ "185g Flour" ,"3 1/2 Teaspoon Baking Powder" ,"1 Teaspoon Salt" ,"1 Tablespoon Granulated Sugar" ,"306ml Milk" ,"1 Egg" ,"42.4g Butter Melter" ]
 # recipeInstructions: "1. Sift and Whisk all the dry ingredients together. 2. Add all the wet ingredients to a well in the middle of the bowl."

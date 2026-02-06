@@ -7,6 +7,7 @@ tags: [ InisOírr, Island ]
 image: /assets/images/code/inisoirr/perspective_promo_2.jpg
 comments: false
 recipe: false
+learn_more: "Island Life"
 ---
 
 We're very excited to announce the launch of Inis Oírr Beo, a mobile app for islanders and visitors to share and discover the island of Inis Oírr.

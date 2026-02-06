@@ -8,6 +8,7 @@ export interface Props {
     categories: string[];
     redFilter?: boolean;
     description?: string;
+    learnMore?: string;
 }
 
 const {
@@ -17,6 +18,7 @@ const {
     slug = '',
     redFilter = true,
     description,
+    learnMore,
 } = Astro.props;
 ---
 
@@ -63,7 +65,7 @@ const {
                     href={slug}
                     class="inline-block px-6 py-3 bg-[#9A0D1B] text-white font-medium rounded-none hover:opacity-90 transition-opacity"
                 >
-                    More
+                    {learnMore || 'More'}
                 </a>
             </div>
         </div>

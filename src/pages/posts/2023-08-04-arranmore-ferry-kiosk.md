@@ -7,6 +7,7 @@ tags: [ New York, America ]
 image: /assets/images/code/2023-kiosk/2_intro_arranmore_ferry.png
 comments: false
 recipe: false
+learn_more: "All Aboard"
 ---
 
 After a couple of [teases](https://www.facebook.com/hexastudiosco/posts/pfbid02BzRuwGrzaj11KkouRisv7aB3uaKZeBEACybYiB6Kt2RdHkqqp3y9UYkHW22v1Wndl), we're incredibly excited to share our latest project, the Arranmore Ferry self service kiosk. This project is a culmination of months of work (and years or dreaming from Seamus, Louise and myself).

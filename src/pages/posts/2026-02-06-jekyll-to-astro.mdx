@@ -1,0 +1,59 @@
+---
+layout: ../../layouts/post-layout.astro
+title: "A New Look for the Site"
+author: Matthew Loughnane
+categories: [ Code ]
+tags: [ code, astro, jekyll, webdev ]
+image: /assets/images/code/2026-astro/meta.png
+comments: false
+recipe: false
+learn_more: "Jekyll > Astro"
+---
+
+This website has been through a few lives. It started as a static site, then a simple Jekyll blog hosted on GitHub Pages (thanks [JekyllThemes.io](https://jekyllthemes.io/)) - markdown files, Liquid templates, and a theme that did the job. It served me well for years across travel posts, recipe dumps, and the occasional code write-up. But this site was looking a little tired and I started hearing the buzz about [Astro](https://astro.build), so I thought I would give it a try.
+
+## Why Move?
+
+Jekyll is solid. It's battle-tested, GitHub Pages supports it natively, and there's nothing wrong with it for a static blog. But after years of working in TypeScript and modern frontend tooling, going back to Ruby gems and Liquid templates started to feel like context switching into a different era. I wanted something that felt closer to the tools I use every day.
+
+Astro ticked every box. It's a modern static site generator that ships zero JavaScript by default, uses file-based routing, supports MDX out of the box, and lets you bring in components from React, Vue, Svelte - whatever you need - without committing to a full SPA framework. For a personal site that's 95% static content with a few interactive flourishes, it's the perfect fit.
+
+## What I'm Using
+
+### File-Based Routing
+
+Just like Jekyll, pages live in a directory and the file structure becomes the URL structure. Blog posts in `/src/pages/posts/` map directly to routes. No config files, no route definitions - just files. Coming from Jekyll's `_posts` convention this felt immediately familiar, but with the added benefit of `.astro` components for non-markdown pages.
+
+### MDX for Blog Posts
+
+This was one of the big draws. Jekyll gives you markdown with Liquid includes. Astro gives you [MDX](https://mdxjs.com/) - markdown with full JSX component support. I can drop a React component or an Astro component directly into a blog post and it just works. The travel posts use an `<ImageGallery>` component that auto-discovers images from a directory and renders a responsive grid. In Jekyll, that was a Liquid loop. In MDX, it's a single clean import.
+
+### Tailwind CSS
+
+Moving from Jekyll's SCSS pipeline to [Tailwind CSS](https://tailwindcss.com) was a breath of fresh air. It's just so much simpler to remember and I've been using it across Hexa projects already. Tailwind 4's integration with Vite is seamless - just a plugin in the Astro config and you're off. Combined with the typography plugin for prose styling on blog posts, the whole styling setup is minimal and fast.
+
+### Layouts and Components
+
+Astro's component model is clean. A global layout handles the `<head>`, meta tags, OpenGraph data, and the site shell. A post layout extracts frontmatter, renders the featured image, title, tags, and wraps the content in prose styling. Components are organised by concern - navigation, home page sections, post cards, UI primitives - and they're all `.astro` files that compile to zero client-side JavaScript.
+
+## Adding Some Loughnane Flair
+
+A straight migration would've been boring. I didn't just want a faster Jekyll - I wanted something that felt alive. Enter the `<Grainient>` component.
+
+I found it on [ReactBits](https://reactbits.dev) - a curated collection of animated React components. Grainient renders an animated WebGL gradient with procedural grain and noise effects using a custom GLSL fragment shader. It takes colour inputs and warps them through sine-wave distortions with tuneable frequency, strength, and speed. The result is a flowing, organic gradient that gives the site a bit of personality.
+
+It sits behind the hero header, the navigation bar, and the footer - bookending every page with those deep maroon and burgundy tones that tie the whole design together. In Astro, dropping in a React component is trivial - just add the React integration, use `client:load` to hydrate it, and the WebGL canvas comes to life while the rest of the page stays static. Astro's bread and butter.
+
+## The Migration
+
+The actual migration was surprisingly smooth. The biggest job was converting Jekyll's YAML front matter format to Astro's - which turned out to be nearly identical. Blog posts moved across almost unchanged. The layout system needed a rewrite, but Astro's `.astro` component syntax is intuitive if you've worked with JSX before. Tailwind replaced the old SCSS, and the result is a leaner, faster stylesheet with better developer experience.
+
+Deployment stayed on GitHub Pages, just swapped from Jekyll's built-in support to a GitHub Actions workflow that runs `npm run build` and deploys the output. Same URL, same hosting, better build.
+
+## Was It Worth It?
+
+Absolutely. The developer experience is better, and I actually enjoy working on it again. Astro's approach of shipping minimal JavaScript while still supporting modern component patterns is exactly right for a content site like this. The build is quick, the output is clean, and when I want to do something fun - like throw a WebGL shader behind the header - I can do it easily.
+
+This site has always been where I try things out. Jekyll served its purpose, but it was time for something new. Astro fits how I build things now, and the Grainient component is compleltely unnecessary but oh so cool touch - that I don't think I could justify in a random project but: a personal site - throw it in.
+
+![Mat Loughnane Homescreen](/assets/images/code/2026-astro/matloughnane-homepage-screenshot.png)
