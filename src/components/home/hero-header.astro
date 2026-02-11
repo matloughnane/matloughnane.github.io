@@ -1,5 +1,6 @@
 ---
 import Grainient from '../Grainient.tsx';
+import SearchToggle from '../search/SearchToggle.tsx';
 import Link from '../ui/link.astro';
 import RotatingIcon from './rotating-icon.astro';
 
@@ -23,12 +24,13 @@ const links = [
     </div>
     <!-- Navigation -->
     <nav class="px-8 py-6">
-        <div class="flex space-x-8">
+        <div class="flex items-center space-x-8">
             {
                 links.map((l) => (
                     <Link href={l.link} label={l.label} variant="nav" />
                 ))
             }
+            <SearchToggle client:load variant="hero" />
         </div>
     </nav>
 
