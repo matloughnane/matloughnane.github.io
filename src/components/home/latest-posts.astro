@@ -87,9 +87,11 @@ const posts = Object.entries(allPosts)
             description,
             url: post.url,
             learnMore: post.frontmatter?.learn_more || '',
+            draft: post.frontmatter?.draft || false,
+            tags: post.frontmatter?.tags || [],
         };
     })
-    .filter((post) => post.title);
+    .filter((post) => post.title && !post.draft && !post.tags.includes('wip') && !post.tags.includes('WIP'));
 
 // Sort by date (newest first) and take latest 10
 const latestPosts = limit
