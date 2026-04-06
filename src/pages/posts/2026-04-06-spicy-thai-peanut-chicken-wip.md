@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/post-layout.astro
-title: "Spicy Thai Peanut Chicken"
+title: "Spicy Thai Peanut Chicken (Air Fryer Crispy Chicken Sandwich Style)"
 author: Matthew Loughnane
 categories: [ Recipes ]
 tags: [ Chicken, Savoury, wip ]
@@ -11,39 +11,47 @@ draft: true
 ---
 
 This is a recipe found on instagram by [@donaldo_cooks](https://www.instagram.com/reel/DWod21rgLmo/)
+(Serving Size: 2 sandwiches | Calories: ~550–650 | Protein: ~35–40g)
 
 # Ingredients
 
-- 680g boneless, skinless chicken breast
-- 16g (approx. 2 tbsp) cornstarch
-- Kosher salt
-- Vegetable oil
-- 1 shallot, thinly sliced
-- 2 red bell peppers, cored + thinly sliced
-- 5cm piece lemongrass
-- 1 red fresno chile pepper, thinly sliced
-- 6 garlic cloves, minced
-- 15g (1 tbsp) minced fresh ginger
-- 2.5g (½ tsp) red pepper flakes (plus more for topping)
-- 125g (½ cup) creamy peanut butter
-- 400ml (1 can) coconut milk
-- 180ml chicken stock
-- 15ml (1 tbsp) soy sauce
-- 15ml (1 tbsp) fish sauce
-- 15ml (1 tbsp) honey
-- 1 lime, juiced (plus lime wedges for serving)
-- Rice, for serving
-- 70g (½ cup) toasted peanuts, chopped
-- 4 scallions, thinly sliced
-- Handful cilantro leaves
+**Chicken:**
+- 2 boneless chicken thighs
+- 60g (1/2 cup) flour
+- 2 eggs, beaten
+- 60g (1 1/2 cups) crushed cornflakes
+- Oil spray
+
+**Spicy Peanut Sauce:**
+- 85g (1/3 cup) smooth peanut butter
+- 15-30ml (1–2 tbsp) sriracha
+- 1.5g (1/2 tsp) crushed red pepper
+- 15ml (1 tbsp) dark soy sauce
+- 5ml (1 tsp) molasses (for color and slight sweetness)
+- 30–60ml (2–4 tbsp) water (to thin)
+
+**Cucumber Carrot Salad:**
+- 150g (1 cup) sliced cucumbers
+- 50g (1/2 cup) shredded carrots
+- 15ml (1 tbsp) red wine vinegar
+- 15ml (1 tbsp) avocado oil
+- 1.5g (1/2 tsp) garlic powder
+- 1.5g (1/2 tsp) onion powder
+- 5ml (1 tsp) soy sauce
+- 1.5g (1/2 tsp) ginger powder
+- Black pepper to taste
+- 5ml (1 tsp) sriracha
+- 5ml (1 tsp) honey
+
+**To Serve:**
+- Ciabatta baguette
+- Optional extra sriracha or peanut sauce
 
 # Instructions
 
-1. **Prep the Chicken:** Toss the chicken breast in the cornstarch.
-2. **Brown:** Heat a large skillet over medium-high heat. Add enough oil to coat the bottom. Once the oil is hot, add the chicken. Cook for 2-3 minutes per side, until browned. Transfer the chicken to a plate.
-3. **Sauté Veggies:** Lower the heat to medium. Add the shallots and red peppers to the skillet, along with a little more oil. Season with a pinch of salt. Sauté for about 8 minutes, stirring often, until browned and tender.
-4. **Aromatics:** Bruise the lemongrass with the back of your knife and add it to the skillet, along with the fresno chile, garlic, ginger, and red pepper flakes. Cook for another minute.
-5. **Build the Sauce:** Stir in the peanut butter, coconut milk, and chicken stock. Mix well and bring to a simmer.
-6. **Simmer Chicken:** Add the chicken back to the skillet. Simmer on low heat for 10 minutes, or until the chicken is cooked through.
-7. **Finish the Sauce:** Stir in the soy sauce, fish sauce, honey, and lime juice. Simmer for another 2 minutes. Taste and adjust seasoning if desired.
-8. **Serve:** Serve the peanut chicken over rice. Top with the peanuts, scallions, cilantro leaves, and more red pepper flakes if desired. Serve with lime wedges to squeeze over top!
+1. **Prep the Chicken:** Prepare a breading station with three bowls: flour, beaten eggs, and crushed cornflakes. 
+2. **Coat the Chicken:** Dredge each chicken thigh in flour, dip it in the eggs, and press firmly into the crushed cornflakes so they stick well. (Use a mix of small and larger cornflake pieces for the best texture).
+3. **Air Fry:** Spray the coated chicken lightly with oil. Air fry at 200°C (390°F) for about 12-15 minutes, flipping halfway through, until golden, crispy, and fully cooked.
+4. **Make the Peanut Sauce:** Whisk together the peanut butter, sriracha, crushed red pepper, dark soy sauce, and molasses. Slowly add the water, whisking until you reach your desired thickness.
+5. **Make the Salad:** Toss the sliced cucumbers and shredded carrots with the red wine vinegar, avocado oil, garlic powder, onion powder, soy sauce, ginger powder, black pepper, sriracha, and honey.
+6. **Assemble:** Slice the ciabatta baguette. Slather on the peanut sauce, add the crispy chicken, and top with the cucumber carrot salad. Enjoy!
