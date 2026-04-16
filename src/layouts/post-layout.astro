@@ -46,7 +46,7 @@ const postDescription = description || `${title} - ${categories.join(', ')} post
                     <img
                         src={image}
                         alt={title}
-                        class="w-full h-64 md:h-96 object-cover rounded-none shadow-lg"
+                        class="w-full h-64 md:h-96 object-cover rounded-b-xl shadow-lg"
                     />
                 </div>
             )}
@@ -58,7 +58,7 @@ const postDescription = description || `${title} - ${categories.join(', ')} post
         </header>
 
         <!-- Post Content -->
-        <div class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-[#9A0D1B] prose-a:no-underline hover:prose-a:underline prose-strong:text-gray-900">
+        <div class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-headings:leading-tight prose-headings:my-2 prose-p:text-gray-700 prose-a:text-[#9A0D1B] prose-a:no-underline hover:prose-a:underline prose-strong:text-gray-900 prose-img:rounded-xl">
             <slot />
         </div>
 
@@ -68,7 +68,7 @@ const postDescription = description || `${title} - ${categories.join(', ')} post
                 <div class="mb-6">
                     <div class="flex flex-wrap gap-2">
                         {tags.map((tag) => (
-                            <span class="px-3 py-1 lowercase cursor text-sm bg-[#9A0D1B] hover:bg-[#8b2d37] text-white rounded-none">
+                            <span class="px-3 py-1 lowercase cursor text-sm bg-red-100 text-[#9A0D1B] border border-[#9A0D1B] rounded-full hover:bg-[#9A0D1B] hover:text-white transition-colors">
                                 {tag}
                             </span>
                         ))}

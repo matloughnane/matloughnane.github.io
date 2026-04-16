@@ -51,23 +51,23 @@ export default function SearchResults({ posts }: SearchResultsProps) {
 
     return (
         <div>
-            <p className="text-sm text-gray-500 mb-6">
+            <h1 className="text-3xl font-bold text-gray-900 mb-8">
                 {filtered.length} result{filtered.length !== 1 ? 's' : ''} for
-                "{query}"
-            </p>
+                &ldquo;{query}&rdquo;
+            </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filtered.map((post) => (
                     <a
                         key={post.slug}
                         href={post.slug}
-                        className="group bg-white rounded-none overflow-hidden shadow md:aspect-square block"
+                        className="group bg-white rounded-xl overflow-hidden shadow-md md:aspect-square block"
                     >
                         <div className="relative h-full flex flex-col">
                             <div className="relative overflow-hidden">
                                 <img
                                     src={post.image}
                                     alt={post.title}
-                                    className="w-full h-48 object-cover group-hover:scale-105 transition-all duration-300"
+                                    className="w-full h-48 object-cover rounded-t-xl group-hover:scale-105 transition-all duration-300"
                                 />
                             </div>
                             <div className="p-6 flex flex-col justify-between grow">
@@ -83,7 +83,7 @@ export default function SearchResults({ posts }: SearchResultsProps) {
                                 </div>
                                 <div className="mt-auto flex flex-col gap-3">
                                     <div className="flex flex-row items-center justify-end">
-                                        <span className="inline-block px-4 py-2 bg-[#9A0D1B] text-white text-sm font-medium rounded-none group-hover:opacity-90 transition-opacity">
+                                        <span className="inline-block px-4 py-2 bg-[#9A0D1B] text-white text-sm font-medium rounded-full group-hover:opacity-90 transition-opacity">
                                             {post.learnMore || 'More'}
                                         </span>
                                     </div>

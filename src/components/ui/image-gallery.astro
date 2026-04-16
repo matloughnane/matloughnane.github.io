@@ -54,11 +54,11 @@ try {
         <div class="image-gallery my-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {publicImagePaths.map((path, i) => (
-                    <div class="aspect-square bg-red-500 overflow-hidden">
+                    <div class="aspect-square bg-red-500 overflow-hidden rounded-lg">
                         <img
                             src={path}
                             alt={`${altText} ${i + 1}`}
-                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300 mt-0 cursor-pointer"
+                            class="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform duration-300 mt-0 cursor-pointer"
                             loading="lazy"
                             data-gallery-img
                             data-index={i}

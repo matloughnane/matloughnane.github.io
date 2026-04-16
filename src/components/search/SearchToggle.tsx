@@ -52,7 +52,7 @@ export default function SearchToggle({ variant = 'hero' }: SearchToggleProps) {
     }
 
     return (
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 animate-[searchExpand_0.3s_ease-out]">
             <Search size={iconSize} className="text-white/70 shrink-0" />
             <input
                 ref={inputRef}
@@ -61,7 +61,7 @@ export default function SearchToggle({ variant = 'hero' }: SearchToggleProps) {
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Search posts..."
-                className="bg-transparent border-b border-white/50 text-white placeholder-white/40 outline-none text-sm py-1 w-32 sm:w-48"
+                className="bg-transparent text-white placeholder-white/50 outline-none text-sm w-32 sm:w-48"
             />
             <button
                 onClick={close}
@@ -70,6 +70,12 @@ export default function SearchToggle({ variant = 'hero' }: SearchToggleProps) {
             >
                 <X size={iconSize - 2} />
             </button>
+            <style>{`
+                @keyframes searchExpand {
+                    from { opacity: 0; transform: scaleX(0.6); }
+                    to { opacity: 1; transform: scaleX(1); }
+                }
+            `}</style>
         </div>
     );
 }

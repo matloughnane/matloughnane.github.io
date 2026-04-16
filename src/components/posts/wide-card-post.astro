@@ -23,14 +23,14 @@ const {
 ---
 
 <article
-    class="relative bg-white rounded-none overflow-hidden shadow-2xs group"
+    class="relative bg-white rounded-xl overflow-hidden shadow-md group"
 >
     <div class="md:flex">
         <div class="md:w-1/2 relative overflow-hidden">
             <img
                 src={image}
                 alt={title}
-                class={`w-full h-64 md:h-96 object-cover group-hover:scale-105 transition-all duration-300 ${redFilter ? 'red-filter-image' : ''}`}
+                class={`w-full h-64 md:h-96 object-cover rounded-t-xl md:rounded-t-none md:rounded-l-xl group-hover:scale-105 transition-all duration-300 ${redFilter ? 'red-filter-image' : ''}`}
             />
         </div>
 
@@ -63,7 +63,7 @@ const {
                 <PostCategoryIcon categories={categories} size="4" />
                 <a
                     href={slug}
-                    class="inline-block px-6 py-3 bg-[#9A0D1B] text-white font-medium rounded-none hover:opacity-90 transition-opacity"
+                    class="inline-block px-6 py-3 bg-[#9A0D1B] text-white font-medium rounded-full hover:opacity-90 transition-opacity"
                 >
                     {learnMore || 'More'}
                 </a>
