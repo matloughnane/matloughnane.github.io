@@ -27,5 +27,12 @@
     "tailwind-merge": "^3.6.0",
     "tailwindcss": "^4.3.0",
     "tailwindcss-animate": "^1.0.7"
+  },
+  "packageManager": "pnpm@10.18.2",
+  "pnpm": {
+    "overrides": {
+      "electron-to-chromium": "1.5.368",
+      "semver@>=7.0.0": "7.8.2"
+    }
   }
 }
