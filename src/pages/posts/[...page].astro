@@ -1,0 +1,69 @@
+---
+import type { GetStaticPaths } from 'astro';
+import GlobalLayout from '../../layouts/global-layout.astro';
+import SubPageNav from '../../components/navigation/sub-page-nav.astro';
+import WideCardPost from '../../components/posts/wide-card-post.astro';
+import PostCard from '../../components/posts/post-card.astro';
+import Pagination from '../../components/posts/pagination.astro';
+import { getSortedPosts } from '../../lib/posts';
+
+export const getStaticPaths = (({ paginate }) => {
+    // Pull the most recent post out as the featured wide card, then paginate the
+    // rest at 12 per page. Page 1 therefore holds 13 posts (1 featured + 12 grid),
+    // filling exactly 4 rows of 3 on the widescreen grid; pages 2+ hold 12.
+    const [featured, ...rest] = getSortedPosts();
+    return paginate(rest, { pageSize: 12, props: { featured } });
+}) satisfies GetStaticPaths;
+
+const { page, featured } = Astro.props;
+
+// The featured wide card only appears on page 1.
+const featuredPost = page.currentPage === 1 ? featured : undefined;
+const gridPosts = page.data;
+---
+
+<GlobalLayout
+    title="All Posts"
+    description="Travel stories, food adventures, and coding insights..."
+>
+    <SubPageNav />
+    <section class="py-8 px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="space-y-8">
+                {
+                    featuredPost && (
+                        <WideCardPost
+                            title={featuredPost.title}
+                            slug={featuredPost.slug}
+                            image={featuredPost.image}
+                            categories={featuredPost.categories}
+                            description={featuredPost.description}
+                            redFilter={false}
+                            learnMore={featuredPost.learnMore}
+                        />
+                    )
+                }
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                >
+                    {
+                        gridPosts.map((post) => (
+                            <PostCard
+                                title={post.title}
+                                slug={post.slug}
+                                image={post.image}
+                                categories={post.categories}
+                                description={post.description}
+                                redFilter={false}
+                                learnMore={post.learnMore}
+                            />
+                        ))
+                    }
+                </div>
+
+                <Pagination page={page} />
+            </div>
+        </div>
+    </section>
+</GlobalLayout>

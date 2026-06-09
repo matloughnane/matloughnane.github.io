@@ -1,0 +1,52 @@
+---
+// Prev/Next pagination controls driven entirely by Astro's `page` object.
+// Renders nothing when there is only a single page.
+export interface Props {
+    page: {
+        currentPage: number;
+        lastPage: number;
+        url: { prev?: string; next?: string };
+    };
+}
+
+const { page } = Astro.props;
+const { currentPage, lastPage, url } = page;
+
+const linkClass =
+    'inline-block px-5 py-2 bg-[#9A0D1B] text-white text-sm font-medium rounded-full hover:opacity-90 transition-opacity';
+const disabledClass =
+    'inline-block px-5 py-2 bg-gray-100 text-gray-400 text-sm font-medium rounded-full cursor-not-allowed select-none';
+---
+
+{
+    lastPage > 1 && (
+        <nav
+            class="flex items-center justify-between gap-4 pt-4"
+            aria-label="Pagination"
+        >
+            {url.prev ? (
+                <a href={url.prev} class={linkClass} rel="prev">
+                    &larr; Previous
+                </a>
+            ) : (
+                <span class={disabledClass} aria-hidden="true">
+                    &larr; Previous
+                </span>
+            )}
+
+            <span class="text-sm text-gray-600">
+                Page {currentPage} of {lastPage}
+            </span>
+
+            {url.next ? (
+                <a href={url.next} class={linkClass} rel="next">
+                    Next &rarr;
+                </a>
+            ) : (
+                <span class={disabledClass} aria-hidden="true">
+                    Next &rarr;
+                </span>
+            )}
+        </nav>
+    )
+}

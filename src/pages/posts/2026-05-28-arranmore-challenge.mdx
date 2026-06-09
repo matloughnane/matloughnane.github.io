@@ -1,0 +1,59 @@
+---
+layout: ../../layouts/post-layout.astro
+title: "The Arranmore Challenge App: Ready for 2026"
+author: Matthew Loughnane
+description: The tournament management and supporter app for the JBH football weekend — live scoring, posting photos and texts and let everyone follow along.
+categories: [ Code ]
+tags: [ Arranmore, App, Football ]
+image: /assets/images/code/2026-arranmore-challenge/app-store-glamour-logo-zoom.jpg
+comments: false
+recipe: false
+learn_more: "Get the App"
+---
+
+import AppStoreBadges from '../../components/hexa/app-store-badges.astro';
+import ImageGallery from '../../components/ui/image-gallery.astro';
+
+We're delighted to announce the relaunch of **Arranmore Challenge** — the tournament management and spectator app built for the JBH football tournament. One place to keep up with the tournament (30th May - 31st May) — players, families, supporters — follow along, post photos and chat about what's happening.
+
+<AppStoreBadges
+    apple="https://apps.apple.com/us/app/arranmore-challenge/id1241991576"
+    google="https://play.google.com/store/apps/details?id=com.hexastudios.arranmorechallenge"
+/>
+
+## Live Scoring, Real-Time Everywhere
+
+The Arranmore Utd committee and team drive the match from a single full-screen scoreboard controller — big buttons for goals, cards, substitutions, half-time, full-time, penalty shootouts and an undo for when you tap the wrong thing in the heat of the moment. Everything updates everyone else in real time over WebSockets, so the second the ball hits the back of the net, every phone in the crowd knows about it.
+
+Tap into a match and you get a chronological timeline of everything that's happened — goals, cards, subs, period markers, shootouts — streaming in live as the touchline admin presses the buttons.
+
+<ImageGallery
+    imagePath="/assets/images/code/2026-arranmore-challenge/screenshots"
+    altText="Arranmore Challenge — live scoring"
+/>
+
+## A Feed For The Tournament
+
+The tournament has its own social feed — short posts, up to three images, reactions and replies. Match events automatically inter weave into the feed, so even people who never post still see the action as it unfolds. Pick the team you support when you join and your supported-team badge appears on your posts.
+
+Group standings (P, W, D, L, GF, GA, GD, Pts) are calculated automatically from match results — no spreadsheets, no scribbling on the back of an envelope.
+
+## Built for the Touchline
+
+A few things we cared about as we built this:
+
+- **Mobile-first, iOS and Android parity** — one codebase, the same experience on whatever phone you've got.
+- **Real-time everywhere** — no pull-to-refresh during a live match.
+- **Works on patchy 4G** — image uploads are optimised server-side so the feed stays fast even at a rural pitch.
+- **Anonymous browsing** — no signup needed to follow scores, schedules and standings. You only need an account to post, join a team or admin a tournament.
+
+## Download Now
+
+> You can download Arranmore Challenge for your Android or iOS devices today.
+
+<br/>
+<AppStoreBadges
+    apple="https://apps.apple.com/us/app/arranmore-challenge/id1241991576"
+    google="https://play.google.com/store/apps/details?id=com.hexastudios.arranmorechallenge"
+/>
+<br/>
