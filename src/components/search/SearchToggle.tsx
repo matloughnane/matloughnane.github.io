@@ -61,7 +61,7 @@ export default function SearchToggle({ variant = 'hero' }: SearchToggleProps) {
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Search posts..."
-                className="bg-transparent text-white placeholder-white/50 outline-none text-sm w-32 sm:w-48"
+                className="bg-transparent text-white placeholder-white/50 outline-none text-sm w-full md:w-48"
             />
             <button
                 onClick={close}

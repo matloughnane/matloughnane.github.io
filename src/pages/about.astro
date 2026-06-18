@@ -8,10 +8,12 @@ import GlobalLayout from '../layouts/global-layout.astro';
     description="Software developer from London, living in Dublin. Founder of Hexa Studios, passionate about cooking, baking, and exploring different cuisines while traveling the world."
 >
     <SubPageNav />
-    <main class="max-w-4xl mx-auto my-12">
-        <div class="grid grid-cols-2 gap-8">
+    <main class="max-w-4xl mx-auto my-12 px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="col-span-1">
-                <h1 class="text-6xl font-bold text-right tracking-tighter">
+                <h1
+                    class="text-4xl sm:text-5xl md:text-6xl font-bold text-right tracking-tighter"
+                >
                     Mat<br />Loughnane
                 </h1>
                 <h2 class="text-2xl font-bold text-right py-8 text-[#9A0D1B]">
@@ -27,7 +29,7 @@ import GlobalLayout from '../layouts/global-layout.astro';
                 <p class="mb-8 text-lg">
                     My favourite thing to make - Carrot Cake
                 </p>
-                <div class="h-[550px] overflow-hidden">
+                <div class="h-[350px] md:h-[550px] overflow-hidden">
                     <img
                         class="w-full h-full object-cover"
                         src="/assets/images/about/about-profile-paris.jpeg"

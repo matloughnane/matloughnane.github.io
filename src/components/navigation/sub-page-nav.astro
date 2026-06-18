@@ -25,8 +25,27 @@ const links = [
         />
     </div>
     <div class="mx-auto flex justify-between items-center">
-        <!-- Left - Navigation Links -->
-        <div class="flex items-center space-x-8">
+        <!-- Left - Hamburger (mobile) + Navigation Links (desktop) -->
+        <button
+            id="nav-toggle"
+            type="button"
+            class="md:hidden flex flex-col justify-center gap-1.5 w-8 h-8 cursor-pointer"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+        >
+            <span
+                class="nav-toggle-bar block w-6 h-0.5 bg-white transition-all duration-300"
+            ></span>
+            <span
+                class="nav-toggle-bar block w-6 h-0.5 bg-white transition-all duration-300"
+            ></span>
+            <span
+                class="nav-toggle-bar block w-6 h-0.5 bg-white transition-all duration-300"
+            ></span>
+        </button>
+
+        <div class="hidden md:flex items-center space-x-8">
             {
                 links.map((link) => (
                     <Link
@@ -49,4 +68,40 @@ const links = [
             <div class="w-1.5 h-1.5 mb-1 bg-[#9A0D1B] rounded-full"></div>
         </div>
     </div>
+
+    <!-- Mobile dropdown menu -->
+    <div id="nav-menu" class="hidden md:hidden flex-col space-y-4 mt-6">
+        {
+            links.map((link) => (
+                <Link href={link.href} label={link.label} variant="subnav" />
+            ))
+        }
+        <SearchToggle client:load variant="subnav" />
+    </div>
 </nav>
+
+<script>
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.getElementById('nav-menu');
+
+    toggle?.addEventListener('click', () => {
+        const willOpen = menu?.classList.contains('hidden');
+        menu?.classList.toggle('hidden');
+        menu?.classList.toggle('flex', willOpen);
+        toggle.setAttribute('aria-expanded', String(willOpen));
+        toggle.classList.toggle('nav-open', willOpen);
+    });
+</script>
+
+<style>
+    /* Animate hamburger into an X when open */
+    #nav-toggle.nav-open .nav-toggle-bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    #nav-toggle.nav-open .nav-toggle-bar:nth-child(2) {
+        opacity: 0;
+    }
+    #nav-toggle.nav-open .nav-toggle-bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+</style>
