@@ -1,11 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Search, X } from 'lucide-react';
 
-interface SearchToggleProps {
-    variant?: 'hero' | 'subnav';
-}
-
-export default function SearchToggle({ variant = 'hero' }: SearchToggleProps) {
+export default function SearchToggle() {
     const [open, setOpen] = useState(false);
     const [query, setQuery] = useState('');
     const inputRef = useRef<HTMLInputElement>(null);
@@ -37,43 +33,52 @@ export default function SearchToggle({ variant = 'hero' }: SearchToggleProps) {
         setQuery('');
     };
 
-    const iconSize = variant === 'hero' ? 20 : 18;
-
     if (!open) {
         return (
             <button
                 onClick={() => setOpen(true)}
-                className="text-white/70 hover:text-white transition-colors cursor-pointer"
+                className="cursor-pointer text-ink-2 transition-colors hover:text-ink"
                 aria-label="Open search"
             >
-                <Search size={iconSize} />
+                <Search size={18} />
             </button>
         );
     }
 
     return (
-        <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 animate-[searchExpand_0.3s_ease-out]">
-            <Search size={iconSize} className="text-white/70 shrink-0" />
+        // The field is a leaf laid on the ground, ruled with the same hairline
+        // as the nav. Focus takes the cloth outline the rest of the site uses —
+        // in the dark the cloth is too near the ground to read, so it swaps to
+        // on-cloth, exactly as the global :focus-visible rule does.
+        <div
+            role="search"
+            className="search-field flex items-center gap-2 rounded-full border border-edge bg-leaf px-3.5 py-1.5 outline-offset-3 outline-cloth animate-[searchExpand_0.3s_ease-out] has-[input:focus-visible]:outline-2 dark:outline-on-cloth"
+        >
+            <Search size={18} className="shrink-0 text-ink-2" />
             <input
                 ref={inputRef}
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="Search posts..."
-                className="bg-transparent text-white placeholder-white/50 outline-none text-sm w-full md:w-48"
+                placeholder="Search posts…"
+                aria-label="Search posts"
+                className="w-full bg-transparent text-sm text-ink caret-cloth outline-none placeholder:text-ink-2 md:w-48 dark:caret-ink"
             />
             <button
                 onClick={close}
-                className="text-white/70 hover:text-white transition-colors cursor-pointer"
+                className="cursor-pointer text-ink-2 transition-colors hover:text-ink"
                 aria-label="Close search"
             >
-                <X size={iconSize - 2} />
+                <X size={16} />
             </button>
             <style>{`
                 @keyframes searchExpand {
                     from { opacity: 0; transform: scaleX(0.6); }
                     to { opacity: 1; transform: scaleX(1); }
+                }
+                @media (prefers-reduced-motion: reduce) {
+                    .search-field { animation: none; }
                 }
             `}</style>
         </div>

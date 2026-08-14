@@ -1,5 +1,10 @@
 ---
-import Footer from '../components/common/footer.astro';
+import BackCover from '../components/album/back-cover.astro';
+import Spine from '../components/album/spine.astro';
+import AlbumNav from '../components/album/album-nav.astro';
+import '@fontsource-variable/archivo';
+import '@fontsource-variable/archivo-narrow';
+import '@fontsource/archivo-black';
 import '../styles/global.css';
 interface Props {
     title: string;
@@ -15,8 +20,28 @@ const socialImageURL = new URL(image, Astro.site);
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link
+            rel="alternate icon"
+            type="image/png"
+            href="/assets/images/favicon.png"
+        />
+        <link rel="apple-touch-icon" href="/assets/images/m-mark.svg" />
         <meta name="viewport" content="width=device-width" />
+        <meta name="color-scheme" content="light dark" />
+
+        <!-- Resolve the theme before first paint: a stored choice wins, the OS
+             setting decides otherwise. Inline and unprocessed on purpose —
+             deferring this shows a flash of the wrong album. -->
+        <script is:inline>
+            (() => {
+                const stored = localStorage.getItem('theme');
+                const dark = stored
+                    ? stored === 'dark'
+                    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+                document.documentElement.classList.toggle('dark', dark);
+            })();
+        </script>
         <meta name="generator" content={Astro.generator} />
 
         <!-- Primary Meta Tags -->
@@ -44,11 +69,50 @@ const socialImageURL = new URL(image, Astro.site);
         <!-- Additional Meta Tags -->
         <meta name="author" content="Mat Loughnane" />
         <meta name="robots" content="index, follow" />
-        <meta name="theme-color" content="#33151e" />
+        <meta
+            name="theme-color"
+            media="(prefers-color-scheme: light)"
+            content="#efeae2"
+        />
+        <meta
+            name="theme-color"
+            media="(prefers-color-scheme: dark)"
+            content="#141215"
+        />
     </head>
 
-    <body class="bg-white">
-        <slot />
-        <Footer />
+    <body>
+        <!--
+        THESIS: This site is a photo album someone is showing you, not a blog
+        index. It refuses the personal-site default of a full-bleed gradient
+        hero above a grid of equal cards.
+        OWN-WORLD: Oxblood book cloth, album card in manila (day) or near-black
+        (night), gummed corner mounts on every photo, china-marker captions.
+        Archivo Black blocked lettering, Archivo Narrow captions. One saturated
+        red, spent only on the current entry.
+        DEVIATIONS: cloth ships as a CSS crosshatch weave and the card as an
+        feTurbulence tooth, not raster material — no image generation was
+        available. Captions ship as wide-tracked Archivo Narrow, NOT as
+        china-marker: a handwriting face here would be a costume, so the
+        promise is recorded as unmet rather than quietly rewritten. Browser
+        surfaces take the cloth, so the one red stays reserved.
+        STORY: A visitor who already knows Mat sees him, then the newest entry
+        at full size, then the rest of the album, then what else is in it.
+        FIRST VIEWPORT: Cloth spine down the left edge; portrait mounted on
+        corners at 232px; name at 74px; the lead entry's photo and title above
+        the fold at 1440x900. No hero band.
+        FORM: Family photo album — candidate 3 of 7, assigned by roll.
+        Seed key fa888a25.
+        FINISH: unreviewed and undocumented is unfinished; this build ends with
+        the finish review, the verdict, and DESIGN.md.
+        -->
+        <Spine />
+        <div class="md:pl-[84px]">
+            <AlbumNav />
+            <main>
+                <slot />
+            </main>
+            <BackCover />
+        </div>
     </body>
 </html>

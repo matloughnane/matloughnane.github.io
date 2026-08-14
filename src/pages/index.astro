@@ -1,16 +1,118 @@
 ---
-import HeroHeader from '../components/home/hero-header.astro';
-import LatestPosts from '../components/home/latest-posts.astro';
 import GlobalLayout from '../layouts/global-layout.astro';
+import MountedPhoto from '../components/album/mounted-photo.astro';
+import LeadEntry from '../components/album/lead-entry.astro';
+import EntryCard from '../components/album/entry-card.astro';
+import ContentsIndex from '../components/album/contents-index.astro';
+import { getSortedPosts } from '../lib/posts';
+
+const posts = getSortedPosts();
+const [lead, ...rest] = posts;
+
+// Five, not six: the first is mounted across two columns, so five fills the
+// spread exactly. Six left a single orphan on a third row.
+const [spreadLead, ...spreadRest] = rest.slice(0, 5);
 ---
 
 <GlobalLayout
     title="Mat Loughnane - A little about me: Coding, Cooking and Travelling"
-    description="Sharing travel adventures, food discoveries, and coding insights from around the my life"
+    description="Sharing travel adventures, food discoveries, and coding insights from around my life"
 >
-    <HeroHeader />
-    <LatestPosts limit={7} />
-    <div class="flex flex-row justify-end mx-18 my-8">
-        <a class="btn" href="/posts">See All Posts</a>
+    <div class="flex flex-col gap-11 px-5 py-8 md:gap-12 md:px-14 md:py-11">
+        <!-- The person, mounted on the leaf. -->
+        <section
+            class="flex flex-col gap-7 md:flex-row md:items-start md:gap-12"
+        >
+            <figure class="flex shrink-0 flex-col gap-3">
+                <MountedPhoto
+                    src="/assets/images/about/about-profile-paris.jpeg"
+                    alt="Mat Loughnane in Paris, August 2025"
+                    loading="eager"
+                    corner={30}
+                    class="h-[260px] w-full md:h-[286px] md:w-[232px]"
+                />
+                <figcaption
+                    class="font-caption text-[13px] tracking-[0.03em] text-ink-2"
+                >
+                    Paris, August 2025
+                </figcaption>
+            </figure>
+
+            <div class="flex flex-col gap-5 md:pt-1">
+                <h1
+                    class="font-display text-[46px] leading-[0.94] tracking-[-0.03em] text-ink sm:text-[62px] md:text-[74px]"
+                >
+                    Mat Loughnane
+                </h1>
+                <p class="max-w-[60ch] text-[17px] leading-7 text-ink">
+                    A software developer from London, living in Dublin. I cook
+                    (mostly to satisfy a sweet tooth) and go looking for other
+                    people's cooking whenever I travel.
+                    <p class="max-w-[60ch] text-[15px] leading-6 text-ink-2">
+                        Building web and mobile apps for over a decade as <a
+                            href="https://hexastudios.co"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="underline decoration-ink-2/50 transition-colors hover:text-ink hover:decoration-ink"
+                            >Hexa Studios</a
+                        > — that work lives there. This is everything else.
+                    </p>
+                </p>
+                <p
+                    class="max-w-[60ch] text-[15px] leading-2 text-muted-foreground"
+                >
+                    PS. Not a great photographer, but improving!
+                </p>
+            </div>
+        </section>
+
+        {
+            lead && (
+                <LeadEntry
+                    title={lead.title}
+                    slug={lead.slug}
+                    image={lead.image}
+                    categories={lead.categories}
+                    description={lead.description}
+                    learnMore={lead.learnMore}
+                    date={lead.date}
+                />
+            )
+        }
+
+        <!-- A leaf spread, not a card grid: the first photo is mounted across
+             two columns so the row reads as a page someone laid out, rather
+             than six identical slots. -->
+        <section
+            class="grid grid-cols-1 gap-x-10 gap-y-11 border-t border-edge pt-9 sm:grid-cols-2 lg:grid-cols-3"
+        >
+            <h2 class="sr-only">More from the album</h2>
+
+            <div class="lg:col-span-2">
+                <EntryCard
+                    title={spreadLead.title}
+                    slug={spreadLead.slug}
+                    image={spreadLead.image}
+                    categories={spreadLead.categories}
+                    description={spreadLead.description}
+                    date={spreadLead.date}
+                />
+            </div>
+
+            {
+                spreadRest.map((post) => (
+                    <EntryCard
+                        title={post.title}
+                        slug={post.slug}
+                        image={post.image}
+                        categories={post.categories}
+                        description={post.description}
+                        date={post.date}
+                    />
+                ))
+            }
+        </section>
+
+        <ContentsIndex />
     </div>
 </GlobalLayout>

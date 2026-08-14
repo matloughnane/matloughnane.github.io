@@ -1,49 +1,55 @@
 ---
-import SubPageNav from '../components/navigation/sub-page-nav.astro';
 import GlobalLayout from '../layouts/global-layout.astro';
+import MountedPhoto from '../components/album/mounted-photo.astro';
 ---
 
 <GlobalLayout
     title="About"
     description="Software developer from London, living in Dublin. Founder of Hexa Studios, passionate about cooking, baking, and exploring different cuisines while traveling the world."
 >
-    <SubPageNav />
-    <main class="max-w-4xl mx-auto my-12 px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="col-span-1">
+    <div class="px-5 py-9 md:px-14 md:py-12">
+        <div
+            class="mx-auto grid max-w-5xl grid-cols-1 gap-10 md:grid-cols-2 md:gap-14"
+        >
+            <div class="flex flex-col gap-5">
                 <h1
-                    class="text-4xl sm:text-5xl md:text-6xl font-bold text-right tracking-tighter"
+                    class="font-display text-[46px] leading-[0.94] tracking-[-0.03em] text-ink sm:text-[62px]"
                 >
                     Mat<br />Loughnane
                 </h1>
-                <h2 class="text-2xl font-bold text-right py-8 text-[#9A0D1B]">
-                    just a little about me
-                </h2>
-            </div>
-            <div class="col-span-1">
-                <p class="mb-8 text-lg">
+                <p class="max-w-[60ch] text-[17px] leading-7 text-ink">
                     I'm a software developer from London, living in Dublin. I
                     enjoy cooking, especially baking to satisfy my sweet tooth
                     and exploring different cuisines on my travels.
                 </p>
-                <p class="mb-8 text-lg">
-                    My favourite thing to make - Carrot Cake
+                <p class="text-[17px] leading-7 text-ink-2">
+                    My favourite thing to make — carrot cake.
                 </p>
-                <div class="h-[350px] md:h-[550px] overflow-hidden rounded-lg">
-                    <img
-                        class="w-full h-full object-cover"
-                        src="/assets/images/about/about-profile-paris.jpeg"
-                    />
-                    <!-- src="/assets/images/about/about-profile.jpg" -->
-                </div>
-                <span class="my-8 block text-lg">
+                <p class="text-[15px] leading-6 text-ink-2">
                     Learn more about my work at <a
                         href="https://hexastudios.co"
-                        class="cursor-pointer underline hover:text-[#9A0D1B]"
-                        target="_blank">hexastudios.co</a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="underline decoration-ink-2/50 transition-colors hover:text-ink hover:decoration-ink"
+                        >hexastudios.co</a
                     >
-                </span>
+                </p>
             </div>
+
+            <figure class="flex flex-col gap-3">
+                <MountedPhoto
+                    src="/assets/images/about/about-profile-paris.jpeg"
+                    alt="Mat Loughnane in Paris, August 2025"
+                    loading="eager"
+                    corner={32}
+                    class="h-[380px] w-full md:h-[520px]"
+                />
+                <figcaption
+                    class="font-caption text-[13px] tracking-[0.03em] text-ink-2"
+                >
+                    Paris, August 2025
+                </figcaption>
+            </figure>
         </div>
-    </main>
+    </div>
 </GlobalLayout>

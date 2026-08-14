@@ -1,0 +1,112 @@
+---
+// Three marks in one hand: a route line, a covered dish, a pair of brackets.
+// Single stroke weight throughout so they read as one set.
+import type { AlbumGroup } from '../../lib/posts';
+
+export interface Props {
+    group: AlbumGroup | null;
+    size?: number;
+    class?: string;
+}
+
+const { group, size = 22, class: className = '' } = Astro.props;
+---
+
+{
+    group === 'journeys' && (
+        <svg
+            class:list={[className]}
+            width={size}
+            height={size}
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+        >
+            <path
+                d="M2 19C7 19 6 5 12 5C18 5 17 19 22 19"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+            />
+        </svg>
+    )
+}
+{
+    group === 'kitchen' && (
+        <svg
+            class:list={[className]}
+            width={size}
+            height={size}
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+        >
+            <path
+                d="M3 11h18c0 5-4 8-9 8s-9-3-9-8Z"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linejoin="round"
+            />
+            <path
+                d="M9 7c0-2 2-2 2-4"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+            />
+            <path
+                d="M14.2 7c0-1.4 1.4-1.4 1.4-2.8"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+            />
+        </svg>
+    )
+}
+{
+    group === null && (
+        <svg
+            class:list={[className]}
+            width={size}
+            height={size}
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+        >
+            {/* The M's two triangles, drawn at the set's own stroke rather than
+                dropped in as the red tile — entries that fit no shelf still
+                hold the caption lane. */}
+            <path
+                d="M8 5.5 13 18.5 3 18.5 8 5.5Z"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linejoin="round"
+            />
+            <path
+                d="M16 5.5 21 18.5 11 18.5 16 5.5Z"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linejoin="round"
+            />
+        </svg>
+    )
+}
+{
+    group === 'builds' && (
+        <svg
+            class:list={[className]}
+            width={size}
+            height={size}
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+        >
+            <path
+                d="M8.5 6 3 12l5.5 6M15.5 6l5.5 6-5.5 6"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+        </svg>
+    )
+}

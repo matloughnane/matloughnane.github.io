@@ -1,0 +1,93 @@
+---
+// Light/dark switch. The head script in global-layout.astro has already
+// resolved the theme before paint; this only handles the change and persists it.
+export interface Props {
+    class?: string;
+}
+const { class: className = '' } = Astro.props;
+---
+
+<button
+    type="button"
+    data-theme-toggle
+    aria-pressed="false"
+    aria-label="Switch to dark"
+    class:list={[
+        'inline-flex h-9 w-9 items-center justify-center rounded-full text-ink-2 transition-colors hover:text-ink',
+        className,
+    ]}
+>
+    <svg
+        class="theme-icon-sun"
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        aria-hidden="true"
+    >
+        <circle cx="12" cy="12" r="4.6" stroke="currentColor" stroke-width="1.7"
+        ></circle>
+        <path
+            d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"></path>
+    </svg>
+    <svg
+        class="theme-icon-moon"
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        aria-hidden="true"
+    >
+        <path
+            d="M20 14.2A8.4 8.4 0 0 1 9.8 4a8.4 8.4 0 1 0 10.2 10.2Z"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linejoin="round"></path>
+    </svg>
+</button>
+
+<style>
+    /* Show the album you would switch to, not the one you are in. */
+    .theme-icon-sun {
+        display: none;
+    }
+    :global(.dark) .theme-icon-sun {
+        display: block;
+    }
+    :global(.dark) .theme-icon-moon {
+        display: none;
+    }
+</style>
+
+<script>
+    // The head script has already resolved the theme; sync the control's state
+    // to it on load, and keep the announced label describing what pressing it
+    // will DO — a static label announces that nothing changed.
+    const buttons = document.querySelectorAll<HTMLButtonElement>(
+        '[data-theme-toggle]'
+    );
+
+    const sync = () => {
+        const dark = document.documentElement.classList.contains('dark');
+        buttons.forEach((button) => {
+            button.setAttribute('aria-pressed', String(dark));
+            button.setAttribute(
+                'aria-label',
+                dark ? 'Switch to light' : 'Switch to dark'
+            );
+        });
+    };
+
+    sync();
+
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+            const dark = document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme', dark ? 'dark' : 'light');
+            sync();
+        });
+    });
+</script>

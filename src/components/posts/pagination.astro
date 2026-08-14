@@ -1,4 +1,6 @@
 ---
+import Arrow from '../album/arrow.astro';
+
 // Prev/Next pagination controls driven entirely by Astro's `page` object.
 // Renders nothing when there is only a single page.
 export interface Props {
@@ -12,10 +14,13 @@ export interface Props {
 const { page } = Astro.props;
 const { currentPage, lastPage, url } = page;
 
+// Ink, not reserve: the saturated red marks the most recent entry and nothing
+// else. Disabled state stays at full ink-2 — dimming it further drops it below
+// the contrast floor, and the missing underline already reads as unavailable.
 const linkClass =
-    'inline-block px-5 py-2 bg-[#9A0D1B] text-white text-sm font-medium rounded-full hover:opacity-90 transition-opacity';
+    'inline-flex items-center gap-2 border-b border-ink pb-1 text-[15px] font-semibold text-ink transition-opacity hover:opacity-70';
 const disabledClass =
-    'inline-block px-5 py-2 bg-gray-100 text-gray-400 text-sm font-medium rounded-full cursor-not-allowed select-none';
+    'inline-flex items-center gap-2 pb-1 text-[15px] font-semibold text-ink-2 cursor-not-allowed select-none';
 ---
 
 {
@@ -26,25 +31,29 @@ const disabledClass =
         >
             {url.prev ? (
                 <a href={url.prev} class={linkClass} rel="prev">
-                    &larr; Previous
+                    <Arrow direction="left" />
+                    Previous
                 </a>
             ) : (
                 <span class={disabledClass} aria-hidden="true">
-                    &larr; Previous
+                    <Arrow direction="left" />
+                    Previous
                 </span>
             )}
 
-            <span class="text-sm text-gray-600">
-                Page {currentPage} of {lastPage}
+            <span class="font-caption text-[13px] tracking-[0.1em] text-ink-2">
+                PAGE {currentPage} OF {lastPage}
             </span>
 
             {url.next ? (
                 <a href={url.next} class={linkClass} rel="next">
-                    Next &rarr;
+                    Next
+                    <Arrow direction="right" />
                 </a>
             ) : (
                 <span class={disabledClass} aria-hidden="true">
-                    Next &rarr;
+                    Next
+                    <Arrow direction="right" />
                 </span>
             )}
         </nav>

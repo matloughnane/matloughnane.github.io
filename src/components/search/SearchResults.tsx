@@ -4,9 +4,9 @@ interface Post {
     title: string;
     slug: string;
     image: string;
-    categories: string[];
     description: string;
-    learnMore?: string;
+    /** Pre-formatted caption line, e.g. "JOURNEYS · MAR 2024". */
+    caption: string;
 }
 
 interface SearchResultsProps {
@@ -29,21 +29,13 @@ export default function SearchResults({ posts }: SearchResultsProps) {
         );
     }, [query, posts]);
 
-    if (!query) {
+    if (!query || filtered.length === 0) {
         return (
-            <div className="text-center py-20 text-gray-500">
+            <div className="py-20 text-center text-ink-2">
                 <p className="text-lg">
-                    Enter a search term to find posts.
-                </p>
-            </div>
-        );
-    }
-
-    if (filtered.length === 0) {
-        return (
-            <div className="text-center py-20 text-gray-500">
-                <p className="text-lg">
-                    No posts found for "{query}"
+                    {query
+                        ? `No entries found for “${query}”`
+                        : 'Enter a search term to find entries.'}
                 </p>
             </div>
         );
@@ -51,46 +43,45 @@ export default function SearchResults({ posts }: SearchResultsProps) {
 
     return (
         <div>
-            <h1 className="text-3xl font-bold text-gray-900 mb-8">
-                {filtered.length} result{filtered.length !== 1 ? 's' : ''} for
+            {/* Stated the way the album states its counts: the caption line
+                carries the number, the heading carries the term. */}
+            <p className="font-caption text-[13px] tracking-[0.16em] text-ink-2">
+                {filtered.length} ENTR{filtered.length === 1 ? 'Y' : 'IES'}
+            </p>
+            <h1 className="mt-2 mb-10 text-[32px] leading-tight font-semibold tracking-[-0.015em] text-ink">
                 &ldquo;{query}&rdquo;
             </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
                 {filtered.map((post) => (
-                    <a
-                        key={post.slug}
-                        href={post.slug}
-                        className="group bg-white rounded-xl overflow-hidden shadow-md md:aspect-square block"
-                    >
-                        <div className="relative h-full flex flex-col">
-                            <div className="relative overflow-hidden">
+                    <article key={post.slug}>
+                        <a href={post.slug} className="group flex flex-col gap-3.5">
+                            {post.image && (
                                 <img
                                     src={post.image}
                                     alt={post.title}
-                                    className="w-full h-48 object-cover rounded-t-xl group-hover:scale-105 transition-all duration-300"
+                                    loading="lazy"
+                                    className="h-[212px] w-full border border-edge object-cover sm:h-[236px]"
                                 />
-                            </div>
-                            <div className="p-6 flex flex-col justify-between grow">
-                                <div>
-                                    <h3 className="text-lg font-semibold text-gray-900 mb-3 line-clamp-2 group-hover:text-gray-700 transition-colors">
-                                        {post.title}
-                                    </h3>
-                                    {post.description && (
-                                        <p className="text-sm text-gray-600 mb-3 leading-relaxed line-clamp-2">
-                                            {post.description}
-                                        </p>
-                                    )}
-                                </div>
-                                <div className="mt-auto flex flex-col gap-3">
-                                    <div className="flex flex-row items-center justify-end">
-                                        <span className="inline-block px-4 py-2 bg-[#9A0D1B] text-white text-sm font-medium rounded-full group-hover:opacity-90 transition-opacity">
-                                            {post.learnMore || 'More'}
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+                            )}
+                            {/* The reserve red marks the current entry and
+                                nothing else, so hover is carried by the rule
+                                under the title rather than by colour. */}
+                            <h2 className="line-clamp-2 text-[21px] leading-7 font-semibold tracking-[-0.015em] text-ink underline decoration-transparent decoration-1 underline-offset-4 transition-[text-decoration-color] group-hover:decoration-ink">
+                                {post.title}
+                            </h2>
+                            {post.caption && (
+                                <span className="font-caption text-[12px] tracking-[0.14em] text-ink-2">
+                                    {post.caption}
+                                </span>
+                            )}
+                            {post.description && (
+                                <p className="line-clamp-3 text-[15px] leading-6 text-ink-2">
+                                    {post.description}
+                                </p>
+                            )}
+                        </a>
+                    </article>
                 ))}
             </div>
         </div>

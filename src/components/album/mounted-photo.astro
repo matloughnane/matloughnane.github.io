@@ -1,0 +1,112 @@
+---
+// The album's core motif: a photograph held to the leaf by four gummed corner
+// mounts. Corners are drawn as four separate fixed-size SVGs rather than one
+// stretched overlay, so they stay square at any container size.
+export interface Props {
+    src: string;
+    alt: string;
+    /** Utility classes for the frame — set the size here (e.g. "h-72 w-full"). */
+    class?: string;
+    /** Corner mount size in px. Scale down for smaller photos. */
+    corner?: number;
+    loading?: 'eager' | 'lazy';
+}
+
+const {
+    src,
+    alt,
+    class: className = '',
+    corner = 30,
+    loading = 'lazy',
+} = Astro.props;
+
+const c = corner;
+---
+
+<div class:list={['album-photo relative overflow-hidden bg-leaf', className]}>
+    <img
+        src={src}
+        alt={alt}
+        loading={loading}
+        decoding="async"
+        class="block h-full w-full object-cover"
+    />
+    <span class="pointer-events-none absolute inset-0" aria-hidden="true">
+        <svg
+            class="album-corner absolute left-0 top-0 origin-top-left"
+            width={c}
+            height={c}
+            viewBox={`0 0 ${c} ${c}`}
+            fill="none"
+        >
+            <path d={`M0 0 H${c} L0 ${c} Z`} fill="var(--album-corner)"></path>
+            <path
+                d={`M${c} 0 L0 ${c}`}
+                stroke="var(--album-edge)"
+                stroke-width="1"></path>
+        </svg>
+        <svg
+            class="album-corner absolute right-0 top-0 origin-top-right"
+            width={c}
+            height={c}
+            viewBox={`0 0 ${c} ${c}`}
+            fill="none"
+        >
+            <path d={`M${c} 0 V${c} L0 0 Z`} fill="var(--album-corner)"></path>
+            <path
+                d={`M0 0 L${c} ${c}`}
+                stroke="var(--album-edge)"
+                stroke-width="1"></path>
+        </svg>
+        <svg
+            class="album-corner absolute bottom-0 left-0 origin-bottom-left"
+            width={c}
+            height={c}
+            viewBox={`0 0 ${c} ${c}`}
+            fill="none"
+        >
+            <path d={`M0 ${c} V0 L${c} ${c} Z`} fill="var(--album-corner)"
+            ></path>
+            <path
+                d={`M0 0 L${c} ${c}`}
+                stroke="var(--album-edge)"
+                stroke-width="1"></path>
+        </svg>
+        <svg
+            class="album-corner absolute bottom-0 right-0 origin-bottom-right"
+            width={c}
+            height={c}
+            viewBox={`0 0 ${c} ${c}`}
+            fill="none"
+        >
+            <path d={`M${c} ${c} H0 L${c} 0 Z`} fill="var(--album-corner)"
+            ></path>
+            <path
+                d={`M${c} 0 L0 ${c}`}
+                stroke="var(--album-edge)"
+                stroke-width="1"></path>
+        </svg>
+    </span>
+</div>
+
+<style>
+    /* The album's native motion: the mounts tighten on the photo. */
+    .album-corner {
+        transition: transform 420ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    :global(a:hover) .album-photo .album-corner,
+    .album-photo:hover .album-corner {
+        transform: scale(0.82);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .album-corner {
+            transition: none;
+        }
+        :global(a:hover) .album-photo .album-corner,
+        .album-photo:hover .album-corner {
+            transform: none;
+        }
+    }
+</style>

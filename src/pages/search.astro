@@ -1,82 +1,35 @@
 ---
 import SearchResults from '../components/search/SearchResults.tsx';
-import SubPageNav from '../components/navigation/sub-page-nav.astro';
 import GlobalLayout from '../layouts/global-layout.astro';
+import { getSortedPosts, albumGroup, GROUP_LABELS } from '../lib/posts';
 
-const allPosts = import.meta.glob('./posts/*.{md,mdx}', { eager: true });
+// This page used to re-implement the glob/scrape logic from lib/posts.ts. That
+// copy still used post.rawContent(), which Astro 7 no longer exposes on .mdx
+// modules, so every search result came through with an empty description — and
+// the description is half of what the filter matches on. Use the shared loader,
+// which also drops drafts and WIP entries the way the rest of the album does.
+//
+// The caption is composed here rather than in the React component: albumGroup
+// lives beside an import.meta.glob, and importing it client-side would pull
+// every post into the browser bundle.
+const posts = getSortedPosts().map((post) => {
+    const group = albumGroup(post.categories);
+    const stamped = new Date(post.date)
+        .toLocaleDateString('en-GB', { month: 'short', year: 'numeric' })
+        .toUpperCase();
 
-const posts = Object.entries(allPosts)
-    .map(([path, post]: [string, any]) => {
-        const slug =
-            path
-                .split('/')
-                .pop()
-                ?.replace(/\.(md|mdx)$/, '') || '';
-
-        let description = '';
-        let content = '';
-        if (post.rawContent && typeof post.rawContent === 'function') {
-            content = post.rawContent();
-        } else if (post.body) {
-            content = post.body;
-        } else if (
-            post.compiledContent &&
-            typeof post.compiledContent === 'function'
-        ) {
-            content = post.compiledContent();
-        }
-
-        if (content) {
-            const lines = content.split('\n');
-            for (const line of lines) {
-                const trimmed = line.trim();
-                if (
-                    trimmed &&
-                    !trimmed.startsWith('#') &&
-                    !trimmed.startsWith('---') &&
-                    !trimmed.startsWith('!') &&
-                    !trimmed.startsWith('import ') &&
-                    !trimmed.startsWith('<')
-                ) {
-                    description = trimmed
-                        .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
-                        .replace(/\*\*([^*]+)\*\*/g, '$1')
-                        .replace(/\*([^*]+)\*/g, '$1')
-                        .replace(/`([^`]+)`/g, '$1')
-                        .replace(/!\[([^\]]*)\]\([^)]+\)/g, '$1')
-                        .replace(/<[^>]+>/g, '')
-                        .replace(/\s+/g, ' ')
-                        .trim()
-                        .substring(0, 150);
-                    break;
-                }
-            }
-        }
-
-        if (!description) {
-            description = `Read about ${post.frontmatter?.title || 'this post'} on Mat Loughnane's blog.`;
-        }
-
-        return {
-            title: post.frontmatter?.title || '',
-            image: post.frontmatter?.image || '',
-            categories: post.frontmatter?.categories || [],
-            slug: `/posts/${slug}`,
-            description,
-            learnMore: post.frontmatter?.learn_more || '',
-        };
-    })
-    .filter((post) => post.title);
+    return {
+        title: post.title,
+        slug: post.slug,
+        image: post.image,
+        description: post.description,
+        caption: `${group ? GROUP_LABELS[group].toUpperCase() : 'ENTRY'} · ${stamped}`,
+    };
+});
 ---
 
-<GlobalLayout
-    title="Search"
-    description="Search posts on Mat Loughnane's blog."
->
-    <SubPageNav />
-    <section class="py-8 px-8">
-        <div class="max-w-7xl mx-auto">
-            <SearchResults client:only="react" posts={posts} />
-        </div>
+<GlobalLayout title="Search" description="Search posts on Mat Loughnane's blog.">
+    <section class="px-5 py-9 md:px-14 md:py-11">
+        <SearchResults client:only="react" posts={posts} />
     </section>
 </GlobalLayout>

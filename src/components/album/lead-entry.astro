@@ -1,0 +1,75 @@
+---
+import MountedPhoto from './mounted-photo.astro';
+import { albumGroup, GROUP_LABELS } from '../../lib/posts';
+
+export interface Props {
+    title: string;
+    slug: string;
+    image: string;
+    categories: string[];
+    description?: string;
+    learnMore?: string;
+    date: string;
+}
+
+const { title, slug, image, categories, description, learnMore, date } =
+    Astro.props;
+
+const group = albumGroup(categories);
+const stamped = new Date(date).toLocaleDateString('en-GB', {
+    month: 'long',
+    year: 'numeric',
+});
+---
+
+<article class="border-t border-edge pt-9">
+    <div class="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-11">
+        <a href={slug} class="block lg:w-[58%]" tabindex="-1" aria-hidden="true">
+            <MountedPhoto
+                src={image}
+                alt={title}
+                loading="eager"
+                corner={34}
+                class="h-[240px] w-full sm:h-[320px] lg:h-[376px]"
+            />
+        </a>
+
+        <div class="flex flex-col gap-5 lg:flex-1 lg:pt-1">
+            <h2
+                class="font-display text-[42px] leading-[0.95] tracking-[-0.03em] text-ink sm:text-[52px] lg:text-[58px]"
+            >
+                <a href={slug} class="hover:text-reserve transition-colors"
+                    >{title}</a
+                >
+            </h2>
+
+            <div class="flex items-center gap-2.5">
+                <span
+                    class="h-2.5 w-2.5 shrink-0 bg-reserve"
+                    title="Most recent entry"></span>
+                <span
+                    class="font-caption text-[13px] tracking-[0.14em] text-ink-2"
+                >
+                    {group ? GROUP_LABELS[group].toUpperCase() : 'ENTRY'} · {
+                        stamped.toUpperCase()
+                    }
+                </span>
+            </div>
+
+            {
+                description && (
+                    <p class="max-w-[46ch] text-[17px] leading-7 text-ink">
+                        {description}
+                    </p>
+                )
+            }
+
+            <a
+                href={slug}
+                class="w-fit border-b border-reserve pb-1 text-[15px] font-semibold text-reserve transition-opacity hover:opacity-80"
+            >
+                {learnMore || 'Read this entry'} &rarr;
+            </a>
+        </div>
+    </div>
+</article>

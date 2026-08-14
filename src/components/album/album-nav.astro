@@ -1,0 +1,134 @@
+---
+import SearchToggle from '../search/SearchToggle.tsx';
+import ThemeToggle from './theme-toggle.astro';
+import { getSortedPosts } from '../../lib/posts';
+
+const links = [
+    { label: 'Home', href: '/' },
+    { label: 'About', href: '/about' },
+    { label: 'Posts', href: '/posts' },
+];
+
+const posts = getSortedPosts();
+const years = posts.map((post) => new Date(post.date).getFullYear());
+const span = `${Math.min(...years)}—${Math.max(...years)}`;
+
+// Written out, the way a caption is, rather than set as a figure.
+const WORDS = [
+    'ZERO', 'ONE', 'TWO', 'THREE', 'FOUR', 'FIVE', 'SIX', 'SEVEN', 'EIGHT',
+    'NINE', 'TEN', 'ELEVEN', 'TWELVE', 'THIRTEEN', 'FOURTEEN', 'FIFTEEN',
+    'SIXTEEN', 'SEVENTEEN', 'EIGHTEEN', 'NINETEEN',
+];
+const TENS = ['', '', 'TWENTY', 'THIRTY', 'FORTY', 'FIFTY', 'SIXTY', 'SEVENTY', 'EIGHTY', 'NINETY'];
+
+function spellOut(n: number): string {
+    if (n < 20) return WORDS[n];
+    const tens = TENS[Math.floor(n / 10)];
+    const unit = n % 10;
+    return unit ? `${tens}-${WORDS[unit]}` : tens;
+}
+
+const entryLine = `${spellOut(posts.length)} ENTRIES · ${span}`;
+const path = Astro.url.pathname;
+const isActive = (href: string) =>
+    href === '/' ? path === '/' : path.startsWith(href);
+---
+
+<nav
+    class="flex items-center justify-between gap-6 border-b border-edge px-5 py-4 md:px-14 md:py-5"
+    aria-label="Primary"
+>
+    <span
+        class="hidden font-caption text-[13px] tracking-[0.16em] text-ink-2 md:block"
+    >
+        {entryLine}
+    </span>
+
+    <button
+        id="album-nav-toggle"
+        type="button"
+        class="flex h-8 w-8 flex-col justify-center gap-1.5 md:hidden"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="album-nav-menu"
+    >
+        <span class="nav-bar block h-0.5 w-6 bg-ink transition-transform"></span>
+        <span class="nav-bar block h-0.5 w-6 bg-ink transition-opacity"></span>
+        <span class="nav-bar block h-0.5 w-6 bg-ink transition-transform"></span>
+    </button>
+
+    <div class="flex items-center gap-6 md:gap-8">
+        <div class="hidden items-center gap-8 md:flex">
+            {
+                links.map((link) => (
+                    <a
+                        href={link.href}
+                        aria-current={isActive(link.href) ? 'page' : undefined}
+                        class:list={[
+                            'text-sm transition-colors hover:text-ink',
+                            isActive(link.href)
+                                ? 'font-semibold text-ink'
+                                : 'text-ink-2',
+                        ]}
+                    >
+                        {link.label}
+                    </a>
+                ))
+            }
+        </div>
+        <div class="flex items-center gap-2 text-ink-2">
+            <SearchToggle client:load variant="subnav" />
+            <ThemeToggle />
+        </div>
+    </div>
+</nav>
+
+<div
+    id="album-nav-menu"
+    class="hidden flex-col gap-4 border-b border-edge px-5 py-5 md:hidden"
+>
+    {
+        links.map((link) => (
+            <a
+                href={link.href}
+                aria-current={isActive(link.href) ? 'page' : undefined}
+                class:list={[
+                    'text-base',
+                    isActive(link.href)
+                        ? 'font-semibold text-ink'
+                        : 'text-ink-2',
+                ]}
+            >
+                {link.label}
+            </a>
+        ))
+    }
+    <span class="font-caption text-[12px] tracking-[0.16em] text-ink-2">
+        {entryLine}
+    </span>
+</div>
+
+<style>
+    #album-nav-toggle.is-open .nav-bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    #album-nav-toggle.is-open .nav-bar:nth-child(2) {
+        opacity: 0;
+    }
+    #album-nav-toggle.is-open .nav-bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+</style>
+
+<script>
+    const toggle = document.getElementById('album-nav-toggle');
+    const menu = document.getElementById('album-nav-menu');
+
+    toggle?.addEventListener('click', () => {
+        const willOpen = menu?.classList.contains('hidden');
+        menu?.classList.toggle('hidden');
+        menu?.classList.toggle('flex', willOpen);
+        toggle.classList.toggle('is-open', willOpen);
+        toggle.setAttribute('aria-expanded', String(willOpen));
+    });
+</script>

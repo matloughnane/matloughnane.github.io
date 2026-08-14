@@ -1,34 +1,47 @@
 ---
 import type { GetStaticPaths } from 'astro';
-import GlobalLayout from '../../layouts/global-layout.astro';
-import LeadEntry from '../../components/album/lead-entry.astro';
-import EntryCard from '../../components/album/entry-card.astro';
-import CategoryMark from '../../components/album/category-mark.astro';
-import Pagination from '../../components/posts/pagination.astro';
+import GlobalLayout from '../../../layouts/global-layout.astro';
+import LeadEntry from '../../../components/album/lead-entry.astro';
+import EntryCard from '../../../components/album/entry-card.astro';
+import CategoryMark from '../../../components/album/category-mark.astro';
+import Pagination from '../../../components/posts/pagination.astro';
 import {
     getSortedPosts,
     getCategoryCounts,
     getEntryCount,
-} from '../../lib/posts';
+    albumGroup,
+    GROUP_LABELS,
+    type AlbumGroup,
+} from '../../../lib/posts';
 
+// One shelf of the album at a time. The URLs are the shelf names —
+// /posts/journeys, /posts/kitchen, /posts/builds — and they paginate the same
+// way /posts does. Only those three params are ever generated, so this route
+// never shadows /posts, /posts/2, or a dated post permalink.
 export const getStaticPaths = (({ paginate }) => {
-    // Pull the most recent post out as the featured wide card, then paginate the
-    // rest at 12 per page. Page 1 therefore holds 13 posts (1 featured + 12 grid),
-    // filling exactly 4 rows of 3 on the widescreen grid; pages 2+ hold 12.
-    const [featured, ...rest] = getSortedPosts();
-    return paginate(rest, { pageSize: 12, props: { featured } });
+    const posts = getSortedPosts();
+    const groups = Object.keys(GROUP_LABELS) as AlbumGroup[];
+
+    return groups.flatMap((group) => {
+        const shelf = posts.filter((post) => albumGroup(post.categories) === group);
+        // Same shape as /posts: newest entry leads, the rest fill the grid.
+        const [featured, ...rest] = shelf;
+        return paginate(rest, {
+            params: { group },
+            pageSize: 12,
+            props: { featured, group },
+        });
+    });
 }) satisfies GetStaticPaths;
 
-const { page, featured } = Astro.props;
+const { page, featured, group } = Astro.props;
 
-// The featured wide card only appears on page 1.
-const featuredPost = page.currentPage === 1 ? featured : undefined;
-const gridPosts = page.data;
-
-// Shelf filters. This view is the unfiltered one, so "all entries" reads active
-// and each shelf links to its own paginated route.
+const label = GROUP_LABELS[group as AlbumGroup];
 const shelves = getCategoryCounts();
 const total = getEntryCount();
+
+const featuredPost = page.currentPage === 1 ? featured : undefined;
+const gridPosts = page.data;
 
 const filterBase =
     'inline-flex items-center gap-2 font-caption text-[12px] tracking-[0.14em] transition-colors md:text-[13px]';
@@ -37,33 +50,35 @@ const filterOff = 'border-b border-transparent pb-1 text-ink-2 hover:text-ink';
 ---
 
 <GlobalLayout
-    title="All Posts"
-    description="Travel stories, food adventures, and coding insights..."
+    title={label}
+    description={`Every ${label.toLowerCase()} entry in the album.`}
 >
     <div class="flex flex-col gap-11 px-5 py-8 md:gap-12 md:px-14 md:py-11">
         <div class="flex flex-col gap-6">
             <h1
                 class="font-display text-[42px] leading-[0.95] tracking-[-0.03em] text-ink sm:text-[54px]"
             >
-                All entries
+                {label}
             </h1>
 
             <nav
                 class="flex flex-wrap items-center gap-x-7 gap-y-3"
                 aria-label="Filter entries by shelf"
             >
-                <a
-                    href="/posts"
-                    aria-current="page"
-                    class:list={[filterBase, filterOn]}
-                >
+                <a href="/posts" class:list={[filterBase, filterOff]}>
                     ALL ENTRIES · {total}
                 </a>
                 {
                     shelves.map((shelf) => (
                         <a
                             href={`/posts/${shelf.group}`}
-                            class:list={[filterBase, filterOff]}
+                            aria-current={
+                                shelf.group === group ? 'page' : undefined
+                            }
+                            class:list={[
+                                filterBase,
+                                shelf.group === group ? filterOn : filterOff,
+                            ]}
                         >
                             <CategoryMark group={shelf.group} size={15} />
                             {shelf.label.toUpperCase()} · {shelf.count}
