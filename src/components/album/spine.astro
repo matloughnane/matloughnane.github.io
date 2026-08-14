@@ -1,13 +1,8 @@
 ---
-// The oxblood book cloth. A vertical spine on desktop with the name blocked
-// letter by letter, the way a narrow album spine is actually stamped; a
-// horizontal cloth band on mobile, where vertical letterforms do not survive
-// 390px. Fixed on desktop so it runs the full height of every page.
-//
-// The brush wordmark is red (#c0392b) and the cloth is oxblood (#7e1220) —
-// 1.9:1, invisible. So it is pasted on a pale label the way an album spine
-// actually carries its title: cream plate, red mark, 4.46:1.
-const letters = 'LOUGHNANE'.split('');
+// The oxblood book cloth: a bare vertical spine on desktop carrying only the
+// M mark and the reading-depth fill, and a horizontal cloth band on mobile,
+// where there is width for the name to sit beside the mark. Fixed on desktop
+// so it runs the full height of every page.
 ---
 
 <!-- Desktop: the spine -->
@@ -38,18 +33,6 @@ const letters = 'LOUGHNANE'.split('');
             <path d="M327.68,74.96l163.84,327.68l-327.68,0l163.84,-327.68Z"></path>
         </svg>
     </a>
-
-    <div class="relative flex flex-col items-center" aria-hidden="true">
-        {
-            letters.map((letter) => (
-                <span
-                    class="font-display text-[19px] leading-5 tracking-[0.02em] text-on-cloth"
-                >
-                    {letter}
-                </span>
-            ))
-        }
-    </div>
 </div>
 
 <!-- Mobile: the same cloth, laid flat -->
