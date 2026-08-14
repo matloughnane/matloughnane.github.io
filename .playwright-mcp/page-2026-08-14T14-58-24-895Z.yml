@@ -1,0 +1,91 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation "Primary" [ref=e4]:
+        - link "Home" [ref=e5] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=e6] [cursor=pointer]:
+          - /url: /about
+        - link "Posts" [ref=e7] [cursor=pointer]:
+          - /url: /posts
+      - generic [ref=e8]:
+        - button "Open search" [ref=e10] [cursor=pointer]
+        - button "Switch to light theme" [pressed] [ref=e14]
+    - main [ref=e18]:
+      - generic [ref=e19]:
+        - heading "Mat Loughnane" [level=1] [ref=e20]
+        - paragraph [ref=e21]:
+          - text: Software developer from London, living in Dublin. I bake to satisfy a sweet tooth, and go looking for other people's cooking whenever I travel. I build web and mobile apps as
+          - link "Hexa Studios" [ref=e22] [cursor=pointer]:
+            - /url: https://hexastudios.co
+          - text: — this is everything else.
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - heading "Writing" [level=2] [ref=e25]
+          - link "All 36 →" [ref=e26] [cursor=pointer]:
+            - /url: /posts
+        - list [ref=e29]:
+          - listitem [ref=e30]:
+            - link "Dingle 14 Jul 26" [ref=e31] [cursor=pointer]:
+              - /url: /posts/2026-07-14-dingle
+              - generic [ref=e32]: Dingle
+              - time [ref=e34]: 14 Jul 26
+          - listitem [ref=e35]:
+            - 'link "The Arranmore Challenge App: Ready for 2026 28 May 26" [ref=e36] [cursor=pointer]':
+              - /url: /posts/2026-05-28-arranmore-challenge
+              - generic [ref=e37]: "The Arranmore Challenge App: Ready for 2026"
+              - time [ref=e39]: 28 May 26
+          - listitem [ref=e40]:
+            - link "A New Look for the Site 06 Feb 26" [ref=e41] [cursor=pointer]:
+              - /url: /posts/2026-02-06-jekyll-to-astro
+              - generic [ref=e42]: A New Look for the Site
+              - time [ref=e44]: 06 Feb 26
+          - listitem [ref=e45]:
+            - link "Experimenting with AI 05 Feb 26" [ref=e46] [cursor=pointer]:
+              - /url: /posts/2026-02-05-ai-experimentation-mcp-to-mastra
+              - generic [ref=e47]: Experimenting with AI
+              - time [ref=e49]: 05 Feb 26
+          - listitem [ref=e50]:
+            - link "Tenerife 03 Jan 26" [ref=e51] [cursor=pointer]:
+              - /url: /posts/2026-01-03-tenerife
+              - generic [ref=e52]: Tenerife
+              - time [ref=e54]: 03 Jan 26
+          - listitem [ref=e55]:
+            - link "Happy Anniver-Paris 24 Aug 25" [ref=e56] [cursor=pointer]:
+              - /url: /posts/2025-08-24-paris
+              - generic [ref=e57]: Happy Anniver-Paris
+              - time [ref=e59]: 24 Aug 25
+          - listitem [ref=e60]:
+            - link "Bridgit 20 May 25" [ref=e61] [cursor=pointer]:
+              - /url: /posts/2025-05-20-bridgit
+              - generic [ref=e62]: Bridgit
+              - time [ref=e64]: 20 May 25
+          - listitem [ref=e65]:
+            - link "Bali & Philippines 04 May 25" [ref=e66] [cursor=pointer]:
+              - /url: /posts/2025-05-04-bali-philippines
+              - generic [ref=e67]: Bali & Philippines
+              - time [ref=e69]: 04 May 25
+          - listitem [ref=e70]:
+            - link "Hexa Studios Round Up 30 Dec 24" [ref=e71] [cursor=pointer]:
+              - /url: /posts/2024-12-30-2024-hexa-round-up
+              - generic [ref=e72]: Hexa Studios Round Up
+              - time [ref=e74]: 30 Dec 24
+          - listitem [ref=e75]:
+            - link "Married 24 Aug 24" [ref=e76] [cursor=pointer]:
+              - /url: /posts/2024-08-24-married
+              - generic [ref=e77]: Married
+              - time [ref=e79]: 24 Aug 24
+    - contentinfo [ref=e80]:
+      - generic [ref=e81]:
+        - link "Hexa Studios" [ref=e82] [cursor=pointer]:
+          - /url: https://hexastudios.co
+        - link "GitHub" [ref=e83] [cursor=pointer]:
+          - /url: https://github.com/matloughnane
+        - link "LinkedIn" [ref=e84] [cursor=pointer]:
+          - /url: https://linkedin.com/in/matloughnane
+      - generic [ref=e85]: © 2026 Mat Loughnane
+  - generic [ref=e88]:
+    - button [ref=e89]
+    - button [ref=e95]
+    - button [ref=e99]
+    - button [ref=e104]

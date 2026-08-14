@@ -11,25 +11,34 @@
 }
 
 /* ── Palette ───────────────────────────────────────────────────────────────
-   Near-monochrome with a single accent, which is the canon this build was
-   commissioned to execute. The accent is the site's existing red, lightened
-   for the dark theme so it clears contrast on a near-black ground. */
+   Lamplit paper: an anglepoise on a desk at night, not a cream editorial page.
+   The colour lives in the neutrals — every surface and ink carries a little
+   warmth (chroma 0.004–0.014) while the ground stays at near-white lightness,
+   so the page reads warm rather than beige. One deep red, kept rare.
+
+   Stated deliberately: the craft floor flags "warm off-white × red" as a
+   current cliché. The brief pinned an atmospheric warm shift, and a pinned
+   brief wins — but the tint is held an order of magnitude below cream
+   (L 0.992 / C 0.004, not L 0.96 / C 0.03) precisely to stay clear of it.
+
+   OKLCH so lightness and chroma move predictably; dark is composed on its own
+   elevation ladder rather than inverted from light. */
 :root {
-    --bg: #ffffff;
-    --bg-subtle: #fafafa;
-    --fg: #111111;
-    --fg-muted: #6b6b6b;
-    --line: #e6e6e6;
-    --accent: #9a0d1b;
+    --bg: oklch(0.992 0.004 75);
+    --bg-subtle: oklch(0.97 0.007 75);
+    --fg: oklch(0.235 0.01 55);
+    --fg-muted: oklch(0.53 0.014 58);
+    --line: oklch(0.9 0.009 75);
+    --accent: oklch(0.42 0.155 25);
 }
 
 .dark {
-    --bg: #0a0a0a;
-    --bg-subtle: #121212;
-    --fg: #ededed;
-    --fg-muted: #a1a1a1;
-    --line: #232323;
-    --accent: #f36d63;
+    --bg: oklch(0.175 0.008 60);
+    --bg-subtle: oklch(0.225 0.01 60);
+    --fg: oklch(0.94 0.006 80);
+    --fg-muted: oklch(0.73 0.012 70);
+    --line: oklch(0.295 0.01 60);
+    --accent: oklch(0.72 0.14 28);
 }
 
 @theme inline {
