@@ -1,6 +1,5 @@
 ---
 import SearchResults from '../components/search/SearchResults.tsx';
-import SubPageNav from '../components/navigation/sub-page-nav.astro';
 import GlobalLayout from '../layouts/global-layout.astro';
 
 const allPosts = import.meta.glob('./posts/*.{md,mdx}', { eager: true });
@@ -73,10 +72,5 @@ const posts = Object.entries(allPosts)
     title="Search"
     description="Search posts on Mat Loughnane's blog."
 >
-    <SubPageNav />
-    <section class="py-8 px-8">
-        <div class="max-w-7xl mx-auto">
-            <SearchResults client:only="react" posts={posts} />
-        </div>
-    </section>
+    <SearchResults client:only="react" posts={posts} />
 </GlobalLayout>

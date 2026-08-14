@@ -1,0 +1,76 @@
+---
+import type { PostSummary } from '../../lib/posts';
+
+// The canon's signature structure: title left, date right, grouped by year.
+// A list, not a card grid — it scans, it loads instantly, and it puts the
+// writing first.
+export interface Props {
+    posts: PostSummary[];
+    /** Year headings help at archive length and get in the way at 8 items. */
+    grouped?: boolean;
+}
+
+const { posts, grouped = false } = Astro.props;
+
+const byYear = posts.reduce<Record<string, PostSummary[]>>((acc, post) => {
+    const year = String(new Date(post.date).getFullYear());
+    (acc[year] ||= []).push(post);
+    return acc;
+}, {});
+
+const years = Object.keys(byYear).sort((a, b) => Number(b) - Number(a));
+const groups = grouped
+    ? years.map((y) => ({ year: y, items: byYear[y] }))
+    : [{ year: '', items: posts }];
+---
+
+<div class="flex flex-col gap-10">
+    {
+        groups.map((group) => (
+            <section class="flex flex-col gap-1">
+                {group.year && (
+                    <h2 class="mb-2 font-mono text-[13px] text-fg-muted">
+                        {group.year}
+                    </h2>
+                )}
+
+                <ul class="flex flex-col">
+                    {group.items.map((post) => (
+                        <li>
+                            <a
+                                href={post.slug}
+                                class="group -mx-3 flex items-baseline justify-between gap-4 rounded-md px-3 py-2.5 transition-colors hover:bg-bg-subtle"
+                            >
+                                <span class="text-[15px] leading-6 text-fg group-hover:text-accent">
+                                    {post.title}
+                                </span>
+                                <span
+                                    class="hidden h-px flex-1 self-center border-b border-dashed border-line sm:block"
+                                    aria-hidden="true"
+                                />
+                                {/* Ungrouped lists carry the year, or two posts
+                                    a year apart both read "24 Aug". Grouped
+                                    lists have the year heading already. */}
+                                <time
+                                    datetime={post.date}
+                                    class="shrink-0 font-mono text-[13px] text-fg-muted"
+                                >
+                                    {new Date(post.date).toLocaleDateString(
+                                        'en-GB',
+                                        grouped
+                                            ? { day: '2-digit', month: 'short' }
+                                            : {
+                                                  day: '2-digit',
+                                                  month: 'short',
+                                                  year: '2-digit',
+                                              }
+                                    )}
+                                </time>
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </section>
+        ))
+    }
+</div>

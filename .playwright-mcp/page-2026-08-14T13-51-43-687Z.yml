@@ -1,0 +1,91 @@
+- generic [active] [ref=f4758e1]:
+  - generic [ref=f4758e2]:
+    - banner [ref=f4758e3]:
+      - navigation "Primary" [ref=f4758e4]:
+        - link "Home" [ref=f4758e5] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=f4758e6] [cursor=pointer]:
+          - /url: /about
+        - link "Posts" [ref=f4758e7] [cursor=pointer]:
+          - /url: /posts
+      - generic [ref=f4758e8]:
+        - button "Open search" [ref=f4758e10] [cursor=pointer]
+        - button "Switch to dark theme" [ref=f4758e14]
+    - main [ref=f4758e17]:
+      - generic [ref=f4758e18]:
+        - heading "Mat Loughnane" [level=1] [ref=f4758e19]
+        - paragraph [ref=f4758e20]:
+          - text: Software developer from London, living in Dublin. I bake to satisfy a sweet tooth, and go looking for other people's cooking whenever I travel. I build web and mobile apps as
+          - link "Hexa Studios" [ref=f4758e21] [cursor=pointer]:
+            - /url: https://hexastudios.co
+          - text: — this is everything else.
+      - generic [ref=f4758e22]:
+        - generic [ref=f4758e23]:
+          - heading "Writing" [level=2] [ref=f4758e24]
+          - link "All 36 →" [ref=f4758e25] [cursor=pointer]:
+            - /url: /posts
+        - list [ref=f4758e28]:
+          - listitem [ref=f4758e29]:
+            - link "Dingle 14 Jul 26" [ref=f4758e30] [cursor=pointer]:
+              - /url: /posts/2026-07-14-dingle
+              - generic [ref=f4758e31]: Dingle
+              - time [ref=f4758e33]: 14 Jul 26
+          - listitem [ref=f4758e34]:
+            - 'link "The Arranmore Challenge App: Ready for 2026 28 May 26" [ref=f4758e35] [cursor=pointer]':
+              - /url: /posts/2026-05-28-arranmore-challenge
+              - generic [ref=f4758e36]: "The Arranmore Challenge App: Ready for 2026"
+              - time [ref=f4758e38]: 28 May 26
+          - listitem [ref=f4758e39]:
+            - link "A New Look for the Site 06 Feb 26" [ref=f4758e40] [cursor=pointer]:
+              - /url: /posts/2026-02-06-jekyll-to-astro
+              - generic [ref=f4758e41]: A New Look for the Site
+              - time [ref=f4758e43]: 06 Feb 26
+          - listitem [ref=f4758e44]:
+            - link "Experimenting with AI 05 Feb 26" [ref=f4758e45] [cursor=pointer]:
+              - /url: /posts/2026-02-05-ai-experimentation-mcp-to-mastra
+              - generic [ref=f4758e46]: Experimenting with AI
+              - time [ref=f4758e48]: 05 Feb 26
+          - listitem [ref=f4758e49]:
+            - link "Tenerife 03 Jan 26" [ref=f4758e50] [cursor=pointer]:
+              - /url: /posts/2026-01-03-tenerife
+              - generic [ref=f4758e51]: Tenerife
+              - time [ref=f4758e53]: 03 Jan 26
+          - listitem [ref=f4758e54]:
+            - link "Happy Anniver-Paris 24 Aug 25" [ref=f4758e55] [cursor=pointer]:
+              - /url: /posts/2025-08-24-paris
+              - generic [ref=f4758e56]: Happy Anniver-Paris
+              - time [ref=f4758e58]: 24 Aug 25
+          - listitem [ref=f4758e59]:
+            - link "Bridgit 20 May 25" [ref=f4758e60] [cursor=pointer]:
+              - /url: /posts/2025-05-20-bridgit
+              - generic [ref=f4758e61]: Bridgit
+              - time [ref=f4758e63]: 20 May 25
+          - listitem [ref=f4758e64]:
+            - link "Bali & Philippines 04 May 25" [ref=f4758e65] [cursor=pointer]:
+              - /url: /posts/2025-05-04-bali-philippines
+              - generic [ref=f4758e66]: Bali & Philippines
+              - time [ref=f4758e68]: 04 May 25
+          - listitem [ref=f4758e69]:
+            - link "Hexa Studios Round Up 30 Dec 24" [ref=f4758e70] [cursor=pointer]:
+              - /url: /posts/2024-12-30-2024-hexa-round-up
+              - generic [ref=f4758e71]: Hexa Studios Round Up
+              - time [ref=f4758e73]: 30 Dec 24
+          - listitem [ref=f4758e74]:
+            - link "Married 24 Aug 24" [ref=f4758e75] [cursor=pointer]:
+              - /url: /posts/2024-08-24-married
+              - generic [ref=f4758e76]: Married
+              - time [ref=f4758e78]: 24 Aug 24
+    - contentinfo [ref=f4758e79]:
+      - generic [ref=f4758e80]:
+        - link "Hexa Studios" [ref=f4758e81] [cursor=pointer]:
+          - /url: https://hexastudios.co
+        - link "GitHub" [ref=f4758e82] [cursor=pointer]:
+          - /url: https://github.com/matloughnane
+        - link "LinkedIn" [ref=f4758e83] [cursor=pointer]:
+          - /url: https://linkedin.com/in/matloughnane
+      - generic [ref=f4758e84]: © 2026 Mat Loughnane
+  - generic [ref=f4758e87]:
+    - button [ref=f4758e88]
+    - button [ref=f4758e94]
+    - button [ref=f4758e98]
+    - button [ref=f4758e103]

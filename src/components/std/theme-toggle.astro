@@ -1,0 +1,82 @@
+---
+// Sun / moon, drawn rather than a glyph, at the same weight as the search icon
+// so the pair reads as one set.
+---
+
+<button
+    type="button"
+    data-theme-toggle
+    aria-pressed="false"
+    aria-label="Switch to dark theme"
+    class="inline-flex h-8 w-8 items-center justify-center rounded-md text-fg-muted transition-colors hover:text-fg"
+>
+    <svg
+        class="icon-sun"
+        width="17"
+        height="17"
+        viewBox="0 0 24 24"
+        fill="none"
+        aria-hidden="true"
+    >
+        <circle cx="12" cy="12" r="4.4" stroke="currentColor" stroke-width="1.6"
+        ></circle>
+        <path
+            d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"></path>
+    </svg>
+    <svg
+        class="icon-moon"
+        width="17"
+        height="17"
+        viewBox="0 0 24 24"
+        fill="none"
+        aria-hidden="true"
+    >
+        <path
+            d="M20 14.2A8.4 8.4 0 0 1 9.8 4a8.4 8.4 0 1 0 10.2 10.2Z"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linejoin="round"></path>
+    </svg>
+</button>
+
+<style>
+    .icon-sun {
+        display: none;
+    }
+    :global(.dark) .icon-sun {
+        display: block;
+    }
+    :global(.dark) .icon-moon {
+        display: none;
+    }
+</style>
+
+<script>
+    const buttons = document.querySelectorAll<HTMLButtonElement>(
+        '[data-theme-toggle]'
+    );
+
+    const sync = () => {
+        const dark = document.documentElement.classList.contains('dark');
+        buttons.forEach((b) => {
+            b.setAttribute('aria-pressed', String(dark));
+            b.setAttribute(
+                'aria-label',
+                dark ? 'Switch to light theme' : 'Switch to dark theme'
+            );
+        });
+    };
+
+    sync();
+
+    buttons.forEach((b) =>
+        b.addEventListener('click', () => {
+            const dark = document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme', dark ? 'dark' : 'light');
+            sync();
+        })
+    );
+</script>

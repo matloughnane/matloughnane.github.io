@@ -1,16 +1,42 @@
 ---
-import HeroHeader from '../components/home/hero-header.astro';
-import LatestPosts from '../components/home/latest-posts.astro';
 import GlobalLayout from '../layouts/global-layout.astro';
+import PostList from '../components/std/post-list.astro';
+import { getSortedPosts } from '../lib/posts';
+
+const posts = getSortedPosts();
+const recent = posts.slice(0, 10);
 ---
 
 <GlobalLayout
     title="Mat Loughnane - A little about me: Coding, Cooking and Travelling"
-    description="Sharing travel adventures, food discoveries, and coding insights from around the my life"
+    description="Sharing travel adventures, food discoveries, and coding insights from around my life"
 >
-    <HeroHeader />
-    <LatestPosts limit={7} />
-    <div class="flex flex-row justify-end mx-18 my-8">
-        <a class="btn" href="/posts">See All Posts</a>
-    </div>
+    <section class="flex flex-col gap-4 pb-12">
+        <h1 class="text-[19px] font-medium tracking-[-0.01em] text-fg">
+            Mat Loughnane
+        </h1>
+        <p class="max-w-[58ch] text-[15px] leading-7 text-fg-muted">
+            Software developer from London, living in Dublin. I bake to satisfy
+            a sweet tooth, and go looking for other people's cooking whenever I
+            travel. I build web and mobile apps as <a
+                href="https://hexastudios.co"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-fg underline decoration-line underline-offset-2 transition-colors hover:decoration-fg"
+                >Hexa Studios</a
+            > — this is everything else.
+        </p>
+    </section>
+
+    <section class="flex flex-col gap-4">
+        <div class="flex items-baseline justify-between">
+            <h2 class="text-[15px] font-medium text-fg">Writing</h2>
+            <a
+                href="/posts"
+                class="font-mono text-[13px] text-fg-muted transition-colors hover:text-fg"
+                >All {posts.length} →</a
+            >
+        </div>
+        <PostList posts={recent} />
+    </section>
 </GlobalLayout>

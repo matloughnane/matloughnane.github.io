@@ -1,7 +1,5 @@
 ---
 import GlobalLayout from './global-layout.astro';
-import SubPageNav from '../components/navigation/sub-page-nav.astro';
-import PostCategoryIcon from '../components/posts/post-category-icon.astro';
 
 export interface Props {
     frontmatter: {
@@ -18,15 +16,30 @@ export interface Props {
 }
 
 const { frontmatter } = Astro.props;
-const { title, author, description, publishDate, categories = [], image, tags = [] } = frontmatter;
+const {
+    title,
+    description,
+    publishDate,
+    categories = [],
+    image,
+    tags = [],
+} = frontmatter;
 
-// Extract date from the file path if publishDate is not provided
 const filePath = Astro.url.pathname;
 const dateMatch = filePath.match(/(\d{4}-\d{2}-\d{2})/);
 const postDate = publishDate || (dateMatch ? dateMatch[0] : undefined);
 
-// Create a proper description if not provided
-const postDescription = description || `${title} - ${categories.join(', ')} post by Mat Loughnane. ${tags.length > 0 ? `Topics: ${tags.join(', ')}.` : ''}`;
+const postDescription =
+    description ||
+    `${title} — ${categories.join(', ')} post by Mat Loughnane.`;
+
+const stamped = postDate
+    ? new Date(postDate).toLocaleDateString('en-GB', {
+          day: 'numeric',
+          month: 'long',
+          year: 'numeric',
+      })
+    : '';
 ---
 
 <GlobalLayout
@@ -35,46 +48,58 @@ const postDescription = description || `${title} - ${categories.join(', ')} post
     publishDate={postDate}
     image={image}
 >
-    <SubPageNav />
-    <article class="max-w-4xl mx-auto px-6">
-        <!-- Post Header -->
-        <header class="mb-12">
-
-            <!-- Featured Image -->
-            {image && (
-                <div class="mb-8">
-                    <img
-                        src={image}
-                        alt={title}
-                        class="w-full h-64 md:h-96 object-cover rounded-b-xl shadow-lg"
-                    />
-                </div>
-            )}
-
-            <!-- Title -->
-            <h1 class="text-5xl font-bold text-gray-900 tracking-tighter leading-tighter mb-2">
+    <article>
+        <header class="flex flex-col gap-3 pb-8">
+            <h1
+                class="text-[26px] font-medium leading-tight tracking-[-0.015em] text-fg"
+            >
                 {title}
             </h1>
+            <div class="flex items-center gap-3 font-mono text-[13px] text-fg-muted">
+                {stamped && <time datetime={postDate}>{stamped}</time>}
+                {
+                    categories.length > 0 && (
+                        <>
+                            <span aria-hidden="true">·</span>
+                            <span>{categories.join(', ')}</span>
+                        </>
+                    )
+                }
+            </div>
         </header>
 
-        <!-- Post Content -->
-        <div class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-headings:leading-tight prose-headings:my-2 prose-h2:text-3xl prose-h3:text-2xl prose-h4:text-xl prose-p:text-gray-700 prose-a:text-[#9A0D1B] prose-a:no-underline hover:prose-a:underline prose-strong:text-gray-900 prose-img:rounded-xl">
+        {
+            image && (
+                <img
+                    src={image}
+                    alt={title}
+                    class="mb-10 h-auto w-full rounded-md border border-line"
+                />
+            )
+        }
+
+        <div
+            class="prose prose-neutral max-w-none dark:prose-invert prose-headings:font-medium prose-headings:tracking-[-0.01em] prose-h2:text-[19px] prose-h3:text-[17px] prose-p:text-[15px] prose-p:leading-7 prose-li:text-[15px] prose-a:text-fg prose-a:decoration-line hover:prose-a:decoration-fg prose-img:rounded-md prose-img:border prose-img:border-line prose-pre:border prose-pre:border-line"
+        >
             <slot />
         </div>
 
-        <!-- Post Footer -->
-        <footer class="mt-16 pt-8">
-            {tags.length > 0 && (
-                <div class="mb-6">
-                    <div class="flex flex-wrap gap-2">
-                        {tags.map((tag) => (
-                            <span class="px-3 py-1 lowercase cursor text-sm bg-red-100 text-[#9A0D1B] border border-[#9A0D1B] rounded-full hover:bg-[#9A0D1B] hover:text-white transition-colors">
-                                {tag}
-                            </span>
-                        ))}
-                    </div>
-                </div>
-            )}
-        </footer>
+        {
+            tags.length > 0 && (
+                <footer class="mt-12 flex flex-wrap gap-x-3 gap-y-2 border-t border-line pt-6">
+                    {tags.map((tag) => (
+                        <span class="font-mono text-[13px] lowercase text-fg-muted">
+                            #{tag}
+                        </span>
+                    ))}
+                </footer>
+            )
+        }
+
+        <a
+            href="/posts"
+            class="mt-10 inline-block text-[14px] text-fg-muted transition-colors hover:text-fg"
+            >← All posts</a
+        >
     </article>
 </GlobalLayout>

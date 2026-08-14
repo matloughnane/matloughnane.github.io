@@ -43,7 +43,7 @@ export default function SearchToggle({ variant = 'hero' }: SearchToggleProps) {
         return (
             <button
                 onClick={() => setOpen(true)}
-                className="text-white/70 hover:text-white transition-colors cursor-pointer"
+                className="text-fg-muted hover:text-fg transition-colors cursor-pointer"
                 aria-label="Open search"
             >
                 <Search size={iconSize} />
@@ -52,8 +52,8 @@ export default function SearchToggle({ variant = 'hero' }: SearchToggleProps) {
     }
 
     return (
-        <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 animate-[searchExpand_0.3s_ease-out]">
-            <Search size={iconSize} className="text-white/70 shrink-0" />
+        <div className="flex items-center gap-2 rounded-md border border-line bg-bg-subtle px-2.5 py-1.5 animate-[searchExpand_0.3s_ease-out]">
+            <Search size={iconSize} className="text-fg-muted shrink-0" />
             <input
                 ref={inputRef}
                 type="text"
@@ -61,11 +61,11 @@ export default function SearchToggle({ variant = 'hero' }: SearchToggleProps) {
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Search posts..."
-                className="bg-transparent text-white placeholder-white/50 outline-none text-sm w-full md:w-48"
+                className="w-full bg-transparent text-[14px] text-fg caret-accent outline-none placeholder:text-fg-muted md:w-40"
             />
             <button
                 onClick={close}
-                className="text-white/70 hover:text-white transition-colors cursor-pointer"
+                className="text-fg-muted hover:text-fg transition-colors cursor-pointer"
                 aria-label="Close search"
             >
                 <X size={iconSize - 2} />

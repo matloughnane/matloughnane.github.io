@@ -1,0 +1,40 @@
+---
+import SearchToggle from '../search/SearchToggle.tsx';
+import ThemeToggle from './theme-toggle.astro';
+
+const links = [
+    { label: 'Home', href: '/' },
+    { label: 'About', href: '/about' },
+    { label: 'Posts', href: '/posts' },
+];
+
+const path = Astro.url.pathname;
+const isActive = (href: string) =>
+    href === '/' ? path === '/' : path.startsWith(href);
+---
+
+<header class="flex items-center justify-between gap-6 py-8">
+    <nav class="flex items-center gap-5" aria-label="Primary">
+        {
+            links.map((link) => (
+                <a
+                    href={link.href}
+                    aria-current={isActive(link.href) ? 'page' : undefined}
+                    class:list={[
+                        'text-[15px] transition-colors',
+                        isActive(link.href)
+                            ? 'font-medium text-fg'
+                            : 'text-fg-muted hover:text-fg',
+                    ]}
+                >
+                    {link.label}
+                </a>
+            ))
+        }
+    </nav>
+
+    <div class="flex items-center gap-1 text-fg-muted">
+        <SearchToggle client:load variant="subnav" />
+        <ThemeToggle />
+    </div>
+</header>
