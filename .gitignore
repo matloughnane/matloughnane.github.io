@@ -25,3 +25,11 @@ pnpm-debug.log*
 
 # v1
 v1
+.playwright-mcp
+.vscode
+.claude
+
+# design context (PRODUCT.md, DESIGN.md) — local only
+docs/
+# impeccable working files
+.impeccable/
