@@ -1,16 +1,84 @@
 ---
-import HeroHeader from '../components/home/hero-header.astro';
-import LatestPosts from '../components/home/latest-posts.astro';
 import GlobalLayout from '../layouts/global-layout.astro';
+import LeadCourse from '../components/blind/lead-course.astro';
+import Course from '../components/blind/course.astro';
+import DestinationBoard from '../components/blind/destination-board.astro';
+import { getSortedPosts, getEntryCount } from '../lib/posts';
+
+const posts = getSortedPosts();
+const [lead, ...rest] = posts;
+const showing = rest.slice(0, 8);
+const total = getEntryCount();
 ---
 
 <GlobalLayout
     title="Mat Loughnane - A little about me: Coding, Cooking and Travelling"
-    description="Sharing travel adventures, food discoveries, and coding insights from around the my life"
+    description="Sharing travel adventures, food discoveries, and coding insights from around my life"
 >
-    <HeroHeader />
-    <LatestPosts limit={7} />
-    <div class="flex flex-row justify-end mx-18 my-8">
-        <a class="btn" href="/posts">See All Posts</a>
+    <div class="px-4 py-6 md:px-8 md:py-8">
+        <!-- The window, inset from the trim: one course showing. -->
+        <div class="border-2 border-legend">
+            <div
+                class="flex items-center justify-between gap-4 border-b-2 border-legend px-4 py-2.5 md:px-6"
+            >
+                <span
+                    class="font-legend text-[15px] uppercase leading-none tracking-[0.2em] text-legend-soft"
+                    >Showing now</span
+                >
+                <span
+                    class="font-legend text-[15px] uppercase leading-none tracking-[0.2em] text-legend-soft"
+                    >{total} courses on the roll</span
+                >
+            </div>
+
+            {
+                lead && (
+                    <LeadCourse
+                        title={lead.title}
+                        slug={lead.slug}
+                        image={lead.image}
+                        categories={lead.categories}
+                        description={lead.description}
+                        learnMore={lead.learnMore}
+                        date={lead.date}
+                    />
+                )
+            }
+        </div>
+
+        <!-- Behind it on the roll. -->
+        <section class="mt-10">
+            <h2
+                class="border-b-2 border-legend pb-2 font-legend text-[15px] uppercase leading-none tracking-[0.2em] text-legend-soft"
+            >
+                Behind it on the roll
+            </h2>
+
+            <div>
+                {
+                    showing.map((post, i) => (
+                        <Course
+                            title={post.title}
+                            slug={post.slug}
+                            image={post.image}
+                            categories={post.categories}
+                            description={post.description}
+                            date={post.date}
+                            index={i}
+                        />
+                    ))
+                }
+            </div>
+
+            <a
+                href="/posts"
+                class="mt-6 inline-block border-b-2 border-dashed border-legend pb-1 font-legend text-[17px] uppercase leading-none tracking-[0.14em] text-legend"
+                >Wind the roll — all {total} courses</a
+            >
+        </section>
+
+        <div class="mt-14">
+            <DestinationBoard />
+        </div>
     </div>
 </GlobalLayout>

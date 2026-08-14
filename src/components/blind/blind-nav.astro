@@ -1,0 +1,84 @@
+---
+import SearchToggle from '../search/SearchToggle.tsx';
+import ThemeToggle from './theme-toggle.astro';
+
+// The trim above the window. Controls take no dye — they are stitch and
+// relief, so the current route is marked by a run of thread beneath it rather
+// than by a colour change.
+//
+// No hamburger: the world's rule is that narrow screens drop courses and never
+// shrink type, so the routes drop to their own row instead of into a menu.
+const links = [
+    { label: 'Home', href: '/' },
+    { label: 'About', href: '/about' },
+    { label: 'Posts', href: '/posts' },
+];
+
+const path = Astro.url.pathname;
+const isActive = (href: string) =>
+    href === '/' ? path === '/' : path.startsWith(href);
+
+const linkBase =
+    'font-legend text-[17px] uppercase leading-none tracking-[0.14em] transition-colors';
+---
+
+<nav class="border-b border-seam bg-cloth-deep" aria-label="Primary">
+    <div class="flex items-center justify-between gap-5 px-4 py-3 md:px-8">
+        <a
+            href="/"
+            class="font-legend text-[17px] uppercase leading-none tracking-[0.16em] text-legend md:hidden"
+            >Mat Loughnane</a
+        >
+
+        <div class="hidden items-center gap-7 md:flex">
+            {
+                links.map((link) => (
+                    <a
+                        href={link.href}
+                        aria-current={isActive(link.href) ? 'page' : undefined}
+                        class:list={[
+                            linkBase,
+                            isActive(link.href)
+                                ? 'stitched text-legend'
+                                : 'text-legend-soft hover:text-legend',
+                        ]}
+                    >
+                        {link.label}
+                    </a>
+                ))
+            }
+        </div>
+
+        <div class="flex items-center gap-2 text-legend-soft">
+            <SearchToggle client:load variant="subnav" />
+            <ThemeToggle />
+        </div>
+    </div>
+
+    <div class="flex items-center gap-6 px-4 pb-3 md:hidden">
+        {
+            links.map((link) => (
+                <a
+                    href={link.href}
+                    aria-current={isActive(link.href) ? 'page' : undefined}
+                    class:list={[
+                        linkBase,
+                        isActive(link.href)
+                            ? 'stitched text-legend'
+                            : 'text-legend-soft',
+                    ]}
+                >
+                    {link.label}
+                </a>
+            ))
+        }
+    </div>
+</nav>
+
+<style>
+    /* Stitch, not dye: a dashed run of thread under the current route. */
+    .stitched {
+        padding-bottom: 4px;
+        border-bottom: 2px dashed currentColor;
+    }
+</style>

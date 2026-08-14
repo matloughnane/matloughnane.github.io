@@ -1,0 +1,43 @@
+---
+import { getDestinationCounts } from '../../lib/posts';
+
+// Where the courses are bound, with counts derived from the posts rather than
+// written down. Set at the same legend size as everything else — the board
+// ranks by inversion and position, never by scale.
+const destinations = getDestinationCounts();
+---
+
+<section class="border-t-2 border-legend pt-6">
+    <h2
+        class="font-legend text-[15px] uppercase leading-none tracking-[0.2em] text-legend-soft"
+    >
+        Destinations on this roll
+    </h2>
+
+    <ul class="mt-4 flex flex-col">
+        {
+            destinations.map((d) => (
+                <li class="border-b border-seam">
+                    <a
+                        href={`/posts/${d.destination}`}
+                        class="group flex items-center gap-5 py-4"
+                    >
+                        <span class="w-[92px] shrink-0 font-legend text-[22px] uppercase leading-none tracking-[0.08em] text-legend group-hover:underline md:w-[132px] md:text-[26px]">
+                            {d.label}
+                        </span>
+                        <span class="w-[104px] shrink-0 font-legend text-[15px] uppercase leading-none tracking-[0.16em] text-legend-soft">
+                            {d.count} courses
+                        </span>
+                        <span
+                            class="hidden flex-1 border-b border-dashed border-seam md:block"
+                            aria-hidden="true"
+                        />
+                        <span class="ml-auto font-legend text-[15px] uppercase leading-none tracking-[0.16em] text-legend-soft group-hover:text-legend md:ml-0">
+                            Show
+                        </span>
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
+</section>

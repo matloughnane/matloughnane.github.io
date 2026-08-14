@@ -1,0 +1,96 @@
+---
+import MattedPanel from './matted-panel.astro';
+import { destinationOf, DESTINATION_LABELS } from '../../lib/posts';
+
+// One course of the roll: date, destination, legend, note. Rank is inversion,
+// never size — every course is set at the same legend size, and only the lead
+// course prints dark on pale. The photograph rides in a fixed slot so the
+// columns hold their lanes down the whole board.
+export interface Props {
+    title: string;
+    slug: string;
+    image: string;
+    categories: string[];
+    description?: string;
+    date: string;
+    /** Steps in later, so a run of courses arrives in sequence. */
+    index?: number;
+}
+
+const {
+    title,
+    slug,
+    image,
+    categories,
+    description,
+    date,
+    index = 0,
+} = Astro.props;
+
+const destination = destinationOf(categories);
+const when = new Date(date);
+const stamped = when
+    .toLocaleDateString('en-GB', {
+        day: '2-digit',
+        month: 'short',
+        year: '2-digit',
+    })
+    .toUpperCase();
+
+// "Stale wears thin": stock that has been on the roll for years is dyed
+// lighter, so age reads as a material fact rather than as a label.
+const years = (Date.now() - when.getTime()) / (1000 * 60 * 60 * 24 * 365);
+const worn = years > 3;
+---
+
+<article
+    class="course step-in border-b border-seam"
+    style={`animation-delay:${Math.min(index, 6) * 55}ms`}
+>
+    <a
+        href={slug}
+        class="group grid grid-cols-[1fr_84px] items-start gap-4 py-5 md:grid-cols-[104px_128px_1fr_132px] md:items-center md:gap-6 md:py-5"
+    >
+        <span
+            class:list={[
+                'order-1 font-legend text-[17px] uppercase leading-none tracking-[0.1em] md:order-none md:text-[20px]',
+                worn ? 'text-legend-soft' : 'text-legend',
+            ]}>{stamped}</span
+        >
+
+        <span
+            class="order-3 hidden font-legend text-[15px] uppercase leading-none tracking-[0.16em] text-legend-soft md:order-none md:block"
+        >
+            {destination ? DESTINATION_LABELS[destination] : 'DEPOT'}
+        </span>
+
+        <span class="order-4 col-span-2 flex flex-col gap-1.5 md:order-none md:col-span-1">
+            <span
+                class="font-legend text-[24px] uppercase leading-[1.06] tracking-[0.02em] text-legend group-hover:underline md:text-[27px]"
+                >{title}</span
+            >
+            <span
+                class="font-legend text-[13px] uppercase leading-none tracking-[0.16em] text-legend-soft md:hidden"
+            >
+                {destination ? DESTINATION_LABELS[destination] : 'DEPOT'}
+            </span>
+            {
+                description && (
+                    <span class="max-w-[68ch] text-[15px] leading-6 text-legend-soft">
+                        {description}
+                    </span>
+                )
+            }
+        </span>
+
+        {
+            image && (
+                <MattedPanel
+                    src={image}
+                    alt=""
+                    class="order-2 h-[56px] w-[84px] shrink-0 md:order-none md:h-[86px] md:w-[132px]"
+                />
+            )
+        }
+    </a>
+</article>

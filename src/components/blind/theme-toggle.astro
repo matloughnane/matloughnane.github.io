@@ -1,0 +1,64 @@
+---
+// Daylight bench or lit from behind. The control takes no dye — it is a punched
+// hole that is either open to the light or closed.
+---
+
+<button
+    type="button"
+    data-theme-toggle
+    aria-pressed="false"
+    aria-label="Switch to lit"
+    class="lamp inline-flex h-8 w-8 items-center justify-center"
+></button>
+
+<style>
+    /* A punched hole in the tape: dark when the light behind is off, alight
+       when it is on. No icon library, no glyph — the control is the hole. */
+    .lamp {
+        border-radius: 999px;
+        background: var(--cloth);
+        box-shadow:
+            inset 0 1px 2px rgb(0 0 0 / 0.4),
+            0 0 0 1.5px var(--seam);
+        cursor: pointer;
+        transition: box-shadow 160ms linear;
+    }
+    .lamp:hover {
+        box-shadow:
+            inset 0 1px 2px rgb(0 0 0 / 0.3),
+            0 0 0 1.5px var(--legend);
+    }
+    :global(.dark) .lamp {
+        background: var(--chrome-field);
+        box-shadow:
+            0 0 0 1.5px var(--seam),
+            0 0 10px 1px color-mix(in srgb, var(--chrome-field) 55%, transparent);
+    }
+</style>
+
+<script>
+    const buttons = document.querySelectorAll<HTMLButtonElement>(
+        '[data-theme-toggle]'
+    );
+
+    const sync = () => {
+        const dark = document.documentElement.classList.contains('dark');
+        buttons.forEach((button) => {
+            button.setAttribute('aria-pressed', String(dark));
+            button.setAttribute(
+                'aria-label',
+                dark ? 'Switch to daylight' : 'Switch to lit'
+            );
+        });
+    };
+
+    sync();
+
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+            const dark = document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme', dark ? 'dark' : 'light');
+            sync();
+        });
+    });
+</script>

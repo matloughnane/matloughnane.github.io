@@ -1,6 +1,5 @@
 // Shared post-loading util. Globs the file-based posts in src/pages/posts,
 // shapes each into a summary, filters out drafts/WIP, and sorts newest-first.
-// Consumed by the homepage (latest-posts.astro) and the paginated /posts route.
 
 export interface PostSummary {
     title: string;
@@ -20,6 +19,31 @@ const allPosts = import.meta.glob('../pages/posts/*.{md,mdx}', {
     eager: true,
 });
 
+// Astro 7 no longer exposes rawContent()/body on globbed .mdx modules, so
+// description scraping silently produced nothing for every .mdx post. Pull the
+// source text directly instead — same files, read at build time.
+const rawSources = import.meta.glob('../pages/posts/*.{md,mdx}', {
+    eager: true,
+    query: '?raw',
+    import: 'default',
+}) as Record<string, string>;
+
+/** Source text with the frontmatter block removed. */
+function bodyOf(path: string): string {
+    const raw = rawSources[path] || '';
+    return raw.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n?/, '');
+}
+
+/** Cut to a word boundary rather than mid-word, and say so with an ellipsis. */
+function truncateOnWord(text: string, limit: number): string {
+    if (text.length <= limit) return text;
+    const clipped = text.slice(0, limit);
+    const lastSpace = clipped.lastIndexOf(' ');
+    return `${clipped
+        .slice(0, lastSpace > 60 ? lastSpace : limit)
+        .replace(/[\s,;:.–-]+$/, '')}…`;
+}
+
 export function getSortedPosts(): PostSummary[] {
     return Object.entries(allPosts)
         .map(([path, post]: [string, any]) => {
@@ -29,26 +53,15 @@ export function getSortedPosts(): PostSummary[] {
                     .pop()
                     ?.replace(/\.(md|mdx)$/, '') || '';
 
-            // Extract first line of content as description
-            let description = '';
+            // An authored `description:` always wins; only fall back to reading
+            // the opening prose when there isn't one.
+            let description = (post.frontmatter?.description || '').trim();
+            const content = bodyOf(path);
 
-            // Handle both .md and .mdx files
-            let content = '';
-            if (post.rawContent && typeof post.rawContent === 'function') {
-                content = post.rawContent();
-            } else if (post.body) {
-                content = post.body;
-            } else if (
-                post.compiledContent &&
-                typeof post.compiledContent === 'function'
-            ) {
-                content = post.compiledContent();
-            }
+            if (!description && content) {
+                const collected: string[] = [];
 
-            if (content) {
-                const lines = content.split('\n');
-                // Find the first non-empty line that's not a heading, frontmatter, or import
-                for (const line of lines) {
+                for (const line of content.split('\n')) {
                     const trimmed = line.trim();
                     if (
                         trimmed &&
@@ -58,32 +71,23 @@ export function getSortedPosts(): PostSummary[] {
                         !trimmed.startsWith('import ') &&
                         !trimmed.startsWith('<')
                     ) {
-                        // Strip markdown formatting
-                        let cleanDescription = trimmed
-                            // Remove markdown links [text](url) -> text
+                        const clean = trimmed
                             .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
-                            // Remove markdown emphasis **text** or *text* -> text
                             .replace(/\*\*([^*]+)\*\*/g, '$1')
                             .replace(/\*([^*]+)\*/g, '$1')
-                            // Remove markdown code `text` -> text
                             .replace(/`([^`]+)`/g, '$1')
-                            // Remove markdown images ![alt](url) -> alt
                             .replace(/!\[([^\]]*)\]\([^)]+\)/g, '$1')
-                            // Remove HTML tags <tag> -> (empty)
                             .replace(/<[^>]+>/g, '')
-                            // Clean up multiple spaces
                             .replace(/\s+/g, ' ')
                             .trim();
 
-                        description = cleanDescription.substring(0, 150); // Limit to 150 characters
-                        break;
+                        if (clean) collected.push(clean);
+                        const joined = collected.join(' ');
+                        if (collected.length >= 2 || joined.length >= 150) break;
                     }
                 }
-            }
 
-            // Fallback description if extraction failed
-            if (!description) {
-                description = `Read about ${post.frontmatter?.title || 'this post'} on Mat Loughnane's blog.`;
+                description = truncateOnWord(collected.join(' '), 200);
             }
 
             return {
@@ -109,4 +113,59 @@ export function getSortedPosts(): PostSummary[] {
         .sort(
             (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
         );
+}
+
+// ── Destinations ───────────────────────────────────────────────────────────
+// A blind lists destinations. Categories are inconsistent across six years
+// (Travel, Recipes, Code, plus one-offs like "Ferry, Kiosk, Hardware"), so map
+// them onto the three the board actually shows. The legend is the data.
+
+export type Destination = 'travel' | 'recipes' | 'code';
+
+const DESTINATION_BY_CATEGORY: Record<string, Destination> = {
+    travel: 'travel',
+    recipes: 'recipes',
+    recipe: 'recipes',
+    food: 'recipes',
+    code: 'code',
+    hardware: 'code',
+    kiosk: 'code',
+};
+
+export const DESTINATION_LABELS: Record<Destination, string> = {
+    travel: 'TRAVEL',
+    recipes: 'RECIPES',
+    code: 'CODE',
+};
+
+/** The destination a post is bound for, or null when nothing matches. */
+export function destinationOf(categories: string[] = []): Destination | null {
+    for (const category of categories) {
+        const found = DESTINATION_BY_CATEGORY[category.trim().toLowerCase()];
+        if (found) return found;
+    }
+    return null;
+}
+
+export interface DestinationCount {
+    destination: Destination;
+    label: string;
+    count: number;
+}
+
+/** Counts per destination, derived rather than written down. */
+export function getDestinationCounts(): DestinationCount[] {
+    const posts = getSortedPosts();
+    const order: Destination[] = ['travel', 'recipes', 'code'];
+
+    return order.map((destination) => ({
+        destination,
+        label: DESTINATION_LABELS[destination],
+        count: posts.filter((p) => destinationOf(p.categories) === destination)
+            .length,
+    }));
+}
+
+export function getEntryCount(): number {
+    return getSortedPosts().length;
 }

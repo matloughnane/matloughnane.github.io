@@ -1,0 +1,57 @@
+- generic [active] [ref=f143e1]:
+  - generic [ref=f143e2]:
+    - link [ref=f143e3] [cursor=pointer]:
+      - /url: /
+      - img "Mat Loughnane — home" [ref=f143e5]
+    - generic [ref=f143e6]:
+      - generic [ref=f143e7]: L
+      - generic [ref=f143e8]: O
+      - generic [ref=f143e9]: U
+      - generic [ref=f143e10]: G
+      - generic [ref=f143e11]: H
+      - generic [ref=f143e12]: "N"
+      - generic [ref=f143e13]: A
+      - generic [ref=f143e14]: "N"
+      - generic [ref=f143e15]: E
+  - generic [ref=f143e16]:
+    - navigation "Primary" [ref=f143e17]:
+      - generic [ref=f143e18]: THIRTY-SIX ENTRIES · 2020—2026
+      - generic [ref=f143e19]:
+        - generic [ref=f143e20]:
+          - link "Home" [ref=f143e21] [cursor=pointer]:
+            - /url: /
+          - link "About" [ref=f143e22] [cursor=pointer]:
+            - /url: /about
+          - link "Posts" [ref=f143e23] [cursor=pointer]:
+            - /url: /posts
+        - generic [ref=f143e24]:
+          - button "Open search" [ref=f143e26] [cursor=pointer]
+          - button "Switch to light" [pressed] [ref=f143e30]
+    - main [ref=f143e34]:
+      - generic [ref=f143e36]:
+        - generic [ref=f143e37]:
+          - heading "Mat Loughnane" [level=1] [ref=f143e38]: MatLoughnane
+          - paragraph [ref=f143e39]: I'm a software developer from London, living in Dublin. I enjoy cooking, especially baking to satisfy my sweet tooth and exploring different cuisines on my travels.
+          - paragraph [ref=f143e40]: My favourite thing to make — carrot cake.
+          - paragraph [ref=f143e41]:
+            - text: Learn more about my work at
+            - link "hexastudios.co" [ref=f143e42] [cursor=pointer]:
+              - /url: https://hexastudios.co
+        - figure "Paris, August 2025" [ref=f143e43]:
+          - img "Mat Loughnane in Paris, August 2025" [ref=f143e45]
+    - contentinfo [ref=f143e47]:
+      - generic [ref=f143e48]:
+        - generic [ref=f143e49]: MAT LOUGHNANE · DUBLIN
+        - generic [ref=f143e50]:
+          - link "hexa studios" [ref=f143e51] [cursor=pointer]:
+            - /url: https://hexastudios.co
+          - link "github" [ref=f143e52] [cursor=pointer]:
+            - /url: https://github.com/matloughnane
+          - link "linkedin" [ref=f143e53] [cursor=pointer]:
+            - /url: https://linkedin.com/in/matloughnane
+      - generic [ref=f143e54]: Mat Loughnane
+  - generic [ref=f143e57]:
+    - button [ref=f143e58]
+    - button [ref=f143e64]
+    - button [ref=f143e68]
+    - button [ref=f143e73]

@@ -1,0 +1,61 @@
+---
+// The punched eyelet tape running down one edge of the roll. On a real blind
+// it is how the mechanism finds its place, so here it is the index: one eyelet
+// per course on screen, the current one relieved rather than dyed.
+//
+// Controls take no dye — the eyelets are punched holes and stitch, which is
+// why they read as relief against the cloth rather than as coloured chrome.
+import { getEntryCount } from '../../lib/posts';
+
+const total = getEntryCount();
+// The tape is punched at a fixed pitch regardless of how much is on screen.
+const eyelets = Array.from({ length: 26 });
+---
+
+<!-- Desktop: the tape down the trim -->
+<div
+    class="fixed left-0 top-0 z-30 hidden h-screen w-[72px] flex-col items-center justify-between border-r border-seam bg-cloth-deep py-6 md:flex"
+    aria-hidden="true"
+>
+    <a
+        href="/"
+        aria-label="Mat Loughnane — home"
+        class="tape-mark flex h-9 w-9 items-center justify-center"
+    >
+        <span class="font-legend text-[19px] font-600 leading-none text-legend"
+            >ML</span
+        >
+    </a>
+
+    <div class="flex flex-1 flex-col items-center justify-center gap-[10px] py-6">
+        {eyelets.map(() => <span class="eyelet" />)}
+    </div>
+
+    <span
+        class="font-legend text-[13px] uppercase leading-none tracking-[0.2em] text-legend-soft"
+        style="writing-mode: vertical-rl; transform: rotate(180deg);"
+    >
+        {total} courses
+    </span>
+</div>
+
+<style>
+    /* A punched hole: the cloth removed, the light behind it showing through,
+       with the stitched rim catching relief. */
+    .eyelet {
+        width: 9px;
+        height: 9px;
+        border-radius: 999px;
+        background: var(--cloth);
+        box-shadow:
+            inset 0 1px 1px rgb(0 0 0 / 0.35),
+            0 0 0 1px var(--seam);
+        flex-shrink: 0;
+    }
+
+    /* The mark is stitched, not dyed: relief on the same cloth. */
+    .tape-mark {
+        border: 1.5px solid var(--legend);
+        box-shadow: inset 0 0 0 2px var(--cloth-deep);
+    }
+</style>

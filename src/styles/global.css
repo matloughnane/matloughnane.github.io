@@ -6,8 +6,12 @@
 @plugin 'tailwindcss-animate';
 
 @theme  {
-    --font-sans: Geist, sans-serif;
-    --font-mono: Geist mono, monospace;
+    /* One condensed grotesque carries every legend, in caps. Barlow (the
+       uncondensed cut of the same family) carries prose — a blind has no
+       running text, so this is a stated adaptation, not part of the world. */
+    --font-legend: 'Barlow Condensed', system-ui, sans-serif;
+    --font-sans: 'Barlow', system-ui, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
     --color-primary: #0E7C86;
     --color-primary-accent: #2AA9A9;
     /* --color-white: #FDF2F0; */
@@ -43,6 +47,16 @@
 }
 
 @theme inline {
+    /* The three dyes as utilities: bg-cloth, text-legend, border-seam … */
+    --color-cloth: var(--cloth);
+    --color-cloth-deep: var(--cloth-deep);
+    --color-seam: var(--seam);
+    --color-legend: var(--legend);
+    --color-legend-soft: var(--legend-soft);
+    --color-chrome: var(--chrome);
+    --color-chrome-field: var(--chrome-field);
+    --color-relief: var(--relief);
+
     --radius-sm: calc(var(--radius) - 4px);
     --radius-md: calc(var(--radius) - 2px);
     --radius-lg: var(--radius);
@@ -81,6 +95,36 @@
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* ── Depot blind ───────────────────────────────────────────────────────────
+   Three dyes and no more: bottle-green duck cloth drenched over the surface,
+   chrome-yellow legends, bleached calico for prose. Rank is inversion, not
+   size — so the two themes are the blind lit from behind at 4:40am (dark) and
+   the same cloth on the daylit bench (light), the roles swapped, never a
+   second palette. */
+:root {
+    /* Daylight: calico bench, green legends, yellow held in reserve. */
+    --cloth: #ede7d9; /* bleached calico ground */
+    --cloth-deep: #e2dbc9; /* a course in shadow */
+    --seam: #c3bba6; /* stitch line between courses */
+    --legend: #123a2b; /* bottle green, dyed through */
+    --legend-soft: #4a6d5d; /* worn thin — older stock */
+    --chrome: #8a5f08; /* chrome yellow: 3.24:1 as mixed, dyed down to 4.58:1 */
+    --chrome-field: #e8a90c; /* the same yellow as a painted field, dark text on it */
+    --relief: #ffffff; /* punch and stitch take no dye */
+}
+
+.dark {
+    /* 4:40am, lit from behind: the cloth drenched, the legends alight. */
+    --cloth: #0e2b20;
+    --cloth-deep: #0a1f17;
+    --seam: #1c4735;
+    --legend: #f2b705; /* chrome yellow is the legend at night */
+    --legend-soft: #9db5aa;
+    --chrome: #f2b705;
+    --chrome-field: #f2b705;
+    --relief: #ede7d9;
 }
 
 :root {
@@ -154,9 +198,82 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border;
     }
+
+  :root {
+    color-scheme: light;
+    scrollbar-color: var(--seam) var(--cloth);
+    accent-color: var(--legend);
+    }
+  .dark { color-scheme: dark; }
+
+  /* Duck cloth, lit from behind: warp and weft at thread scale, stronger at
+     night where the backlight drives the weave through the dye. */
   body {
-    @apply bg-background text-foreground;
+    @apply bg-cloth text-legend;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    background-image:
+      repeating-linear-gradient(90deg, rgb(0 0 0 / 0.045) 0 1px, transparent 1px 3px),
+      repeating-linear-gradient(0deg, rgb(0 0 0 / 0.035) 0 1px, transparent 1px 3px);
+    }
+  .dark body {
+    background-image:
+      repeating-linear-gradient(90deg, rgb(255 255 255 / 0.05) 0 1px, transparent 1px 3px),
+      repeating-linear-gradient(0deg, rgb(255 255 255 / 0.035) 0 1px, transparent 1px 3px);
+    }
+
+  ::selection { background: var(--legend); color: var(--cloth); }
+
+  /* Controls take no dye — only stitch, punch and relief. */
+  :focus-visible {
+    outline: 2px solid var(--legend);
+    outline-offset: 3px;
+    }
+
+  a { text-underline-offset: 3px; }
+}
+
+@layer components {
+  /* Nothing glides. A course steps one whole line-height, overshoots, settles. */
+  .step-in {
+    animation: course-step 460ms cubic-bezier(0.2, 1.5, 0.35, 1) both;
+    }
+  @keyframes course-step {
+    from { transform: translateY(-100%); }
+    to   { transform: translateY(0); }
+    }
+
+  @media (prefers-reduced-motion: reduce) {
+    .step-in { animation: none; }
+    }
+}
+
+/* ── The step ──────────────────────────────────────────────────────────────
+   Navigating winds the roll. The outgoing board steps up and out of the
+   window, the incoming board steps down into it, both with the one-step
+   overshoot a mechanism gives you — nothing crossfades, nothing glides.
+   Transform only, so it stays on the compositor. */
+::view-transition-old(root) {
+    animation: course-out 320ms cubic-bezier(0.5, 0, 0.75, 0) both;
+}
+::view-transition-new(root) {
+    animation: course-next 520ms cubic-bezier(0.2, 1.45, 0.35, 1) both;
+}
+
+@keyframes course-out {
+    to { transform: translateY(-7%); opacity: 0; }
+}
+@keyframes course-next {
+    from { transform: translateY(9%); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+}
+
+/* A mechanism nobody asked to see move: honour the request and just cut. */
+@media (prefers-reduced-motion: reduce) {
+    ::view-transition-old(root),
+    ::view-transition-new(root) {
+        animation: none;
     }
 }

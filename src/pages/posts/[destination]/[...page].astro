@@ -1,0 +1,129 @@
+---
+import type { GetStaticPaths } from 'astro';
+import GlobalLayout from '../../../layouts/global-layout.astro';
+import LeadCourse from '../../../components/blind/lead-course.astro';
+import Course from '../../../components/blind/course.astro';
+import Pagination from '../../../components/posts/pagination.astro';
+import {
+    getSortedPosts,
+    getDestinationCounts,
+    getEntryCount,
+    destinationOf,
+    DESTINATION_LABELS,
+} from '../../../lib/posts';
+
+// One paginated board per destination. Nested a level down so these never
+// compete with /posts and /posts/2 for the same route shape.
+export const getStaticPaths = (({ paginate }) => {
+    const all = getSortedPosts();
+
+    return getDestinationCounts().flatMap((d) => {
+        const bound = all.filter(
+            (post) => destinationOf(post.categories) === d.destination
+        );
+        const [featured, ...rest] = bound;
+
+        return paginate(rest, {
+            pageSize: 12,
+            params: { destination: d.destination },
+            props: { featured, label: d.label, count: bound.length },
+        });
+    });
+}) satisfies GetStaticPaths;
+
+const { page, featured, label, count } = Astro.props;
+const { destination } = Astro.params;
+
+const featuredPost = page.currentPage === 1 ? featured : undefined;
+const coursePosts = page.data;
+
+const destinations = getDestinationCounts();
+const total = getEntryCount();
+
+const tab =
+    'font-legend text-[15px] uppercase leading-none tracking-[0.16em] pb-1';
+---
+
+<GlobalLayout
+    title={`${label} — all courses`}
+    description={`Every ${label.toLowerCase()} entry on Mat Loughnane's site.`}
+>
+    <div class="px-4 py-6 md:px-8 md:py-8">
+        <div class="flex flex-col gap-5">
+            <h1
+                class="font-legend text-[40px] uppercase leading-none tracking-[0.02em] text-legend sm:text-[52px]"
+            >
+                Bound for {label}
+            </h1>
+
+            <nav
+                class="flex flex-wrap items-center gap-x-6 gap-y-3"
+                aria-label="Filter by destination"
+            >
+                <a
+                    href="/posts"
+                    class:list={[
+                        tab,
+                        'border-b-2 border-transparent text-legend-soft hover:text-legend',
+                    ]}>All · {total}</a
+                >
+                {
+                    destinations.map((d) => (
+                        <a
+                            href={`/posts/${d.destination}`}
+                            aria-current={
+                                d.destination === destination
+                                    ? 'page'
+                                    : undefined
+                            }
+                            class:list={[
+                                tab,
+                                d.destination === destination
+                                    ? 'border-b-2 border-legend text-legend'
+                                    : 'border-b-2 border-transparent text-legend-soft hover:text-legend',
+                            ]}
+                        >
+                            {d.label} · {d.count}
+                        </a>
+                    ))
+                }
+            </nav>
+        </div>
+
+        {
+            featuredPost && (
+                <div class="mt-8 border-2 border-legend">
+                    <LeadCourse
+                        title={featuredPost.title}
+                        slug={featuredPost.slug}
+                        image={featuredPost.image}
+                        categories={featuredPost.categories}
+                        description={featuredPost.description}
+                        learnMore={featuredPost.learnMore}
+                        date={featuredPost.date}
+                    />
+                </div>
+            )
+        }
+
+        <section class="mt-10 border-t-2 border-legend">
+            {
+                coursePosts.map((post, i) => (
+                    <Course
+                        title={post.title}
+                        slug={post.slug}
+                        image={post.image}
+                        categories={post.categories}
+                        description={post.description}
+                        date={post.date}
+                        index={i}
+                    />
+                ))
+            }
+        </section>
+
+        <div class="mt-8">
+            <Pagination page={page} />
+        </div>
+    </div>
+</GlobalLayout>

@@ -1,0 +1,435 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-14T00:00:00Z",
+  "title": "Design System: Album Leaf",
+  "provenance": {
+    "seedKey": "fa888a25",
+    "form": "Family photo album — candidate 3 of 7, assigned by roll",
+    "branch": "redesign-album-leaf",
+    "source": "Recorded from the built code, not the direction contract."
+  },
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Manila Card",
+        "canonical": "oklch(93.9% 0.012 79.8)",
+        "darkValue": "#141215",
+        "tonalRamp": [
+          "oklch(15.0% 0.012 79.8)",
+          "oklch(26.4% 0.012 79.8)",
+          "oklch(37.9% 0.012 79.8)",
+          "oklch(49.3% 0.012 79.8)",
+          "oklch(60.7% 0.012 79.8)",
+          "oklch(72.1% 0.012 79.8)",
+          "oklch(83.6% 0.012 79.8)",
+          "oklch(95.0% 0.012 79.8)"
+        ]
+      },
+      "leaf": {
+        "role": "neutral",
+        "displayName": "Leaf",
+        "canonical": "oklch(96.5% 0.010 81.8)",
+        "darkValue": "#1e1b20",
+        "tonalRamp": [
+          "oklch(15.0% 0.010 81.8)",
+          "oklch(26.4% 0.010 81.8)",
+          "oklch(37.9% 0.010 81.8)",
+          "oklch(49.3% 0.010 81.8)",
+          "oklch(60.7% 0.010 81.8)",
+          "oklch(72.1% 0.010 81.8)",
+          "oklch(83.6% 0.010 81.8)",
+          "oklch(95.0% 0.010 81.8)"
+        ]
+      },
+      "edge": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(87.9% 0.018 78.2)",
+        "darkValue": "#2a252c",
+        "tonalRamp": [
+          "oklch(15.0% 0.018 78.2)",
+          "oklch(26.4% 0.018 78.2)",
+          "oklch(37.9% 0.018 78.2)",
+          "oklch(49.3% 0.018 78.2)",
+          "oklch(60.7% 0.018 78.2)",
+          "oklch(72.1% 0.018 78.2)",
+          "oklch(83.6% 0.018 78.2)",
+          "oklch(95.0% 0.018 78.2)"
+        ]
+      },
+      "corner": {
+        "role": "neutral",
+        "displayName": "Gummed Corner",
+        "canonical": "oklch(79.4% 0.027 76.7)",
+        "darkValue": "#312a33",
+        "tonalRamp": [
+          "oklch(15.0% 0.027 76.7)",
+          "oklch(26.4% 0.027 76.7)",
+          "oklch(37.9% 0.027 76.7)",
+          "oklch(49.3% 0.027 76.7)",
+          "oklch(60.7% 0.027 76.7)",
+          "oklch(72.1% 0.027 76.7)",
+          "oklch(83.6% 0.027 76.7)",
+          "oklch(95.0% 0.027 76.7)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(23.2% 0.012 55.7)",
+        "darkValue": "#f4efe9",
+        "contrastOnGround": { "light": 14.06, "dark": 16.3 },
+        "tonalRamp": [
+          "oklch(15.0% 0.012 55.7)",
+          "oklch(26.4% 0.012 55.7)",
+          "oklch(37.9% 0.012 55.7)",
+          "oklch(49.3% 0.012 55.7)",
+          "oklch(60.7% 0.012 55.7)",
+          "oklch(72.1% 0.012 55.7)",
+          "oklch(83.6% 0.012 55.7)",
+          "oklch(95.0% 0.012 55.7)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Faded Ink",
+        "canonical": "oklch(50.9% 0.021 70.0)",
+        "darkValue": "#a2969f",
+        "contrastOnGround": { "light": 4.83, "dark": 6.57 },
+        "tonalRamp": [
+          "oklch(15.0% 0.021 70.0)",
+          "oklch(26.4% 0.021 70.0)",
+          "oklch(37.9% 0.021 70.0)",
+          "oklch(49.3% 0.021 70.0)",
+          "oklch(60.7% 0.021 70.0)",
+          "oklch(72.1% 0.021 70.0)",
+          "oklch(83.6% 0.021 70.0)",
+          "oklch(95.0% 0.021 70.0)"
+        ]
+      },
+      "cloth": {
+        "role": "primary",
+        "displayName": "Oxblood Book Cloth",
+        "canonical": "oklch(38.5% 0.141 21.1)",
+        "darkValue": "#7e1220",
+        "note": "Identical in both renditions. Also the system colour for focus ring, selection, caret and accent-color. Only 1.77:1 against the dark ground, which is why the dark focus outline swaps to on-cloth.",
+        "tonalRamp": [
+          "oklch(15.0% 0.141 21.1)",
+          "oklch(26.4% 0.141 21.1)",
+          "oklch(37.9% 0.141 21.1)",
+          "oklch(49.3% 0.141 21.1)",
+          "oklch(60.7% 0.141 21.1)",
+          "oklch(72.1% 0.141 21.1)",
+          "oklch(83.6% 0.141 21.1)",
+          "oklch(95.0% 0.141 21.1)"
+        ]
+      },
+      "on-cloth": {
+        "role": "primary",
+        "displayName": "Album Cream",
+        "canonical": "oklch(93.3% 0.018 70.2)",
+        "darkValue": "#f1e7dc",
+        "contrastOnCloth": 8.63,
+        "tonalRamp": [
+          "oklch(15.0% 0.018 70.2)",
+          "oklch(26.4% 0.018 70.2)",
+          "oklch(37.9% 0.018 70.2)",
+          "oklch(49.3% 0.018 70.2)",
+          "oklch(60.7% 0.018 70.2)",
+          "oklch(72.1% 0.018 70.2)",
+          "oklch(83.6% 0.018 70.2)",
+          "oklch(95.0% 0.018 70.2)"
+        ]
+      },
+      "reserve": {
+        "role": "secondary",
+        "displayName": "Reserve Red",
+        "canonical": "oklch(49.3% 0.178 29.5)",
+        "darkValue": "#e2554c",
+        "contrastOnGround": { "light": 5.66, "dark": 5.0 },
+        "note": "Reserved: marks the most recent entry and nothing else.",
+        "tonalRamp": [
+          "oklch(15.0% 0.178 29.5)",
+          "oklch(26.4% 0.178 29.5)",
+          "oklch(37.9% 0.178 29.5)",
+          "oklch(49.3% 0.178 29.5)",
+          "oklch(60.7% 0.178 29.5)",
+          "oklch(72.1% 0.178 29.5)",
+          "oklch(83.6% 0.178 29.5)",
+          "oklch(95.0% 0.178 29.5)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The person's name only — 46px, 62px at sm, 74px at md. Also the back cover wordmark at 38/46px."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Lead entry title (42/52/58px), page titles (42/54px), post titles (40/52px). Archivo Black throughout."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Entry card titles. Two-line clamp with a 56px reserved height so caption lines across a row share one lane."
+      },
+      "body": { "displayName": "Body", "purpose": "Running copy, held to 46-60ch." },
+      "body-small": {
+        "displayName": "Body Small",
+        "purpose": "Entry descriptions, secondary paragraphs, read links, pagination labels."
+      },
+      "label": {
+        "displayName": "Caption",
+        "purpose": "Archivo Narrow uppercase. Nav entry-count line, section headings, figure captions, back cover location."
+      },
+      "label-small": {
+        "displayName": "Caption Small",
+        "purpose": "The line under an entry: shelf and date, uppercase."
+      }
+    },
+    "textures": [
+      {
+        "name": "card-tooth",
+        "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='t'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23t)' opacity='0.035'/%3E%3C/svg%3E\")",
+        "purpose": "Body grain so the ground reads as stock, not a flat fill. Opacity 0.035 in light, 0.055 in dark."
+      },
+      {
+        "name": "cloth-weave",
+        "value": "repeating-linear-gradient(45deg, rgb(255 255 255 / 0.035) 0px, rgb(255 255 255 / 0.035) 1px, transparent 1px, transparent 3px), repeating-linear-gradient(-45deg, rgb(0 0 0 / 0.06) 0px, rgb(0 0 0 / 0.06) 1px, transparent 1px, transparent 3px)",
+        "purpose": "Crosshatch at thread scale on every cloth surface. Additive over background-color, so bg-cloth stays a colour token."
+      }
+    ],
+    "shadows": [
+      {
+        "name": "pasted-label",
+        "value": "0 1px 3px rgb(0 0 0 / 0.35)",
+        "purpose": "The spine's cream plate only, paired with rotate(-1.5deg). Not a reusable elevation token — the rest of the album is flat."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-settle",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The album's easing. Corner mounts tightening (420ms) and entries settling (620ms)."
+      },
+      {
+        "name": "corner-grip",
+        "value": "transform: scale(0.82); 420ms",
+        "purpose": "Signature hover: the four mounts tighten on the photograph."
+      },
+      {
+        "name": "entry-settle",
+        "value": "opacity 0->1, translateY(14px)->0; 620ms; stagger min(index,3) * 70ms",
+        "purpose": "IntersectionObserver entrance, rootMargin 0px 0px -10% 0px, threshold 0.1, with a 1600ms reveal failsafe."
+      },
+      {
+        "name": "spine-progress",
+        "value": "transform: scaleY(0->1); 120ms linear",
+        "purpose": "Reading depth on the spine. Transform, not height, so it stays on the compositor."
+      },
+      {
+        "name": "search-expand",
+        "value": "opacity 0->1, scaleX(0.6)->1; 300ms ease-out",
+        "purpose": "Search field opening from its collapsed mark."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px", "note": "Spine becomes fixed and vertical; body gains an 84px left inset." },
+      { "name": "lg", "value": "1024px", "note": "Entry grid reaches three columns." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Mounted Photo",
+      "kind": "custom",
+      "refersTo": "mounted-photo",
+      "description": "The core motif: a photograph held to the leaf by four gummed corner mounts, which tighten on hover.",
+      "html": "<div class=\"ds-photo\"><img src=\"/assets/images/about/about-profile-paris.jpeg\" alt=\"Paris, August 2025\"><span class=\"ds-photo-mounts\" aria-hidden=\"true\"><svg class=\"ds-mount ds-mount-tl\" width=\"30\" height=\"30\" viewBox=\"0 0 30 30\" fill=\"none\"><path d=\"M0 0 H30 L0 30 Z\" fill=\"var(--album-corner)\"></path><path d=\"M30 0 L0 30\" stroke=\"var(--album-edge)\" stroke-width=\"1\"></path></svg><svg class=\"ds-mount ds-mount-tr\" width=\"30\" height=\"30\" viewBox=\"0 0 30 30\" fill=\"none\"><path d=\"M30 0 V30 L0 0 Z\" fill=\"var(--album-corner)\"></path><path d=\"M0 0 L30 30\" stroke=\"var(--album-edge)\" stroke-width=\"1\"></path></svg><svg class=\"ds-mount ds-mount-bl\" width=\"30\" height=\"30\" viewBox=\"0 0 30 30\" fill=\"none\"><path d=\"M0 30 V0 L30 30 Z\" fill=\"var(--album-corner)\"></path><path d=\"M0 0 L30 30\" stroke=\"var(--album-edge)\" stroke-width=\"1\"></path></svg><svg class=\"ds-mount ds-mount-br\" width=\"30\" height=\"30\" viewBox=\"0 0 30 30\" fill=\"none\"><path d=\"M30 30 H0 L30 0 Z\" fill=\"var(--album-corner)\"></path><path d=\"M30 0 L0 30\" stroke=\"var(--album-edge)\" stroke-width=\"1\"></path></svg></span></div>",
+      "css": ".ds-photo { position: relative; overflow: hidden; background: var(--album-leaf); width: 232px; height: 286px; border-radius: 0; } .ds-photo img { display: block; width: 100%; height: 100%; object-fit: cover; } .ds-photo-mounts { position: absolute; inset: 0; pointer-events: none; } .ds-mount { position: absolute; transition: transform 420ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-mount-tl { top: 0; left: 0; transform-origin: top left; } .ds-mount-tr { top: 0; right: 0; transform-origin: top right; } .ds-mount-bl { bottom: 0; left: 0; transform-origin: bottom left; } .ds-mount-br { bottom: 0; right: 0; transform-origin: bottom right; } .ds-photo:hover .ds-mount { transform: scale(0.82); } @media (prefers-reduced-motion: reduce) { .ds-mount { transition: none; } .ds-photo:hover .ds-mount { transform: none; } }"
+    },
+    {
+      "name": "Entry Card",
+      "kind": "card",
+      "refersTo": "entry-card-title",
+      "description": "A grid entry: photograph, then title, then caption, then description. No border, no fill, no radius — only the title is a link, stretched to cover the card.",
+      "html": "<article class=\"ds-entry\"><div class=\"ds-entry-photo\"></div><h3 class=\"ds-entry-title\"><a href=\"#\">Neapolitan Pizza at Home</a></h3><div class=\"ds-entry-caption\"><svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M3 11h18c0 5-4 8-9 8s-9-3-9-8Z\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linejoin=\"round\"/><path d=\"M9 7c0-2 2-2 2-4\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><path d=\"M14.2 7c0-1.4 1.4-1.4 1.4-2.8\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\"/></svg><span>KITCHEN · DEC 2020</span></div><p class=\"ds-entry-desc\">Two years of chasing a 60-second bake in a home oven.</p></article>",
+      "css": ".ds-entry { position: relative; display: flex; flex-direction: column; gap: 14px; max-width: 340px; font-family: 'Archivo Variable', system-ui, sans-serif; } .ds-entry-photo { height: 212px; background: var(--album-leaf); border: 1px solid var(--album-edge); } .ds-entry-title { margin: 0; min-height: 56px; font-size: 21px; font-weight: 600; line-height: 28px; letter-spacing: -0.015em; color: var(--album-ink); } .ds-entry-title a { color: inherit; text-decoration: none; text-underline-offset: 4px; } .ds-entry-title a::after { content: ''; position: absolute; inset: 0; } .ds-entry:hover .ds-entry-title a { text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--album-ink-2) 50%, transparent); } .ds-entry:focus-within .ds-entry-title a { outline: 2px solid var(--album-cloth); outline-offset: 3px; } .ds-entry-caption { display: flex; align-items: center; gap: 8px; color: var(--album-ink-2); font-family: 'Archivo Narrow Variable', sans-serif; font-size: 12px; letter-spacing: 0.14em; } .ds-entry-desc { margin: 0; font-size: 15px; line-height: 24px; color: var(--album-ink-2); }"
+    },
+    {
+      "name": "Lead Entry Link",
+      "kind": "button",
+      "refersTo": "lead-entry-link",
+      "description": "The read link on the newest entry. The only link in the album that carries reserve red.",
+      "html": "<a class=\"ds-lead-link\" href=\"#\">Read this entry <svg width=\"20\" height=\"14\" viewBox=\"0 0 20 14\" fill=\"none\" aria-hidden=\"true\"><path d=\"M1 7h17M12.5 1.5 18 7l-5.5 5.5\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-lead-link { display: inline-flex; align-items: center; gap: 8px; width: fit-content; padding-bottom: 4px; border-bottom: 1px solid var(--album-reserve); font-family: 'Archivo Variable', system-ui, sans-serif; font-size: 15px; font-weight: 600; color: var(--album-reserve); text-decoration: none; transition: opacity 150ms; } .ds-lead-link:hover { opacity: 0.8; } .ds-lead-link:focus-visible { outline: 2px solid var(--album-cloth); outline-offset: 3px; }"
+    },
+    {
+      "name": "Recency Mark",
+      "kind": "chip",
+      "refersTo": "lead-entry-title",
+      "description": "The 10x10px reserve square that marks the most recent entry, beside its caption line. The single sanctioned use of reserve as a fill.",
+      "html": "<div class=\"ds-recency\"><span class=\"ds-recency-dot\" title=\"Most recent entry\"></span><span class=\"ds-recency-caption\">JOURNEYS · APRIL 2026</span></div>",
+      "css": ".ds-recency { display: flex; align-items: center; gap: 10px; } .ds-recency-dot { width: 10px; height: 10px; flex-shrink: 0; background: var(--album-reserve); border-radius: 0; } .ds-recency-caption { font-family: 'Archivo Narrow Variable', sans-serif; font-size: 13px; letter-spacing: 0.14em; color: var(--album-ink-2); }"
+    },
+    {
+      "name": "Shelf Filter",
+      "kind": "chip",
+      "refersTo": "shelf-filter",
+      "description": "Category filter row. Active takes a 2px ink rule; inactive reserves a transparent 1px rule so the row never shifts.",
+      "html": "<nav class=\"ds-shelves\" aria-label=\"Filter entries by shelf\"><a class=\"ds-shelf ds-shelf-on\" href=\"#\" aria-current=\"page\">ALL ENTRIES · 37</a><a class=\"ds-shelf\" href=\"#\"><svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M2 19C7 19 6 5 12 5C18 5 17 19 22 19\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\"/></svg>JOURNEYS · 14</a><a class=\"ds-shelf\" href=\"#\"><svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M8.5 6 3 12l5.5 6M15.5 6l5.5 6-5.5 6\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>BUILDS · 7</a></nav>",
+      "css": ".ds-shelves { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; } .ds-shelf { display: inline-flex; align-items: center; gap: 8px; padding-bottom: 4px; border-bottom: 1px solid transparent; font-family: 'Archivo Narrow Variable', sans-serif; font-size: 13px; letter-spacing: 0.14em; color: var(--album-ink-2); text-decoration: none; transition: color 150ms; } .ds-shelf:hover { color: var(--album-ink); } .ds-shelf-on { border-bottom: 2px solid var(--album-ink); font-weight: 600; color: var(--album-ink); } .ds-shelf:focus-visible { outline: 2px solid var(--album-cloth); outline-offset: 3px; }"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "search-field",
+      "description": "A leaf laid on the ground, ruled with the nav's hairline. Focus is delegated from the input to the whole field.",
+      "html": "<div class=\"ds-search\" role=\"search\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\" stroke=\"currentColor\" stroke-width=\"1.7\"/><path d=\"m20 20-3.5-3.5\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\"/></svg><input type=\"text\" placeholder=\"Search posts…\" aria-label=\"Search posts\"></div>",
+      "css": ".ds-search { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border: 1px solid var(--album-edge); border-radius: 9999px; background: var(--album-leaf); color: var(--album-ink-2); outline-color: var(--album-cloth); outline-offset: 3px; } .ds-search:has(input:focus-visible) { outline: 2px solid var(--album-cloth); } .ds-search input { width: 192px; border: none; background: transparent; outline: none; font-family: 'Archivo Variable', system-ui, sans-serif; font-size: 14px; color: var(--album-ink); caret-color: var(--album-cloth); } .ds-search input::placeholder { color: var(--album-ink-2); }"
+    },
+    {
+      "name": "Primary Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "A single row under a hairline: spelled-out entry count on the left, links on the right. No underline, no pill, no background.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Primary\"><span class=\"ds-nav-count\">THIRTY-SEVEN ENTRIES · 2020—2026</span><div class=\"ds-nav-links\"><a class=\"ds-nav-link ds-nav-link-on\" href=\"#\" aria-current=\"page\">Home</a><a class=\"ds-nav-link\" href=\"#\">About</a><a class=\"ds-nav-link\" href=\"#\">Posts</a></div></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 56px; border-bottom: 1px solid var(--album-edge); font-family: 'Archivo Variable', system-ui, sans-serif; } .ds-nav-count { font-family: 'Archivo Narrow Variable', sans-serif; font-size: 13px; letter-spacing: 0.16em; color: var(--album-ink-2); } .ds-nav-links { display: flex; align-items: center; gap: 32px; } .ds-nav-link { font-size: 14px; color: var(--album-ink-2); text-decoration: none; transition: color 150ms; } .ds-nav-link:hover { color: var(--album-ink); } .ds-nav-link-on { font-weight: 600; color: var(--album-ink); } .ds-nav-link:focus-visible { outline: 2px solid var(--album-cloth); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Pagination",
+      "kind": "nav",
+      "refersTo": "pagination-link",
+      "description": "Prev/Next in ink with a drawn arrow. Disabled sides stay at full ink-2 with no rule — the missing rule reads as unavailable without dropping below the contrast floor.",
+      "html": "<nav class=\"ds-pager\" aria-label=\"Pagination\"><span class=\"ds-pager-off\" aria-hidden=\"true\"><svg width=\"20\" height=\"14\" viewBox=\"0 0 20 14\" fill=\"none\"><path d=\"M19 7H2M7.5 1.5 2 7l5.5 5.5\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Previous</span><span class=\"ds-pager-count\">PAGE 1 OF 3</span><a class=\"ds-pager-link\" href=\"#\" rel=\"next\">Next<svg width=\"20\" height=\"14\" viewBox=\"0 0 20 14\" fill=\"none\"><path d=\"M1 7h17M12.5 1.5 18 7l-5.5 5.5\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></nav>",
+      "css": ".ds-pager { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 16px; font-family: 'Archivo Variable', system-ui, sans-serif; } .ds-pager-link { display: inline-flex; align-items: center; gap: 8px; padding-bottom: 4px; border-bottom: 1px solid var(--album-ink); font-size: 15px; font-weight: 600; color: var(--album-ink); text-decoration: none; transition: opacity 150ms; } .ds-pager-link:hover { opacity: 0.7; } .ds-pager-link:focus-visible { outline: 2px solid var(--album-cloth); outline-offset: 3px; } .ds-pager-off { display: inline-flex; align-items: center; gap: 8px; padding-bottom: 4px; font-size: 15px; font-weight: 600; color: var(--album-ink-2); cursor: not-allowed; user-select: none; } .ds-pager-count { font-family: 'Archivo Narrow Variable', sans-serif; font-size: 13px; letter-spacing: 0.1em; color: var(--album-ink-2); }"
+    },
+    {
+      "name": "Theme Toggle",
+      "kind": "button",
+      "refersTo": "theme-toggle",
+      "description": "Shows the album you would switch to, not the one you are in. Label and aria-pressed re-sync on every toggle.",
+      "html": "<button class=\"ds-theme\" type=\"button\" aria-pressed=\"false\" aria-label=\"Switch to dark\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M20 14.2A8.4 8.4 0 0 1 9.8 4a8.4 8.4 0 1 0 10.2 10.2Z\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linejoin=\"round\"/></svg></button>",
+      "css": ".ds-theme { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border: none; border-radius: 9999px; background: transparent; color: var(--album-ink-2); cursor: pointer; transition: color 150ms; } .ds-theme:hover { color: var(--album-ink); } .ds-theme:focus-visible { outline: 2px solid var(--album-cloth); outline-offset: 3px; }"
+    },
+    {
+      "name": "Spine",
+      "kind": "custom",
+      "refersTo": "spine-letter",
+      "description": "The signature: fixed 84px oxblood cloth with the name stamped letter by letter, a pasted cream label, and a scroll-depth fill in a deeper cloth.",
+      "html": "<div class=\"ds-spine\"><div class=\"ds-spine-fill\" aria-hidden=\"true\"></div><span class=\"ds-spine-plate\"></span><div class=\"ds-spine-name\" aria-hidden=\"true\"><span>L</span><span>O</span><span>U</span><span>G</span><span>H</span><span>N</span><span>A</span><span>N</span><span>E</span></div></div>",
+      "css": ".ds-spine { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 84px; height: 340px; overflow: hidden; background-color: var(--album-cloth); background-image: repeating-linear-gradient(45deg, rgb(255 255 255 / 0.035) 0px, rgb(255 255 255 / 0.035) 1px, transparent 1px, transparent 3px), repeating-linear-gradient(-45deg, rgb(0 0 0 / 0.06) 0px, rgb(0 0 0 / 0.06) 1px, transparent 1px, transparent 3px); } .ds-spine-fill { position: absolute; inset-inline: 0; top: 0; height: 100%; background-color: #5e0d18; transform: scaleY(0.38); transform-origin: top; transition: transform 120ms linear; } .ds-spine-plate { position: absolute; top: 24px; left: 50%; width: 52px; height: 40px; margin-left: -26px; background: var(--album-on-cloth); transform: rotate(-1.5deg); box-shadow: 0 1px 3px rgb(0 0 0 / 0.35); } .ds-spine-name { position: relative; display: flex; flex-direction: column; align-items: center; font-family: 'Archivo Black', sans-serif; font-size: 19px; line-height: 20px; letter-spacing: 0.02em; color: var(--album-on-cloth); } @media (prefers-reduced-motion: reduce) { .ds-spine-fill { transition: none; } }"
+    },
+    {
+      "name": "Back Cover",
+      "kind": "custom",
+      "refersTo": "back-cover",
+      "description": "The album closes on the cloth it opens with: caption and outbound links on the left, wordmark on the right.",
+      "html": "<footer class=\"ds-cover\"><div class=\"ds-cover-left\"><span class=\"ds-cover-caption\">MAT LOUGHNANE · DUBLIN</span><div class=\"ds-cover-links\"><a href=\"#\">hexa studios</a><a href=\"#\">github</a><a href=\"#\">linkedin</a></div></div><span class=\"ds-cover-mark\">Mat Loughnane</span></footer>",
+      "css": ".ds-cover { display: flex; flex-direction: column; gap: 40px; padding: 56px; background-color: var(--album-cloth); background-image: repeating-linear-gradient(45deg, rgb(255 255 255 / 0.035) 0px, rgb(255 255 255 / 0.035) 1px, transparent 1px, transparent 3px), repeating-linear-gradient(-45deg, rgb(0 0 0 / 0.06) 0px, rgb(0 0 0 / 0.06) 1px, transparent 1px, transparent 3px); font-family: 'Archivo Variable', system-ui, sans-serif; } @media (min-width: 768px) { .ds-cover { flex-direction: row; align-items: flex-end; justify-content: space-between; } } .ds-cover-left { display: flex; flex-direction: column; gap: 16px; } .ds-cover-caption { font-family: 'Archivo Narrow Variable', sans-serif; font-size: 13px; letter-spacing: 0.16em; color: color-mix(in srgb, var(--album-on-cloth) 75%, transparent); } .ds-cover-links { display: flex; flex-wrap: wrap; gap: 24px; } .ds-cover-links a { font-size: 15px; font-weight: 500; color: var(--album-on-cloth); text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--album-on-cloth) 40%, transparent); text-underline-offset: 3px; transition: text-decoration-color 150ms; } .ds-cover-links a:hover { text-decoration-color: var(--album-on-cloth); } .ds-cover-links a:focus-visible { outline: 2px solid var(--album-on-cloth); outline-offset: 3px; } .ds-cover-mark { font-family: 'Archivo Black', sans-serif; font-size: 46px; line-height: 1; letter-spacing: -0.03em; color: var(--album-on-cloth); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Family Photo Album",
+    "overview": "This is not a site with an album theme applied to it. It is an album: oxblood book cloth down the left edge, card leaves with visible tooth, and every photograph held to the leaf by four gummed corner mounts. The reader is not browsing an index, they are being shown something. That single fiction settles almost every decision — why photographs are mounted rather than framed, why captions sit under titles in narrow uppercase, why the newest entry is the only thing in the album allowed to carry a red mark, and why nothing floats.\n\nThe world is materially specific and chromatically nearly silent. Two neutrals do the work of an entire palette (card and ink), one deep oxblood carries the binding, and one saturated red is spent exactly once per page. Density is generous rather than tight: pages breathe on a 20/56px gutter with 36–48px between sections, and the only thing competing for attention is a photograph. There are no gradients, no glass, no cards-with-shadows, no hero band — the direction contract's stated refusal (a full-bleed gradient hero over a grid of equal cards) is visible in the build as an absence, and the homepage's asymmetric spread, where the first entry of the grid runs across two columns, is what replaces it.\n\nLight and dark are not inversions of one another. They are the same physical album under two lights: manila card on a table in daylight, and the black album closed in its case. The values in each rendition were authored from that scene, which is why the dark ground is a warm-neutral near-black rather than a mathematically flipped manila, and why the book cloth — a physical material — is byte-identical in both.",
+    "keyCharacteristics": [
+      "Two neutral renditions of one object, not a palette and its inverse",
+      "Every photograph mounted on four square corner mounts; no photograph is ever a bare rectangle",
+      "Blocked Archivo Black display lettering against small, wide-tracked Archivo Narrow captions",
+      "One saturated red, reserved for the single most recent entry",
+      "Radius 0 on everything that holds content",
+      "Flat by default — exactly one shadow exists in the entire system",
+      "Marks are drawn, not set from a glyph font"
+    ],
+    "rules": [
+      {
+        "name": "The Reserve Rule",
+        "body": "The saturated red marks the most recent entry and nothing else. In the build it appears in exactly three places, all on the lead entry: the 10×10px square beside its caption, the title's hover colour, and the rule under its read link. Every other red-shaped opportunity is deliberately refused — pagination links take ink, shelf filters take ink, search-result hover takes an ink underline, the spine's scroll fill takes a deeper cloth (#5e0d18), and browser chrome takes cloth. The audit test: if a screen shows red in two unrelated places, one of them is wrong.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Renditions Rule",
+        "body": "Light and dark are the same album under different light, not a colour and its inverse. Author each rendition's neutrals from the scene; do not derive one from the other. Cloth and on-cloth do not change between them.",
+        "section": "colors"
+      },
+      {
+        "name": "The Cloth-Is-Chrome Rule",
+        "body": "Anything the browser draws that the design did not — focus ring, text selection, caret, form accent, scrollbar — takes cloth or corner, never reserve. In dark, the focus outline swaps to on-cloth, because cloth against a near-black ground is 1.77:1 and effectively invisible.",
+        "section": "colors"
+      },
+      {
+        "name": "The Caption-Under Rule",
+        "body": "The caption belongs beneath the thing it captions, never above it. Shelf and date sit under an entry's title in Archivo Narrow uppercase; the title always leads. No eyebrow, no kicker, no label above a heading.",
+        "section": "typography"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Display type is heavy, tight, and negative-tracked; caption type is narrow, small, uppercase, and wide-tracked. There is no third register — anything that isn't one of those two is set in Archivo Variable at body weight. Never letterspace body text and never set a caption in the display face.",
+        "section": "typography"
+      },
+      {
+        "name": "The Written-Out Rule",
+        "body": "Counts in caption lines are spelled out as words (\"THIRTY-SEVEN ENTRIES · 2020—2026\"), the way someone writes on the back of a photograph, not set as figures. This applies to the album's own self-description; per-shelf counts inside filters stay numeric.",
+        "section": "typography"
+      },
+      {
+        "name": "The Spread Rule",
+        "body": "A row of entries is a page someone laid out, not six identical slots. When a grid can be broken asymmetrically — one card spanning two columns, an entry lifted out to lead — break it, and cut the count so no row is left with an orphan.",
+        "section": "layout"
+      },
+      {
+        "name": "The Hairline Rule",
+        "body": "Sections are separated by a 1px edge rule with 36px of space beneath it. That rule is the only divider in the system: no boxes, no panels, no filled section backgrounds.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Leaf Rule",
+        "body": "Nothing in the album casts a shadow. Cards, photographs, the nav, the search field, the mobile menu and the back cover are all flat at rest and flat on hover. If a surface needs to separate from another surface, use the edge hairline or the leaf/ground tonal step — never a shadow, and never a shadow appearing on hover.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Square Corner Rule",
+        "body": "Radius 0 on anything that holds content. The only rounded forms in the album are the search field and post tag chips; they are carried inconsistencies, not a shape token to extend.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Corner Mount Rule",
+        "body": "Every photograph in the album is held by four gummed corner mounts. The motif does not stop at the door of an entry, a post header, or a result — a photograph without mounts is not part of this album.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Drawn Mark Rule",
+        "body": "Marks are drawn as inline SVG at 1.6–1.7 stroke with round caps, in the album's own hand. No glyph icons, no unicode arrows, no icon fonts, and no borrowed icon set at a different stroke weight.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Visible-By-Default Rule",
+        "body": "Entries ship visible in the markup and are only ever hidden by script, and a 1600ms failsafe reveals anything the observer missed. No animation is permitted to be the reason content is invisible — if the script fails, the page must still read.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do mount every photograph on four corner mounts, scaling the mount to the photo (26px on grid cards, 30–34px on hero-scale images).",
+      "Do spend reserve red on the single most recent entry and nowhere else; use ink for every other emphasis, and cloth for anything the browser draws.",
+      "Do author light and dark as two renditions of the same object, keeping cloth and on-cloth identical across both.",
+      "Do put the caption under the title in Archivo Narrow uppercase at 12–13px with 0.14–0.16em tracking.",
+      "Do separate sections with a single 1px edge rule and 36px beneath it.",
+      "Do draw new marks as inline SVG at 1.6–1.7 stroke with round caps, in currentColor.",
+      "Do break a grid asymmetrically and cut the entry count so no row ends in an orphan.",
+      "Do gate every animation on prefers-reduced-motion and ship content visible by default.",
+      "Do hold running copy to 46–60ch and centre only a post's prose column (max-w-3xl)."
+    ],
+    "donts": [
+      "Don't add a shadow. The one shadow in the system belongs to the spine plate and does not generalise.",
+      "Don't round a surface that holds content. The album is square; the search field's and tag chips' pills are inherited inconsistencies, not permission.",
+      "Don't use reserve for a focus ring, a hover state, a link colour, a badge, or a second \"important\" thing on the same page.",
+      "Don't reach for the legacy tokens still sitting in @theme (--color-primary teal, --color-accent coral, --color-muted, --background-image-grid, the marquee keyframes) or the shadcn oklch neutral set. They predate this world and belong to no surface in it.",
+      "Don't set a unicode arrow or a glyph icon; the album has a drawn arrow component and three drawn category marks.",
+      "Don't put a label, count, or eyebrow above a heading.",
+      "Don't letterspace body text, and don't set caption-scale type in Archivo Black.",
+      "Don't introduce a full-bleed gradient hero, a glass panel, or a grid of six identical bordered cards — the album exists as a refusal of exactly that.",
+      "Don't animate height or top for a scroll-driven effect; use a compositor transform."
+    ]
+  }
+}

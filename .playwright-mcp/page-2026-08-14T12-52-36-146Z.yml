@@ -1,0 +1,22 @@
+- generic [ref=f4742e4]:
+  - generic [ref=f4742e5]:
+    - checkbox "Use dark theme" [ref=f4742e6]
+    - generic [ref=f4742e7] [cursor=pointer]: Use dark theme
+  - banner [ref=f4742e17]:
+    - generic [ref=f4742e18]:
+      - heading "FailedToLoadModuleSSR" [level=2] [ref=f4742e19]
+      - heading "Could not import file." [level=1] [ref=f4742e20]
+  - generic [ref=f4742e26]:
+    - generic [ref=f4742e27]:
+      - generic [ref=f4742e31]:
+        - text: Could not import
+        - code [ref=f4742e32]: ../components/blind/blind-footer.astro
+        - text: .
+      - link "See Docs Reference" [ref=f4742e34] [cursor=pointer]:
+        - /url: https://docs.astro.build/en/reference/errors/failed-to-load-module-ssr/
+    - generic [ref=f4742e38]: This is often caused by a typo in the import path. Please make sure the file exists.
+  - generic [ref=f4742e43]:
+    - generic [ref=f4742e44]:
+      - heading "Stack Trace" [level=2] [ref=f4742e45]
+      - generic [ref=f4742e46] [cursor=pointer]
+    - generic [ref=f4742e51]: "Error: Failed to load url ../components/blind/blind-footer.astro (resolved id: ../components/blind/blind-footer.astro) in /Users/matthew/developer/hexa/matloughnane.github.io/src/layouts/global-layout.astro. Does the file exist? at loadAndTransform (file:///Users/matthew/developer/hexa/matloughnane.github.io/node_modules/.pnpm/vite@8.1.5_@types+node@24.13.3_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:20113:31) at async fetchModule (file:///Users/matthew/developer/hexa/matloughnane.github.io/node_modules/.pnpm/vite@8.1.5_@types+node@24.13.3_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:33584:15) at async handleInvoke (file:///Users/matthew/developer/hexa/matloughnane.github.io/node_modules/.pnpm/vite@8.1.5_@types+node@24.13.3_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:26274:21) at async EventEmitter.listenerForInvokeHandler (file:///Users/matthew/developer/hexa/matloughnane.github.io/node_modules/.pnpm/vite@8.1.5_@types+node@24.13.3_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:26329:13)"

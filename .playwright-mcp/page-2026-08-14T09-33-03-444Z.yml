@@ -1,0 +1,108 @@
+- generic [active] [ref=f491e1]:
+  - link "Mat Loughnane — home" [ref=f491e3] [cursor=pointer]:
+    - /url: /
+    - generic [ref=f491e5]: MAT LOUGHNANE
+  - generic [ref=f491e6]:
+    - navigation "Primary" [ref=f491e7]:
+      - button "Toggle navigation" [ref=f491e8]
+      - generic [ref=f491e13]:
+        - button "Open search" [ref=f491e15] [cursor=pointer]
+        - button "Switch to dark" [ref=f491e19]
+    - main [ref=f491e22]:
+      - generic [ref=f491e23]:
+        - generic [ref=f491e24]:
+          - figure "Paris, August 2025" [ref=f491e25]:
+            - img "Mat Loughnane in Paris, August 2025" [ref=f491e27]
+          - generic [ref=f491e29]:
+            - heading "Mat Loughnane" [level=1] [ref=f491e30]
+            - paragraph [ref=f491e31]: A software developer from London, living in Dublin. I bake to satisfy a sweet tooth, and go looking for other people's cooking whenever I travel.
+            - paragraph [ref=f491e32]:
+              - text: Building web and mobile apps for over a decade as
+              - link "Hexa Studios" [ref=f491e33] [cursor=pointer]:
+                - /url: https://hexastudios.co
+              - text: — that work lives there. This is everything else.
+        - article [ref=f491e34]:
+          - generic [ref=f491e35]:
+            - link [ref=f491e36] [cursor=pointer]:
+              - /url: /posts/2026-07-14-dingle
+            - generic [ref=f491e39]:
+              - heading [level=2] [ref=f491e40]:
+                - link "Dingle" [ref=f491e41] [cursor=pointer]:
+                  - /url: /posts/2026-07-14-dingle
+              - generic [ref=f491e42]:
+                - generic "Most recent entry" [ref=f491e43]
+                - generic [ref=f491e44]: JOURNEYS · JULY 2026
+              - paragraph [ref=f491e45]: We spent a few sunny days in Dingle, Kerry. We stayed in Ballyfitterer and the Slea Head drive was our main route. We travelled clockwise around the drive past the Coumeenoole beach onto the Dunquin…
+              - link "Slea Head →" [ref=f491e46] [cursor=pointer]:
+                - /url: /posts/2026-07-14-dingle
+        - generic [ref=f491e47]:
+          - heading "More from the album" [level=2] [ref=f491e48]
+          - article [ref=f491e50]:
+            - generic [ref=f491e51]:
+              - heading [level=3] [ref=f491e54]:
+                - 'link "The Arranmore Challenge App: Ready for 2026" [ref=f491e55] [cursor=pointer]':
+                  - /url: /posts/2026-05-28-arranmore-challenge
+              - generic [ref=f491e56]: BUILDS · MAY 2026
+              - paragraph [ref=f491e60]: The tournament management and supporter app for the JBH football weekend — live scoring, posting photos and texts and let everyone follow along.
+          - article [ref=f491e61]:
+            - generic [ref=f491e62]:
+              - heading [level=3] [ref=f491e65]:
+                - link "A New Look for the Site" [ref=f491e66] [cursor=pointer]:
+                  - /url: /posts/2026-02-06-jekyll-to-astro
+              - generic [ref=f491e67]: BUILDS · FEB 2026
+              - paragraph [ref=f491e71]: This website has been through a few lives. It started as a static site, then a simple Jekyll blog hosted on GitHub Pages (thanks JekyllThemes.io) - markdown files, Liquid templates, and a theme that…
+          - article [ref=f491e72]:
+            - generic [ref=f491e73]:
+              - heading [level=3] [ref=f491e76]:
+                - link "Experimenting with AI" [ref=f491e77] [cursor=pointer]:
+                  - /url: /posts/2026-02-05-ai-experimentation-mcp-to-mastra
+              - generic [ref=f491e78]: BUILDS · FEB 2026
+              - paragraph [ref=f491e82]: Over the past few months I've been deep in experimentation mode, trying to figure out the best way to bring AI agents into the products we build at Hexa Studios. It's been a journey through MCP…
+          - article [ref=f491e83]:
+            - generic [ref=f491e84]:
+              - heading [level=3] [ref=f491e87]:
+                - link "Tenerife" [ref=f491e88] [cursor=pointer]:
+                  - /url: /posts/2026-01-03-tenerife
+              - generic [ref=f491e89]: JOURNEYS · JAN 2026
+              - paragraph [ref=f491e93]: New Year's 2026 in the sun. Swapped the cold for Tenerife and it didn't disappoint, except the first day when it poured. Highlights were Daria's Bakery for pastries and Bank Steakhouse for a serious…
+          - article [ref=f491e94]:
+            - generic [ref=f491e95]:
+              - heading [level=3] [ref=f491e98]:
+                - link "Happy Anniver-Paris" [ref=f491e99] [cursor=pointer]:
+                  - /url: /posts/2025-08-24-paris
+              - generic [ref=f491e100]: JOURNEYS · AUG 2025
+              - paragraph [ref=f491e104]: "We visited Paris for our 1st anniversary. Amazing museums and bakeries galore. A couple of highlights:"
+        - generic [ref=f491e105]:
+          - heading "THE ALBUM, SHELF BY SHELF" [level=2] [ref=f491e106]
+          - list [ref=f491e107]:
+            - listitem [ref=f491e108]:
+              - link "Journeys — 14 entries" [ref=f491e109] [cursor=pointer]:
+                - /url: /posts/journeys
+                - generic [ref=f491e113]: Journeys
+                - generic [ref=f491e114]: 14 ENTRIES
+            - listitem [ref=f491e117]:
+              - link "Kitchen — 13 entries" [ref=f491e118] [cursor=pointer]:
+                - /url: /posts/kitchen
+                - generic [ref=f491e124]: Kitchen
+                - generic [ref=f491e125]: 13 ENTRIES
+            - listitem [ref=f491e128]:
+              - link "Builds — 8 entries" [ref=f491e129] [cursor=pointer]:
+                - /url: /posts/builds
+                - generic [ref=f491e133]: Builds
+                - generic [ref=f491e134]: 8 ENTRIES
+    - contentinfo [ref=f491e137]:
+      - generic [ref=f491e138]:
+        - generic [ref=f491e139]: MAT LOUGHNANE · DUBLIN
+        - generic [ref=f491e140]:
+          - link "hexa studios" [ref=f491e141] [cursor=pointer]:
+            - /url: https://hexastudios.co
+          - link "github" [ref=f491e142] [cursor=pointer]:
+            - /url: https://github.com/matloughnane
+          - link "linkedin" [ref=f491e143] [cursor=pointer]:
+            - /url: https://linkedin.com/in/matloughnane
+      - generic [ref=f491e144]: Mat Loughnane
+  - generic [ref=f491e147]:
+    - button [ref=f491e148]
+    - button [ref=f491e154]
+    - button [ref=f491e158]
+    - button [ref=f491e163]

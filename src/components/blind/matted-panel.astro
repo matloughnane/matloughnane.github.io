@@ -1,0 +1,31 @@
+---
+// "Foreign images are matted on cloth and never tinted." A photograph is not
+// part of the dye system, so it is not allowed to bleed into it: it sits inside
+// a cloth mat, cut on the same bias as the courses, and keeps its own colour.
+export interface Props {
+    src: string;
+    alt: string;
+    class?: string;
+    loading?: 'eager' | 'lazy';
+}
+
+const { src, alt, class: className = '', loading = 'lazy' } = Astro.props;
+---
+
+<div class:list={['mat relative bg-cloth-deep p-[6px]', className]}>
+    <img
+        src={src}
+        alt={alt}
+        loading={loading}
+        decoding="async"
+        class="block h-full w-full object-cover"
+    />
+</div>
+
+<style>
+    /* The bias: the mat is cut at 12 degrees along its lower edge, and the
+       photograph inside stays level. */
+    .mat {
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 14px), 0 100%);
+    }
+</style>

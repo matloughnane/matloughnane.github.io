@@ -1,0 +1,79 @@
+---
+import MattedPanel from './matted-panel.astro';
+import { destinationOf, DESTINATION_LABELS } from '../../lib/posts';
+
+// The course showing in the window. Rank is inversion: this panel alone prints
+// dark on pale, so it leads without being set larger than anything else.
+export interface Props {
+    title: string;
+    slug: string;
+    image: string;
+    categories: string[];
+    description?: string;
+    learnMore?: string;
+    date: string;
+}
+
+const { title, slug, image, categories, description, learnMore, date } =
+    Astro.props;
+
+const destination = destinationOf(categories);
+const stamped = new Date(date)
+    .toLocaleDateString('en-GB', {
+        day: '2-digit',
+        month: 'long',
+        year: 'numeric',
+    })
+    .toUpperCase();
+---
+
+<article class="lead step-in bg-legend text-cloth">
+    <div class="grid gap-0 md:grid-cols-[1fr_minmax(0,46%)]">
+        <div class="flex flex-col justify-between gap-8 p-6 md:p-9">
+            <div class="flex items-center gap-4">
+                <span
+                    class="font-legend text-[15px] uppercase leading-none tracking-[0.18em] opacity-80"
+                    >{stamped}</span
+                >
+                <span
+                    class="font-legend text-[15px] uppercase leading-none tracking-[0.18em] opacity-80"
+                >
+                    {destination ? DESTINATION_LABELS[destination] : 'DEPOT'}
+                </span>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <h2
+                    class="font-legend text-[44px] uppercase leading-[0.98] tracking-[0.01em] sm:text-[58px] md:text-[66px]"
+                >
+                    <a href={slug} class="hover:underline">{title}</a>
+                </h2>
+                {
+                    description && (
+                        <p class="max-w-[54ch] text-[16px] leading-6 opacity-90">
+                            {description}
+                        </p>
+                    )
+                }
+            </div>
+
+            <a
+                href={slug}
+                class="w-fit border-b-2 border-dashed border-current pb-1 font-legend text-[17px] uppercase leading-none tracking-[0.14em]"
+            >
+                {learnMore || 'Read this course'}
+            </a>
+        </div>
+
+        {
+            image && (
+                <MattedPanel
+                    src={image}
+                    alt={title}
+                    loading="eager"
+                    class="h-[240px] w-full md:h-full md:min-h-[340px]"
+                />
+            )
+        }
+    </div>
+</article>

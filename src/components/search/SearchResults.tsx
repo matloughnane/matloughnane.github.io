@@ -31,9 +31,9 @@ export default function SearchResults({ posts }: SearchResultsProps) {
 
     if (!query) {
         return (
-            <div className="text-center py-20 text-gray-500">
-                <p className="text-lg">
-                    Enter a search term to find posts.
+            <div className="border-2 border-legend px-6 py-16 text-center">
+                <p className="font-legend text-[20px] uppercase tracking-[0.14em] text-legend-soft">
+                    Enter a term to search the roll.
                 </p>
             </div>
         );
@@ -41,55 +41,55 @@ export default function SearchResults({ posts }: SearchResultsProps) {
 
     if (filtered.length === 0) {
         return (
-            <div className="text-center py-20 text-gray-500">
-                <p className="text-lg">
-                    No posts found for "{query}"
-                </p>
+            <div className="stalled border-2 border-legend">
+                <div className="overflow-hidden px-6 pt-10 text-center">
+                    <p className="font-legend text-[28px] uppercase leading-none tracking-[0.08em] text-legend">
+                        No course bound for
+                    </p>
+                </div>
+                <div className="border-t-2 border-dashed border-legend overflow-hidden px-6 pb-10 text-center">
+                    <p className="-mt-3 font-legend text-[28px] uppercase leading-none tracking-[0.08em] text-legend-soft">
+                        &ldquo;{query}&rdquo;
+                    </p>
+                </div>
             </div>
         );
     }
 
     return (
         <div>
-            <h1 className="text-3xl font-bold text-gray-900 mb-8">
+            <h1 className="mb-6 font-legend text-[34px] uppercase leading-none tracking-[0.02em] text-legend">
                 {filtered.length} result{filtered.length !== 1 ? 's' : ''} for
                 &ldquo;{query}&rdquo;
             </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="border-t-2 border-legend">
                 {filtered.map((post) => (
                     <a
                         key={post.slug}
                         href={post.slug}
-                        className="group bg-white rounded-xl overflow-hidden shadow-md md:aspect-square block"
+                        className="group grid grid-cols-[1fr_84px] items-center gap-4 border-b border-seam py-4"
                     >
-                        <div className="relative h-full flex flex-col">
-                            <div className="relative overflow-hidden">
+                        <>
+                            <div className="order-2">
                                 <img
                                     src={post.image}
                                     alt={post.title}
-                                    className="w-full h-48 object-cover rounded-t-xl group-hover:scale-105 transition-all duration-300"
+                                    className="h-[56px] w-[84px] bg-cloth-deep object-cover p-[4px]"
                                 />
                             </div>
-                            <div className="p-6 flex flex-col justify-between grow">
+                            <div className="order-1 flex flex-col gap-1.5">
                                 <div>
-                                    <h3 className="text-lg font-semibold text-gray-900 mb-3 line-clamp-2 group-hover:text-gray-700 transition-colors">
+                                    <h3 className="font-legend text-[22px] uppercase leading-[1.06] tracking-[0.02em] text-legend group-hover:underline">
                                         {post.title}
                                     </h3>
                                     {post.description && (
-                                        <p className="text-sm text-gray-600 mb-3 leading-relaxed line-clamp-2">
+                                        <p className="line-clamp-2 text-[15px] leading-6 text-legend-soft">
                                             {post.description}
                                         </p>
                                     )}
                                 </div>
-                                <div className="mt-auto flex flex-col gap-3">
-                                    <div className="flex flex-row items-center justify-end">
-                                        <span className="inline-block px-4 py-2 bg-[#9A0D1B] text-white text-sm font-medium rounded-full group-hover:opacity-90 transition-opacity">
-                                            {post.learnMore || 'More'}
-                                        </span>
-                                    </div>
-                                </div>
                             </div>
-                        </div>
+                        </>
                     </a>
                 ))}
             </div>

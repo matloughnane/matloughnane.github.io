@@ -1,69 +1,105 @@
 ---
 import type { GetStaticPaths } from 'astro';
 import GlobalLayout from '../../layouts/global-layout.astro';
-import SubPageNav from '../../components/navigation/sub-page-nav.astro';
-import WideCardPost from '../../components/posts/wide-card-post.astro';
-import PostCard from '../../components/posts/post-card.astro';
+import LeadCourse from '../../components/blind/lead-course.astro';
+import Course from '../../components/blind/course.astro';
 import Pagination from '../../components/posts/pagination.astro';
-import { getSortedPosts } from '../../lib/posts';
+import {
+    getSortedPosts,
+    getDestinationCounts,
+    getEntryCount,
+} from '../../lib/posts';
 
 export const getStaticPaths = (({ paginate }) => {
-    // Pull the most recent post out as the featured wide card, then paginate the
-    // rest at 12 per page. Page 1 therefore holds 13 posts (1 featured + 12 grid),
-    // filling exactly 4 rows of 3 on the widescreen grid; pages 2+ hold 12.
+    // The newest course shows in the window; the rest wind past at 12 a page.
     const [featured, ...rest] = getSortedPosts();
     return paginate(rest, { pageSize: 12, props: { featured } });
 }) satisfies GetStaticPaths;
 
 const { page, featured } = Astro.props;
 
-// The featured wide card only appears on page 1.
 const featuredPost = page.currentPage === 1 ? featured : undefined;
-const gridPosts = page.data;
+const coursePosts = page.data;
+
+const destinations = getDestinationCounts();
+const total = getEntryCount();
+
+const tab =
+    'font-legend text-[15px] uppercase leading-none tracking-[0.16em] pb-1';
 ---
 
 <GlobalLayout
     title="All Posts"
     description="Travel stories, food adventures, and coding insights..."
 >
-    <SubPageNav />
-    <section class="py-8 px-8">
-        <div class="max-w-7xl mx-auto">
-            <div class="space-y-8">
-                {
-                    featuredPost && (
-                        <WideCardPost
-                            title={featuredPost.title}
-                            slug={featuredPost.slug}
-                            image={featuredPost.image}
-                            categories={featuredPost.categories}
-                            description={featuredPost.description}
-                            redFilter={false}
-                            learnMore={featuredPost.learnMore}
-                        />
-                    )
-                }
+    <div class="px-4 py-6 md:px-8 md:py-8">
+        <div class="flex flex-col gap-5">
+            <h1
+                class="font-legend text-[40px] uppercase leading-none tracking-[0.02em] text-legend sm:text-[52px]"
+            >
+                The whole roll
+            </h1>
 
-                <div
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+            <nav
+                class="flex flex-wrap items-center gap-x-6 gap-y-3"
+                aria-label="Filter by destination"
+            >
+                <a
+                    href="/posts"
+                    aria-current="page"
+                    class:list={[tab, 'border-b-2 border-legend text-legend']}
+                    >All · {total}</a
                 >
-                    {
-                        gridPosts.map((post) => (
-                            <PostCard
-                                title={post.title}
-                                slug={post.slug}
-                                image={post.image}
-                                categories={post.categories}
-                                description={post.description}
-                                redFilter={false}
-                                learnMore={post.learnMore}
-                            />
-                        ))
-                    }
-                </div>
-
-                <Pagination page={page} />
-            </div>
+                {
+                    destinations.map((d) => (
+                        <a
+                            href={`/posts/${d.destination}`}
+                            class:list={[
+                                tab,
+                                'border-b-2 border-transparent text-legend-soft hover:text-legend',
+                            ]}
+                        >
+                            {d.label} · {d.count}
+                        </a>
+                    ))
+                }
+            </nav>
         </div>
-    </section>
+
+        {
+            featuredPost && (
+                <div class="mt-8 border-2 border-legend">
+                    <LeadCourse
+                        title={featuredPost.title}
+                        slug={featuredPost.slug}
+                        image={featuredPost.image}
+                        categories={featuredPost.categories}
+                        description={featuredPost.description}
+                        learnMore={featuredPost.learnMore}
+                        date={featuredPost.date}
+                    />
+                </div>
+            )
+        }
+
+        <section class="mt-10 border-t-2 border-legend">
+            {
+                coursePosts.map((post, i) => (
+                    <Course
+                        title={post.title}
+                        slug={post.slug}
+                        image={post.image}
+                        categories={post.categories}
+                        description={post.description}
+                        date={post.date}
+                        index={i}
+                    />
+                ))
+            }
+        </section>
+
+        <div class="mt-8">
+            <Pagination page={page} />
+        </div>
+    </div>
 </GlobalLayout>

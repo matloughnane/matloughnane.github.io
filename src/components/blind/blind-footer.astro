@@ -1,0 +1,40 @@
+---
+// The end of the roll: the last course, drenched, with the maker's stitch.
+const elsewhere = [
+    { label: 'hexa studios', href: 'https://hexastudios.co' },
+    { label: 'github', href: 'https://github.com/matloughnane' },
+    { label: 'linkedin', href: 'https://linkedin.com/in/matloughnane' },
+];
+---
+
+<footer class="mt-20 border-t-2 border-legend bg-legend text-cloth">
+    <div
+        class="flex flex-col gap-8 px-6 py-10 md:flex-row md:items-end md:justify-between md:px-9 md:py-12"
+    >
+        <div class="flex flex-col gap-4">
+            <span
+                class="font-legend text-[15px] uppercase leading-none tracking-[0.2em] opacity-80"
+                >Mat Loughnane · Dublin</span
+            >
+            <div class="flex flex-wrap gap-6">
+                {
+                    elsewhere.map((link) => (
+                        <a
+                            href={link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="font-legend text-[17px] uppercase leading-none tracking-[0.12em] underline decoration-dashed underline-offset-4"
+                        >
+                            {link.label}
+                        </a>
+                    ))
+                }
+            </div>
+        </div>
+
+        <span
+            class="font-legend text-[34px] uppercase leading-none tracking-[0.04em] md:text-[42px]"
+            >End of roll</span
+        >
+    </div>
+</footer>

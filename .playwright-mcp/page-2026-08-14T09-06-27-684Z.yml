@@ -1,0 +1,130 @@
+- generic [active] [ref=f148e1]:
+  - generic [ref=f148e2]:
+    - link [ref=f148e3] [cursor=pointer]:
+      - /url: /
+      - img "Mat Loughnane — home" [ref=f148e5]
+    - generic [ref=f148e6]:
+      - generic [ref=f148e7]: L
+      - generic [ref=f148e8]: O
+      - generic [ref=f148e9]: U
+      - generic [ref=f148e10]: G
+      - generic [ref=f148e11]: H
+      - generic [ref=f148e12]: "N"
+      - generic [ref=f148e13]: A
+      - generic [ref=f148e14]: "N"
+      - generic [ref=f148e15]: E
+  - generic [ref=f148e16]:
+    - navigation "Primary" [ref=f148e17]:
+      - generic [ref=f148e18]: THIRTY-SIX ENTRIES · 2020—2026
+      - generic [ref=f148e19]:
+        - generic [ref=f148e20]:
+          - link "Home" [ref=f148e21] [cursor=pointer]:
+            - /url: /
+          - link "About" [ref=f148e22] [cursor=pointer]:
+            - /url: /about
+          - link "Posts" [ref=f148e23] [cursor=pointer]:
+            - /url: /posts
+        - generic [ref=f148e24]:
+          - button "Open search" [ref=f148e26] [cursor=pointer]
+          - button "Switch to dark" [ref=f148e30]
+    - main [ref=f148e33]:
+      - generic [ref=f148e34]:
+        - generic [ref=f148e35]:
+          - figure "Paris, August 2025" [ref=f148e36]:
+            - img "Mat Loughnane in Paris, August 2025" [ref=f148e38]
+          - generic [ref=f148e40]:
+            - heading "Mat Loughnane" [level=1] [ref=f148e41]
+            - paragraph [ref=f148e42]: A software developer from London, living in Dublin. I bake to satisfy a sweet tooth, and go looking for other people's cooking whenever I travel.
+            - paragraph [ref=f148e43]:
+              - text: Building web and mobile apps for over a decade as
+              - link "Hexa Studios" [ref=f148e44] [cursor=pointer]:
+                - /url: https://hexastudios.co
+              - text: — that work lives there. This is everything else.
+        - article [ref=f148e45]:
+          - generic [ref=f148e46]:
+            - link [ref=f148e47] [cursor=pointer]:
+              - /url: /posts/2026-07-14-dingle
+            - generic [ref=f148e50]:
+              - heading [level=2] [ref=f148e51]:
+                - link "Dingle" [ref=f148e52] [cursor=pointer]:
+                  - /url: /posts/2026-07-14-dingle
+              - generic [ref=f148e53]:
+                - generic "Most recent entry" [ref=f148e54]
+                - generic [ref=f148e55]: JOURNEYS · JULY 2026
+              - paragraph [ref=f148e56]: We spent a few sunny days in Dingle, Kerry. We stayed in Ballyfitterer and the Slea Head drive was our main route. We travelled clockwise around the drive past the Coumeenoole beach onto the Dunquin…
+              - link "Slea Head →" [ref=f148e57] [cursor=pointer]:
+                - /url: /posts/2026-07-14-dingle
+        - generic [ref=f148e58]:
+          - heading "More from the album" [level=2] [ref=f148e59]
+          - article [ref=f148e61]:
+            - generic [ref=f148e62]:
+              - heading [level=3] [ref=f148e65]:
+                - 'link "The Arranmore Challenge App: Ready for 2026" [ref=f148e66] [cursor=pointer]':
+                  - /url: /posts/2026-05-28-arranmore-challenge
+              - generic [ref=f148e67]: BUILDS · MAY 2026
+              - paragraph [ref=f148e71]: The tournament management and supporter app for the JBH football weekend — live scoring, posting photos and texts and let everyone follow along.
+          - article [ref=f148e72]:
+            - generic [ref=f148e73]:
+              - heading [level=3] [ref=f148e76]:
+                - link "A New Look for the Site" [ref=f148e77] [cursor=pointer]:
+                  - /url: /posts/2026-02-06-jekyll-to-astro
+              - generic [ref=f148e78]: BUILDS · FEB 2026
+              - paragraph [ref=f148e82]: This website has been through a few lives. It started as a static site, then a simple Jekyll blog hosted on GitHub Pages (thanks JekyllThemes.io) - markdown files, Liquid templates, and a theme that…
+          - article [ref=f148e83]:
+            - generic [ref=f148e84]:
+              - heading [level=3] [ref=f148e87]:
+                - link "Experimenting with AI" [ref=f148e88] [cursor=pointer]:
+                  - /url: /posts/2026-02-05-ai-experimentation-mcp-to-mastra
+              - generic [ref=f148e89]: BUILDS · FEB 2026
+              - paragraph [ref=f148e93]: Over the past few months I've been deep in experimentation mode, trying to figure out the best way to bring AI agents into the products we build at Hexa Studios. It's been a journey through MCP…
+          - article [ref=f148e94]:
+            - generic [ref=f148e95]:
+              - heading [level=3] [ref=f148e98]:
+                - link "Tenerife" [ref=f148e99] [cursor=pointer]:
+                  - /url: /posts/2026-01-03-tenerife
+              - generic [ref=f148e100]: JOURNEYS · JAN 2026
+              - paragraph [ref=f148e104]: New Year's 2026 in the sun. Swapped the cold for Tenerife and it didn't disappoint, except the first day when it poured. Highlights were Daria's Bakery for pastries and Bank Steakhouse for a serious…
+          - article [ref=f148e105]:
+            - generic [ref=f148e106]:
+              - heading [level=3] [ref=f148e109]:
+                - link "Happy Anniver-Paris" [ref=f148e110] [cursor=pointer]:
+                  - /url: /posts/2025-08-24-paris
+              - generic [ref=f148e111]: JOURNEYS · AUG 2025
+              - paragraph [ref=f148e115]: "We visited Paris for our 1st anniversary. Amazing museums and bakeries galore. A couple of highlights:"
+        - generic [ref=f148e116]:
+          - heading "THE ALBUM, SHELF BY SHELF" [level=2] [ref=f148e117]
+          - list [ref=f148e118]:
+            - listitem [ref=f148e119]:
+              - link "Journeys — 14 entries" [ref=f148e120] [cursor=pointer]:
+                - /url: /posts/journeys
+                - generic [ref=f148e124]: Journeys
+                - generic [ref=f148e125]: 14 ENTRIES
+                - generic [ref=f148e126]: Dingle, Tenerife, Happy Anniver-Paris, Bali & Philippines, Italy
+            - listitem [ref=f148e129]:
+              - link "Kitchen — 13 entries" [ref=f148e130] [cursor=pointer]:
+                - /url: /posts/kitchen
+                - generic [ref=f148e136]: Kitchen
+                - generic [ref=f148e137]: 13 ENTRIES
+                - generic [ref=f148e138]: Lemon Pepper Chicken Rice, Creamy Tuscan Pasta, Simple Butter Chicken Recipe, Banana Bread, Raspberry Ripple Loaf
+            - listitem [ref=f148e141]:
+              - link "Builds — 8 entries" [ref=f148e142] [cursor=pointer]:
+                - /url: /posts/builds
+                - generic [ref=f148e146]: Builds
+                - generic [ref=f148e147]: 8 ENTRIES
+                - generic [ref=f148e148]: "The Arranmore Challenge App: Ready for 2026, A New Look for the Site, Experimenting with AI, Bridgit, Hexa Studios Round Up"
+    - contentinfo [ref=f148e151]:
+      - generic [ref=f148e152]:
+        - generic [ref=f148e153]: MAT LOUGHNANE · DUBLIN
+        - generic [ref=f148e154]:
+          - link "hexa studios" [ref=f148e155] [cursor=pointer]:
+            - /url: https://hexastudios.co
+          - link "github" [ref=f148e156] [cursor=pointer]:
+            - /url: https://github.com/matloughnane
+          - link "linkedin" [ref=f148e157] [cursor=pointer]:
+            - /url: https://linkedin.com/in/matloughnane
+      - generic [ref=f148e158]: Mat Loughnane
+  - generic [ref=f148e161]:
+    - button [ref=f148e162]
+    - button [ref=f148e168]
+    - button [ref=f148e172]
+    - button [ref=f148e177]

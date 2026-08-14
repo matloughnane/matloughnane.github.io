@@ -12,10 +12,11 @@ export interface Props {
 const { page } = Astro.props;
 const { currentPage, lastPage, url } = page;
 
+// Controls take no dye: stitch and relief only.
 const linkClass =
-    'inline-block px-5 py-2 bg-[#9A0D1B] text-white text-sm font-medium rounded-full hover:opacity-90 transition-opacity';
+    'inline-block border-b-2 border-dashed border-legend pb-1 font-legend text-[17px] uppercase leading-none tracking-[0.14em] text-legend';
 const disabledClass =
-    'inline-block px-5 py-2 bg-gray-100 text-gray-400 text-sm font-medium rounded-full cursor-not-allowed select-none';
+    'inline-block pb-1 font-legend text-[17px] uppercase leading-none tracking-[0.14em] text-legend-soft cursor-not-allowed select-none';
 ---
 
 {
@@ -34,8 +35,8 @@ const disabledClass =
                 </span>
             )}
 
-            <span class="text-sm text-gray-600">
-                Page {currentPage} of {lastPage}
+            <span class="font-legend text-[15px] uppercase tracking-[0.16em] text-legend-soft">
+                Course {currentPage} of {lastPage}
             </span>
 
             {url.next ? (

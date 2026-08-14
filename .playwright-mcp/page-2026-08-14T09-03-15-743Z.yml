@@ -1,0 +1,143 @@
+- generic [active] [ref=f137e1]:
+  - link [ref=f137e3] [cursor=pointer]:
+    - /url: /
+    - img "Mat Loughnane — home" [ref=f137e5]
+  - generic [ref=f137e6]:
+    - navigation "Primary" [ref=f137e7]:
+      - button "Toggle navigation" [ref=f137e8]
+      - generic [ref=f137e13]:
+        - button "Open search" [ref=f137e15] [cursor=pointer]
+        - button "Switch to dark" [ref=f137e19]
+    - main [ref=f137e22]:
+      - generic [ref=f137e23]:
+        - generic [ref=f137e24]:
+          - heading "All entries" [level=1] [ref=f137e25]
+          - navigation "Filter entries by shelf" [ref=f137e26]:
+            - link "ALL ENTRIES · 36" [ref=f137e27] [cursor=pointer]:
+              - /url: /posts
+            - link "JOURNEYS · 14" [ref=f137e28] [cursor=pointer]:
+              - /url: /posts/journeys
+            - link "KITCHEN · 13" [ref=f137e31] [cursor=pointer]:
+              - /url: /posts/kitchen
+            - link "BUILDS · 8" [ref=f137e36] [cursor=pointer]:
+              - /url: /posts/builds
+        - article [ref=f137e39]:
+          - generic [ref=f137e40]:
+            - link [ref=f137e41] [cursor=pointer]:
+              - /url: /posts/2026-07-14-dingle
+            - generic [ref=f137e44]:
+              - heading [level=2] [ref=f137e45]:
+                - link "Dingle" [ref=f137e46] [cursor=pointer]:
+                  - /url: /posts/2026-07-14-dingle
+              - generic [ref=f137e47]:
+                - generic "Most recent entry" [ref=f137e48]
+                - generic [ref=f137e49]: JOURNEYS · JULY 2026
+              - paragraph [ref=f137e50]: We spent a few sunny days in Dingle, Kerry. We stayed in Ballyfitterer and the Slea Head drive was our main route. We travelled clockwise around the drive past the Coumeenoole beach onto the Dunquin…
+              - link "Slea Head →" [ref=f137e51] [cursor=pointer]:
+                - /url: /posts/2026-07-14-dingle
+        - generic [ref=f137e52]:
+          - article [ref=f137e53]:
+            - generic [ref=f137e54]:
+              - heading [level=3] [ref=f137e57]:
+                - 'link "The Arranmore Challenge App: Ready for 2026" [ref=f137e58] [cursor=pointer]':
+                  - /url: /posts/2026-05-28-arranmore-challenge
+              - generic [ref=f137e59]: BUILDS · MAY 2026
+              - paragraph [ref=f137e63]: The tournament management and supporter app for the JBH football weekend — live scoring, posting photos and texts and let everyone follow along.
+          - article [ref=f137e64]:
+            - generic [ref=f137e65]:
+              - heading [level=3] [ref=f137e68]:
+                - link "A New Look for the Site" [ref=f137e69] [cursor=pointer]:
+                  - /url: /posts/2026-02-06-jekyll-to-astro
+              - generic [ref=f137e70]: BUILDS · FEB 2026
+              - paragraph [ref=f137e74]: This website has been through a few lives. It started as a static site, then a simple Jekyll blog hosted on GitHub Pages (thanks JekyllThemes.io) - markdown files, Liquid templates, and a theme that…
+          - article [ref=f137e75]:
+            - generic [ref=f137e76]:
+              - heading [level=3] [ref=f137e79]:
+                - link "Experimenting with AI" [ref=f137e80] [cursor=pointer]:
+                  - /url: /posts/2026-02-05-ai-experimentation-mcp-to-mastra
+              - generic [ref=f137e81]: BUILDS · FEB 2026
+              - paragraph [ref=f137e85]: Over the past few months I've been deep in experimentation mode, trying to figure out the best way to bring AI agents into the products we build at Hexa Studios. It's been a journey through MCP…
+          - article [ref=f137e86]:
+            - generic [ref=f137e87]:
+              - heading [level=3] [ref=f137e90]:
+                - link "Tenerife" [ref=f137e91] [cursor=pointer]:
+                  - /url: /posts/2026-01-03-tenerife
+              - generic [ref=f137e92]: JOURNEYS · JAN 2026
+              - paragraph [ref=f137e96]: New Year's 2026 in the sun. Swapped the cold for Tenerife and it didn't disappoint, except the first day when it poured. Highlights were Daria's Bakery for pastries and Bank Steakhouse for a serious…
+          - article [ref=f137e97]:
+            - generic [ref=f137e98]:
+              - heading [level=3] [ref=f137e101]:
+                - link "Happy Anniver-Paris" [ref=f137e102] [cursor=pointer]:
+                  - /url: /posts/2025-08-24-paris
+              - generic [ref=f137e103]: JOURNEYS · AUG 2025
+              - paragraph [ref=f137e107]: "We visited Paris for our 1st anniversary. Amazing museums and bakeries galore. A couple of highlights:"
+          - article [ref=f137e108]:
+            - generic [ref=f137e109]:
+              - heading [level=3] [ref=f137e112]:
+                - link "Bridgit" [ref=f137e113] [cursor=pointer]:
+                  - /url: /posts/2025-05-20-bridgit
+              - generic [ref=f137e114]: BUILDS · MAY 2025
+              - paragraph [ref=f137e118]: I've been working on Bridgit - a Charities iPaaS - and it's just launched in beta. In fact Bridgit already had a fully self serve customer!
+          - article [ref=f137e119]:
+            - generic [ref=f137e120]:
+              - heading [level=3] [ref=f137e123]:
+                - link "Bali & Philippines" [ref=f137e124] [cursor=pointer]:
+                  - /url: /posts/2025-05-04-bali-philippines
+              - generic [ref=f137e125]: JOURNEYS · MAY 2025
+              - paragraph [ref=f137e129]: For our honeymoon we travelled to Bali and the Philippines. While in the Philippines we spend 4 days on a Tao Philippines expedition which was incredible
+          - article [ref=f137e130]:
+            - generic [ref=f137e131]:
+              - heading [level=3] [ref=f137e134]:
+                - link "Hexa Studios Round Up" [ref=f137e135] [cursor=pointer]:
+                  - /url: /posts/2024-12-30-2024-hexa-round-up
+              - generic [ref=f137e136]: BUILDS · DEC 2024
+              - paragraph [ref=f137e140]: 2024 was the first full year that I was working for myself as Hexa Studios and I loved the challenges of running my own business, picking up new projects and the variety of works people reached out…
+          - article [ref=f137e141]:
+            - generic [ref=f137e142]:
+              - heading [level=3] [ref=f137e145]:
+                - link "Married" [ref=f137e146] [cursor=pointer]:
+                  - /url: /posts/2024-08-24-married
+              - generic [ref=f137e147]: ENTRY · AUG 2024
+              - paragraph [ref=f137e149]: We got married!
+          - article [ref=f137e150]:
+            - generic [ref=f137e151]:
+              - heading [level=3] [ref=f137e154]:
+                - link "Lemon Pepper Chicken Rice" [ref=f137e155] [cursor=pointer]:
+                  - /url: /posts/2024-07-31-lemon-pepper-chicken-rice
+              - generic [ref=f137e156]: KITCHEN · JUL 2024
+              - paragraph [ref=f137e162]: This is a recipe found on instagram by @jalalsamfit (Makes serving for 4)
+          - article [ref=f137e163]:
+            - generic [ref=f137e164]:
+              - heading [level=3] [ref=f137e167]:
+                - link "Inis Oírr Beo Launches" [ref=f137e168] [cursor=pointer]:
+                  - /url: /posts/2024-04-19-inis-oirr-beo
+              - generic [ref=f137e169]: BUILDS · APR 2024
+              - paragraph [ref=f137e173]: We're very excited to announce the launch of Inis Oírr Beo, a mobile app for islanders and visitors to share and discover the island of Inis Oírr. The Inis Oírr Beo mobile application is an Android…
+          - article [ref=f137e174]:
+            - generic [ref=f137e175]:
+              - heading [level=3] [ref=f137e178]:
+                - link "Italy" [ref=f137e179] [cursor=pointer]:
+                  - /url: /posts/2024-03-29-italy
+              - generic [ref=f137e180]: JOURNEYS · MAR 2024
+              - paragraph [ref=f137e184]: Our trip across Italy from Venice to Sorrento
+        - navigation "Pagination" [ref=f137e185]:
+          - generic [ref=f137e186]: Previous
+          - generic [ref=f137e189]: PAGE 1 OF 3
+          - link "Next" [ref=f137e190] [cursor=pointer]:
+            - /url: /posts/2
+    - contentinfo [ref=f137e193]:
+      - generic [ref=f137e194]:
+        - generic [ref=f137e195]: MAT LOUGHNANE · DUBLIN
+        - generic [ref=f137e196]:
+          - link "hexa studios" [ref=f137e197] [cursor=pointer]:
+            - /url: https://hexastudios.co
+          - link "github" [ref=f137e198] [cursor=pointer]:
+            - /url: https://github.com/matloughnane
+          - link "linkedin" [ref=f137e199] [cursor=pointer]:
+            - /url: https://linkedin.com/in/matloughnane
+      - generic [ref=f137e200]: Mat Loughnane
+  - generic [ref=f137e203]:
+    - button [ref=f137e204]
+    - button [ref=f137e210]
+    - button [ref=f137e214]
+    - button [ref=f137e219]

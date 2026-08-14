@@ -1,0 +1,146 @@
+- generic [active] [ref=f4744e1]:
+  - generic [ref=f4744e2]:
+    - link [ref=f4744e3] [cursor=pointer]:
+      - /url: /
+      - generic [ref=f4744e4]: ML
+    - generic [ref=f4744e32]: 36 courses
+  - generic [ref=f4744e33]:
+    - navigation "Primary" [ref=f4744e34]:
+      - generic [ref=f4744e35]:
+        - generic [ref=f4744e36]:
+          - link "Home" [ref=f4744e37] [cursor=pointer]:
+            - /url: /
+          - link "About" [ref=f4744e38] [cursor=pointer]:
+            - /url: /about
+          - link "Posts" [ref=f4744e39] [cursor=pointer]:
+            - /url: /posts
+        - generic [ref=f4744e40]:
+          - button "Open search" [ref=f4744e42] [cursor=pointer]
+          - button "Switch to lit" [ref=f4744e46] [cursor=pointer]
+    - main [ref=f4744e47]:
+      - generic [ref=f4744e48]:
+        - generic [ref=f4744e49]:
+          - generic [ref=f4744e50]:
+            - generic [ref=f4744e51]: Showing now
+            - generic [ref=f4744e52]: 36 courses on the roll
+          - article [ref=f4744e53]:
+            - generic [ref=f4744e54]:
+              - generic [ref=f4744e55]:
+                - generic [ref=f4744e56]:
+                  - generic [ref=f4744e57]: 14 JULY 2026
+                  - generic [ref=f4744e58]: TRAVEL
+                - generic [ref=f4744e59]:
+                  - heading [level=2] [ref=f4744e60]:
+                    - link "Dingle" [ref=f4744e61] [cursor=pointer]:
+                      - /url: /posts/2026-07-14-dingle
+                  - paragraph [ref=f4744e62]: We spent a few sunny days in Dingle, Kerry. We stayed in Ballyfitterer and the Slea Head drive was our main route. We travelled clockwise around the drive past the Coumeenoole beach onto the Dunquin…
+                - link "Slea Head" [ref=f4744e63] [cursor=pointer]:
+                  - /url: /posts/2026-07-14-dingle
+              - img "Dingle" [ref=f4744e65]
+        - generic [ref=f4744e66]:
+          - heading "Behind it on the roll" [level=2] [ref=f4744e67]
+          - generic [ref=f4744e68]:
+            - article [ref=f4744e69]:
+              - 'link "28 MAY 26 CODE The Arranmore Challenge App: Ready for 2026 The tournament management and supporter app for the JBH football weekend — live scoring, posting photos and texts and let everyone follow along." [ref=f4744e70] [cursor=pointer]':
+                - /url: /posts/2026-05-28-arranmore-challenge
+                - generic [ref=f4744e71]: 28 MAY 26
+                - generic [ref=f4744e72]: CODE
+                - generic [ref=f4744e73]:
+                  - generic [ref=f4744e74]: "The Arranmore Challenge App: Ready for 2026"
+                  - generic [ref=f4744e75]: The tournament management and supporter app for the JBH football weekend — live scoring, posting photos and texts and let everyone follow along.
+            - article [ref=f4744e77]:
+              - link "06 FEB 26 CODE A New Look for the Site This website has been through a few lives. It started as a static site, then a simple Jekyll blog hosted on GitHub Pages (thanks JekyllThemes.io) - markdown files, Liquid templates, and a theme that…" [ref=f4744e78] [cursor=pointer]:
+                - /url: /posts/2026-02-06-jekyll-to-astro
+                - generic [ref=f4744e79]: 06 FEB 26
+                - generic [ref=f4744e80]: CODE
+                - generic [ref=f4744e81]:
+                  - generic [ref=f4744e82]: A New Look for the Site
+                  - generic [ref=f4744e83]: This website has been through a few lives. It started as a static site, then a simple Jekyll blog hosted on GitHub Pages (thanks JekyllThemes.io) - markdown files, Liquid templates, and a theme that…
+            - article [ref=f4744e85]:
+              - link "05 FEB 26 CODE Experimenting with AI Over the past few months I've been deep in experimentation mode, trying to figure out the best way to bring AI agents into the products we build at Hexa Studios. It's been a journey through MCP…" [ref=f4744e86] [cursor=pointer]:
+                - /url: /posts/2026-02-05-ai-experimentation-mcp-to-mastra
+                - generic [ref=f4744e87]: 05 FEB 26
+                - generic [ref=f4744e88]: CODE
+                - generic [ref=f4744e89]:
+                  - generic [ref=f4744e90]: Experimenting with AI
+                  - generic [ref=f4744e91]: Over the past few months I've been deep in experimentation mode, trying to figure out the best way to bring AI agents into the products we build at Hexa Studios. It's been a journey through MCP…
+            - article [ref=f4744e93]:
+              - link "03 JAN 26 TRAVEL Tenerife New Year's 2026 in the sun. Swapped the cold for Tenerife and it didn't disappoint, except the first day when it poured. Highlights were Daria's Bakery for pastries and Bank Steakhouse for a serious…" [ref=f4744e94] [cursor=pointer]:
+                - /url: /posts/2026-01-03-tenerife
+                - generic [ref=f4744e95]: 03 JAN 26
+                - generic [ref=f4744e96]: TRAVEL
+                - generic [ref=f4744e97]:
+                  - generic [ref=f4744e98]: Tenerife
+                  - generic [ref=f4744e99]: New Year's 2026 in the sun. Swapped the cold for Tenerife and it didn't disappoint, except the first day when it poured. Highlights were Daria's Bakery for pastries and Bank Steakhouse for a serious…
+            - article [ref=f4744e101]:
+              - link "24 AUG 25 TRAVEL Happy Anniver-Paris We visited Paris for our 1st anniversary. Amazing museums and bakeries galore. A couple of highlights:" [ref=f4744e102] [cursor=pointer]:
+                - /url: /posts/2025-08-24-paris
+                - generic [ref=f4744e103]: 24 AUG 25
+                - generic [ref=f4744e104]: TRAVEL
+                - generic [ref=f4744e105]:
+                  - generic [ref=f4744e106]: Happy Anniver-Paris
+                  - generic [ref=f4744e107]: "We visited Paris for our 1st anniversary. Amazing museums and bakeries galore. A couple of highlights:"
+            - article [ref=f4744e109]:
+              - link "20 MAY 25 CODE Bridgit I've been working on Bridgit - a Charities iPaaS - and it's just launched in beta. In fact Bridgit already had a fully self serve customer!" [ref=f4744e110] [cursor=pointer]:
+                - /url: /posts/2025-05-20-bridgit
+                - generic [ref=f4744e111]: 20 MAY 25
+                - generic [ref=f4744e112]: CODE
+                - generic [ref=f4744e113]:
+                  - generic [ref=f4744e114]: Bridgit
+                  - generic [ref=f4744e115]: I've been working on Bridgit - a Charities iPaaS - and it's just launched in beta. In fact Bridgit already had a fully self serve customer!
+            - article [ref=f4744e117]:
+              - link "04 MAY 25 TRAVEL Bali & Philippines For our honeymoon we travelled to Bali and the Philippines. While in the Philippines we spend 4 days on a Tao Philippines expedition which was incredible" [ref=f4744e118] [cursor=pointer]:
+                - /url: /posts/2025-05-04-bali-philippines
+                - generic [ref=f4744e119]: 04 MAY 25
+                - generic [ref=f4744e120]: TRAVEL
+                - generic [ref=f4744e121]:
+                  - generic [ref=f4744e122]: Bali & Philippines
+                  - generic [ref=f4744e123]: For our honeymoon we travelled to Bali and the Philippines. While in the Philippines we spend 4 days on a Tao Philippines expedition which was incredible
+            - article [ref=f4744e125]:
+              - link "30 DEC 24 CODE Hexa Studios Round Up 2024 was the first full year that I was working for myself as Hexa Studios and I loved the challenges of running my own business, picking up new projects and the variety of works people reached out…" [ref=f4744e126] [cursor=pointer]:
+                - /url: /posts/2024-12-30-2024-hexa-round-up
+                - generic [ref=f4744e127]: 30 DEC 24
+                - generic [ref=f4744e128]: CODE
+                - generic [ref=f4744e129]:
+                  - generic [ref=f4744e130]: Hexa Studios Round Up
+                  - generic [ref=f4744e131]: 2024 was the first full year that I was working for myself as Hexa Studios and I loved the challenges of running my own business, picking up new projects and the variety of works people reached out…
+          - link "Wind the roll — all 36 courses" [ref=f4744e133] [cursor=pointer]:
+            - /url: /posts
+        - generic [ref=f4744e135]:
+          - heading "Destinations on this roll" [level=2] [ref=f4744e136]
+          - list [ref=f4744e137]:
+            - listitem [ref=f4744e138]:
+              - link "TRAVEL 14 courses Show" [ref=f4744e139] [cursor=pointer]:
+                - /url: /posts/travel
+                - generic [ref=f4744e140]: TRAVEL
+                - generic [ref=f4744e141]: 14 courses
+                - generic [ref=f4744e143]: Show
+            - listitem [ref=f4744e144]:
+              - link "RECIPES 13 courses Show" [ref=f4744e145] [cursor=pointer]:
+                - /url: /posts/recipes
+                - generic [ref=f4744e146]: RECIPES
+                - generic [ref=f4744e147]: 13 courses
+                - generic [ref=f4744e149]: Show
+            - listitem [ref=f4744e150]:
+              - link "CODE 8 courses Show" [ref=f4744e151] [cursor=pointer]:
+                - /url: /posts/code
+                - generic [ref=f4744e152]: CODE
+                - generic [ref=f4744e153]: 8 courses
+                - generic [ref=f4744e155]: Show
+    - contentinfo [ref=f4744e156]:
+      - generic [ref=f4744e157]:
+        - generic [ref=f4744e158]:
+          - generic [ref=f4744e159]: Mat Loughnane · Dublin
+          - generic [ref=f4744e160]:
+            - link "hexa studios" [ref=f4744e161] [cursor=pointer]:
+              - /url: https://hexastudios.co
+            - link "github" [ref=f4744e162] [cursor=pointer]:
+              - /url: https://github.com/matloughnane
+            - link "linkedin" [ref=f4744e163] [cursor=pointer]:
+              - /url: https://linkedin.com/in/matloughnane
+        - generic [ref=f4744e164]: End of roll
+  - generic [ref=f4744e167]:
+    - button [ref=f4744e168]
+    - button [ref=f4744e174]
+    - button [ref=f4744e178]
+    - button [ref=f4744e183]
