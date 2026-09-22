@@ -3,6 +3,7 @@ import GlobalLayout from './global-layout.astro';
 import MountedPhoto from '../components/album/mounted-photo.astro';
 import CategoryMark from '../components/album/category-mark.astro';
 import { albumGroup, GROUP_LABELS } from '../lib/posts';
+import { blogPostingSchema, recipeSchema } from '../lib/structured-data';
 
 export interface Props {
     frontmatter: {
@@ -15,10 +16,19 @@ export interface Props {
         image?: string;
         comments?: boolean;
         recipe?: boolean;
+        draft?: boolean;
+        prepTime?: string;
+        cookTime?: string;
+        recipeYield?: string;
+        recipeCategory?: string;
+        recipeCuisine?: string;
+        recipeIngredient?: string[];
+        recipeInstructions?: string;
     };
+    file: string;
 }
 
-const { frontmatter } = Astro.props;
+const { frontmatter, file } = Astro.props;
 const { title, author, description, publishDate, categories = [], image, tags = [] } = frontmatter;
 
 // Extract date from the file path if publishDate is not provided
@@ -30,6 +40,23 @@ const postDate = publishDate || (dateMatch ? dateMatch[0] : undefined);
 const postDescription = description || `${title} - ${categories.join(', ')} post by Mat Loughnane. ${tags.length > 0 ? `Topics: ${tags.join(', ')}.` : ''}`;
 
 const group = albumGroup(categories);
+
+// Unfinished recipes still build, so keep them out of rich results until
+// they have something to show.
+const unfinished = frontmatter.draft || tags.some((tag) => tag.toLowerCase() === 'wip');
+const schemaInput = {
+    file,
+    url: new URL(Astro.url.pathname, Astro.site),
+    title,
+    description: postDescription,
+    image: new URL(image || '/og-image.jpg', Astro.site),
+    datePublished: postDate,
+    tags,
+    frontmatter,
+};
+const schema = unfinished
+    ? []
+    : [frontmatter.recipe ? recipeSchema(schemaInput) : blogPostingSchema(schemaInput)];
 const stamped = postDate
     ? new Date(postDate)
           .toLocaleDateString('en-GB', {
@@ -46,6 +73,7 @@ const stamped = postDate
     description={postDescription}
     publishDate={postDate}
     image={image}
+    schema={schema}
 >
     <article class="mx-auto max-w-3xl px-5 py-9 md:px-8 md:py-12">
         <!-- Post Header -->

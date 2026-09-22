@@ -35,6 +35,34 @@ function bodyOf(path: string): string {
     return raw.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n?/, '');
 }
 
+/** Raw body of a post, looked up by the absolute path Astro gives layouts. */
+export function rawSourceFor(file: string): string {
+    const name = file.split('/').pop();
+    const path = Object.keys(rawSources).find((p) => p.endsWith(`/${name}`));
+    return path ? bodyOf(path) : '';
+}
+
+/** Inline markdown down to plain text. */
+export function stripMarkdown(text: string): string {
+    return (
+        text
+            // Remove markdown images ![alt](url) -> alt
+            .replace(/!\[([^\]]*)\]\([^)]+\)/g, '$1')
+            // Remove markdown links [text](url) -> text
+            .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+            // Remove markdown emphasis **text** or *text* -> text
+            .replace(/\*\*([^*]+)\*\*/g, '$1')
+            .replace(/\*([^*]+)\*/g, '$1')
+            // Remove markdown code `text` -> text
+            .replace(/`([^`]+)`/g, '$1')
+            // Remove HTML tags <tag> -> (empty)
+            .replace(/<[^>]+>/g, '')
+            // Clean up multiple spaces
+            .replace(/\s+/g, ' ')
+            .trim()
+    );
+}
+
 /** Cut to a word boundary rather than mid-word, and say so with an ellipsis. */
 function truncateOnWord(text: string, limit: number): string {
     if (text.length <= limit) return text;
@@ -75,22 +103,7 @@ export function getSortedPosts(): PostSummary[] {
                         !trimmed.startsWith('import ') &&
                         !trimmed.startsWith('<')
                     ) {
-                        // Strip markdown formatting
-                        const cleanDescription = trimmed
-                            // Remove markdown links [text](url) -> text
-                            .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
-                            // Remove markdown emphasis **text** or *text* -> text
-                            .replace(/\*\*([^*]+)\*\*/g, '$1')
-                            .replace(/\*([^*]+)\*/g, '$1')
-                            // Remove markdown code `text` -> text
-                            .replace(/`([^`]+)`/g, '$1')
-                            // Remove markdown images ![alt](url) -> alt
-                            .replace(/!\[([^\]]*)\]\([^)]+\)/g, '$1')
-                            // Remove HTML tags <tag> -> (empty)
-                            .replace(/<[^>]+>/g, '')
-                            // Clean up multiple spaces
-                            .replace(/\s+/g, ' ')
-                            .trim();
+                        const cleanDescription = stripMarkdown(trimmed);
 
                         if (cleanDescription) collected.push(cleanDescription);
 

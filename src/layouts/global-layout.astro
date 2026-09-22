@@ -6,13 +6,16 @@ import '@fontsource-variable/archivo';
 import '@fontsource-variable/archivo-narrow';
 import '@fontsource/archivo-black';
 import '../styles/global.css';
+import { siteGraph, toJsonLd } from '../lib/structured-data';
 interface Props {
     title: string;
     description: string;
     publishDate?: string;
     image?: string;
+    /** Page-level schema.org nodes, merged into the site-wide JSON-LD graph. */
+    schema?: Record<string, unknown>[];
 }
-const { title, description, publishDate, image = '/og-image.jpg' } = Astro.props;
+const { title, description, publishDate, image = '/og-image.jpg', schema = [] } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const socialImageURL = new URL(image, Astro.site);
 ---
@@ -68,6 +71,13 @@ const socialImageURL = new URL(image, Astro.site);
 
         <!-- Additional Meta Tags -->
         <meta name="author" content="Mat Loughnane" />
+
+        <!-- Structured data -->
+        <script
+            is:inline
+            type="application/ld+json"
+            set:html={toJsonLd([...siteGraph(), ...schema])}
+        />
         <meta name="robots" content="index, follow" />
         <meta
             name="theme-color"
