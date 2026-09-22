@@ -1,5 +1,5 @@
 ---
-// Three marks in one hand: a plane, a covered dish, a pair of brackets.
+// Three marks in one hand: a plane, a knife and fork, a pair of brackets.
 // Single stroke weight throughout so they read as one set.
 import type { AlbumGroup } from '../../lib/posts';
 
@@ -44,22 +44,18 @@ const { group, size = 22, class: className = '' } = Astro.props;
             aria-hidden="true"
         >
             <path
-                d="M3 11h18c0 5-4 8-9 8s-9-3-9-8Z"
+                d="M5 3v5a3 3 0 0 0 6 0V3M8 3v18"
                 stroke="currentColor"
                 stroke-width="1.7"
+                stroke-linecap="round"
                 stroke-linejoin="round"
             />
             <path
-                d="M9 7c0-2 2-2 2-4"
+                d="M18 21V3c-2.6 1.6-3.8 4.3-3.8 8.2 0 1.6.9 2.8 2.4 2.8H18"
                 stroke="currentColor"
                 stroke-width="1.7"
                 stroke-linecap="round"
-            />
-            <path
-                d="M14.2 7c0-1.4 1.4-1.4 1.4-2.8"
-                stroke="currentColor"
-                stroke-width="1.7"
-                stroke-linecap="round"
+                stroke-linejoin="round"
             />
         </svg>
     )
