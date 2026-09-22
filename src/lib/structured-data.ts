@@ -9,7 +9,8 @@
 
 import { rawSourceFor, stripMarkdown } from './posts';
 
-const SITE = 'https://matloughnane.github.io';
+// The `site` from astro.config.mjs, without a trailing slash.
+const SITE = import.meta.env.SITE.replace(/\/$/, '');
 const PERSON_ID = `${SITE}/#person`;
 const WEBSITE_ID = `${SITE}/#website`;
 

@@ -41,4 +41,4 @@ This is an Astro 5.17.1 static site (personal website/blog) with file-based rout
 
 ### Deployment
 
-GitHub Actions automatically deploys to GitHub Pages on push to `master` branch. The site is accessible at https://matloughnane.github.io
+GitHub Actions automatically deploys to GitHub Pages on push to `master` branch. The site is accessible at https://matloughnane.com (custom domain via `public/CNAME`)

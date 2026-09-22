@@ -7,7 +7,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://matloughnane.github.io',
+    site: 'https://matloughnane.com',
     // base: '/v2',
     integrations: [mdx(), react(), sitemap()],
     vite: {
