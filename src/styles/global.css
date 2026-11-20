@@ -109,6 +109,7 @@
     --album-leaf: #f7f3ec;
     --album-edge: #ded6ca; /* rules, hairlines */
     --album-corner: #c6baa9; /* gummed corner mounts */
+    --album-mount: var(--album-cloth); /* corner marks around photos */
     --album-ink-2: #6e6459; /* secondary, tinted from the ground */
     --album-ink: #221c18;
     --album-cloth: #7e1220; /* oxblood book cloth */
@@ -121,6 +122,7 @@
     --album-leaf: #1e1b20;
     --album-edge: #2a252c;
     --album-corner: #312a33;
+    --album-mount: #b0283a; /* cloth, lifted so it reads on the dark card */
     --album-ink-2: #a2969f;
     --album-ink: #f4efe9;
     --album-cloth: #7e1220;

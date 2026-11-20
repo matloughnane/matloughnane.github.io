@@ -52,7 +52,7 @@ export default function SearchToggle() {
         // on-cloth, exactly as the global :focus-visible rule does.
         <div
             role="search"
-            className="search-field flex items-center gap-2 rounded-full border border-edge bg-leaf px-3.5 py-1.5 outline-offset-3 outline-cloth animate-[searchExpand_0.3s_ease-out] has-[input:focus-visible]:outline-2 dark:outline-on-cloth"
+            className="search-field flex items-center gap-2 border border-edge bg-leaf px-3.5 py-1.5 outline-offset-3 outline-cloth animate-[searchExpand_0.3s_ease-out] has-[input:focus-visible]:outline-2 dark:outline-on-cloth"
         >
             <Search size={18} className="shrink-0 text-ink-2" />
             <input
